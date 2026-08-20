@@ -1,0 +1,3 @@
+@echo off
+echo Starting MCOC Master Hub Companion...
+start "" "%~dp0index.html"
