@@ -383,6 +383,9 @@ function renderTiersTab() {
       <div class="glass-panel p-5 rounded-2xl border mb-6" style="border-color: ${clsInfo.border};">
         <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
           <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 border p-1 flex items-center justify-center shadow-md" style="border-color: ${clsInfo.color};">
+              <img src="assets/images/classes/${clsName.toLowerCase()}.svg" alt="${clsName}" class="w-full h-full object-contain">
+            </div>
             <h3 class="text-xl font-black" style="color: ${clsInfo.color};">${clsName} Class Tier List</h3>
             <span class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-amber-500/20 text-amber-300 border border-amber-500/30">
               STORY S-TIER PICKS
@@ -466,7 +469,10 @@ function renderBeginnerGuides() {
           <img src="assets/images/${champ.image}" class="w-12 h-12 rounded-lg object-contain bg-slate-950 p-1 border border-slate-700" onerror="this.src='assets/images/ascendable.svg'" />
           <div>
             <h4 class="text-sm font-bold text-white">${champ.name}</h4>
-            <span class="text-xs font-semibold" style="color: ${clsData.color};">${champ.class} Class</span>
+            <div class="flex items-center gap-1.5 mt-0.5">
+              <img src="assets/images/classes/${champ.class.toLowerCase()}.svg" alt="${champ.class}" class="w-4 h-4 object-contain">
+              <span class="text-xs font-semibold" style="color: ${clsData.color};">${champ.class} Class</span>
+            </div>
           </div>
         </div>
 
@@ -531,8 +537,9 @@ function displayChampionModal(champ) {
 
         <h3 class="text-base font-extrabold text-white mb-0.5">${champ.name}</h3>
         ${alias ? `<span class="text-xs text-sky-400 font-bold mb-1">${alias}</span>` : ''}
-        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3" style="background: ${clsData.bg}; color: ${clsData.color}; border: 1px solid ${clsData.border};">
-          ${champ.class} Class
+        <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 inline-flex items-center gap-1.5" style="background: ${clsData.bg}; color: ${clsData.color}; border: 1px solid ${clsData.border};">
+          <img src="assets/images/classes/${(champ.class || '').toLowerCase()}.svg" alt="${champ.class}" class="w-3.5 h-3.5 object-contain" onerror="this.style.display='none'">
+          <span>${champ.class} Class</span>
         </span>
 
         ${isOwned ? `

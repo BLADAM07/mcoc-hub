@@ -1,15 +1,15 @@
-﻿// Interactive Class Advantage Wheel
+// Interactive Class Advantage Wheel
 window.initClassWheel = function() {
   const container = document.getElementById('class-wheel-container');
   if (!container) return;
 
   const classes = [
-    { name: 'Cosmic', angle: 0, color: '#00c8ff', icon: '🌌', beats: 'Tech', weakTo: 'Mystic', identity: 'Heavy Buffs, Armor Breaks, Raw Damage, True Damage' },
-    { name: 'Tech', angle: 60, color: '#0070f3', icon: '🤖', beats: 'Mutant', weakTo: 'Cosmic', identity: 'Power Drain/Burn, Armor Up, Shock, Heal Block, Ability Control' },
-    { name: 'Mutant', angle: 120, color: '#ffb703', icon: '🧬', beats: 'Skill', weakTo: 'Tech', identity: 'Prowess, High Special Damage, Regeneration, Bleeds' },
-    { name: 'Skill', angle: 180, color: '#e63946', icon: '🎯', beats: 'Science', weakTo: 'Mutant', identity: 'Shrug-off / Cleanse, Critical Hits, Bleed, True Strike, Evade Counters' },
-    { name: 'Science', angle: 240, color: '#2a9d8f', icon: '🧪', beats: 'Mystic', weakTo: 'Skill', identity: 'Debuff Stacking, Power Sting, Slow, Weakness, Passives' },
-    { name: 'Mystic', angle: 300, color: '#9d4edd', icon: '🔮', beats: 'Cosmic', weakTo: 'Science', identity: 'Nullify, Stagger, Fate Seal, Power Steal, Mystic Dispersion' }
+    { name: 'Cosmic', angle: 0, color: '#00c8ff', beats: 'Tech', weakTo: 'Mystic', identity: 'Heavy Buffs, Armor Breaks, Raw Damage, True Damage' },
+    { name: 'Tech', angle: 60, color: '#0070f3', beats: 'Mutant', weakTo: 'Cosmic', identity: 'Power Drain/Burn, Armor Up, Shock, Heal Block, Ability Control' },
+    { name: 'Mutant', angle: 120, color: '#ffb703', beats: 'Skill', weakTo: 'Tech', identity: 'Prowess, High Special Damage, Regeneration, Bleeds' },
+    { name: 'Skill', angle: 180, color: '#e63946', beats: 'Science', weakTo: 'Mutant', identity: 'Shrug-off / Cleanse, Critical Hits, Bleed, True Strike, Evade Counters' },
+    { name: 'Science', angle: 240, color: '#2a9d8f', beats: 'Mystic', weakTo: 'Skill', identity: 'Debuff Stacking, Power Sting, Slow, Weakness, Passives' },
+    { name: 'Mystic', angle: 300, color: '#9d4edd', beats: 'Cosmic', weakTo: 'Science', identity: 'Nullify, Stagger, Fate Seal, Power Steal, Mystic Dispersion' }
   ];
 
   const size = 380;
@@ -49,10 +49,10 @@ window.initClassWheel = function() {
 
     nodesHtml += `
       <g class="class-node cursor-pointer group" data-class="${cls.name}" onclick="selectClassWheel('${cls.name}')">
-        <circle cx="${x}" cy="${y}" r="34" fill="#111726" stroke="${cls.color}" stroke-width="2.5" 
-                class="transition-all duration-300 group-hover:r-[38] filter drop-shadow-[0_0_8px_${cls.color}]" />
-        <text x="${x}" y="${y - 4}" text-anchor="middle" font-size="18" fill="#fff">${cls.icon}</text>
-        <text x="${x}" y="${y + 16}" text-anchor="middle" font-size="11" font-weight="700" fill="${cls.color}" class="uppercase tracking-wider">${cls.name}</text>
+        <circle cx="${x}" cy="${y}" r="35" fill="#111726" stroke="${cls.color}" stroke-width="2.5" 
+                class="transition-all duration-300 group-hover:r-[39] filter drop-shadow-[0_0_10px_${cls.color}]" />
+        <image href="assets/images/classes/${cls.name.toLowerCase()}.svg" x="${x - 13}" y="${y - 20}" width="26" height="26" class="pointer-events-none" />
+        <text x="${x}" y="${y + 18}" text-anchor="middle" font-size="9.5" font-weight="900" fill="${cls.color}" class="uppercase tracking-wider select-none">${cls.name}</text>
       </g>
     `;
   });
@@ -94,44 +94,62 @@ window.selectClassWheel = function(className) {
   const sTiers = (window.MCOC_DATA.storyTiers.sTier[className] || []).slice(0, 5);
   const ownedChamps = (window.MCOC_DATA.champions || []).filter(c => c.class === className && c.isOwned);
 
+  const beatCls = window.MCOC_DATA.classes[data.beats] || {};
+  const weakCls = window.MCOC_DATA.classes[data.weakTo] || {};
+
   detailEl.innerHTML = `
     <div class="p-6 rounded-2xl glass-panel border" style="border-color: ${data.border};">
-      <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
-        <div class="flex items-center gap-3">
-          <span class="text-3xl font-extrabold" style="color: ${data.color};">${data.name}</span>
-          <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style="background: ${data.bg}; color: ${data.color}; border: 1px solid ${data.border}">
-            Class Profile
-          </span>
+      <div class="flex items-center justify-between mb-5 flex-wrap gap-3">
+        <div class="flex items-center gap-3.5">
+          <div class="w-12 h-12 rounded-xl bg-slate-900 border-2 p-1.5 flex items-center justify-center shadow-lg" style="border-color: ${data.color};">
+            <img src="assets/images/classes/${className.toLowerCase()}.svg" alt="${className}" class="w-full h-full object-contain">
+          </div>
+          <div>
+            <h3 class="text-2xl font-black tracking-tight" style="color: ${data.color};">${data.name.toUpperCase()} CLASS</h3>
+            <span class="text-xs text-slate-400 font-medium">Class Advantage Profile</span>
+          </div>
         </div>
-        <div class="text-xs text-slate-400">
+        <div class="px-3 py-1 rounded-xl bg-slate-900 border border-slate-700 text-xs text-slate-300">
           Owned: <span class="text-white font-bold">${ownedChamps.length}</span> champions
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-        <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30">
-          <div class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 mb-1">
-            <span>⚔️ Advantage (+40% Attack & +Crit/Pen)</span>
+        <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/40 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-emerald-400 flex items-center gap-1.5 mb-1.5">
+              <span>⚔️ ADVANTAGE (+40% Attack & Crit/Pen)</span>
+            </div>
+            <div class="text-base font-black text-white flex items-center gap-2">
+              <span>CRUSHES:</span>
+              <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-slate-900 border" style="border-color: ${beatCls.color || '#fff'};">
+                <img src="assets/images/classes/${data.beats.toLowerCase()}.svg" class="w-4 h-4 object-contain">
+                <span style="color: ${beatCls.color || '#fff'}">${data.beats}</span>
+              </div>
+            </div>
           </div>
-          <div class="text-lg font-bold text-white flex items-center gap-2">
-            CRUSHES: <span style="color: ${window.MCOC_DATA.classes[data.beats]?.color || '#fff'}">${data.beats}</span>
-          </div>
-          <div class="text-xs text-slate-300 mt-1">Gains high damage bonus and reduced ability resistance against ${data.beats}.</div>
+          <div class="text-xs text-slate-300 mt-2">Gains high damage bonus and reduced ability resistance against ${data.beats}.</div>
         </div>
 
-        <div class="p-3.5 rounded-xl bg-rose-950/30 border border-rose-500/30">
-          <div class="text-xs font-semibold text-rose-400 flex items-center gap-1.5 mb-1">
-            <span>🛡️ Weakness (-20% Attack & Vulnerability)</span>
+        <div class="p-3.5 rounded-xl bg-rose-950/30 border border-rose-500/40 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-rose-400 flex items-center gap-1.5 mb-1.5">
+              <span>🛡️ WEAKNESS (-20% Attack & Vulnerability)</span>
+            </div>
+            <div class="text-base font-black text-white flex items-center gap-2">
+              <span>WEAK TO:</span>
+              <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-slate-900 border" style="border-color: ${weakCls.color || '#fff'};">
+                <img src="assets/images/classes/${data.weakTo.toLowerCase()}.svg" class="w-4 h-4 object-contain">
+                <span style="color: ${weakCls.color || '#fff'}">${data.weakTo}</span>
+              </div>
+            </div>
           </div>
-          <div class="text-lg font-bold text-white flex items-center gap-2">
-            WEAK TO: <span style="color: ${window.MCOC_DATA.classes[data.weakTo]?.color || '#fff'}">${data.weakTo}</span>
-          </div>
-          <div class="text-xs text-slate-300 mt-1">Suffers reduced combat effectiveness against ${data.weakTo} defenders.</div>
+          <div class="text-xs text-slate-300 mt-2">Suffers reduced combat effectiveness against ${data.weakTo} defenders.</div>
         </div>
       </div>
 
       <div class="mb-5">
-        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Class Mechanics & Specialty</h4>
+        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Class Mechanics & Kit Specialty</h4>
         <p class="text-sm text-slate-200 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 leading-relaxed">
           ${data.identity}
         </p>
