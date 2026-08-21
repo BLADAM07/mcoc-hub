@@ -1,4 +1,4 @@
-// MCOC Master Hub Generated Dataset
+﻿// MCOC Master Hub Generated Dataset
 window.MCOC_DATA = {
     "classes":  {
                     "Cosmic":  {
@@ -132,12 +132,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cassandra Nova",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -160,8 +157,14 @@ window.MCOC_DATA = {
                           "immunities":  [
                                              "Reverse Control Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "name":  "Jean Grey",
                           "storyTier":  null,
                           "class":  "Mutant",
@@ -209,12 +212,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Dazzler",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -240,12 +240,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Northstar",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -262,7 +259,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "Negasonic Teenage Warhead.webp",
+                          "image":  "ntw.webp",
                           "id":  "negasonicteenagewarhead",
                           "guide":  null,
                           "immunities":  [
@@ -270,12 +267,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Negasonic Teenage Warhead",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -321,19 +315,16 @@ window.MCOC_DATA = {
                           "id":  "onslaught",
                           "guide":  {
                                         "whyStory":  "Removes annoying node effects just by landing basic hits/metal-based attacks, so he simplifies hard paths.",
-                                        "easyToHandle":  "Straightforward — just attack normally, no special rotation needed."
+                                        "easyToHandle":  "Straightforward â€” just attack normally, no special rotation needed."
                                     },
                           "immunities":  [
 
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  5,
-                                        "rarity":  6,
-                                        "championName":  "Onslaught",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -383,12 +374,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain Britain",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -414,12 +402,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sauron",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -511,12 +496,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Kitty Pryde",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -584,7 +566,7 @@ window.MCOC_DATA = {
                           "id":  "stormpyramidx",
                           "guide":  {
                                         "whyStory":  "Excellent all-rounder; her Special 2 can control and weaken enemies, great for Story and Alliance War.",
-                                        "easyToHandle":  "Just build power and fire Special 2 — very consistent and reliable."
+                                        "easyToHandle":  "Just build power and fire Special 2 â€” very consistent and reliable."
                                     },
                           "immunities":  [
                                              "Coldsnap Immunity",
@@ -593,12 +575,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Storm (Pyramid X)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  "needed if node wanted"
                                     },
@@ -624,12 +603,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Professor X",
-                                        "reqLvl":  "",
                                         "futureRank":  46146,
                                         "notes":  ""
                                     },
@@ -653,7 +629,7 @@ window.MCOC_DATA = {
                           "id":  "apocalypse",
                           "guide":  {
                                         "whyStory":  "Support-style champ who helps keep the team alive and buffed, useful in longer content.",
-                                        "easyToHandle":  "Simple to pilot — mostly about staying alive and letting his passive buffs work."
+                                        "easyToHandle":  "Simple to pilot â€” mostly about staying alive and letting his passive buffs work."
                                     },
                           "immunities":  [
                                              "Disorient Immunity",
@@ -687,12 +663,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mister Sinister",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -760,17 +733,8 @@ window.MCOC_DATA = {
                           "immunities":  [
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spot",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Sunspot",
                           "storyTier":  null,
                           "class":  "Mutant",
@@ -835,19 +799,16 @@ window.MCOC_DATA = {
                           "id":  "domino",
                           "guide":  {
                                         "whyStory":  "Her \u0027luck\u0027 mechanic can randomly trigger big bonuses, making her surprisingly strong for story content.",
-                                        "easyToHandle":  "Play normally and let her luck procs do the work — low skill floor."
+                                        "easyToHandle":  "Play normally and let her luck procs do the work â€” low skill floor."
                                     },
                           "immunities":  [
 
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  7,
-                                        "championName":  "Domino",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  "needed if node wanted"
                                     },
@@ -883,12 +844,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Emma Frost",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -910,7 +868,7 @@ window.MCOC_DATA = {
                           "image":  "bishop.png",
                           "id":  "bishop",
                           "guide":  {
-                                        "whyStory":  "Very strong once you learn his combo/rotation — turns enemy specials into his own power.",
+                                        "whyStory":  "Very strong once you learn his combo/rotation â€” turns enemy specials into his own power.",
                                         "easyToHandle":  "Takes a bit more strategy/practice to get the timing of his rotation right."
                                     },
                           "immunities":  [
@@ -918,12 +876,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Bishop",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -978,12 +933,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Iceman",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -1009,12 +961,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Psylocke",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -1087,12 +1036,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Beast",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -1110,7 +1056,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "cyclopsblueteam.png",
+                          "image":  "cyclops blue team.webp",
                           "id":  "cyclopsblueteam",
                           "guide":  null,
                           "immunities":  [
@@ -1118,12 +1064,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cyclops (Blue Team)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -1141,7 +1084,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "wolverine.png",
+                          "image":  "x23.png",
                           "id":  "wolverinex23",
                           "guide":  null,
                           "immunities":  [
@@ -1149,12 +1092,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Wolverine (X-23)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -1203,12 +1143,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Rogue",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -1235,12 +1172,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Nightcrawler",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -1266,12 +1200,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gambit",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -1311,7 +1242,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "cyclopsblueteam.png",
+                          "image":  "cyclops red team.png",
                           "id":  "cyclopsnewxavierschool",
                           "guide":  null,
                           "immunities":  [
@@ -1361,17 +1292,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Wolverine (X-23)",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Wolverine",
                           "storyTier":  null,
                           "class":  "Mutant",
@@ -1391,7 +1313,7 @@ window.MCOC_DATA = {
                           "id":  "storm",
                           "guide":  {
                                         "whyStory":  "Excellent all-rounder; her Special 2 can control and weaken enemies, great for Story and Alliance War.",
-                                        "easyToHandle":  "Just build power and fire Special 2 — very consistent and reliable."
+                                        "easyToHandle":  "Just build power and fire Special 2 â€” very consistent and reliable."
                                     },
                           "immunities":  [
                                              "Shock Immunity",
@@ -1400,12 +1322,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Storm",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -1423,7 +1342,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "magneto.png",
+                          "image":  "Magneto (House of X).png",
                           "id":  "magnetohouseofx",
                           "guide":  null,
                           "immunities":  [
@@ -1431,12 +1350,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Magneto (House of X)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -1469,12 +1385,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Colossus",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -1501,12 +1414,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  5,
-                                        "rarity":  6,
-                                        "championName":  "Magneto",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -1584,12 +1494,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Karolina Dean",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -1606,7 +1513,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "phoenix.webp",
+                          "image":  "phoenix_dark.webp",
                           "id":  "darkphoenix",
                           "guide":  null,
                           "immunities":  [
@@ -1689,12 +1596,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Beta Ray Bill",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -1740,7 +1644,7 @@ window.MCOC_DATA = {
                           "id":  "theserpent",
                           "guide":  {
                                         "whyStory":  "Good node remover, especially useful against armored/tanky enemies.",
-                                        "easyToHandle":  "Play defensively and let his ability chip away nodes — beginner friendly."
+                                        "easyToHandle":  "Play defensively and let his ability chip away nodes â€” beginner friendly."
                                     },
                           "immunities":  [
                                              "Special Lock Immunity",
@@ -1798,12 +1702,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gladiator",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -1824,7 +1725,7 @@ window.MCOC_DATA = {
                           "id":  "vox",
                           "guide":  {
                                         "whyStory":  "Extremely strong damage-over-time (degeneration) champ, one of the best in the game for pure damage.",
-                                        "easyToHandle":  "Simple to use offensively — his damage does the talking, minimal setup needed."
+                                        "easyToHandle":  "Simple to use offensively â€” his damage does the talking, minimal setup needed."
                                     },
                           "immunities":  [
                                              "Special Lock Immunity",
@@ -1835,13 +1736,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vox",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
+                                        "futureRank":  3,
                                         "notes":  ""
                                     },
                           "name":  "Vox",
@@ -1863,7 +1761,7 @@ window.MCOC_DATA = {
                           "id":  "adamwarlock",
                           "guide":  {
                                         "whyStory":  "Great against buff-heavy or healing enemies; drains their power and blocks their healing.",
-                                        "easyToHandle":  "Fun, forgiving playstyle — good for beginners once basics are known."
+                                        "easyToHandle":  "Fun, forgiving playstyle â€” good for beginners once basics are known."
                                     },
                           "immunities":  [
                                              "Frostbite Immunity",
@@ -1871,17 +1769,8 @@ window.MCOC_DATA = {
                                              "Coldsnap Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Warlock",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Adam Warlock",
                           "storyTier":  null,
                           "class":  "Cosmic",
@@ -1909,17 +1798,8 @@ window.MCOC_DATA = {
                                              "Power Steal Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Hulkling",
                           "storyTier":  null,
                           "class":  "Cosmic",
@@ -1944,12 +1824,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gorr",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -1982,12 +1859,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Galan",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -2011,19 +1885,16 @@ window.MCOC_DATA = {
                           "id":  "odin",
                           "guide":  {
                                         "whyStory":  "Support champ who helps keep the team topped up and buffed for longer fights.",
-                                        "easyToHandle":  "Easy to use — mostly about staying safe and letting his support abilities work."
+                                        "easyToHandle":  "Easy to use â€” mostly about staying safe and letting his support abilities work."
                                     },
                           "immunities":  [
                                              "Nullify Immunity"
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Odin",
-                                        "reqLvl":  "3.0",
                                         "futureRank":  5,
                                         "notes":  "needed"
                                     },
@@ -2051,12 +1922,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Super-Skrull",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -2103,12 +1971,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sersi",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -2133,12 +1998,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Knull",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -2161,7 +2023,7 @@ window.MCOC_DATA = {
                           "image":  "hercules.png",
                           "id":  "hercules",
                           "guide":  {
-                                        "whyStory":  "Well-known, reliable all-rounder — works in almost every game mode without a bad matchup.",
+                                        "whyStory":  "Well-known, reliable all-rounder â€” works in almost every game mode without a bad matchup.",
                                         "easyToHandle":  "Very beginner friendly, straightforward attack pattern."
                                     },
                           "immunities":  [
@@ -2169,12 +2031,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  5,
-                                        "rarity":  6,
-                                        "championName":  "Hercules",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -2200,17 +2059,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cassandra Nova",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Nova",
                           "storyTier":  null,
                           "class":  "Cosmic",
@@ -2256,12 +2106,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Terrax",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2288,12 +2135,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Red Goblin",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2323,12 +2167,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Cosmic Ghost Rider",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -2354,12 +2195,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cull Obsidian",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2384,12 +2222,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Annihilus",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2414,12 +2249,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Silver Surfer",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -2444,17 +2276,8 @@ window.MCOC_DATA = {
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vision",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Vision (Aarkus)",
                           "storyTier":  null,
                           "class":  "Cosmic",
@@ -2471,7 +2294,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "captainmarvel.png",
+                          "image":  "Captain Marvel.png",
                           "id":  "captainmarvel",
                           "guide":  null,
                           "immunities":  [
@@ -2479,12 +2302,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain Marvel",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2556,12 +2376,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Venom the Duck",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2608,12 +2425,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Corvus Glaive",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -2639,12 +2453,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Carnage",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2670,12 +2481,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hela",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2783,7 +2591,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "msmarvel.png",
+                          "image":  "Ms. Marvel (Kamala Khan).png",
                           "id":  "msmarvelkamalakhan",
                           "guide":  null,
                           "immunities":  [
@@ -2791,12 +2599,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ms. Marvel (Kamala Khan)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2848,13 +2653,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Venompool",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
+                                        "futureRank":  2,
                                         "notes":  ""
                                     },
                           "name":  "Venompool",
@@ -2882,13 +2684,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  7,
                                         "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hyperion",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
+                                        "rank":  2,
+                                        "futureRank":  3,
                                         "notes":  ""
                                     },
                           "name":  "Hyperion",
@@ -2914,12 +2713,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Superior Iron Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2946,12 +2742,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ms. Marvel",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -2976,12 +2769,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Symbiote)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -3030,12 +2820,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Bolt",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -3073,23 +2860,14 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "captainmarvel.png",
+                          "image":  "Captain Marvel (Classic).png",
                           "id":  "captainmarvelclassic",
                           "guide":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain Marvel",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Captain Marvel (Classic)",
                           "storyTier":  null,
                           "class":  "Cosmic",
@@ -3133,12 +2911,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ronan",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  "must best for all"
                                     },
@@ -3163,12 +2938,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Thor",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -3195,13 +2967,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Venom",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
                                         "notes":  ""
                                     },
                           "name":  "Venom",
@@ -3245,17 +3014,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Blade",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Blade (Stellar Forged)",
                           "storyTier":  null,
                           "class":  "Mystic",
@@ -3292,7 +3052,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "spiderman.png",
+                          "image":  "Spider-Man (Pavitr Prabhakar).png",
                           "id":  "spidermanpavitrprabhakar",
                           "guide":  null,
                           "immunities":  [
@@ -3340,7 +3100,7 @@ window.MCOC_DATA = {
                           "id":  "nicominoru",
                           "guide":  {
                                         "whyStory":  "Deals strong damage-over-time effects, good against enemies who don\u0027t have DOT immunity.",
-                                        "easyToHandle":  "Reduces punishing nodes and deals damage passively — fairly simple to use."
+                                        "easyToHandle":  "Reduces punishing nodes and deals damage passively â€” fairly simple to use."
                                     },
                           "immunities":  [
                                              "Buff immunity",
@@ -3349,12 +3109,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Nico Minoru",
-                                        "reqLvl":  "2.0",
                                         "futureRank":  2,
                                         "notes":  "Helpfull"
                                     },
@@ -3381,12 +3138,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Isophyne",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -3412,12 +3166,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spiral",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -3464,12 +3215,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Enchantress",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -3500,12 +3248,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "The Destroyer",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -3532,12 +3277,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "White Tiger",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -3582,7 +3324,7 @@ window.MCOC_DATA = {
                           "id":  "kushala",
                           "guide":  {
                                         "whyStory":  "Unique dimension-based mechanics make her strong in specific matchups, though harder to summarize simply.",
-                                        "easyToHandle":  "More advanced champ — takes time to learn her different modes."
+                                        "easyToHandle":  "More advanced champ â€” takes time to learn her different modes."
                                     },
                           "immunities":  [
                                              "Incinerate Immunity",
@@ -3590,13 +3332,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Kushala",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
                                         "notes":  ""
                                     },
                           "name":  "Kushala",
@@ -3624,12 +3363,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Werewolf By Night",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -3661,12 +3397,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Kindred",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -3685,7 +3418,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "Absorbing_Man.png",
+                          "image":  "Absorbing Man.png",
                           "id":  "absorbingman",
                           "guide":  null,
                           "immunities":  [
@@ -3700,12 +3433,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Absorbing Man",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -3750,7 +3480,7 @@ window.MCOC_DATA = {
                           "image":  "Wiccan.png",
                           "id":  "wiccan",
                           "guide":  {
-                                        "whyStory":  "Flexible all-rounder who can be played multiple ways depending on the fight — good for Story and Quests.",
+                                        "whyStory":  "Flexible all-rounder who can be played multiple ways depending on the fight â€” good for Story and Quests.",
                                         "easyToHandle":  "Requires understanding his tactic options, but forgiving once you pick one."
                                     },
                           "immunities":  [
@@ -3762,14 +3492,11 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Wiccan",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  3,
+                                        "notes":  "good for all play"
                                     },
                           "name":  "Wiccan",
                           "storyTier":  "S-Tier (Mystic)",
@@ -3796,12 +3523,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Supreme)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -3875,12 +3599,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "America Chavez",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -3929,17 +3650,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Scarlet Witch",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Scarlet Witch (Sigil)",
                           "storyTier":  null,
                           "class":  "Mystic",
@@ -3962,12 +3674,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Longshot",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -3995,12 +3704,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sasquatch",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4029,12 +3735,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Dragon Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4062,12 +3765,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mojo",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4115,12 +3815,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Tigra",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -4147,17 +3844,8 @@ window.MCOC_DATA = {
                                              "Armor Break Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Thing",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Man-Thing",
                           "storyTier":  null,
                           "class":  "Mystic",
@@ -4179,12 +3867,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ebony Maw",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -4227,7 +3912,7 @@ window.MCOC_DATA = {
                           "image":  "doctordoom.png",
                           "id":  "doctordoom",
                           "guide":  {
-                                        "whyStory":  "One of the most reliable, powerful Mystic champs — dominates most Story and Alliance War content.",
+                                        "whyStory":  "One of the most reliable, powerful Mystic champs â€” dominates most Story and Alliance War content.",
                                         "easyToHandle":  "Simple special-attack loop once learned makes him surprisingly consistent."
                                     },
                           "immunities":  [
@@ -4263,12 +3948,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Black Widow (Claire Voyant)",
-                                        "reqLvl":  "1.0",
                                         "futureRank":  5,
                                         "notes":  "must"
                                     },
@@ -4344,12 +4026,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Morningstar",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4380,12 +4059,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Mephisto",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4458,12 +4134,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ghost Rider",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -4491,12 +4164,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mordo",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4522,13 +4192,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
+                                        "rarity":  7,
+                                        "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Doctor Voodoo",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
+                                        "futureRank":  2,
                                         "notes":  ""
                                     },
                           "name":  "Doctor Voodoo",
@@ -4553,12 +4220,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Thor (Jane Foster)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -4604,17 +4268,8 @@ window.MCOC_DATA = {
                           "immunities":  [
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Colossus",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Unstoppable Colossus",
                           "storyTier":  null,
                           "class":  "Mystic",
@@ -4658,8 +4313,8 @@ window.MCOC_DATA = {
                           "image":  "juggernaut.png",
                           "id":  "juggernaut",
                           "guide":  {
-                                        "whyStory":  "Very tanky and hard to stop — great for absorbing damage in tough story fights.",
-                                        "easyToHandle":  "Beginner friendly — mostly about attacking and tanking hits, becomes unstoppable easily."
+                                        "whyStory":  "Very tanky and hard to stop â€” great for absorbing damage in tough story fights.",
+                                        "easyToHandle":  "Beginner friendly â€” mostly about attacking and tanking hits, becomes unstoppable easily."
                                     },
                           "immunities":  [
                                              "Reverse Control Immunity"
@@ -4681,7 +4336,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "ironfist.png",
+                          "image":  "ironfistwhite.png",
                           "id":  "ironfistimmortal",
                           "guide":  null,
                           "immunities":  [
@@ -4710,12 +4365,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Scarlet Witch",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4739,17 +4391,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Guillotine 2099",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Guillotine",
                           "storyTier":  null,
                           "class":  "Mystic",
@@ -4817,12 +4460,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Blue Marvel",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -4885,7 +4525,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "spider-women.webp",
+                          "image":  "spider-women_new.webp",
                           "id":  "spiderwoman",
                           "guide":  null,
                           "immunities":  [
@@ -4895,12 +4535,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Spider-Woman (Jessica Drew)",
-                                        "reqLvl":  "1.0",
                                         "futureRank":  2,
                                         "notes":  "must"
                                     },
@@ -4923,17 +4560,8 @@ window.MCOC_DATA = {
                           "immunities":  [
                                              "Stun Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Falcon",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Falcon (Joaquin Torres)",
                           "storyTier":  null,
                           "class":  "Science",
@@ -4949,24 +4577,15 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "shehulk.webp",
+                          "image":  "She-Hulk (Deathless).webp",
                           "id":  "shehulkdeathless",
                           "guide":  null,
                           "immunities":  [
                                              "Poison Immunity",
                                              "Rupture Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "She-Hulk (Deathless)",
                           "storyTier":  null,
                           "class":  "Science",
@@ -5039,12 +4658,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Spider-Punk",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -5069,12 +4685,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
+                                        "rarity":  7,
+                                        "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Morbius",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -5096,7 +4709,7 @@ window.MCOC_DATA = {
                           "id":  "photon",
                           "guide":  {
                                         "whyStory":  "Balanced fighter who does well in Story, Arena and most quests without needing a specific counter-matchup.",
-                                        "easyToHandle":  "Build up her Special 2 by landing hits (charges to 25) then release it — simple charge-and-release pattern."
+                                        "easyToHandle":  "Build up her Special 2 by landing hits (charges to 25) then release it â€” simple charge-and-release pattern."
                                     },
                           "immunities":  [
                                              "Neutralize Immunity",
@@ -5105,12 +4718,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Photon",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -5133,7 +4743,7 @@ window.MCOC_DATA = {
                           "image":  "silk.png",
                           "id":  "silk",
                           "guide":  {
-                                        "whyStory":  "Good utility pick for nodes that punish debuffs — she can clear them off herself late in the fight.",
+                                        "whyStory":  "Good utility pick for nodes that punish debuffs â€” she can clear them off herself late in the fight.",
                                         "easyToHandle":  "Just play normally; her clean-up ability triggers automatically when you land her Special 2 near the end."
                                     },
                           "immunities":  [
@@ -5141,12 +4751,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Silk",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -5169,7 +4776,7 @@ window.MCOC_DATA = {
                           "image":  "sandman.webp",
                           "id":  "sandman",
                           "guide":  {
-                                        "whyStory":  "Great pick when a boss node punishes you for holding back — he rewards players who keep attacking non-stop.",
+                                        "whyStory":  "Great pick when a boss node punishes you for holding back â€” he rewards players who keep attacking non-stop.",
                                         "easyToHandle":  "Very beginner friendly: just keep hitting combos, no tricky timing needed."
                                     },
                           "immunities":  [
@@ -5179,12 +4786,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sandman",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -5213,12 +4817,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cassie Lang",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5269,12 +4870,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spot",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5322,12 +4920,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Jessica Jones",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -5354,12 +4949,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Scorpion",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -5389,12 +4981,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Anti-Venom",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -5443,7 +5032,7 @@ window.MCOC_DATA = {
                           "id":  "spiderman2099",
                           "guide":  {
                                         "whyStory":  "Simple, reliable damage dealer that works in most Story and Arena content.",
-                                        "easyToHandle":  "Just attack — no tricky mechanics, great for beginners."
+                                        "easyToHandle":  "Just attack â€” no tricky mechanics, great for beginners."
                                     },
                           "immunities":  [
                                              "Buff immunity"
@@ -5473,12 +5062,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mister Negative",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -5503,12 +5089,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Red Guardian",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5560,12 +5143,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Hulk (Immortal)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -5586,23 +5166,14 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "abomination.png",
+                          "image":  "Abomination (Immortal).png",
                           "id":  "abominationimmortal",
                           "guide":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Abomination",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Abomination (Immortal)",
                           "storyTier":  null,
                           "class":  "Science",
@@ -5652,12 +5223,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Thing",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -5683,12 +5251,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Mister Fantastic",
-                                        "reqLvl":  "3.0",
                                         "futureRank":  2,
                                         "notes":  "needed"
                                     },
@@ -5716,12 +5281,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Human Torch",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -5750,12 +5312,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sentry",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -5780,12 +5339,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Wasp",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5812,12 +5368,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk (Ragnarok)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5865,17 +5418,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Captain America (Infinity War)",
                           "storyTier":  null,
                           "class":  "Science",
@@ -5899,12 +5443,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "M.O.D.O.K.",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5929,13 +5470,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
+                                        "rarity":  7,
+                                        "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "She-Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
+                                        "futureRank":  2,
                                         "notes":  ""
                                     },
                           "name":  "She-Hulk",
@@ -5964,12 +5502,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Red Hulk",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -5994,21 +5529,18 @@ window.MCOC_DATA = {
                           "id":  "spidermanmilesmorales",
                           "guide":  {
                                         "whyStory":  "Completes small in-fight \u0027challenges\u0027 (like dodging or blocking) to earn fury buffs that boost his damage, and stacks debuffs on the enemy \nreliable pick for Story and beyond.",
-                                        "easyToHandle":  "Just play normally (dodge/block/attack) and the challenges complete themselves — no memorized rotation needed."
+                                        "easyToHandle":  "Just play normally (dodge/block/attack) and the challenges complete themselves â€” no memorized rotation needed."
                                     },
                           "immunities":  [
 
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Miles Morales",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
+                                        "futureRank":  2,
+                                        "notes":  "importance"
                                     },
                           "name":  "Spider man (Miles Morales)",
                           "storyTier":  null,
@@ -6053,13 +5585,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
+                                        "rarity":  7,
+                                        "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Classic)",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
+                                        "futureRank":  2,
                                         "notes":  ""
                                     },
                           "name":  "Spider-Man (Classic)",
@@ -6085,12 +5614,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6115,17 +5641,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Captain America (WWII)",
                           "storyTier":  null,
                           "class":  "Science",
@@ -6173,12 +5690,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ant-Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6196,7 +5710,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "abomination.png",
+                          "image":  "Abomination.png",
                           "id":  "abomination",
                           "guide":  null,
                           "immunities":  [
@@ -6204,12 +5718,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Abomination",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6240,12 +5751,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -6296,12 +5804,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Yellowjacket",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6326,12 +5831,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Spider-Gwen",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6358,12 +5860,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Luke Cage",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6390,12 +5889,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Joe Fixit",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -6464,16 +5960,13 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "M\u0027Baku",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "M’Baku",
+                          "name":  "Mâ€™Baku",
                           "storyTier":  null,
                           "class":  "Skill",
                           "tags":  [
@@ -6486,7 +5979,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "starlord.png",
+                          "image":  "Star-Lord (Stellar Forged).webp",
                           "id":  "starlordstellarforged",
                           "guide":  null,
                           "immunities":  [
@@ -6518,12 +6011,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Frankencastle",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -6548,12 +6038,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mr. Knight",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -6573,7 +6060,7 @@ window.MCOC_DATA = {
                           "image":  "portrait_yelenabelova.webp",
                           "id":  "yelenabelova",
                           "guide":  {
-                                        "whyStory":  "One of the easiest \u0027node remover\u0027 champs — she strips away punishing node effects so story fights become simple.",
+                                        "whyStory":  "One of the easiest \u0027node remover\u0027 champs â€” she strips away punishing node effects so story fights become simple.",
                                         "easyToHandle":  "No complicated combos, very forgiving to use for beginners."
                                     },
                           "immunities":  [
@@ -6603,12 +6090,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Lumatrix",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -6676,12 +6160,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Silver Sable",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -6733,12 +6214,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Chee\u0027ilth",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -6766,12 +6244,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Moondragon",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6791,7 +6266,7 @@ window.MCOC_DATA = {
                           "image":  "kate_bishop.png",
                           "id":  "katebishop",
                           "guide":  {
-                                        "whyStory":  "Very strong once you learn his combo/rotation — turns enemy specials into his own power.",
+                                        "whyStory":  "Very strong once you learn his combo/rotation â€” turns enemy specials into his own power.",
                                         "easyToHandle":  "Takes a bit more strategy/practice to get the timing of his rotation right."
                                     },
                           "immunities":  [
@@ -6799,12 +6274,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Kate Bishop",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -6832,13 +6304,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Baron Zemo",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
                                         "notes":  ""
                                     },
                           "name":  "Baron Zemo",
@@ -6866,12 +6335,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Valkyrie",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -6898,12 +6364,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Mantis",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -6951,12 +6414,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Cat",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -7025,12 +6485,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Jabari Panther",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7055,12 +6512,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Shang-Chi",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -7106,12 +6560,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Widow (Deadly Origin)",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -7134,19 +6585,16 @@ window.MCOC_DATA = {
                           "id":  "hitmonkey",
                           "guide":  {
                                         "whyStory":  "Strong all-round damage dealer who works well in Story and Arena thanks to high critical hit chance.",
-                                        "easyToHandle":  "Play aggressively and land crits — no special rotation required."
+                                        "easyToHandle":  "Play aggressively and land crits â€” no special rotation required."
                                     },
                           "immunities":  [
 
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Hit-Monkey",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -7174,12 +6622,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Mole Man",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -7247,12 +6692,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Stealth Suit)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -7305,12 +6747,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Korg",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -7379,12 +6818,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Killmonger",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -7409,18 +6845,9 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Moondragon",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Ægon",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "name":  "Ã†gon",
                           "storyTier":  null,
                           "class":  "Skill",
                           "tags":  [
@@ -7441,12 +6868,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gwenpool",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -7472,12 +6896,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Taskmaster",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7504,12 +6925,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Blade",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7528,24 +6946,15 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "thor.png",
+                          "image":  "Thor_(Ragnarok)_portrait.webp",
                           "id":  "thorragnarok",
                           "guide":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Wither Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Thor",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Thor (Ragnarok)",
                           "storyTier":  null,
                           "class":  "Skill",
@@ -7570,12 +6979,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Kingpin",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -7600,17 +7006,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Venom",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Agent Venom",
                           "storyTier":  null,
                           "class":  "Skill",
@@ -7633,12 +7030,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Panther (Civil War)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -7686,12 +7080,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Falcon",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7735,7 +7126,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "daredevil.png",
+                          "image":  "Daredevil (Classic).png",
                           "id":  "daredevilclassic",
                           "guide":  null,
                           "immunities":  [
@@ -7743,12 +7134,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Daredevil (Classic)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7771,17 +7159,8 @@ window.MCOC_DATA = {
                           "immunities":  [
                                              "Wither Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Punisher 2099",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Punisher",
                           "storyTier":  null,
                           "class":  "Skill",
@@ -7824,12 +7203,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Elektra",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -7855,12 +7231,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Winter Soldier",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7884,17 +7257,8 @@ window.MCOC_DATA = {
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Widow (Deadly Origin)",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Black Widow",
                           "storyTier":  null,
                           "class":  "Skill",
@@ -7910,7 +7274,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "daredevil.png",
+                          "image":  "Daredevil (Hell\u0027s Kitchen).png",
                           "id":  "daredevilhellskitchen",
                           "guide":  null,
                           "immunities":  [
@@ -7918,12 +7282,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Daredevil (Hell\u0027s Kitchen)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -7948,12 +7309,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Panther",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -7980,12 +7338,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Hawkeye",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8054,12 +7409,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Slayer (J. Jonah Jameson)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8106,7 +7458,7 @@ window.MCOC_DATA = {
                           "id":  "themaker",
                           "guide":  {
                                         "whyStory":  "Powerful utility for tough content but requires understanding his mechanics well.",
-                                        "easyToHandle":  "More complex — best for players ready to learn a detailed kit."
+                                        "easyToHandle":  "More complex â€” best for players ready to learn a detailed kit."
                                     },
                           "immunities":  [
                                              "Reverse Control Immunity",
@@ -8131,7 +7483,7 @@ window.MCOC_DATA = {
                           "id":  "bastion",
                           "guide":  {
                                         "whyStory":  "Reduces the effect of punishing nodes, making hard paths in Story/Quests much easier.",
-                                        "easyToHandle":  "Tricky/unpredictable playstyle — takes some getting used to."
+                                        "easyToHandle":  "Tricky/unpredictable playstyle â€” takes some getting used to."
                                     },
                           "immunities":  [
 
@@ -8160,12 +7512,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Arnim Zola",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -8191,7 +7540,7 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Jack O’Lantern",
+                          "name":  "Jack Oâ€™Lantern",
                           "storyTier":  null,
                           "class":  "Tech",
                           "tags":  [
@@ -8216,17 +7565,8 @@ window.MCOC_DATA = {
                                              "Power Drain Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vision",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Vision (Deathless)",
                           "storyTier":  null,
                           "class":  "Tech",
@@ -8254,12 +7594,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Arcade",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -8289,12 +7626,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Prowler",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -8320,7 +7654,7 @@ window.MCOC_DATA = {
                           "id":  "ironheart",
                           "guide":  {
                                         "whyStory":  "Countering Mutant champs is common in this game, and she covers that matchup well too.",
-                                        "easyToHandle":  "Playstyle is more about utility than combos — approachable once basics are known."
+                                        "easyToHandle":  "Playstyle is more about utility than combos â€” approachable once basics are known."
                                     },
                           "immunities":  [
                                              "Coldsnap Immunity",
@@ -8331,12 +7665,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ironheart",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
@@ -8388,12 +7719,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
+                                        "rarity":  7,
+                                        "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Shocker",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8416,7 +7744,7 @@ window.MCOC_DATA = {
                           "id":  "vivvision",
                           "guide":  {
                                         "whyStory":  "Smart utility champ good for outlasting enemies and controlling fights with debuffs.",
-                                        "easyToHandle":  "Needs a little strategy/planning but not hard timing — more about picking the right moment."
+                                        "easyToHandle":  "Needs a little strategy/planning but not hard timing â€” more about picking the right moment."
                                     },
                           "immunities":  [
                                              "Nullify Immunity",
@@ -8428,13 +7756,10 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Viv Vision",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
+                                        "futureRank":  3,
                                         "notes":  ""
                                     },
                           "name":  "Viv Vision",
@@ -8462,12 +7787,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ant-Man (Future)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -8520,12 +7842,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  7,
-                                        "championName":  "Iron Man (Infamous)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  "must best for all"
                                     },
@@ -8552,12 +7871,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America (Sam Wilson)",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -8585,12 +7901,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Omega Sentinel",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -8619,12 +7932,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Psycho-Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8651,12 +7961,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Peni Parker",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -8684,12 +7991,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Silver Centurion",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8710,8 +8014,8 @@ window.MCOC_DATA = {
                           "image":  "nimrod.png",
                           "id":  "nimrod",
                           "guide":  {
-                                        "whyStory":  "Excellent against Mutant opponents (very common in Story) — shocks them and shuts down their regeneration.",
-                                        "easyToHandle":  "Switch between his two modes and attack — straightforward once you know his 2 modes."
+                                        "whyStory":  "Excellent against Mutant opponents (very common in Story) â€” shocks them and shuts down their regeneration.",
+                                        "easyToHandle":  "Switch between his two modes and attack â€” straightforward once you know his 2 modes."
                                     },
                           "immunities":  [
                                              "Ability Accuracy Reduction Immunity",
@@ -8744,17 +8048,8 @@ window.MCOC_DATA = {
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Red Guardian",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Guardian",
                           "storyTier":  null,
                           "class":  "Tech",
@@ -8778,12 +8073,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mysterio",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8811,12 +8103,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Guillotine 2099",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -8840,7 +8129,7 @@ window.MCOC_DATA = {
                           "id":  "warlock",
                           "guide":  {
                                         "whyStory":  "Great against buff-heavy or healing enemies; drains their power and blocks their healing.",
-                                        "easyToHandle":  "Fun, forgiving playstyle — good for beginners once basics are known."
+                                        "easyToHandle":  "Fun, forgiving playstyle â€” good for beginners once basics are known."
                                     },
                           "immunities":  [
                                              "Coldsnap Immunity",
@@ -8850,12 +8139,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Warlock",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -8885,12 +8171,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Red Skull",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -8945,12 +8228,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Sentinel",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -8969,7 +8249,7 @@ window.MCOC_DATA = {
                                          ]
                       },
                       {
-                          "image":  "ironman.webp",
+                          "image":  "iron man( infinity war).png",
                           "id":  "ironmaninfinitywar",
                           "guide":  null,
                           "immunities":  [
@@ -8978,12 +8258,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Iron Man (Infinity War)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
@@ -9010,12 +8287,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ghost",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -9043,12 +8317,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Green Goblin",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -9100,12 +8371,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vulture",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -9132,12 +8400,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Stark Enhanced)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -9213,12 +8478,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Punisher 2099",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -9243,17 +8505,8 @@ window.MCOC_DATA = {
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ultron",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Ultron (Classic)",
                           "storyTier":  null,
                           "class":  "Tech",
@@ -9301,12 +8554,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Howard the Duck",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -9331,12 +8581,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Rocket Raccoon",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -9404,12 +8651,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
+                                        "rarity":  7,
+                                        "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Iron Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -9454,7 +8698,7 @@ window.MCOC_DATA = {
                           "id":  "vision",
                           "guide":  {
                                         "whyStory":  "Smart utility champ good for outlasting enemies and controlling fights with debuffs.",
-                                        "easyToHandle":  "Needs a little strategy/planning but not hard timing — more about picking the right moment."
+                                        "easyToHandle":  "Needs a little strategy/planning but not hard timing â€” more about picking the right moment."
                                     },
                           "immunities":  [
                                              "Poison Immunity",
@@ -9462,12 +8706,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vision",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
@@ -9493,17 +8734,8 @@ window.MCOC_DATA = {
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ultron",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
+                          "isOwned":  false,
+                          "owned":  null,
                           "name":  "Vision (Age of Ultron)",
                           "storyTier":  null,
                           "class":  "Tech",
@@ -9553,12 +8785,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulkbuster",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
@@ -9588,12 +8817,9 @@ window.MCOC_DATA = {
                                          ],
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ultron",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
@@ -9613,11 +8839,10 @@ window.MCOC_DATA = {
                       }
                   ],
     "stats":  {
-                  "sixStars":  192,
-                  "sevenStars":  16,
-                  "ownedChampions":  208,
                   "totalChampions":  327,
-                  "totalImmunities":  43
+                  "ownedChampions":  183,
+                  "sevenStarChampions":  32,
+                  "sixStarChampions":  151
               },
     "immunities":  {
                        "Stagger Immunity":  {
@@ -9672,7 +8897,7 @@ window.MCOC_DATA = {
                                                                     "Isophyne",
                                                                     "Karolina Dean",
                                                                     "Mephisto",
-                                                                    "M’Baku",
+                                                                    "Mâ€™Baku",
                                                                     "Sabretooth",
                                                                     "Sasquatch",
                                                                     "Sentinel",
@@ -9688,7 +8913,7 @@ window.MCOC_DATA = {
                        "Reverse Control Immunity":  {
                                                         "champions":  [
                                                                           "Ironheart",
-                                                                          "Jack O’Lantern",
+                                                                          "Jack Oâ€™Lantern",
                                                                           "Jean Grey",
                                                                           "Juggernaut",
                                                                           "Mister Sinister",
@@ -10368,7 +9593,7 @@ window.MCOC_DATA = {
                                                                      "Ikaris",
                                                                      "Iron Man (Infamous)",
                                                                      "Ironheart",
-                                                                     "Jack O’Lantern",
+                                                                     "Jack Oâ€™Lantern",
                                                                      "Kindred",
                                                                      "Kitty Pryde",
                                                                      "Kushala",
@@ -10408,7 +9633,7 @@ window.MCOC_DATA = {
                      },
                      {
                          "term":  "All-rounder",
-                         "definition":  "A champion who performs well in almost every situation — a safe, flexible choice."
+                         "definition":  "A champion who performs well in almost every situation â€” a safe, flexible choice."
                      },
                      {
                          "term":  "Node remover",
@@ -10480,7 +9705,7 @@ window.MCOC_DATA = {
                                                          "Dragon Man",
                                                          "King Groot"
                                                      ],
-                            "icon":  "☣️"
+                            "icon":  "â˜£ï¸"
                         },
                         {
                             "counterAdvice":  "Use multi-elemental immune champions or stance switchers who negate energy debuffs (Absorbing Man, Human Torch, Storm PX, BWCV, Ultron).",
@@ -10501,7 +9726,7 @@ window.MCOC_DATA = {
                                                          "Ultron",
                                                          "Iceman"
                                                      ],
-                            "icon":  "⚡🔥"
+                            "icon":  "âš¡ðŸ”¥"
                         },
                         {
                             "counterAdvice":  "Bleed-immune champions completely negate Caltrops, letting you dash back and dex freely.",
@@ -10522,7 +9747,7 @@ window.MCOC_DATA = {
                                                          "Kushala",
                                                          "Nimrod"
                                                      ],
-                            "icon":  "🩸"
+                            "icon":  "ðŸ©¸"
                         },
                         {
                             "counterAdvice":  "Bring Shock-immune champions or champions who use Passives instead of active Buffs (Titania, Hulk, Red Guardian, Spot, Cassie Lang).",
@@ -10543,7 +9768,7 @@ window.MCOC_DATA = {
                                                          "Silver Surfer",
                                                          "Storm (Pyramid X)"
                                                      ],
-                            "icon":  "⚡"
+                            "icon":  "âš¡"
                         },
                         {
                             "counterAdvice":  "Incinerate immune champions negate the aura damage completely. Human Torch actually gets HEALED and builds Smolders.",
@@ -10564,7 +9789,7 @@ window.MCOC_DATA = {
                                                          "Kushala",
                                                          "Havok"
                                                      ],
-                            "icon":  "🔥"
+                            "icon":  "ðŸ”¥"
                         },
                         {
                             "counterAdvice":  "Use Heal Block / Petrify champions (Scorpion, Void, Warlock, Mister Fantastic) or Stagger / Fate Seal (Doom, Kushala, BWCV).",
@@ -10586,7 +9811,7 @@ window.MCOC_DATA = {
                                                          "Human Torch",
                                                          "Titania"
                                                      ],
-                            "icon":  "🩹"
+                            "icon":  "ðŸ©¹"
                         },
                         {
                             "counterAdvice":  "Bring strict Power Lock, Power Burn, or Enervate specialists (Infamous Iron Man, Doom, Magik, Viv Vision, Wiccan, Absorbing Man).",
@@ -10608,7 +9833,7 @@ window.MCOC_DATA = {
                                                          "Nimrod",
                                                          "Magik"
                                                      ],
-                            "icon":  "🔋"
+                            "icon":  "ðŸ”‹"
                         },
                         {
                             "counterAdvice":  "Use Slow debuffs (Silk, Shang-Chi, She-Hulk, Spider-Gwen, Valkyrie) which disable Unstoppable and Evade, or intercept specialists.",
@@ -10629,7 +9854,7 @@ window.MCOC_DATA = {
                                                          "Kate Bishop",
                                                          "Photon"
                                                      ],
-                            "icon":  "🛡️"
+                            "icon":  "ðŸ›¡ï¸"
                         },
                         {
                             "counterAdvice":  "Use True Strike / True Sense / Coldsnap / Slow anti-evade champions (Kate Bishop, Bullseye, Nick Fury, Shang-Chi, Iceman, Professor X).",
@@ -10649,7 +9874,7 @@ window.MCOC_DATA = {
                                                          "Iceman",
                                                          "Hit-Monkey"
                                                      ],
-                            "icon":  "💨"
+                            "icon":  "ðŸ’¨"
                         },
                         {
                             "counterAdvice":  "Champions immune to Reverse Controls maintain standard controls during the fight (Magneto, Professor X, Emma Frost, Mister Sinister, Juggernaut).",
@@ -10668,7 +9893,7 @@ window.MCOC_DATA = {
                                                          "Juggernaut",
                                                          "Kitty Pryde"
                                                      ],
-                            "icon":  "🔄"
+                            "icon":  "ðŸ”„"
                         }
                     ],
     "storyTiers":  {
