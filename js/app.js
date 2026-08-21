@@ -97,9 +97,9 @@ function renderStatsOverview() {
   const sixEl = document.getElementById('stat-six-stars');
 
   if (totalEl) totalEl.innerText = stats.totalChampions || 327;
-  if (ownedEl) ownedEl.innerText = stats.ownedChampions || 208;
-  if (sevenEl) sevenEl.innerText = stats.sevenStars || 16;
-  if (sixEl) sixEl.innerText = stats.sixStars || 192;
+  if (ownedEl) ownedEl.innerText = stats.ownedChampions || 190;
+  if (sevenEl) sevenEl.innerText = stats.sevenStarChampions || stats.sevenStars || 46;
+  if (sixEl) sixEl.innerText = stats.sixStarChampions || stats.sixStars || 144;
 }
 
 function renderChampionCard(champ, isRosterMode = false) {

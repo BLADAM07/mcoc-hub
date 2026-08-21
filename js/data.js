@@ -2,1829 +2,1674 @@
 window.MCOC_DATA = {
     "classes":  {
                     "Cosmic":  {
-                                   "weakTo":  "Mystic",
                                    "name":  "Cosmic",
                                    "color":  "#00c8ff",
-                                   "identity":  "Heavy Buffs, Armor Breaks, Raw Damage, True Damage",
-                                   "beats":  "Tech",
+                                   "border":  "rgba(0, 200, 255, 0.5)",
                                    "bg":  "rgba(0, 200, 255, 0.15)",
-                                   "border":  "rgba(0, 200, 255, 0.5)"
+                                   "beats":  "Tech",
+                                   "weakTo":  "Mystic",
+                                   "identity":  "Heavy Buffs, Armor Breaks, Raw Damage, True Damage"
                                },
                     "Mutant":  {
-                                   "weakTo":  "Tech",
                                    "name":  "Mutant",
                                    "color":  "#ffb703",
-                                   "identity":  "Prowess, High Special Damage, Regeneration, Bleed",
-                                   "beats":  "Skill",
+                                   "border":  "rgba(255, 183, 3, 0.5)",
                                    "bg":  "rgba(255, 183, 3, 0.15)",
-                                   "border":  "rgba(255, 183, 3, 0.5)"
+                                   "beats":  "Skill",
+                                   "weakTo":  "Tech",
+                                   "identity":  "Prowess, High Special Damage, Regeneration, Bleed"
                                },
                     "Skill":  {
-                                  "weakTo":  "Mutant",
                                   "name":  "Skill",
                                   "color":  "#e63946",
-                                  "identity":  "Shrug-off / Cleanse, Critical Hits, Bleed, True Strike, Evade Counters",
-                                  "beats":  "Science",
+                                  "border":  "rgba(230, 57, 70, 0.5)",
                                   "bg":  "rgba(230, 57, 70, 0.15)",
-                                  "border":  "rgba(230, 57, 70, 0.5)"
+                                  "beats":  "Science",
+                                  "weakTo":  "Mutant",
+                                  "identity":  "Shrug-off / Cleanse, Critical Hits, Bleed, True Strike, Evade Counters"
                               },
                     "Science":  {
-                                    "weakTo":  "Skill",
                                     "name":  "Science",
                                     "color":  "#2a9d8f",
-                                    "identity":  "Debuff Stacking, Power Sting, Slow, Weakness, Fatigue, Buff Immunity / Passives",
-                                    "beats":  "Mystic",
+                                    "border":  "rgba(42, 157, 143, 0.5)",
                                     "bg":  "rgba(42, 157, 143, 0.15)",
-                                    "border":  "rgba(42, 157, 143, 0.5)"
+                                    "beats":  "Mystic",
+                                    "weakTo":  "Skill",
+                                    "identity":  "Debuff Stacking, Power Sting, Slow, Weakness, Fatigue, Buff Immunity / Passives"
                                 },
                     "Mystic":  {
-                                   "weakTo":  "Science",
                                    "name":  "Mystic",
                                    "color":  "#9d4edd",
-                                   "identity":  "Nullify, Stagger, Fate Seal, Power Steal, Mystic Dispersion",
-                                   "beats":  "Cosmic",
+                                   "border":  "rgba(157, 78, 221, 0.5)",
                                    "bg":  "rgba(157, 78, 221, 0.15)",
-                                   "border":  "rgba(157, 78, 221, 0.5)"
+                                   "beats":  "Cosmic",
+                                   "weakTo":  "Science",
+                                   "identity":  "Nullify, Stagger, Fate Seal, Power Steal, Mystic Dispersion"
                                },
                     "Tech":  {
-                                 "weakTo":  "Cosmic",
                                  "name":  "Tech",
                                  "color":  "#0070f3",
-                                 "identity":  "Power Drain, Power Burn, Armor Up, Shock, Heal Block, Ability Accuracy Control",
-                                 "beats":  "Mutant",
+                                 "border":  "rgba(0, 112, 243, 0.5)",
                                  "bg":  "rgba(0, 112, 243, 0.15)",
-                                 "border":  "rgba(0, 112, 243, 0.5)"
+                                 "beats":  "Mutant",
+                                 "weakTo":  "Cosmic",
+                                 "identity":  "Power Drain, Power Burn, Armor Up, Shock, Heal Block, Ability Accuracy Control"
                              }
                 },
     "champions":  [
                       {
-                          "image":  "shatterstar.webp",
                           "id":  "shatterstar",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
                           "name":  "Shatterstar",
-                          "storyTier":  null,
                           "class":  "Mutant",
+                          "image":  "shatterstar.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Pixie_portrait.webp",
                           "id":  "pixie",
-                          "guide":  null,
+                          "name":  "Pixie",
+                          "class":  "Mutant",
+                          "image":  "Pixie_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Pixie",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: S",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "silversamurai.png",
-                          "id":  "silversamurai",
-                          "guide":  null,
-                          "immunities":  [
-
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Silver Samurai",
                           "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Metal"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                          "guide":  null
                       },
                       {
-                          "image":  "cassandranova.png",
-                          "id":  "cassandranova",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "id":  "silversamurai",
+                          "name":  "Silver Samurai",
+                          "class":  "Mutant",
+                          "image":  "silversamurai.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "cassandranova",
+                          "name":  "Cassandra Nova",
+                          "class":  "Mutant",
+                          "image":  "cassandranova.png",
+                          "isOwned":  true,
+                          "owned":  {
                                         "rarity":  6,
-                                        "championName":  "Cassandra Nova",
-                                        "reqLvl":  "",
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Cassandra Nova",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "jean_grey.webp",
-                          "id":  "jeangrey",
-                          "guide":  null,
                           "immunities":  [
-                                             "Reverse Control Immunity"
+
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Jean Grey",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "gentle_og.png",
+                          "id":  "jeangrey",
+                          "name":  "Jean Grey",
+                          "class":  "Mutant",
+                          "image":  "jean_grey.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Reverse Control Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "gentle",
-                          "guide":  null,
+                          "name":  "Gentle",
+                          "class":  "Mutant",
+                          "image":  "gentle_og.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Stun Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Gentle",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: XL",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "dazzler.png",
                           "id":  "dazzler",
-                          "guide":  null,
+                          "name":  "Dazzler",
+                          "class":  "Mutant",
+                          "image":  "dazzler.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  3,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Bad Vibes Immunity",
                                              "Nullify Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Dazzler",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Dazzler",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "northstar.png",
                           "id":  "northstar",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Northstar",
+                          "class":  "Mutant",
+                          "image":  "northstar.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Northstar",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Northstar",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Negasonic Teenage Warhead.webp",
                           "id":  "negasonicteenagewarhead",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Negasonic Teenage Warhead",
+                          "class":  "Mutant",
+                          "image":  "ntw.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Negasonic Teenage Warhead",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Negasonic Teenage Warhead",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "dust.webp",
                           "id":  "dust",
-                          "guide":  null,
+                          "name":  "Dust",
+                          "class":  "Mutant",
+                          "image":  "dust.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Dust",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "onslaughtt.webp",
                           "id":  "onslaught",
+                          "name":  "Onslaught",
+                          "class":  "Mutant",
+                          "image":  "onslaughtt.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  5,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Boss Slayer \u0026 Story MVP",
+                          "storyTier":  "S",
                           "guide":  {
                                         "whyStory":  "Removes annoying node effects just by landing basic hits/metal-based attacks, so he simplifies hard paths.",
                                         "easyToHandle":  "Straightforward — just attack normally, no special rotation needed."
-                                    },
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  5,
-                                        "rarity":  6,
-                                        "championName":  "Onslaught",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Onslaught",
-                          "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: XL"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                    }
                       },
                       {
-                          "image":  "danimoonstar.png",
                           "id":  "danimoonstar",
-                          "guide":  null,
+                          "name":  "Dani Moonstar",
+                          "class":  "Mutant",
+                          "image":  "danimoonstar.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Dani Moonstar",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "captainbritain.png",
                           "id":  "captainbritain",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Captain Britain",
+                          "class":  "Mutant",
+                          "image":  "captainbritain.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain Britain",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Captain Britain",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#X-Men",
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "sauron.png",
                           "id":  "sauron",
-                          "guide":  null,
+                          "name":  "Sauron",
+                          "class":  "Mutant",
+                          "image":  "sauron.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Poison Immunity",
                                              "Power Steal Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sauron",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Sauron",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "toad.png",
                           "id":  "toad",
-                          "guide":  null,
+                          "name":  "Toad",
+                          "class":  "Mutant",
+                          "image":  "toad.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Toad",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: S",
                                        "#X-Men"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "jubilee.png",
                           "id":  "jubilee",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
                           "name":  "Jubilee",
-                          "storyTier":  null,
                           "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "stryfe.png",
-                          "id":  "stryfe",
-                          "guide":  null,
+                          "image":  "jubilee.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Stryfe",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "kittypryde.png",
-                          "id":  "kittypryde",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Reverse Control Immunity",
-                                             "Stun Immunity",
-                                             "Incinerate Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Kitty Pryde",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Kitty Pryde",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "platinumpool.png",
-                          "id":  "platinumpool",
-                          "guide":  null,
+                          "id":  "stryfe",
+                          "name":  "Stryfe",
+                          "class":  "Mutant",
+                          "image":  "stryfe.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Platinum Pool",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "wolverineweaponx.png",
-                          "id":  "wolverineweaponx",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Petrify Immunity"
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Wolverine (Weapon X)",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "stormpyramidx.png",
-                          "id":  "stormpyramidx",
-                          "guide":  {
-                                        "whyStory":  "Excellent all-rounder; her Special 2 can control and weaken enemies, great for Story and Alliance War.",
-                                        "easyToHandle":  "Just build power and fire Special 2 — very consistent and reliable."
-                                    },
-                          "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity",
-                                             "Incinerate Immunity"
-                                         ],
+                          "id":  "kittypryde",
+                          "name":  "Kitty Pryde",
+                          "class":  "Mutant",
+                          "image":  "kittypryde.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  1,
                                         "rarity":  6,
-                                        "championName":  "Storm (Pyramid X)",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  "needed if node wanted"
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
                                     },
-                          "name":  "Storm (Pyramid X)",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+                                             "Stun Immunity",
+                                             "Reverse Control Immunity",
+                                             "Incinerate Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "platinumpool",
+                          "name":  "Platinum Pool",
+                          "class":  "Mutant",
+                          "image":  "platinumpool.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "professorx.png",
-                          "id":  "professorx",
-                          "guide":  null,
+                          "id":  "wolverineweaponx",
+                          "name":  "Wolverine (Weapon X)",
+                          "class":  "Mutant",
+                          "image":  "wolverineweaponx.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Reverse Control Immunity"
+                                             "Petrify Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "stormpyramidx",
+                          "name":  "Storm (Pyramid X)",
+                          "class":  "Mutant",
+                          "image":  "stormpyramidx.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Frostbite Immunity",
+                                             "Coldsnap Immunity",
+                                             "Incinerate Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "professorx",
+                          "name":  "Professor X",
+                          "class":  "Mutant",
+                          "image":  "professorx.png",
+                          "isOwned":  true,
+                          "owned":  {
                                         "rarity":  6,
-                                        "championName":  "Professor X",
-                                        "reqLvl":  "",
+                                        "awaken":  true,
+                                        "rank":  1,
                                         "futureRank":  46146,
                                         "notes":  ""
                                     },
-                          "name":  "Professor X",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+                                             "Reverse Control Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Support \u0026 Synergy",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "apocalypse.png",
                           "id":  "apocalypse",
-                          "guide":  {
-                                        "whyStory":  "Support-style champ who helps keep the team alive and buffed, useful in longer content.",
-                                        "easyToHandle":  "Simple to pilot — mostly about staying alive and letting his passive buffs work."
-                                    },
+                          "name":  "Apocalypse",
+                          "class":  "Mutant",
+                          "image":  "apocalypse.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Disorient Immunity",
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Apocalypse",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Villain",
                                        "#X-Men"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Support \u0026 Synergy"
-                                         ]
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Support-style champ who helps keep the team alive and buffed, useful in longer content.",
+                                        "easyToHandle":  "Simple to pilot — mostly about staying alive and letting his passive buffs work."
+                                    }
                       },
                       {
-                          "image":  "mistersinister.png",
                           "id":  "mistersinister",
-                          "guide":  null,
+                          "name":  "Mister Sinister",
+                          "class":  "Mutant",
+                          "image":  "mistersinister.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Taunt Immunity",
                                              "Reverse Control Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mister Sinister",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Mister Sinister",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
+                                       "#Size: M",
                                        "#Villain",
-                                       "#Size: M"
+                                       "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "havok.png",
                           "id":  "havok",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Incinerate Immunity"
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
                           "name":  "Havok",
-                          "storyTier":  null,
                           "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "namor.png",
-                          "id":  "namor",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "image":  "havok.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Namor",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Purify \u0026 Cleanse"
-                                         ]
-                      },
-                      {
-                          "image":  "sunspot.png",
-                          "id":  "sunspot",
-                          "guide":  null,
                           "immunities":  [
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spot",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Sunspot",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Spider-Verse",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "sabretooth.png",
-                          "id":  "sabretooth",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity"
-                                         ],
+                          "id":  "namor",
+                          "name":  "Namor",
+                          "class":  "Mutant",
+                          "image":  "namor.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Sabretooth",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "goldpool.png",
-                          "id":  "goldpool",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Goldpool",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Mercenary"
+                                       "#Hero",
+                                       "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "domino.png",
-                          "id":  "domino",
-                          "guide":  {
-                                        "whyStory":  "Her \u0027luck\u0027 mechanic can randomly trigger big bonuses, making her surprisingly strong for story content.",
-                                        "easyToHandle":  "Play normally and let her luck procs do the work — low skill floor."
-                                    },
+                          "id":  "sunspot",
+                          "name":  "Sunspot",
+                          "class":  "Mutant",
+                          "image":  "sunspot.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Incinerate Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Defensive \u0026 Tank"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "sabretooth",
+                          "name":  "Sabretooth",
+                          "class":  "Mutant",
+                          "image":  "sabretooth.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Frostbite Immunity",
+                                             "Coldsnap Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "goldpool",
+                          "name":  "Goldpool",
+                          "class":  "Mutant",
+                          "image":  "goldpool.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "domino",
+                          "name":  "Domino",
+                          "class":  "Mutant",
+                          "image":  "domino.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  7,
-                                        "championName":  "Domino",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
-                                        "notes":  "needed if node wanted"
+                                        "notes":  "good for all play"
                                     },
-                          "name":  "Domino",
-                          "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men",
                                        "#Mercenary"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Her \u0027luck\u0027 mechanic can randomly trigger big bonuses, making her surprisingly strong for story content.",
+                                        "easyToHandle":  "Play normally and let her luck procs do the work — low skill floor."
+                                    }
                       },
                       {
-                          "image":  "emmafrost.png",
                           "id":  "emmafrost",
-                          "guide":  null,
+                          "name":  "Emma Frost",
+                          "class":  "Mutant",
+                          "image":  "emmafrost.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  2,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
-                                             "Coldsnap Immunity",
-                                             "Reverse Control Immunity",
                                              "Stun Immunity",
                                              "Frostbite Immunity",
                                              "Poison Immunity",
+                                             "Reverse Control Immunity",
+                                             "Coldsnap Immunity",
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Emma Frost",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Emma Frost",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "bishop.png",
                           "id":  "bishop",
+                          "name":  "Bishop",
+                          "class":  "Mutant",
+                          "image":  "bishop.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: L",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
                           "guide":  {
                                         "whyStory":  "Very strong once you learn his combo/rotation — turns enemy specials into his own power.",
                                         "easyToHandle":  "Takes a bit more strategy/practice to get the timing of his rotation right."
-                                    },
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Bishop",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Bishop",
-                          "storyTier":  "S-Tier (Skill)",
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                    }
                       },
                       {
-                          "image":  "omegared.png",
                           "id":  "omegared",
-                          "guide":  null,
+                          "name":  "Omega Red",
+                          "class":  "Mutant",
+                          "image":  "omegared.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Omega Red",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
+                                       "#Size: M",
                                        "#Villain",
-                                       "#Size: M"
+                                       "#X-Men"
                                    ],
                           "categories":  [
-                                             "Burst Damage",
                                              "Damage Over Time (DOT)",
-                                             "Purify \u0026 Cleanse"
-                                         ]
+                                             "Power Control"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "iceman.png",
                           "id":  "iceman",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Nova Flame Immunity",
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity",
-                                             "Poison Immunity",
-                                             "Incinerate Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Iceman",
+                          "class":  "Mutant",
+                          "image":  "iceman.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Iceman",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Iceman",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+                                             "Nova Flame Immunity",
+                                             "Frostbite Immunity",
+                                             "Poison Immunity",
+                                             "Coldsnap Immunity",
+                                             "Incinerate Immunity",
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "psylocke.png",
                           "id":  "psylocke",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Psylocke",
+                          "class":  "Mutant",
+                          "image":  "psylocke.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Psylocke",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Psylocke",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "cable.webp",
-                          "id":  "cable",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "cable",
+                          "name":  "Cable",
+                          "class":  "Mutant",
+                          "image":  "cable.webp",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Cable",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "archangel.png",
                           "id":  "archangel",
-                          "guide":  null,
+                          "name":  "Archangel",
+                          "class":  "Mutant",
+                          "image":  "archangel.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Ability Accuracy Reduction Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Archangel",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
-                                             "Burst Damage",
                                              "Damage Over Time (DOT)",
                                              "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "beast.png",
                           "id":  "beast",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Beast",
+                          "class":  "Mutant",
+                          "image":  "beast.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Beast",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Beast",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "cyclopsblueteam.png",
                           "id":  "cyclopsblueteam",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Cyclops (Blue Team)",
+                          "class":  "Mutant",
+                          "image":  "cyclops blue team.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cyclops (Blue Team)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Cyclops (Blue Team)",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "wolverine.png",
-                          "id":  "wolverinex23",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Wolverine (X-23)",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Wolverine (X 23)",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "oldmanlogan.png",
+                          "id":  "wolverinex23",
+                          "name":  "Wolverine (X 23)",
+                          "class":  "Mutant",
+                          "image":  "x23.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "oldmanlogan",
-                          "guide":  null,
+                          "name":  "Old Man Logan",
+                          "class":  "Mutant",
+                          "image":  "oldmanlogan.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Ability Accuracy Reduction Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Old Man Logan",
-                          "storyTier":  null,
-                          "class":  "Mutant",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero",
+                                       "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "rogue.png",
                           "id":  "rogue",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Reverse Control Immunity"
-                                         ],
+                          "name":  "Rogue",
+                          "class":  "Mutant",
+                          "image":  "rogue.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Rogue",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Rogue",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Purify \u0026 Cleanse"
-                                         ]
-                      },
-                      {
-                          "image":  "nightcrawler.png",
-                          "id":  "nightcrawler",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Nightcrawler",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Nightcrawler",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "gambit.png",
-                          "id":  "gambit",
-                          "guide":  null,
                           "immunities":  [
                                              "Reverse Control Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "nightcrawler",
+                          "name":  "Nightcrawler",
+                          "class":  "Mutant",
+                          "image":  "nightcrawler.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  1,
                                         "rarity":  6,
-                                        "championName":  "Gambit",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Gambit",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "deadpool.webp",
-                          "id":  "deadpool",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Deadpool",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Mercenary"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "cyclopsblueteam.png",
-                          "id":  "cyclopsnewxavierschool",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Cyclops (New Xavier School)",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "deadpoolxforce.png",
-                          "id":  "deadpoolxforce",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Deadpool (X-Force)",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Mercenary"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "wolverine.png",
-                          "id":  "wolverine",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Wolverine (X-23)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Wolverine",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Hero",
                                        "#X-Men"
                                    ],
                           "categories":  [
                                              "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "storm.png",
+                          "id":  "gambit",
+                          "name":  "Gambit",
+                          "class":  "Mutant",
+                          "image":  "gambit.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Reverse Control Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "deadpool",
+                          "name":  "Deadpool",
+                          "class":  "Mutant",
+                          "image":  "deadpool.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "cyclopsnewxavierschool",
+                          "name":  "Cyclops (New Xavier School)",
+                          "class":  "Mutant",
+                          "image":  "cyclops red team.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "deadpoolxforce",
+                          "name":  "Deadpool (X-Force)",
+                          "class":  "Mutant",
+                          "image":  "deadpoolxforce.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "wolverine",
+                          "name":  "Wolverine",
+                          "class":  "Mutant",
+                          "image":  "wolverine.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "storm",
+                          "name":  "Storm",
+                          "class":  "Mutant",
+                          "image":  "storm.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Shock Immunity",
+                                             "Coldsnap Immunity",
+                                             "Incinerate Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
                           "guide":  {
                                         "whyStory":  "Excellent all-rounder; her Special 2 can control and weaken enemies, great for Story and Alliance War.",
                                         "easyToHandle":  "Just build power and fire Special 2 — very consistent and reliable."
-                                    },
-                          "immunities":  [
-                                             "Shock Immunity",
-                                             "Coldsnap Immunity",
-                                             "Incinerate Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Storm",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Storm",
-                          "storyTier":  null,
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                                    }
                       },
                       {
-                          "image":  "magneto.png",
                           "id":  "magnetohouseofx",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Magneto (House of X)",
+                          "class":  "Mutant",
+                          "image":  "Magneto (House of X).png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Magneto (House of X)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Magneto (House of X)",
-                          "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M",
-                                       "#Metal",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
-                      },
-                      {
-                          "image":  "colossus.png",
-                          "id":  "colossus",
-                          "guide":  null,
                           "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Armor Shattered Immunity",
-                                             "Frostbite Immunity",
-                                             "Armor Break Immunity",
-                                             "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain",
+                                       "#X-Men"
+                                   ],
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "colossus",
+                          "name":  "Colossus",
+                          "class":  "Mutant",
+                          "image":  "colossus.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Colossus",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Colossus",
-                          "storyTier":  null,
-                          "class":  "Mutant",
+                          "immunities":  [
+                                             "Armor Shattered Immunity",
+                                             "Frostbite Immunity",
+                                             "Armor Break Immunity",
+                                             "Coldsnap Immunity",
+                                             "Incinerate Immunity",
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
+                                       "#Size: L",
                                        "#Hero",
-                                       "#Size: XL",
-                                       "#Metal",
                                        "#X-Men"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "magneto.png",
                           "id":  "magneto",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Magneto",
+                          "class":  "Mutant",
+                          "image":  "magneto.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mutant",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  5,
-                                        "rarity":  6,
-                                        "championName":  "Magneto",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Magneto",
-                          "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Villain",
                                        "#X-Men"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "phylavell.webp",
                           "id":  "phylavell",
-                          "guide":  null,
+                          "name":  "Phyla-Vell",
+                          "class":  "Cosmic",
+                          "image":  "phylavell.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Special Lock Immunity",
                                              "Death Immunity",
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Phyla-Vell",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Imperiosa_portrait.webp",
                           "id":  "imperiosa",
-                          "guide":  null,
+                          "name":  "Imperiosa",
+                          "class":  "Cosmic",
+                          "image":  "Imperiosa_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Special Lock Immunity",
                                              "Disintegrate Immunity",
-                                             "Power Drain Immunity",
-                                             "Bleed Immunity"
+                                             "Bleed Immunity",
+                                             "Power Drain Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Imperiosa",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "karolinadean.png",
                           "id":  "karolinadean",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Special Lock Immunity",
-                                             "Coldsnap Immunity",
-                                             "Power Lock Immunity",
-                                             "Frostbite Immunity"
-                                         ],
+                          "name":  "Karolina Dean",
+                          "class":  "Cosmic",
+                          "image":  "karolinadean.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Karolina Dean",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Karolina Dean",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Special Lock Immunity",
+                                             "Power Lock Immunity",
+                                             "Frostbite Immunity",
+                                             "Coldsnap Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "phoenix.webp",
                           "id":  "darkphoenix",
-                          "guide":  null,
+                          "name":  "Dark Phoenix",
+                          "class":  "Cosmic",
+                          "image":  "phoenix_dark.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Nova Flame Immunity",
                                              "Incinerate Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Dark Phoenix",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "thanos.png",
                           "id":  "thanosdeathless",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Power Burn Immunity",
-                                             "Coldsnap Immunity",
-                                             "Reverse Control Immunity",
-                                             "Frostbite Immunity",
-                                             "Poison Immunity",
-                                             "Rupture Immunity",
-                                             "Power Drain Immunity"
-                                         ],
+                          "name":  "Thanos (Deathless)",
+                          "class":  "Cosmic",
+                          "image":  "Thanos (Deathless).webp",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Thanos (Deathless)",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Power Burn Immunity",
+                                             "Frostbite Immunity",
+                                             "Poison Immunity",
+                                             "Reverse Control Immunity",
+                                             "Coldsnap Immunity",
+                                             "Power Drain Immunity",
+                                             "Rupture Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Villain",
                                        "#Deathless"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "scream.webp",
                           "id":  "scream",
-                          "guide":  null,
+                          "name":  "Scream",
+                          "class":  "Cosmic",
+                          "image":  "scream.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Scream",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Symbiote",
-                                       "#Spider-Verse"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Beta_Ray_Bill.webp",
                           "id":  "betaraybill",
-                          "guide":  null,
+                          "name":  "Beta Ray Bill",
+                          "class":  "Cosmic",
+                          "image":  "Beta_Ray_Bill.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Beta Ray Bill",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Beta Ray Bill",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kinggrootdeathless.webp",
                           "id":  "kinggrootdeathless",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Power Burn Immunity",
-                                             "Power Drain Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "King Groot (Deathless)",
+                          "class":  "Cosmic",
+                          "image":  "kinggrootdeathless.webp",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "King Groot (Deathless)",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Power Burn Immunity",
+                                             "Bleed Immunity",
+                                             "Power Drain Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
+                                       "#Size: L",
+                                       "#Hero",
                                        "#Deathless"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "the_serpent.webp",
                           "id":  "theserpent",
-                          "guide":  {
-                                        "whyStory":  "Good node remover, especially useful against armored/tanky enemies.",
-                                        "easyToHandle":  "Play defensively and let his ability chip away nodes — beginner friendly."
-                                    },
+                          "name":  "The Serpent",
+                          "class":  "Cosmic",
+                          "image":  "the_serpent.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Special Lock Immunity",
                                              "Death Immunity",
-                                             "Coldsnap Immunity",
                                              "Heal Block Immunity",
                                              "Power Lock Immunity",
+                                             "Coldsnap Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "The Serpent",
-                          "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Boss Slayer \u0026 Story MVP",
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "maestro.webp",
                           "id":  "maestro",
-                          "guide":  null,
+                          "name":  "Maestro",
+                          "class":  "Cosmic",
+                          "image":  "maestro.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Poison Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Maestro",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "gladiator.webp",
                           "id":  "gladiator",
-                          "guide":  null,
+                          "name":  "Gladiator",
+                          "class":  "Cosmic",
+                          "image":  "gladiator.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Power Burn Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gladiator",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Gladiator",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "vox.png",
                           "id":  "vox",
-                          "guide":  {
-                                        "whyStory":  "Extremely strong damage-over-time (degeneration) champ, one of the best in the game for pure damage.",
-                                        "easyToHandle":  "Simple to use offensively — his damage does the talking, minimal setup needed."
+                          "name":  "Vox",
+                          "class":  "Cosmic",
+                          "image":  "vox.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  3,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Special Lock Immunity",
@@ -1833,6453 +1678,5616 @@ window.MCOC_DATA = {
                                              "Poison Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vox",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Vox",
-                          "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "adamwarlock.png",
-                          "id":  "adamwarlock",
-                          "guide":  {
-                                        "whyStory":  "Great against buff-heavy or healing enemies; drains their power and blocks their healing.",
-                                        "easyToHandle":  "Fun, forgiving playstyle — good for beginners once basics are known."
-                                    },
-                          "immunities":  [
-                                             "Frostbite Immunity",
-                                             "Poison Immunity",
-                                             "Coldsnap Immunity",
-                                             "Bleed Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Warlock",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Adam Warlock",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Robot",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Extremely strong damage-over-time (degeneration) champ, one of the best in the game for pure damage.",
+                                        "easyToHandle":  "Simple to use offensively — his damage does the talking, minimal setup needed."
+                                    }
                       },
                       {
-                          "image":  "hulkling.png",
-                          "id":  "hulkling",
-                          "guide":  null,
+                          "id":  "adamwarlock",
+                          "name":  "Adam Warlock",
+                          "class":  "Cosmic",
+                          "image":  "adamwarlock.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Power Burn Immunity",
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
+                                       "#Robot"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Power Control"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "hulkling",
+                          "name":  "Hulkling",
+                          "class":  "Cosmic",
+                          "image":  "hulkling.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
                                              "Shock Immunity",
+                                             "Power Burn Immunity",
                                              "Stun Immunity",
                                              "Poison Immunity",
                                              "Power Steal Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Hulkling",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Avenger",
                                        "#Gamma"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "gorr.png",
                           "id":  "gorr",
-                          "guide":  null,
+                          "name":  "Gorr",
+                          "class":  "Cosmic",
+                          "image":  "gorr.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Heal Block Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gorr",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Gorr",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Defensive \u0026 Tank",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "galan.png",
                           "id":  "galan",
-                          "guide":  null,
+                          "name":  "Galan",
+                          "class":  "Cosmic",
+                          "image":  "galan.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Special Lock Immunity",
-                                             "Power Burn Immunity",
                                              "Nullify Immunity",
+                                             "Power Burn Immunity",
                                              "Power Lock Immunity",
                                              "Fate Seal Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Galan",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Galan",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
+                                       "#Villain",
                                        "#God"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                             "Power Control",
+                                             "Support \u0026 Synergy",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "odin.png",
                           "id":  "odin",
-                          "guide":  {
-                                        "whyStory":  "Support champ who helps keep the team topped up and buffed for longer fights.",
-                                        "easyToHandle":  "Easy to use — mostly about staying safe and letting his support abilities work."
+                          "name":  "Odin",
+                          "class":  "Cosmic",
+                          "image":  "odin.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  5,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Nullify Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Odin",
-                                        "reqLvl":  "3.0",
-                                        "futureRank":  5,
-                                        "notes":  "needed"
-                                    },
-                          "name":  "Odin",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#God"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
                                              "Support \u0026 Synergy"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "superskrull.png",
                           "id":  "superskrull",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Shock Immunity",
-                                             "Incinerate Immunity"
-                                         ],
+                          "name":  "Super-Skrull",
+                          "class":  "Cosmic",
+                          "image":  "superskrull.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Super-Skrull",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Super-Skrull",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "ikaris.png",
-                          "id":  "ikaris",
-                          "guide":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Ikaris",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Sersi.png",
-                          "id":  "sersi",
-                          "guide":  null,
+                          "id":  "ikaris",
+                          "name":  "Ikaris",
+                          "class":  "Cosmic",
+                          "image":  "ikaris.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-
+                                             "Shock Immunity",
+                                             "Incinerate Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "sersi",
+                          "name":  "Sersi",
+                          "class":  "Cosmic",
+                          "image":  "Sersi.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sersi",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Sersi",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "knull.png",
-                          "id":  "knull",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "knull",
+                          "name":  "Knull",
+                          "class":  "Cosmic",
+                          "image":  "knull.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Knull",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Knull",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: M",
                                        "#Villain",
-                                       "#Size: XL",
                                        "#Symbiote",
                                        "#God"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hercules.png",
                           "id":  "hercules",
-                          "guide":  {
-                                        "whyStory":  "Well-known, reliable all-rounder — works in almost every game mode without a bad matchup.",
-                                        "easyToHandle":  "Very beginner friendly, straightforward attack pattern."
-                                    },
-                          "immunities":  [
-                                             "Stun Immunity"
-                                         ],
+                          "name":  "Hercules",
+                          "class":  "Cosmic",
+                          "image":  "hercules.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  5,
-                                        "rarity":  6,
-                                        "championName":  "Hercules",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Hercules",
-                          "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger",
-                                       "#God"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
-                      },
-                      {
-                          "image":  "nova.png",
-                          "id":  "nova",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cassandra Nova",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Nova",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "airwalker.png",
-                          "id":  "airwalker",
-                          "guide":  null,
                           "immunities":  [
                                              "Stun Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Air-Walker",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
+                                       "#Size: L",
                                        "#Hero",
-                                       "#Size: M",
-                                       "#Robot",
                                        "#God"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Well-known, reliable all-rounder — works in almost every game mode without a bad matchup.",
+                                        "easyToHandle":  "Very beginner friendly, straightforward attack pattern."
+                                    }
                       },
                       {
-                          "image":  "terrax.png",
+                          "id":  "nova",
+                          "name":  "Nova",
+                          "class":  "Cosmic",
+                          "image":  "nova.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "airwalker",
+                          "name":  "Air-Walker",
+                          "class":  "Cosmic",
+                          "image":  "airwalker.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Stun Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "terrax",
-                          "guide":  null,
+                          "name":  "Terrax",
+                          "class":  "Cosmic",
+                          "image":  "terrax.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Terrax",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Terrax",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "redgoblin.png",
                           "id":  "redgoblin",
-                          "guide":  null,
+                          "name":  "Red Goblin",
+                          "class":  "Cosmic",
+                          "image":  "redgoblin.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Power Burn Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Red Goblin",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Red Goblin",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Symbiote"
+                                       "#Villain"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "cosmicghostrider.png",
                           "id":  "cosmicghostrider",
-                          "guide":  {
-                                        "whyStory":  "Vox",
-                                        "easyToHandle":  "Hyperion"
+                          "name":  "Cosmic Ghost Rider",
+                          "class":  "Cosmic",
+                          "image":  "cosmicghostrider.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  5,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Cosmic Ghost Rider",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Cosmic Ghost Rider",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Purify \u0026 Cleanse",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "cullobsidian.png",
                           "id":  "cullobsidian",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Cull Obsidian",
+                          "class":  "Cosmic",
+                          "image":  "cullobsidian.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cull Obsidian",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Cull Obsidian",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: XL"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "annihilus.png",
-                          "id":  "annihilus",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "annihilus",
+                          "name":  "Annihilus",
+                          "class":  "Cosmic",
+                          "image":  "annihilus.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Annihilus",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Annihilus",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "siversurfer.png",
                           "id":  "silversurfer",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Buff immunity"
-                                         ],
+                          "name":  "Silver Surfer",
+                          "class":  "Cosmic",
+                          "image":  "siversurfer.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Silver Surfer",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Silver Surfer",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Buff immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "visionaarkus.png",
                           "id":  "visionaarkus",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity",
-                                             "Bleed Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vision",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
                           "name":  "Vision (Aarkus)",
-                          "storyTier":  null,
                           "class":  "Cosmic",
+                          "image":  "visionaarkus.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
                                        "#Robot",
                                        "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "captainmarvel.png",
                           "id":  "captainmarvel",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Captain Marvel",
+                          "class":  "Cosmic",
+                          "image":  "Captain Marvel.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain Marvel",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Captain Marvel",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "champion.png",
                           "id":  "thechampion",
-                          "guide":  null,
+                          "name":  "The Champion",
+                          "class":  "Cosmic",
+                          "image":  "champion.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Petrify Immunity",
                                              "Heal Block Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "The Champion",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "heimdall.png",
-                          "id":  "heimdall",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Heimdall",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero",
+                                       "#Spider-Verse"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "venomtheduck.png",
-                          "id":  "venomtheduck",
-                          "guide":  null,
+                          "id":  "heimdall",
+                          "name":  "Heimdall",
+                          "class":  "Cosmic",
+                          "image":  "heimdall.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "venomtheduck",
+                          "name":  "Venom The Duck",
+                          "class":  "Cosmic",
+                          "image":  "venomtheduck.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Venom the Duck",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Venom The Duck",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Villain",
                                        "#Symbiote"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "proximamidnight.png",
                           "id":  "proximamidnight",
-                          "guide":  null,
+                          "name":  "Proxima Midnight",
+                          "class":  "Cosmic",
+                          "image":  "proximamidnight.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Proxima Midnight",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "corvusglaive.png",
                           "id":  "corvusglaive",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Corvus Glaive",
+                          "class":  "Cosmic",
+                          "image":  "corvusglaive.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Corvus Glaive",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Corvus Glaive",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
-                      },
-                      {
-                          "image":  "carnage.png",
-                          "id":  "carnage",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "carnage",
+                          "name":  "Carnage",
+                          "class":  "Cosmic",
+                          "image":  "carnage.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Carnage",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Carnage",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Villain",
                                        "#Symbiote"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hela.png",
                           "id":  "hela",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Hela",
+                          "class":  "Cosmic",
+                          "image":  "hela.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hela",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Hela",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M",
-                                       "#God"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "angela.png",
-                          "id":  "angela",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain",
+                                       "#God"
+                                   ],
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "angela",
+                          "name":  "Angela",
+                          "class":  "Cosmic",
+                          "image":  "angela.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Angela",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "medusa.png",
                           "id":  "medusa",
-                          "guide":  null,
+                          "name":  "Medusa",
+                          "class":  "Cosmic",
+                          "image":  "medusa.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Medusa",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Defensive \u0026 Tank",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kinggroot.png",
                           "id":  "kinggroot",
-                          "guide":  null,
+                          "name":  "King Groot",
+                          "class":  "Cosmic",
+                          "image":  "kinggroot.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Power Burn Immunity",
-                                             "Power Drain Immunity",
-                                             "Bleed Immunity"
+                                             "Bleed Immunity",
+                                             "Power Drain Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "King Groot",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: XL"
+                                       "#Size: L",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "thanos.png",
                           "id":  "thanos",
-                          "guide":  null,
+                          "name":  "Thanos",
+                          "class":  "Cosmic",
+                          "image":  "thanos.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Thanos",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Villain"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "msmarvel.png",
                           "id":  "msmarvelkamalakhan",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Ms. Marvel (Kamala Khan)",
+                          "class":  "Cosmic",
+                          "image":  "Ms. Marvel (Kamala Khan).png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ms. Marvel (Kamala Khan)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Ms. Marvel (Kamala Khan)",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "phoenix.webp",
                           "id":  "phoenix",
-                          "guide":  null,
+                          "name":  "Phoenix",
+                          "class":  "Cosmic",
+                          "image":  "phoenix.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Special Lock Immunity",
-                                             "Power Burn Immunity",
                                              "Heal Block Immunity",
+                                             "Power Burn Immunity",
                                              "Power Lock Immunity",
                                              "Incinerate Immunity",
                                              "Power Drain Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Phoenix",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "venompool.png",
                           "id":  "venompool",
-                          "guide":  null,
+                          "name":  "Venompool",
+                          "class":  "Cosmic",
+                          "image":  "venompool.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Special Lock Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Venompool",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Venompool",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Villain",
                                        "#Symbiote"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hyperion.png",
                           "id":  "hyperion",
-                          "guide":  {
-                                        "whyStory":  "Big raw damage output, great for pushing through story content quickly.",
-                                        "easyToHandle":  "Simple \u0027hit hard\u0027 playstyle, not much setup required."
+                          "name":  "Hyperion",
+                          "class":  "Cosmic",
+                          "image":  "hyperion.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  3,
+                                        "futureRank":  3,
+                                        "notes":  "importance"
                                     },
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: L",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
+                          "guide":  {
+                                        "whyStory":  "Big raw damage output, great for pushing through story content quickly.",
+                                        "easyToHandle":  "Simple \u0027hit hard\u0027 playstyle, not much setup required."
+                                    }
+                      },
+                      {
+                          "id":  "superiorironman",
+                          "name":  "Superior Iron Man",
+                          "class":  "Cosmic",
+                          "image":  "superiorironman.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
                                         "rarity":  6,
-                                        "championName":  "Hyperion",
-                                        "reqLvl":  "",
+                                        "awaken":  true,
+                                        "rank":  1,
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Hyperion",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "superiorironman.png",
-                          "id":  "superiorironman",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Superior Iron Man",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Superior Iron Man",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "msmarvel.png",
                           "id":  "msmarvel",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Ms. Marvel",
+                          "class":  "Cosmic",
+                          "image":  "msmarvel.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ms. Marvel",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Ms. Marvel",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spidermansymbiote.webp",
                           "id":  "spidermansymbiote",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Spider-Man (Symbiote)",
+                          "class":  "Cosmic",
+                          "image":  "spidermansymbiote.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Symbiote)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Spider-Man (Symbiote)",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Symbiote",
+                                       "#Hero",
                                        "#Spider-Verse",
-                                       "#Avenger"
+                                       "#Symbiote"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "groot.png",
                           "id":  "groot",
-                          "guide":  null,
+                          "name":  "Groot",
+                          "class":  "Cosmic",
+                          "image":  "groot.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Groot",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: L",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blackbolt.png",
                           "id":  "blackbolt",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Black Bolt",
+                          "class":  "Cosmic",
+                          "image":  "blackbolt.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Bolt",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Black Bolt",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "drax.png",
                           "id":  "drax",
-                          "guide":  null,
+                          "name":  "Drax",
+                          "class":  "Cosmic",
+                          "image":  "drax.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Drax",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: L",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "captainmarvel.png",
                           "id":  "captainmarvelclassic",
-                          "guide":  null,
+                          "name":  "Captain Marvel (Classic)",
+                          "class":  "Cosmic",
+                          "image":  "Captain Marvel (Classic).png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain Marvel",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Captain Marvel (Classic)",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "gamora.png",
                           "id":  "gamora",
-                          "guide":  null,
+                          "name":  "Gamora",
+                          "class":  "Cosmic",
+                          "image":  "gamora.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Gamora",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "ronan.png",
                           "id":  "ronan",
-                          "guide":  null,
+                          "name":  "Ronan",
+                          "class":  "Cosmic",
+                          "image":  "ronan.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ronan",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  "must best for all"
-                                    },
-                          "name":  "Ronan",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Villain"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "thor.png",
                           "id":  "thor",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Thor",
+                          "class":  "Cosmic",
+                          "image":  "thor.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Cosmic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Thor",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Thor",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: L",
                                        "#Hero",
-                                       "#Size: M",
                                        "#Avenger",
                                        "#God"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "venom.png",
                           "id":  "venom",
-                          "guide":  null,
+                          "name":  "Venom",
+                          "class":  "Cosmic",
+                          "image":  "venom.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Venom",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Venom",
-                          "storyTier":  null,
-                          "class":  "Cosmic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Villain",
                                        "#Symbiote"
                                    ],
                           "categories":  [
                                              "Burst Damage",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "agathaharkness.webp",
                           "id":  "agathaharkness",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
                           "name":  "Agatha Harkness",
-                          "storyTier":  null,
                           "class":  "Mystic",
+                          "image":  "agathaharkness.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blade.png",
                           "id":  "bladestellarforged",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Blade",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
                           "name":  "Blade (Stellar Forged)",
-                          "storyTier":  null,
                           "class":  "Mystic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Mercenary"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
-                      },
-                      {
-                          "image":  "Madelyne_Pryor_portrait.webp",
-                          "id":  "madelynepryor",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Rupture Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "image":  "Blade (Stellar Forged).webp",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Madelyne Pryor",
-                          "storyTier":  null,
-                          "class":  "Mystic",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
-                      },
-                      {
-                          "image":  "spiderman.png",
-                          "id":  "spidermanpavitrprabhakar",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Spider-Man (Pavitr Prabhakar)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Spider-Verse",
-                                       "#Avenger"
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "dracula.webp",
+                          "id":  "madelynepryor",
+                          "name":  "Madelyne Pryor",
+                          "class":  "Mystic",
+                          "image":  "Madelyne_Pryor_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Bleed Immunity",
+                                             "Rupture Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "spidermanpavitrprabhakar",
+                          "name":  "Spider-Man (Pavitr Prabhakar)",
+                          "class":  "Mystic",
+                          "image":  "Spider-Man (Pavitr Prabhakar).png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "dracula",
-                          "guide":  null,
+                          "name":  "Dracula",
+                          "class":  "Mystic",
+                          "image":  "dracula.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Heal Block Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Dracula",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "nicominoru.png",
                           "id":  "nicominoru",
-                          "guide":  {
-                                        "whyStory":  "Deals strong damage-over-time effects, good against enemies who don\u0027t have DOT immunity.",
-                                        "easyToHandle":  "Reduces punishing nodes and deals damage passively — fairly simple to use."
+                          "name":  "Nico Minoru",
+                          "class":  "Mystic",
+                          "image":  "nicominoru.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Buff immunity",
                                              "Poison Immunity",
                                              "Rupture Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Nico Minoru",
-                                        "reqLvl":  "2.0",
-                                        "futureRank":  2,
-                                        "notes":  "Helpfull"
-                                    },
-                          "name":  "Nico Minoru",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "isophyne_latest.webp",
                           "id":  "isophyne",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Isophyne",
+                          "class":  "Mystic",
+                          "image":  "isophyne_latest.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Isophyne",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Isophyne",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+                                             "Frostbite Immunity",
+                                             "Coldsnap Immunity",
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spiral.png",
                           "id":  "spiral",
-                          "guide":  null,
+                          "name":  "Spiral",
+                          "class":  "Mystic",
+                          "image":  "spiral.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Reverse Control Immunity",
                                              "Falter Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spiral",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Spiral",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "shathra.png",
                           "id":  "shathra",
-                          "guide":  null,
+                          "name":  "Shathra",
+                          "class":  "Mystic",
+                          "image":  "shathra.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Shathra",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "enchantresss.webp",
                           "id":  "enchantress",
-                          "guide":  null,
+                          "name":  "Enchantress",
+                          "class":  "Mystic",
+                          "image":  "enchantresss.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Power Lock Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Enchantress",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Enchantress",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#God"
+                                       "#Hero",
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "the_destroyer.webp",
                           "id":  "thedestroyer",
-                          "guide":  null,
+                          "name":  "The Destroyer",
+                          "class":  "Mystic",
+                          "image":  "the_destroyer.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
+                                             "Infuriate Immunity",
                                              "Intimidate Immunity",
                                              "Slow Immunity",
                                              "Poison Immunity",
                                              "Armor Break Immunity",
-                                             "Infuriate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "The Destroyer",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "The Destroyer",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
-                                       "#Robot",
-                                       "#Metal"
+                                       "#Hero",
+                                       "#Metal",
+                                       "#Robot"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "whitetiger.webp",
                           "id":  "whitetiger",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Nullify Immunity"
-                                         ],
+                          "name":  "White Tiger",
+                          "class":  "Mystic",
+                          "image":  "whitetiger.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "White Tiger",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "White Tiger",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+                                             "Nullify Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "guillotine_deathless.webp",
                           "id":  "guillotinedeathless",
-                          "guide":  null,
+                          "name":  "Guillotine (Deathless)",
+                          "class":  "Mystic",
+                          "image":  "guillotine_deathless.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Guillotine (Deathless)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Dimensional Being",
-                                       "#Deathless"
+                                       "#Hero",
+                                       "#Deathless",
+                                       "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kushala.webp",
                           "id":  "kushala",
-                          "guide":  {
-                                        "whyStory":  "Unique dimension-based mechanics make her strong in specific matchups, though harder to summarize simply.",
-                                        "easyToHandle":  "More advanced champ — takes time to learn her different modes."
+                          "name":  "Kushala",
+                          "class":  "Mystic",
+                          "image":  "kushala.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Kushala",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Kushala",
-                          "storyTier":  "S-Tier (Mystic)",
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Symbiote",
                                        "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
                                              "Damage Over Time (DOT)",
-                                             "Burst Damage"
-                                         ]
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Unique dimension-based mechanics make her strong in specific matchups, though harder to summarize simply.",
+                                        "easyToHandle":  "More advanced champ — takes time to learn her different modes."
+                                    }
                       },
                       {
-                          "image":  "werewolfbynight.webp",
                           "id":  "werewolfbynight",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Heal Block Immunity"
-                                         ],
+                          "name":  "Werewolf By Night",
+                          "class":  "Mystic",
+                          "image":  "werewolfbynight.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Werewolf By Night",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Werewolf By Night",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+                                             "Heal Block Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kindred.png",
                           "id":  "kindred",
-                          "guide":  null,
+                          "name":  "Kindred",
+                          "class":  "Mystic",
+                          "image":  "kindred.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
+                                             "Infuriate Immunity",
                                              "Intimidate Immunity",
                                              "Heal Block Immunity",
                                              "Stun Immunity",
                                              "Poison Immunity",
-                                             "Incinerate Immunity",
-                                             "Infuriate Immunity"
+                                             "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Kindred",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Kindred",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Absorbing_Man.png",
                           "id":  "absorbingman",
-                          "guide":  null,
+                          "name":  "Absorbing Man",
+                          "class":  "Mystic",
+                          "image":  "Absorbing Man.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
-                                             "Coldsnap Immunity",
                                              "Armor Shattered Immunity",
                                              "Frostbite Immunity",
                                              "Poison Immunity",
                                              "Armor Break Immunity",
+                                             "Coldsnap Immunity",
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Absorbing Man",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Absorbing Man",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
-                                       "#Gamma"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
                                              "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "wong.png",
                           "id":  "wong",
-                          "guide":  null,
+                          "name":  "Wong",
+                          "class":  "Mystic",
+                          "image":  "wong.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Wong",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Wiccan.png",
                           "id":  "wiccan",
-                          "guide":  {
-                                        "whyStory":  "Flexible all-rounder who can be played multiple ways depending on the fight — good for Story and Quests.",
-                                        "easyToHandle":  "Requires understanding his tactic options, but forgiving once you pick one."
+                          "name":  "Wiccan",
+                          "class":  "Mystic",
+                          "image":  "Wiccan.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  3,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Nullify Immunity",
-                                             "Reverse Control Immunity",
                                              "Stun Immunity",
+                                             "Reverse Control Immunity",
                                              "Armor Break Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  3,
-                                        "rarity":  6,
-                                        "championName":  "Wiccan",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Wiccan",
-                          "storyTier":  "S-Tier (Mystic)",
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
                                              "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                             "Buff Control \u0026 Nullify"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Flexible all-rounder who can be played multiple ways depending on the fight — good for Story and Quests.",
+                                        "easyToHandle":  "Requires understanding his tactic options, but forgiving once you pick one."
+                                    }
                       },
                       {
-                          "image":  "spiderman_supreme.png",
                           "id":  "spidermansupreme",
-                          "guide":  null,
+                          "name":  "Spider-Man (Supreme)",
+                          "class":  "Mystic",
+                          "image":  "spiderman_supreme.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Special Lock Immunity",
                                              "Neutralize Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Supreme)",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Spider-Man (Supreme)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Spider-Verse",
-                                       "#Avenger"
+                                       "#Hero",
+                                       "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "rintrah.png",
                           "id":  "rintrah",
-                          "guide":  null,
+                          "name":  "Rintrah",
+                          "class":  "Mystic",
+                          "image":  "rintrah.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Stun Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Rintrah",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "purgatory.png",
                           "id":  "purgatory",
-                          "guide":  null,
+                          "name":  "Purgatory",
+                          "class":  "Mystic",
+                          "image":  "purgatory.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Purgatory",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "americachavez.png",
                           "id":  "americachavez",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "America Chavez",
+                          "class":  "Mystic",
+                          "image":  "americachavez.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "America Chavez",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "America Chavez",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Dimensional Being"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Support \u0026 Synergy"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "mangog.png",
                           "id":  "mangog",
-                          "guide":  null,
+                          "name":  "Mangog",
+                          "class":  "Mystic",
+                          "image":  "mangog.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Armor Break Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Mangog",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "scarletwitch.png",
                           "id":  "scarletwitchsigil",
-                          "guide":  null,
+                          "name":  "Scarlet Witch (Sigil)",
+                          "class":  "Mystic",
+                          "image":  "Scarlet Witch (Sigil).png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Scarlet Witch",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Scarlet Witch (Sigil)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "longshot.png",
                           "id":  "longshot",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Ability Accuracy Reduction Immunity"
-                                         ],
+                          "name":  "Longshot",
+                          "class":  "Mystic",
+                          "image":  "longshot.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Longshot",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Longshot",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+                                             "Ability Accuracy Reduction Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "sasquatch.png",
                           "id":  "sasquatch",
-                          "guide":  null,
+                          "name":  "Sasquatch",
+                          "class":  "Mystic",
+                          "image":  "sasquatch.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Frostbite Immunity",
                                              "Armor Break Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sasquatch",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Sasquatch",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
-                                       "#Gamma"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Buff Control \u0026 Nullify",
-                                             "Power Control",
                                              "Defensive \u0026 Tank"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "dragonman.png",
                           "id":  "dragonman",
-                          "guide":  null,
+                          "name":  "Dragon Man",
+                          "class":  "Mystic",
+                          "image":  "dragonman.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Armor Shattered Immunity",
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Hero",
+                                       "#Metal",
+                                       "#Robot"
+                                   ],
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "mojo",
+                          "name":  "Mojo",
+                          "class":  "Mystic",
+                          "image":  "mojo.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Dragon Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Dragon Man",
-                          "storyTier":  null,
-                          "class":  "Mystic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: XL",
-                                       "#Robot",
-                                       "#Dimensional Being"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "mojo.png",
-                          "id":  "mojo",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mojo",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Mojo",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Size: XL",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "sorcerersupreme.png",
                           "id":  "sorcerersupreme",
-                          "guide":  null,
+                          "name":  "Sorcerer Supreme",
+                          "class":  "Mystic",
+                          "image":  "sorcerersupreme.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Sorcerer Supreme",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Spider-Verse",
+                                       "#Dimensional Being"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "tigra.png",
                           "id":  "tigra",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Tigra",
+                          "class":  "Mystic",
+                          "image":  "tigra.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Tigra",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Tigra",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "manthing.png",
                           "id":  "manthing",
-                          "guide":  null,
+                          "name":  "Man-Thing",
+                          "class":  "Mystic",
+                          "image":  "manthing.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Armor Shattered Immunity",
                                              "Armor Break Immunity",
                                              "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "ebonymaw",
+                          "name":  "Ebony Maw",
+                          "class":  "Mystic",
+                          "image":  "ebonymaw.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  4,
                                         "rarity":  6,
-                                        "championName":  "Thing",
-                                        "reqLvl":  "",
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Man-Thing",
-                          "storyTier":  null,
-                          "class":  "Mystic",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: XL"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
-                      },
-                      {
-                          "image":  "ebonymaw.png",
-                          "id":  "ebonymaw",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ebony Maw",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Ebony Maw",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "diablo.png",
                           "id":  "diablo",
-                          "guide":  null,
+                          "name":  "Diablo",
+                          "class":  "Mystic",
+                          "image":  "diablo.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Stun Immunity",
                                              "Armor Break Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Diablo",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "doctordoom.png",
                           "id":  "doctordoom",
-                          "guide":  {
-                                        "whyStory":  "One of the most reliable, powerful Mystic champs — dominates most Story and Alliance War content.",
-                                        "easyToHandle":  "Simple special-attack loop once learned makes him surprisingly consistent."
-                                    },
+                          "name":  "Doctor Doom",
+                          "class":  "Mystic",
+                          "image":  "doctordoom.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Armor Shattered Immunity",
                                              "Armor Break Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Doctor Doom",
-                          "storyTier":  "S-Tier (Mystic)",
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
                                              "Power Control",
+                                             "Buff Control \u0026 Nullify",
                                              "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "One of the most reliable, powerful Mystic champs — dominates most Story and Alliance War content.",
+                                        "easyToHandle":  "Simple special-attack loop once learned makes him surprisingly consistent."
+                                    }
                       },
                       {
-                          "image":  "blackwidowvlairevoyant.png",
                           "id":  "blackwidowclairevoyant",
-                          "guide":  null,
+                          "name":  "Black Widow (Claire Voyant)",
+                          "class":  "Mystic",
+                          "image":  "blackwidowvlairevoyant.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  4,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Buff immunity",
                                              "Poison Immunity",
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Black Widow (Claire Voyant)",
-                                        "reqLvl":  "1.0",
-                                        "futureRank":  5,
-                                        "notes":  "must"
-                                    },
-                          "name":  "Black Widow (Claire Voyant)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                                             "Damage Over Time (DOT)",
+                                             "Buff Control \u0026 Nullify"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "symbiotesupreme.png",
                           "id":  "symbiotesupreme",
-                          "guide":  null,
+                          "name":  "Symbiote Supreme",
+                          "class":  "Mystic",
+                          "image":  "symbiotesupreme.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Symbiote Supreme",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Spider-Verse",
                                        "#Symbiote",
                                        "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Damage Over Time (DOT)",
+                                             "Buff Control \u0026 Nullify"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "dormammu.png",
                           "id":  "dormammu",
-                          "guide":  null,
+                          "name":  "Dormammu",
+                          "class":  "Mystic",
+                          "image":  "dormammu.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Coldsnap Immunity",
                                              "Poison Immunity",
+                                             "Coldsnap Immunity",
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Dormammu",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "morningstar.png",
                           "id":  "morningstar",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Morningstar",
+                          "class":  "Mystic",
+                          "image":  "morningstar.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Morningstar",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Morningstar",
-                          "storyTier":  null,
-                          "class":  "Mystic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Metal",
-                                       "#Dimensional Being"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "mephisto.png",
-                          "id":  "mephisto",
-                          "guide":  null,
                           "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity",
-                                             "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "mephisto",
+                          "name":  "Mephisto",
+                          "class":  "Mystic",
+                          "image":  "mephisto.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Mephisto",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Mephisto",
-                          "storyTier":  null,
-                          "class":  "Mystic",
+                          "immunities":  [
+                                             "Frostbite Immunity",
+                                             "Poison Immunity",
+                                             "Coldsnap Immunity",
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Villain",
                                        "#Dimensional Being"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Support \u0026 Synergy"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hood.png",
                           "id":  "thehood",
-                          "guide":  null,
+                          "name":  "The Hood",
+                          "class":  "Mystic",
+                          "image":  "hood.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Stun Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "The Hood",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "loki.png",
                           "id":  "loki",
-                          "guide":  null,
+                          "name":  "Loki",
+                          "class":  "Mystic",
+                          "image":  "loki.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Loki",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Villain",
                                        "#God"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "ghostrider.webp",
                           "id":  "ghostrider",
-                          "guide":  null,
+                          "name":  "Ghost Rider",
+                          "class":  "Mystic",
+                          "image":  "ghostrider.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ghost Rider",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Ghost Rider",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Purify \u0026 Cleanse",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "mordo.png",
                           "id":  "mordo",
-                          "guide":  null,
+                          "name":  "Mordo",
+                          "class":  "Mystic",
+                          "image":  "mordo.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Ability Accuracy Reduction Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mordo",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Mordo",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "doctorvoodoo.png",
                           "id":  "doctorvoodoo",
-                          "guide":  null,
+                          "name":  "Doctor Voodoo",
+                          "class":  "Mystic",
+                          "image":  "doctorvoodoo.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Fate Seal Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "thorjanefoster",
+                          "name":  "Thor (Jane Foster)",
+                          "class":  "Mystic",
+                          "image":  "thorjanefoster.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Mystic",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Doctor Voodoo",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Doctor Voodoo",
-                          "storyTier":  null,
-                          "class":  "Mystic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Dimensional Being"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
-                      },
-                      {
-                          "image":  "thorjanefoster.png",
-                          "id":  "thorjanefoster",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Thor (Jane Foster)",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Thor (Jane Foster)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
+                                       "#Size: L",
                                        "#Hero",
-                                       "#Size: M",
                                        "#Avenger",
                                        "#God"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "ironfist.png",
                           "id":  "ironfist",
-                          "guide":  null,
+                          "name":  "Iron Fist",
+                          "class":  "Mystic",
+                          "image":  "ironfist.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Iron Fist",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Metal",
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "unstoppablecolossus.png",
                           "id":  "unstoppablecolossus",
-                          "guide":  null,
+                          "name":  "Unstoppable Colossus",
+                          "class":  "Mystic",
+                          "image":  "unstoppablecolossus.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mutant",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Colossus",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Unstoppable Colossus",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
-                                       "#Metal",
-                                       "#X-Men"
+                                       "#Size: L",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Doctor_Strange_portrait.webp",
                           "id":  "doctorstrange",
-                          "guide":  null,
+                          "name":  "Doctor Strange",
+                          "class":  "Mystic",
+                          "image":  "Doctor_Strange_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Coldsnap Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Doctor Strange",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Avenger",
-                                       "#Dimensional Being"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "juggernaut.png",
                           "id":  "juggernaut",
-                          "guide":  {
-                                        "whyStory":  "Very tanky and hard to stop — great for absorbing damage in tough story fights.",
-                                        "easyToHandle":  "Beginner friendly — mostly about attacking and tanking hits, becomes unstoppable easily."
+                          "name":  "Juggernaut",
+                          "class":  "Mystic",
+                          "image":  "juggernaut.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  "must"
                                     },
                           "immunities":  [
                                              "Reverse Control Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Juggernaut",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL"
+                                       "#Size: XL",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  {
+                                        "whyStory":  "Very tanky and hard to stop — great for absorbing damage in tough story fights.",
+                                        "easyToHandle":  "Beginner friendly — mostly about attacking and tanking hits, becomes unstoppable easily."
+                                    }
                       },
                       {
-                          "image":  "ironfist.png",
                           "id":  "ironfistimmortal",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Iron Fist (Immortal)",
+                          "class":  "Mystic",
+                          "image":  "ironfistwhite.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Iron Fist (Immortal)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
-                      },
-                      {
-                          "image":  "scarletwitch.png",
-                          "id":  "scarletwitchclassic",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Mystic",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Scarlet Witch",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Scarlet Witch (Classic)",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "guillotine.png",
-                          "id":  "guillotine",
-                          "guide":  null,
+                          "id":  "scarletwitchclassic",
+                          "name":  "Scarlet Witch (Classic)",
+                          "class":  "Mystic",
+                          "image":  "scarletwitch.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Guillotine 2099",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Guillotine",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "guillotine",
+                          "name":  "Guillotine",
+                          "class":  "Mystic",
+                          "image":  "guillotine.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
                                        "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "magik.webp",
                           "id":  "magik",
-                          "guide":  null,
+                          "name":  "Magik",
+                          "class":  "Mystic",
+                          "image":  "magik.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Magik",
-                          "storyTier":  null,
-                          "class":  "Mystic",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Dimensional Being"
                                    ],
-                          "categories":  [
-                                             "Buff Control \u0026 Nullify",
-                                             "Power Control"
-                                         ]
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Wave_portrait.webp",
                           "id":  "wave",
-                          "guide":  null,
+                          "name":  "Wave",
+                          "class":  "Science",
+                          "image":  "Wave_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Wave",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blue_marvel_portrait.webp",
                           "id":  "bluemarvel",
-                          "guide":  null,
+                          "name":  "Blue Marvel",
+                          "class":  "Science",
+                          "image":  "blue_marvel_portrait.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Power Steal Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Blue Marvel",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Blue Marvel",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "lizard.png",
                           "id":  "lizard",
-                          "guide":  null,
+                          "name":  "Lizard",
+                          "class":  "Science",
+                          "image":  "lizard.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Heal Block Immunity",
                                              "Buff immunity",
+                                             "Heal Block Immunity",
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Lizard",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "portrait_high_evolutionary.png",
                           "id":  "highevolutionary",
-                          "guide":  null,
+                          "name":  "High Evolutionary",
+                          "class":  "Science",
+                          "image":  "portrait_high_evolutionary.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
-                                             "Neutralize Immunity",
                                              "Buff immunity",
+                                             "Neutralize Immunity",
                                              "Rupture Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "High Evolutionary",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spider-women.webp",
                           "id":  "spiderwoman",
-                          "guide":  null,
+                          "name":  "Spider-Woman",
+                          "class":  "Science",
+                          "image":  "spider-women_new.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  "needed"
+                                    },
                           "immunities":  [
                                              "Neutralize Immunity",
                                              "Poison Immunity",
                                              "Power Steal Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Spider-Woman (Jessica Drew)",
-                                        "reqLvl":  "1.0",
-                                        "futureRank":  2,
-                                        "notes":  "must"
-                                    },
-                          "name":  "Spider-Woman",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "falcon_joaquintorres.webp",
                           "id":  "falconjoaquintorres",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stun Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Falcon",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
                           "name":  "Falcon (Joaquin Torres)",
-                          "storyTier":  null,
                           "class":  "Science",
+                          "image":  "falcon_joaquintorres.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Evade \u0026 Auto-Block Counter",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "shehulk.webp",
                           "id":  "shehulkdeathless",
-                          "guide":  null,
+                          "name":  "She-Hulk (Deathless)",
+                          "class":  "Science",
+                          "image":  "She-Hulk (Deathless).webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity",
                                              "Rupture Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "She-Hulk (Deathless)",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Avenger",
                                        "#Gamma",
                                        "#Deathless"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                                             "Defensive \u0026 Tank",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "count_nefaria.png",
                           "id":  "countnefaria",
-                          "guide":  null,
+                          "name":  "Count Nefaria",
+                          "class":  "Science",
+                          "image":  "count_nefaria.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Power Steal Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Count Nefaria",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: XL",
-                                       "#Metal"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "The_ledger.webp",
                           "id":  "theleader",
-                          "guide":  null,
+                          "name":  "The Leader",
+                          "class":  "Science",
+                          "image":  "The_ledger.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "The Leader",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "spider-punk.webp",
-                          "id":  "spiderpunk",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Reverse Control Immunity",
-                                             "Rupture Immunity",
-                                             "Concussion Immunnity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Spider-Punk",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Spider-Punk",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "morbius.webp",
-                          "id":  "morbius",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Morbius",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Morbius",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "spiderpunk",
+                          "name":  "Spider-Punk",
+                          "class":  "Science",
+                          "image":  "spider-punk.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  "Helpfull"
+                                    },
+                          "immunities":  [
+                                             "Concussion Immunnity",
+                                             "Reverse Control Immunity",
+                                             "Rupture Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
                                        "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "photon.png",
+                          "id":  "morbius",
+                          "name":  "Morbius",
+                          "class":  "Science",
+                          "image":  "morbius.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "photon",
-                          "guide":  {
-                                        "whyStory":  "Balanced fighter who does well in Story, Arena and most quests without needing a specific counter-matchup.",
-                                        "easyToHandle":  "Build up her Special 2 by landing hits (charges to 25) then release it — simple charge-and-release pattern."
+                          "name":  "Photon",
+                          "class":  "Science",
+                          "image":  "photon.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Neutralize Immunity",
                                              "Power Steal Immunity",
                                              "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Balanced fighter who does well in Story, Arena and most quests without needing a specific counter-matchup.",
+                                        "easyToHandle":  "Build up her Special 2 by landing hits (charges to 25) then release it — simple charge-and-release pattern."
+                                    }
+                      },
+                      {
+                          "id":  "silk",
+                          "name":  "Silk",
+                          "class":  "Science",
+                          "image":  "silk.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
                                         "rarity":  6,
-                                        "championName":  "Photon",
-                                        "reqLvl":  "",
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Photon",
-                          "storyTier":  "S-Tier (Science)",
-                          "class":  "Science",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Avenger"
+                                       "#Hero",
+                                       "#Spider-Verse"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "silk.png",
-                          "id":  "silk",
+                          "categories":  "Burst Damage",
+                          "storyTier":  "S",
                           "guide":  {
                                         "whyStory":  "Good utility pick for nodes that punish debuffs — she can clear them off herself late in the fight.",
                                         "easyToHandle":  "Just play normally; her clean-up ability triggers automatically when you land her Special 2 near the end."
-                                    },
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Silk",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Silk",
-                          "storyTier":  "S-Tier (Science)",
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Spider-Verse"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                                    }
                       },
                       {
-                          "image":  "sandman.webp",
                           "id":  "sandman",
-                          "guide":  {
-                                        "whyStory":  "Great pick when a boss node punishes you for holding back — he rewards players who keep attacking non-stop.",
-                                        "easyToHandle":  "Very beginner friendly: just keep hitting combos, no tricky timing needed."
-                                    },
-                          "immunities":  [
-                                             "Shock Immunity",
-                                             "Poison Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Sandman",
+                          "class":  "Science",
+                          "image":  "sandman.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Sandman",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Sandman",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M",
-                                       "#Spider-Verse"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "cassie_lang.webp",
-                          "id":  "cassielang",
-                          "guide":  null,
                           "immunities":  [
                                              "Shock Immunity",
-                                             "Buff immunity",
                                              "Poison Immunity",
-                                             "Power Steal Immunity"
+                                             "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  {
+                                        "whyStory":  "Great pick when a boss node punishes you for holding back — he rewards players who keep attacking non-stop.",
+                                        "easyToHandle":  "Very beginner friendly: just keep hitting combos, no tricky timing needed."
+                                    }
+                      },
+                      {
+                          "id":  "cassielang",
+                          "name":  "Cassie Lang",
+                          "class":  "Science",
+                          "image":  "cassie_lang.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Cassie Lang",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Cassie Lang",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Buff immunity",
+                                             "Shock Immunity",
+                                             "Poison Immunity",
+                                             "Power Steal Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "titania.png",
                           "id":  "titania",
-                          "guide":  null,
+                          "name":  "Titania",
+                          "class":  "Science",
+                          "image":  "titania.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Buff immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Titania",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: XL",
-                                       "#Gamma"
+                                       "#Size: M",
+                                       "#Villain"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                          "categories":  "Boss Slayer \u0026 Story MVP",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spot.png",
                           "id":  "spot",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stun Immunity",
-                                             "Buff immunity"
-                                         ],
+                          "name":  "Spot",
+                          "class":  "Science",
+                          "image":  "spot.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spot",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Spot",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Buff immunity",
+                                             "Stun Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Spider-Verse"
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "quicksilver.png",
                           "id":  "quicksilver",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "QuickSilver",
+                          "class":  "Science",
+                          "image":  "quicksilver.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "QuickSilver",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "jessica.png",
-                          "id":  "jessicajones",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  "Evade \u0026 Auto-Block Counter",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "jessicajones",
+                          "name":  "Jessica Jones",
+                          "class":  "Science",
+                          "image":  "jessica.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Jessica Jones",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Jessica Jones",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "scorpion.png",
                           "id":  "scorpion",
-                          "guide":  null,
+                          "name":  "Scorpion",
+                          "class":  "Science",
+                          "image":  "scorpion.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  2,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Poison Immunity",
                                              "Rupture Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Scorpion",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Scorpion",
-                          "storyTier":  "S-Tier (Science)",
-                          "class":  "Science",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Spider-Verse"
+                                       "#Villain"
                                    ],
                           "categories":  [
                                              "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank",
-                                             "Burst Damage"
-                                         ]
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "antivenom.png",
                           "id":  "antivenom",
-                          "guide":  null,
+                          "name":  "Anti-Venom",
+                          "class":  "Science",
+                          "image":  "antivenom.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  4,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Poison Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Anti-Venom",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Anti-Venom",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Villain",
+                                       "#Avenger",
                                        "#Symbiote"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "theoverseer.png",
                           "id":  "theoverseer",
-                          "guide":  null,
+                          "name":  "The Overseer",
+                          "class":  "Science",
+                          "image":  "theoverseer.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Stagger Immunity",
                                              "Nullify Immunity",
-                                             "Reverse Control Immunity",
+                                             "Stagger Immunity",
                                              "Neutralize Immunity",
                                              "Poison Immunity",
+                                             "Reverse Control Immunity",
                                              "Fate Seal Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "The Overseer",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Gamma"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spiderman2099.png",
                           "id":  "spiderman2099",
-                          "guide":  {
-                                        "whyStory":  "Simple, reliable damage dealer that works in most Story and Arena content.",
-                                        "easyToHandle":  "Just attack — no tricky mechanics, great for beginners."
-                                    },
-                          "immunities":  [
-                                             "Buff immunity"
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
                           "name":  "Spider Man 2099",
-                          "storyTier":  null,
                           "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "misternegative.png",
-                          "id":  "misternegative",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity",
-                                             "Fate Seal Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mister Negative",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Mister Negative",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "redguardian.png",
-                          "id":  "redguardian",
-                          "guide":  null,
+                          "image":  "spiderman2099.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Buff immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Red Guardian",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Red Guardian",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Buff Control \u0026 Nullify"
-                                         ]
-                      },
-                      {
-                          "image":  "spiderham.png",
-                          "id":  "spiderham",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Spider-Ham",
-                          "storyTier":  "S-Tier (Science)",
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: S",
                                        "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank",
-                                             "Burst Damage"
-                                         ]
-                      },
-                      {
-                          "image":  "hulkimmortal.png",
-                          "id":  "hulkimmortal",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Reverse Control Immunity",
-                                             "Poison Immunity"
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Hulk (Immortal)",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Hulk (Immortal)",
                           "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: XL",
-                                       "#Avenger",
-                                       "#Gamma"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                          "guide":  {
+                                        "whyStory":  "Simple, reliable damage dealer that works in most Story and Arena content.",
+                                        "easyToHandle":  "Just attack — no tricky mechanics, great for beginners."
+                                    }
                       },
                       {
-                          "image":  "abomination.png",
-                          "id":  "abominationimmortal",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
+                          "id":  "misternegative",
+                          "name":  "Mister Negative",
+                          "class":  "Science",
+                          "image":  "misternegative.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Stagger Immunity",
+                                             "Fate Seal Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "redguardian",
+                          "name":  "Red Guardian",
+                          "class":  "Science",
+                          "image":  "redguardian.png",
+                          "isOwned":  true,
+                          "owned":  {
                                         "rarity":  6,
-                                        "championName":  "Abomination",
-                                        "reqLvl":  "",
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Abomination (Immortal)",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Buff immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
-                                       "#Gamma"
+                                       "#Size: L",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "invisiblewoman.png",
-                          "id":  "invisiblewoman",
-                          "guide":  null,
+                          "id":  "spiderham",
+                          "name":  "Spider-Ham",
+                          "class":  "Science",
+                          "image":  "spiderham.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Invisible Woman",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
+                                       "#Size: S",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "thing.png",
-                          "id":  "thing",
-                          "guide":  null,
+                          "id":  "hulkimmortal",
+                          "name":  "Hulk (Immortal)",
+                          "class":  "Science",
+                          "image":  "hulkimmortal.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  4,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
-                                             "Stagger Immunity",
-                                             "Shock Immunity",
+                                             "Poison Immunity",
+                                             "Reverse Control Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Hero",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "abominationimmortal",
+                          "name":  "Abomination (Immortal)",
+                          "class":  "Science",
+                          "image":  "Abomination (Immortal).png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Hero",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "invisiblewoman",
+                          "name":  "Invisible Woman",
+                          "class":  "Science",
+                          "image":  "invisiblewoman.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "thing",
+                          "name":  "Thing",
+                          "class":  "Science",
+                          "image":  "thing.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  4,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
                                              "Nullify Immunity",
+                                             "Shock Immunity",
                                              "Armor Shattered Immunity",
+                                             "Stagger Immunity",
                                              "Armor Break Immunity",
                                              "Fate Seal Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Thing",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Thing",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: XL"
+                                       "#Size: XL",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "misterfantastic.png",
                           "id":  "misterfantastic",
-                          "guide":  null,
+                          "name":  "Mister Fantastic",
+                          "class":  "Science",
+                          "image":  "misterfantastic.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Mister Fantastic",
-                                        "reqLvl":  "3.0",
-                                        "futureRank":  2,
-                                        "notes":  "needed"
-                                    },
-                          "name":  "Mister Fantastic",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Support \u0026 Synergy"
-                                         ]
+                          "categories":  "Support \u0026 Synergy",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "humantorch.png",
                           "id":  "humantorch",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity",
-                                             "Incinerate Immunity"
-                                         ],
+                          "name":  "Human Torch",
+                          "class":  "Science",
+                          "image":  "humantorch.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Human Torch",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Human Torch",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Frostbite Immunity",
+                                             "Coldsnap Immunity",
+                                             "Incinerate Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
                                              "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "sentry.png",
                           "id":  "sentry",
-                          "guide":  null,
+                          "name":  "Sentry",
+                          "class":  "Science",
+                          "image":  "sentry.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Poison Immunity",
                                              "Incinerate Immunity",
                                              "Fate Seal Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "wasp",
+                          "name":  "Wasp",
+                          "class":  "Science",
+                          "image":  "wasp.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "hulkragnarok",
+                          "name":  "Hulk (Ragnarok)",
+                          "class":  "Science",
+                          "image":  "hulkragnarok.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Poison Immunity",
+                                             "Reverse Control Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Hero",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "void",
+                          "name":  "Void",
+                          "class":  "Science",
+                          "image":  "void.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Incinerate Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "captainamericainfinitywar",
+                          "name":  "Captain America (Infinity War)",
+                          "class":  "Science",
+                          "image":  "Captain America (Infinity War).png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "modok",
+                          "name":  "M.O.D.O.K.",
+                          "class":  "Science",
+                          "image":  "modok.png",
+                          "isOwned":  true,
+                          "owned":  {
                                         "rarity":  6,
-                                        "championName":  "Sentry",
-                                        "reqLvl":  "",
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "shehulk",
+                          "name":  "She-Hulk",
+                          "class":  "Science",
+                          "image":  "shehulk.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Sentry",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "wasp.png",
-                          "id":  "wasp",
-                          "guide":  null,
                           "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Wasp",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Wasp",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: S",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "hulkragnarok.png",
-                          "id":  "hulkragnarok",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Reverse Control Immunity",
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk (Ragnarok)",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Hulk (Ragnarok)",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Avenger",
                                        "#Gamma"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
-                      },
-                      {
-                          "image":  "void.png",
-                          "id":  "void",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Incinerate Immunity"
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Void",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
+                                             "Defensive \u0026 Tank",
                                              "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "captainamerica.png",
-                          "id":  "captainamericainfinitywar",
-                          "guide":  null,
-                          "immunities":  [
-
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Captain America (Infinity War)",
                           "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Support \u0026 Synergy"
-                                         ]
+                          "guide":  null
                       },
                       {
-                          "image":  "modok.png",
-                          "id":  "modok",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "M.O.D.O.K.",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "M.O.D.O.K.",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: S"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "shehulk.webp",
-                          "id":  "shehulk",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "She-Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "She-Hulk",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: XL",
-                                       "#Avenger",
-                                       "#Gamma"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
-                      },
-                      {
-                          "image":  "redhulk.png",
                           "id":  "redhulk",
-                          "guide":  null,
+                          "name":  "Red Hulk",
+                          "class":  "Science",
+                          "image":  "redhulk.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Poison Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Red Hulk",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Red Hulk",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Avenger",
                                        "#Gamma"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spidermanmilesmorales.png",
                           "id":  "spidermanmilesmorales",
-                          "guide":  {
-                                        "whyStory":  "Completes small in-fight \u0027challenges\u0027 (like dodging or blocking) to earn fury buffs that boost his damage, and stacks debuffs on the enemy \nreliable pick for Story and beyond.",
-                                        "easyToHandle":  "Just play normally (dodge/block/attack) and the challenges complete themselves — no memorized rotation needed."
-                                    },
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Spider man (Miles Morales)",
+                          "class":  "Science",
+                          "image":  "spidermanmilesmorales.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Miles Morales",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
+                                        "futureRank":  2,
+                                        "notes":  "must best for all"
                                     },
-                          "name":  "Spider man (Miles Morales)",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "quake.png",
-                          "id":  "quake",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Quake",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "spiderman.png",
-                          "id":  "spidermanclassic",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Classic)",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Spider-Man (Classic)",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Spider-Verse",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "captainamerica.png",
-                          "id":  "captainamerica",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Captain America",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
                                        "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Support \u0026 Synergy"
-                                         ]
-                      },
-                      {
-                          "image":  "captainamericawwii.png",
-                          "id":  "captainamericawwii",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Captain America (WWII)",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Support \u0026 Synergy"
-                                         ]
-                      },
-                      {
-                          "image":  "rhino_new.png",
-                          "id":  "rhino",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Rhino",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
                                        "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "antman.png",
-                          "id":  "antman",
-                          "guide":  null,
+                          "id":  "quake",
+                          "name":  "Quake",
+                          "class":  "Science",
+                          "image":  "quake.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Shock Immunity",
-                                             "Buff immunity",
                                              "Poison Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "spidermanclassic",
+                          "name":  "Spider-Man (Classic)",
+                          "class":  "Science",
+                          "image":  "spiderman.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "captainamerica",
+                          "name":  "Captain America",
+                          "class":  "Science",
+                          "image":  "captainamerica.png",
+                          "isOwned":  true,
+                          "owned":  {
                                         "rarity":  6,
-                                        "championName":  "Ant-Man",
-                                        "reqLvl":  "",
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Ant-Man",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: S",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "abomination.png",
-                          "id":  "abomination",
-                          "guide":  null,
+                          "id":  "captainamericawwii",
+                          "name":  "Captain America (WWII)",
+                          "class":  "Science",
+                          "image":  "captainamericawwii.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Poison Immunity"
+
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "rhino",
+                          "name":  "Rhino",
+                          "class":  "Science",
+                          "image":  "rhino_new.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Villain"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "antman",
+                          "name":  "Ant-Man",
+                          "class":  "Science",
+                          "image":  "antman.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Abomination",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Abomination",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Buff immunity",
+                                             "Shock Immunity",
+                                             "Poison Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "abomination",
+                          "name":  "Abomination",
+                          "class":  "Science",
+                          "image":  "Abomination.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
+                          "tags":  [
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Gamma"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hulk.png",
                           "id":  "hulk",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity",
-                                             "Reverse Control Immunity",
-                                             "Buff immunity",
-                                             "Poison Immunity",
-                                             "Fate Seal Immunity"
-                                         ],
+                          "name":  "Hulk",
+                          "class":  "Science",
+                          "image":  "hulk.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulk",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Hulk",
-                          "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Buff immunity",
+                                             "Nullify Immunity",
+                                             "Stagger Immunity",
+                                             "Poison Immunity",
+                                             "Reverse Control Immunity",
+                                             "Fate Seal Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Avenger",
                                        "#Gamma"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "electro.png",
                           "id":  "electro",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Shock Immunity"
-                                         ],
+                          "name":  "Electro",
+                          "class":  "Science",
+                          "image":  "electro.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Electro",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M",
-                                       "#Spider-Verse"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "yellowjacket.png",
-                          "id":  "yellowjacket",
-                          "guide":  null,
                           "immunities":  [
                                              "Shock Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "yellowjacket",
+                          "name":  "Yellow Jacket",
+                          "class":  "Science",
+                          "image":  "yellowjacket.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Yellowjacket",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Yellow Jacket",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Shock Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spidergwen.png",
                           "id":  "spidergwen",
-                          "guide":  null,
+                          "name":  "Spider-Gwen",
+                          "class":  "Science",
+                          "image":  "spidergwen.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  "Evade \u0026 Auto-Block Counter",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "lukecage",
+                          "name":  "Luke Cage",
+                          "class":  "Science",
+                          "image":  "lukecage.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Spider-Gwen",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Spider-Gwen",
-                          "storyTier":  null,
-                          "class":  "Science",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Spider-Verse"
-                                   ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Support \u0026 Synergy"
-                                         ]
-                      },
-                      {
-                          "image":  "lukecage.png",
-                          "id":  "lukecage",
-                          "guide":  null,
                           "immunities":  [
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Science",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Luke Cage",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Luke Cage",
-                          "storyTier":  null,
-                          "class":  "Science",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "joefixit.png",
                           "id":  "joefixit",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Reverse Control Immunity",
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Joe Fixit",
+                          "class":  "Science",
+                          "image":  "joefixit.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Joe Fixit",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Joe Fixit",
-                          "storyTier":  null,
-                          "class":  "Science",
+                          "immunities":  [
+                                             "Poison Immunity",
+                                             "Reverse Control Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Gamma"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blacktarantula.webp",
                           "id":  "blacktarantula",
-                          "guide":  null,
+                          "name":  "Black Tarantula",
+                          "class":  "Skill",
+                          "image":  "blacktarantula.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Black Tarantula",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Doctor_Bong_portrait.webp",
                           "id":  "doctorbong",
-                          "guide":  null,
+                          "name":  "Doctor Bong",
+                          "class":  "Skill",
+                          "image":  "Doctor_Bong_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Power Sting Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Doctor Bong",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "mbaku_portrait.webp",
                           "id":  "mbaku",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Frostbite Immunity"
-                                         ],
+                          "name":  "M’Baku",
+                          "class":  "Skill",
+                          "image":  "mbaku_portrait.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "M\u0027Baku",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "M’Baku",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+                                             "Frostbite Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "starlord.png",
                           "id":  "starlordstellarforged",
-                          "guide":  null,
+                          "name":  "Star-Lord (Stellar Forged)",
+                          "class":  "Skill",
+                          "image":  "Star-Lord (Stellar Forged).webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Star-Lord (Stellar Forged)",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "frankencastle.webp",
                           "id":  "frankencastle",
-                          "guide":  null,
+                          "name":  "Franken-Castle",
+                          "class":  "Skill",
+                          "image":  "frankencastle.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Petrify Immunity",
                                              "Spectre Immunity",
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Frankencastle",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Franken-Castle",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "misterknight.png",
                           "id":  "mrknight",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Mr. Knight",
+                          "class":  "Skill",
+                          "image":  "misterknight.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mr. Knight",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Mr. Knight",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "portrait_yelenabelova.webp",
                           "id":  "yelenabelova",
-                          "guide":  {
-                                        "whyStory":  "One of the easiest \u0027node remover\u0027 champs — she strips away punishing node effects so story fights become simple.",
-                                        "easyToHandle":  "No complicated combos, very forgiving to use for beginners."
-                                    },
+                          "name":  "Yelena Belova",
+                          "class":  "Skill",
+                          "image":  "portrait_yelenabelova.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Yelena Belova",
-                          "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "lumatrix.webp",
                           "id":  "lumatrix",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Rupture Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Lumatrix",
+                          "class":  "Skill",
+                          "image":  "lumatrix.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Lumatrix",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Lumatrix",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "okoye_og.png",
-                          "id":  "okoye",
-                          "guide":  null,
                           "immunities":  [
-
+                                             "Bleed Immunity",
+                                             "Rupture Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Okoye",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "patriot.webp",
-                          "id":  "patriot",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Patriot",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Avenger"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "silver_sable.webp",
-                          "id":  "silversable",
-                          "guide":  null,
+                          "id":  "okoye",
+                          "name":  "Okoye",
+                          "class":  "Skill",
+                          "image":  "okoye_og.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "patriot",
+                          "name":  "Patriot",
+                          "class":  "Skill",
+                          "image":  "patriot.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "silversable",
+                          "name":  "Silver Sable",
+                          "class":  "Skill",
+                          "image":  "silver_sable.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Silver Sable",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Silver Sable",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Mercenary"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "bullseye.webp",
                           "id":  "bullseye",
-                          "guide":  null,
+                          "name":  "Bullseye",
+                          "class":  "Skill",
+                          "image":  "bullseye.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Fatigue Immunity",
                                              "Precision Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Bullseye",
-                          "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Mercenary"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                                             "Burst Damage",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "chee\u0027ilth.webp",
                           "id":  "cheeilth",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Chee\u0027ilth",
+                          "class":  "Skill",
+                          "image":  "chee\u0027ilth.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Chee\u0027ilth",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Chee\u0027ilth",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "moondragon.png",
                           "id":  "moondragon",
-                          "guide":  null,
+                          "name":  "Moondragon",
+                          "class":  "Skill",
+                          "image":  "moondragon.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Death Immunity",
                                              "Reverse Control Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Moondragon",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Moondragon",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: XL",
+                                       "#Hero"
                                    ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Buff Control \u0026 Nullify",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kate_bishop.png",
                           "id":  "katebishop",
-                          "guide":  {
-                                        "whyStory":  "Very strong once you learn his combo/rotation — turns enemy specials into his own power.",
-                                        "easyToHandle":  "Takes a bit more strategy/practice to get the timing of his rotation right."
+                          "name":  "Kate Bishop",
+                          "class":  "Skill",
+                          "image":  "kate_bishop.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  3,
+                                        "futureRank":  5,
+                                        "notes":  "needed"
                                     },
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: L",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
+                      },
+                      {
+                          "id":  "baronzemo",
+                          "name":  "Baron Zemo",
+                          "class":  "Skill",
+                          "image":  "Baron_Zemo.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  3,
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  2,
+                                        "notes":  "must"
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "valkyrie",
+                          "name":  "Valkyrie",
+                          "class":  "Skill",
+                          "image":  "valkyrie.png",
+                          "isOwned":  true,
+                          "owned":  {
                                         "rarity":  6,
-                                        "championName":  "Kate Bishop",
-                                        "reqLvl":  "",
+                                        "awaken":  true,
+                                        "rank":  1,
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Kate Bishop",
-                          "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger",
-                                       "#X-Men"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
-                      },
-                      {
-                          "image":  "Baron_Zemo.png",
-                          "id":  "baronzemo",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Baron Zemo",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Baron Zemo",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero",
+                                       "#God"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "valkyrie.png",
-                          "id":  "valkyrie",
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Purify \u0026 Cleanse"
+                                         ],
+                          "storyTier":  null,
                           "guide":  {
                                         "whyStory":  "Good for content where timing your moves matters (dashing back/forward at the right moment).",
                                         "easyToHandle":  "Needs a bit of practice with movement timing, but pays off with strong damage once learned."
-                                    },
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Valkyrie",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Valkyrie",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                    }
                       },
                       {
-                          "image":  "mantis.png",
                           "id":  "mantis",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Mantis",
+                          "class":  "Skill",
+                          "image":  "mantis.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Mantis",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Mantis",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Evade \u0026 Auto-Block Counter",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "attuma.png",
                           "id":  "attuma",
-                          "guide":  null,
+                          "name":  "Attuma",
+                          "class":  "Skill",
+                          "image":  "attuma.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Attuma",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
-                                       "#Metal"
+                                       "#Villain"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Defensive \u0026 Tank",
+                                             "Purify \u0026 Cleanse"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blackcat.png",
                           "id":  "blackcat",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Black Cat",
+                          "class":  "Skill",
+                          "image":  "blackcat.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Cat",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Black Cat",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "mistyknight.png",
-                          "id":  "mistyknight",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Misty Knight",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "karven.png",
-                          "id":  "kraven",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Bleed Immunity"
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Kraven",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Spider-Verse"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "jabaripanther.png",
-                          "id":  "jabaripanther",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Jabari Panther",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Jabari Panther",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
                                        "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "shangchi.png",
-                          "id":  "shangchi",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Shang-Chi",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Shang Chi",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "squirrelgirl.png",
-                          "id":  "squirrelgirl",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Squirrel Girl",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "blackwidow.png",
-                          "id":  "blackwidowdeadlyorigin",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Widow (Deadly Origin)",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Black Widow (Deadly Origin)",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Burst Damage"
-                                         ]
-                      },
-                      {
-                          "image":  "hitmonkey.png",
-                          "id":  "hitmonkey",
-                          "guide":  {
-                                        "whyStory":  "Strong all-round damage dealer who works well in Story and Arena thanks to high critical hit chance.",
-                                        "easyToHandle":  "Play aggressively and land crits — no special rotation required."
-                                    },
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Hit-Monkey",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Hit-Monkey",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: S",
                                        "#Mercenary"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage"
-                                         ]
+                                             "Damage Over Time (DOT)",
+                                             "Purify \u0026 Cleanse"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "moleman.png",
-                          "id":  "moleman",
-                          "guide":  null,
+                          "id":  "mistyknight",
+                          "name":  "Misty Knight",
+                          "class":  "Skill",
+                          "image":  "mistyknight.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
-                                             "Shock Immunity"
+
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "kraven",
+                          "name":  "Kraven",
+                          "class":  "Skill",
+                          "image":  "karven.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Bleed Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  "Evade \u0026 Auto-Block Counter",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "jabaripanther",
+                          "name":  "Jabari Panther",
+                          "class":  "Skill",
+                          "image":  "jabaripanther.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
                                         "rarity":  6,
-                                        "championName":  "Mole Man",
-                                        "reqLvl":  "",
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  "Purify \u0026 Cleanse",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "shangchi",
+                          "name":  "Shang Chi",
+                          "class":  "Skill",
+                          "image":  "shangchi.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Mole Man",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Burst Damage"
-                                         ]
-                      },
-                      {
-                          "image":  "ronin.png",
-                          "id":  "ronin",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "squirrelgirl",
+                          "name":  "Squirrel Girl",
+                          "class":  "Skill",
+                          "image":  "squirrelgirl.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Ronin",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "elsabloodstone.png",
-                          "id":  "elsabloodstone",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Elsa Bloodstone",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spidermanstealthsuit.png",
-                          "id":  "spidermanstealthsuit",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "id":  "blackwidowdeadlyorigin",
+                          "name":  "Black Widow (Deadly Origin)",
+                          "class":  "Skill",
+                          "image":  "Black Widow (Deadly Origin).png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Stealth Suit)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Spider-Man (Stealth-Suit)",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Spider-Verse",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "nickfury.png",
+                          "id":  "hitmonkey",
+                          "name":  "Hit-Monkey",
+                          "class":  "Skill",
+                          "image":  "hitmonkey.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  2,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: S",
+                                       "#Hero",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  "Burst Damage",
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Strong all-round damage dealer who works well in Story and Arena thanks to high critical hit chance.",
+                                        "easyToHandle":  "Play aggressively and land crits — no special rotation required."
+                                    }
+                      },
+                      {
+                          "id":  "moleman",
+                          "name":  "Mole Man",
+                          "class":  "Skill",
+                          "image":  "moleman.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  2,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Shock Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  "Purify \u0026 Cleanse",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "ronin",
+                          "name":  "Ronin",
+                          "class":  "Skill",
+                          "image":  "ronin.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "elsabloodstone",
+                          "name":  "Elsa Bloodstone",
+                          "class":  "Skill",
+                          "image":  "elsabloodstone.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "spidermanstealthsuit",
+                          "name":  "Spider-Man (Stealth-Suit)",
+                          "class":  "Skill",
+                          "image":  "spidermanstealthsuit.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "nickfury",
-                          "guide":  null,
+                          "name":  "Nick Fury",
+                          "class":  "Skill",
+                          "image":  "nickfury.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Stun Immunity",
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Nick Fury",
-                          "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
+                                             "Damage Over Time (DOT)",
                                              "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
                                              "Support \u0026 Synergy",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "korg.png",
                           "id":  "korg",
-                          "guide":  null,
+                          "name":  "Korg",
+                          "class":  "Skill",
+                          "image":  "korg.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Korg",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Korg",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: XL"
+                                       "#Size: L",
+                                       "#Villain"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
+                                             "Defensive \u0026 Tank",
                                              "Evade \u0026 Auto-Block Counter",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Purify \u0026 Cleanse"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "night_thrasher.png",
                           "id":  "nightthrasher",
-                          "guide":  null,
+                          "name":  "Night Thrasher",
+                          "class":  "Skill",
+                          "image":  "night_thrasher.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Night Thrasher",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "masacre.png",
                           "id":  "masacre",
-                          "guide":  null,
+                          "name":  "Masacre",
+                          "class":  "Skill",
+                          "image":  "masacre.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Masacre",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Mercenary"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "killmonger.png",
                           "id":  "killmonger",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Killmonger",
+                          "class":  "Skill",
+                          "image":  "killmonger.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Killmonger",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Killmonger",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
+                                             "Damage Over Time (DOT)",
                                              "Defensive \u0026 Tank"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "dragonman.png",
-                          "id":  "gon",
-                          "guide":  null,
+                          "id":  "aegon",
+                          "name":  "Ã†gon",
+                          "class":  "Skill",
+                          "image":  "aegon.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Moondragon",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Ægon",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "gwenpool.png",
                           "id":  "gwenpool",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Gwenpool",
+                          "class":  "Skill",
+                          "image":  "gwenpool.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Gwenpool",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Gwenpool",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Mercenary"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "taskmaster.png",
-                          "id":  "taskmaster",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Taskmaster",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Taskmaster",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Mercenary"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "blade.png",
-                          "id":  "blade",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Blade",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Blade",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
                                        "#Hero",
-                                       "#Size: M",
+                                       "#Spider-Verse",
                                        "#Mercenary"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
+                                             "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "thor.png",
+                          "id":  "taskmaster",
+                          "name":  "Taskmaster",
+                          "class":  "Skill",
+                          "image":  "taskmaster.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "blade",
+                          "name":  "Blade",
+                          "class":  "Skill",
+                          "image":  "blade.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  "Damage Over Time (DOT)",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "thorragnarok",
-                          "guide":  null,
+                          "name":  "Thor (Ragnarok)",
+                          "class":  "Skill",
+                          "image":  "Thor_(Ragnarok)_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Wither Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Thor",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Thor (Ragnarok)",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
+                                       "#Size: L",
                                        "#Hero",
-                                       "#Size: M",
                                        "#Avenger",
                                        "#God"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kingpin.png",
                           "id":  "kingpin",
-                          "guide":  null,
+                          "name":  "Kingpin",
+                          "class":  "Skill",
+                          "image":  "kingpin.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Petrify Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Kingpin",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Kingpin",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
+                                       "#Size: XL",
+                                       "#Villain"
                                    ],
                           "categories":  [
+                                             "Defensive \u0026 Tank",
                                              "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "agentvenom.png",
                           "id":  "agentvenom",
-                          "guide":  null,
+                          "name":  "Agent Venom",
+                          "class":  "Skill",
+                          "image":  "agentvenom.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Cosmic",
-                                        "awaken":  true,
-                                        "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Venom",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Agent Venom",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: XL",
+                                       "#Villain",
                                        "#Symbiote"
                                    ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Purify \u0026 Cleanse",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blackpanthercivilwar.png",
                           "id":  "blackpanthercivilwar",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Black Panther (Civil War)",
+                          "class":  "Skill",
+                          "image":  "blackpanthercivilwar.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Panther (Civil War)",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Black Panther (Civil War)",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "karnak.png",
-                          "id":  "karnak",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Karnak",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "falcon.png",
+                          "id":  "karnak",
+                          "name":  "Karnak",
+                          "class":  "Skill",
+                          "image":  "karnak.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "falcon",
-                          "guide":  null,
+                          "name":  "Falcon",
+                          "class":  "Skill",
+                          "image":  "falcon.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Stun Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Falcon",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Falcon",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Evade \u0026 Auto-Block Counter",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "crossbones.png",
                           "id":  "crossbones",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity"
-                                         ],
+                          "name":  "Crossbones",
+                          "class":  "Skill",
+                          "image":  "crossbones.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Crossbones",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Stagger Immunity"
+                                         ],
                           "tags":  [
+                                       "#Size: L",
                                        "#Villain",
-                                       "#Size: M",
-                                       "#Metal",
                                        "#Mercenary"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
                                              "Evade \u0026 Auto-Block Counter",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Purify \u0026 Cleanse"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "daredevil.png",
                           "id":  "daredevilclassic",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Daredevil (Classic)",
+                          "class":  "Skill",
+                          "image":  "Daredevil (Classic).png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Daredevil (Classic)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Daredevil (Classic)",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "punisher.png",
                           "id":  "punisher",
-                          "guide":  null,
+                          "name":  "Punisher",
+                          "class":  "Skill",
+                          "image":  "punisher.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Wither Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Punisher 2099",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Punisher",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "moonknight.png",
                           "id":  "moonknight",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Moon Knight",
+                          "class":  "Skill",
+                          "image":  "moonknight.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Moon Knight",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "elektra.png",
-                          "id":  "elektra",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "elektra",
+                          "name":  "Elektra",
+                          "class":  "Skill",
+                          "image":  "elektra.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Elektra",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Elektra",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Mercenary"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "wintersoldier.png",
-                          "id":  "wintersoldier",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "wintersoldier",
+                          "name":  "Winter Soldier",
+                          "class":  "Skill",
+                          "image":  "wintersoldier.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Winter Soldier",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Winter Soldier",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "blackwidow.png",
                           "id":  "blackwidow",
-                          "guide":  null,
+                          "name":  "Black Widow",
+                          "class":  "Skill",
+                          "image":  "blackwidow.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Widow (Deadly Origin)",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Black Widow",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
-                                             "Burst Damage"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "daredevil.png",
                           "id":  "daredevilhellskitchen",
-                          "guide":  null,
+                          "name":  "Daredevil (Hell\u0027s Kitchen)",
+                          "class":  "Skill",
+                          "image":  "Daredevil (Hell\u0027s Kitchen).png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Petrify Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Skill",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Daredevil (Hell\u0027s Kitchen)",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Daredevil (Hell\u0027s Kitchen)",
-                          "storyTier":  null,
-                          "class":  "Skill",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "black_panther.png",
                           "id":  "blackpanther",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Black Panther",
+                          "class":  "Skill",
+                          "image":  "black_panther.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Black Panther",
-                                        "reqLvl":  "",
                                         "futureRank":  3,
                                         "notes":  ""
                                     },
-                          "name":  "Black Panther",
-                          "storyTier":  null,
-                          "class":  "Skill",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter",
+                                             "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hawkeye.png",
                           "id":  "hawkeye",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Hawkeye",
+                          "class":  "Skill",
+                          "image":  "hawkeye.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Skill",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Hawkeye",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Hawkeye",
-                          "storyTier":  null,
-                          "class":  "Skill",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Purify \u0026 Cleanse",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "hobgoblin_philurich.webp",
-                          "id":  "hobgoblinphilurich",
-                          "guide":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Hobgoblin (Phil Urich)",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Ruby_Thursday_portrait.webp",
+                          "id":  "hobgoblinphilurich",
+                          "name":  "Hobgoblin (Phil Urich)",
+                          "class":  "Tech",
+                          "image":  "hobgoblin_philurich.webp",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Poison Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "rubythursday",
-                          "guide":  null,
+                          "name":  "Ruby Thursday",
+                          "class":  "Tech",
+                          "image":  "Ruby_Thursday_portrait.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Delirium Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Ruby Thursday",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Spider-Slayer_jjj_portrait.webp",
                           "id":  "spiderslayerjjonahjameson",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Spider-Slayer (J. Jonah Jameson)",
+                          "class":  "Tech",
+                          "image":  "Spider-Slayer_jjj_portrait.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Slayer (J. Jonah Jameson)",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Spider-Slayer (J. Jonah Jameson)",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Poison Immunity",
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Robot",
+                                       "#Hero",
                                        "#Metal",
+                                       "#Robot",
                                        "#Spider-Verse"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "solvarch.png",
                           "id":  "solvarch",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Poison Immunity",
-                                             "Crush Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Solvarch",
+                          "class":  "Tech",
+                          "image":  "solvarch.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Solvarch",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Poison Immunity",
+                                             "Bleed Immunity",
+                                             "Crush Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "portrait_maker.png",
                           "id":  "themaker",
-                          "guide":  {
-                                        "whyStory":  "Powerful utility for tough content but requires understanding his mechanics well.",
-                                        "easyToHandle":  "More complex — best for players ready to learn a detailed kit."
-                                    },
+                          "name":  "The Maker",
+                          "class":  "Tech",
+                          "image":  "portrait_maker.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Reverse Control Immunity",
                                              "Neuroshock Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "The Maker",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Metal"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "bastion.webp",
                           "id":  "bastion",
-                          "guide":  {
-                                        "whyStory":  "Reduces the effect of punishing nodes, making hard paths in Story/Quests much easier.",
-                                        "easyToHandle":  "Tricky/unpredictable playstyle — takes some getting used to."
-                                    },
+                          "name":  "Bastion",
+                          "class":  "Tech",
+                          "image":  "bastion.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Bastion",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  {
+                                        "whyStory":  "Reduces the effect of punishing nodes, making hard paths in Story/Quests much easier.",
+                                        "easyToHandle":  "Tricky/unpredictable playstyle — takes some getting used to."
+                                    }
                       },
                       {
-                          "image":  "arimzola.webp",
                           "id":  "arnimzola",
-                          "guide":  null,
+                          "name":  "Arnim Zola",
+                          "class":  "Tech",
+                          "image":  "arimzola.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Arnim Zola",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Arnim Zola",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "jack_o_lantern.webp",
                           "id":  "jackolantern",
-                          "guide":  null,
+                          "name":  "Jack O’Lantern",
+                          "class":  "Tech",
+                          "image":  "jack_o_lantern.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Reverse Control Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Jack O’Lantern",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: M"
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "vision_deathless.webp",
                           "id":  "visiondeathless",
-                          "guide":  null,
+                          "name":  "Vision (Deathless)",
+                          "class":  "Tech",
+                          "image":  "vision_deathless.webp",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Power Burn Immunity",
-                                             "Coldsnap Immunity",
-                                             "Reverse Control Immunity",
                                              "Frostbite Immunity",
                                              "Poison Immunity",
-                                             "Power Drain Immunity",
-                                             "Bleed Immunity"
+                                             "Reverse Control Immunity",
+                                             "Coldsnap Immunity",
+                                             "Bleed Immunity",
+                                             "Power Drain Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vision",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Vision (Deathless)",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
                                        "#Robot",
                                        "#Avenger",
                                        "#Deathless"
                                    ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "arcade.png",
                           "id":  "arcade",
-                          "guide":  null,
+                          "name":  "Arcade",
+                          "class":  "Tech",
+                          "image":  "arcade.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  5,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Poison Immunity",
                                              "Incinerate Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Arcade",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Arcade",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "prowler.webp",
                           "id":  "prowler",
-                          "guide":  null,
+                          "name":  "Prowler",
+                          "class":  "Tech",
+                          "image":  "prowler.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  2,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Nullify Immunity",
                                              "Reverse Control Immunity",
@@ -8287,2522 +7295,1288 @@ window.MCOC_DATA = {
                                              "Falter Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Prowler",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
-                          "name":  "Prowler",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Robot",
+                                       "#Hero",
                                        "#Metal"
                                    ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Ironheart.webp",
                           "id":  "ironheart",
-                          "guide":  {
-                                        "whyStory":  "Countering Mutant champs is common in this game, and she covers that matchup well too.",
-                                        "easyToHandle":  "Playstyle is more about utility than combos — approachable once basics are known."
-                                    },
-                          "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Ability Accuracy Reduction Immunity",
-                                             "Reverse Control Immunity",
-                                             "Frostbite Immunity",
-                                             "Incinerate Immunity"
-                                         ],
+                          "name":  "Ironheart",
+                          "class":  "Tech",
+                          "image":  "Ironheart.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ironheart",
-                                        "reqLvl":  "",
                                         "futureRank":  5,
                                         "notes":  ""
                                     },
-                          "name":  "Ironheart",
-                          "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Ability Accuracy Reduction Immunity",
+                                             "Frostbite Immunity",
+                                             "Reverse Control Immunity",
+                                             "Coldsnap Immunity",
+                                             "Incinerate Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero",
+                                       "#Metal",
+                                       "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Burst Damage"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Countering Mutant champs is common in this game, and she covers that matchup well too.",
+                                        "easyToHandle":  "Playstyle is more about utility than combos — approachable once basics are known."
+                                    }
                       },
                       {
-                          "image":  "ladydeathstrike.png",
                           "id":  "ladydeathstrike",
-                          "guide":  null,
+                          "name":  "Lady Deathstrike",
+                          "class":  "Tech",
+                          "image":  "ladydeathstrike.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Heal Block Immunity",
                                              "Ability Accuracy Reduction Immunity",
-                                             "Rupture Immunity",
-                                             "Armor Break Immunity"
+                                             "Armor Break Immunity",
+                                             "Rupture Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Lady Deathstrike",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "shocker.webp",
                           "id":  "shocker",
-                          "guide":  null,
+                          "name":  "Shocker",
+                          "class":  "Tech",
+                          "image":  "shocker.webp",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Concussion Immunnity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Shocker",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Shocker",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Spider-Verse"
+                                       "#Villain",
+                                       "#Metal"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "Viv_Vision.png",
                           "id":  "vivvision",
-                          "guide":  {
-                                        "whyStory":  "Smart utility champ good for outlasting enemies and controlling fights with debuffs.",
-                                        "easyToHandle":  "Needs a little strategy/planning but not hard timing — more about picking the right moment."
+                          "name":  "Viv Vision",
+                          "class":  "Tech",
+                          "image":  "Viv_Vision.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  3,
+                                        "notes":  ""
                                     },
                           "immunities":  [
                                              "Nullify Immunity",
-                                             "Reverse Control Immunity",
                                              "Stun Immunity",
                                              "Poison Immunity",
+                                             "Reverse Control Immunity",
                                              "Fate Seal Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Viv Vision",
-                                        "reqLvl":  "",
-                                        "futureRank":  5,
-                                        "notes":  ""
-                                    },
-                          "name":  "Viv Vision",
-                          "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
                                        "#Robot",
                                        "#Avenger"
                                    ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Power Control",
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "ant_man_future.webp",
                           "id":  "antmanfuture",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Buff immunity",
-                                             "Shock Immunity",
-                                             "Poison Immunity"
-                                         ],
+                          "name":  "Ant-Man (Future)",
+                          "class":  "Tech",
+                          "image":  "ant_man_future.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ant-Man (Future)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Ant-Man (Future)",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
+                                       "#Size: M",
                                        "#Hero",
-                                       "#Size: S",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
+                          "id":  "shuri",
+                          "name":  "Shuri",
+                          "class":  "Tech",
                           "image":  "shuri.png",
-                          "id":  "Shuri",
-                          "guide":  null,
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Ability Accuracy Reduction Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Shuri",
-                          "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
                                              "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage",
-                                             "Damage Over Time (DOT)"
-                                         ]
+                                             "Purify \u0026 Cleanse"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "idoom.png",
                           "id":  "ironmaninfamous",
-                          "guide":  null,
+                          "name":  "Iron Man (Infamous)",
+                          "class":  "Tech",
+                          "image":  "idoom.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  2,
+                                        "futureRank":  3,
+                                        "notes":  "needed if node wanted"
+                                    },
                           "immunities":  [
                                              "Shock Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  2,
-                                        "rarity":  7,
-                                        "championName":  "Iron Man (Infamous)",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  "must best for all"
-                                    },
-                          "name":  "Iron Man (Infamous)",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  null
                       },
                       {
-                          "image":  "captainamerica.png",
                           "id":  "captainamericasamwilson",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Captain America (Sam Wilson)",
+                          "class":  "Tech",
+                          "image":  "Captain America (Sam Wilson).png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Captain America (Sam Wilson)",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Captain America (Sam Wilson)",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "omegasentinel.png",
-                          "id":  "omegasentinel",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity",
-                                             "Fate Seal Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Omega Sentinel",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Omega Sentinel",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
-                                       "#Robot",
-                                       "#Metal"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Damage Over Time (DOT)"
-                                         ]
-                      },
-                      {
-                          "image":  "psychoman.png",
-                          "id":  "psychoman",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "omegasentinel",
+                          "name":  "Omega Sentinel",
+                          "class":  "Tech",
+                          "image":  "omegasentinel.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Stagger Immunity",
+                                             "Fate Seal Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Robot"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "psychoman",
+                          "name":  "Psycho-Man",
+                          "class":  "Tech",
+                          "image":  "psychoman.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Psycho-Man",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Psycho-Man",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "peniparker.png",
                           "id":  "peniparker",
-                          "guide":  null,
+                          "name":  "Peni Parker",
+                          "class":  "Tech",
+                          "image":  "peniparker.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Stun Immunity",
                                              "Poison Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Peni Parker",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Peni Parker",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: S",
-                                       "#Metal",
-                                       "#Spider-Verse"
+                                       "#Size: M",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "silvercenturion.png",
                           "id":  "silvercenturion",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Silver Centurion",
+                          "class":  "Tech",
+                          "image":  "silvercenturion.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Silver Centurion",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Silver Centurion",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "nimrod.png",
                           "id":  "nimrod",
-                          "guide":  {
-                                        "whyStory":  "Excellent against Mutant opponents (very common in Story) — shocks them and shuts down their regeneration.",
-                                        "easyToHandle":  "Switch between his two modes and attack — straightforward once you know his 2 modes."
-                                    },
+                          "name":  "Nimrod",
+                          "class":  "Tech",
+                          "image":  "nimrod.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Ability Accuracy Reduction Immunity",
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Nimrod",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: XL",
-                                       "#Robot",
-                                       "#Metal"
+                                       "#Size: M",
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Robot"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Damage Over Time (DOT)",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  "S",
+                          "guide":  {
+                                        "whyStory":  "Excellent against Mutant opponents (very common in Story) — shocks them and shuts down their regeneration.",
+                                        "easyToHandle":  "Switch between his two modes and attack — straightforward once you know his 2 modes."
+                                    }
                       },
                       {
-                          "image":  "guardian.png",
                           "id":  "guardian",
-                          "guide":  null,
+                          "name":  "Guardian",
+                          "class":  "Tech",
+                          "image":  "guardian.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "mysterio",
+                          "name":  "Mysterio",
+                          "class":  "Tech",
+                          "image":  "mysterio.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Science",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Red Guardian",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Guardian",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Support \u0026 Synergy"
-                                         ]
-                      },
-                      {
-                          "image":  "mysterio.png",
-                          "id":  "mysterio",
-                          "guide":  null,
                           "immunities":  [
                                              "Ability Accuracy Reduction Immunity",
                                              "Reverse Control Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Mysterio",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Mysterio",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Spider-Verse"
+                                       "#Villain"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "guillotine2099.png",
                           "id":  "guillotine2099",
-                          "guide":  null,
+                          "name":  "Guillotine 2099",
+                          "class":  "Tech",
+                          "image":  "guillotine2099.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Guillotine 2099",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Guillotine 2099",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Robot",
+                                       "#Hero",
                                        "#Metal",
+                                       "#Robot",
                                        "#Dimensional Being"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "warlock.png",
                           "id":  "warlock",
-                          "guide":  {
-                                        "whyStory":  "Great against buff-heavy or healing enemies; drains their power and blocks their healing.",
-                                        "easyToHandle":  "Fun, forgiving playstyle — good for beginners once basics are known."
-                                    },
-                          "immunities":  [
-                                             "Coldsnap Immunity",
-                                             "Frostbite Immunity",
-                                             "Poison Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Warlock",
+                          "class":  "Tech",
+                          "image":  "warlock.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  4,
-                                        "rarity":  6,
-                                        "championName":  "Warlock",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Warlock",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Frostbite Immunity",
+                                             "Poison Immunity",
+                                             "Coldsnap Immunity",
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
                                        "#Robot"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP"
-                                         ]
+                                             "Damage Over Time (DOT)",
+                                             "Power Control"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  {
+                                        "whyStory":  "Great against buff-heavy or healing enemies; drains their power and blocks their healing.",
+                                        "easyToHandle":  "Fun, forgiving playstyle — good for beginners once basics are known."
+                                    }
                       },
                       {
-                          "image":  "redskull.png",
                           "id":  "redskull",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity",
-                                             "Ability Accuracy Reduction Immunity",
-                                             "Fate Seal Immunity"
-                                         ],
+                          "name":  "Red Skull",
+                          "class":  "Tech",
+                          "image":  "redskull.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Red Skull",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Red Skull",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Ability Accuracy Reduction Immunity",
+                                             "Stagger Immunity",
+                                             "Fate Seal Immunity"
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Villain"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "darkhawk.png",
                           "id":  "darkhawk",
-                          "guide":  null,
+                          "name":  "Darkhawk",
+                          "class":  "Tech",
+                          "image":  "darkhawk.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Darkhawk",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Robot",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "sentinel.png",
                           "id":  "sentinel",
-                          "guide":  null,
+                          "name":  "Sentinel",
+                          "class":  "Tech",
+                          "image":  "sentinel.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  7,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
-                                             "Coldsnap Immunity",
                                              "Frostbite Immunity",
                                              "Poison Immunity",
                                              "Armor Break Immunity",
+                                             "Coldsnap Immunity",
                                              "Bleed Immunity"
                                          ],
+                          "tags":  [
+                                       "#Size: XL",
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Robot"
+                                   ],
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "ironmaninfinitywar",
+                          "name":  "Iron Man (Infinity War)",
+                          "class":  "Tech",
+                          "image":  "iron man( infinity war).png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  7,
-                                        "championName":  "Sentinel",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Sentinel",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: XL",
-                                       "#Robot",
-                                       "#Metal"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "ironman.webp",
-                          "id":  "ironmaninfinitywar",
-                          "guide":  null,
                           "immunities":  [
                                              "Coldsnap Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Iron Man (Infinity War)",
-                                        "reqLvl":  "",
-                                        "futureRank":  3,
-                                        "notes":  ""
-                                    },
-                          "name":  "Iron Man (Infinity War)",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "ghost.png",
                           "id":  "ghost",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Ghost",
+                          "class":  "Tech",
+                          "image":  "ghost.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ghost",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Ghost",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Boss Slayer \u0026 Story MVP",
-                                             "Burst Damage",
-                                             "Evade \u0026 Auto-Block Counter"
-                                         ]
-                      },
-                      {
-                          "image":  "greengoblin.png",
-                          "id":  "greengoblin",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Purify \u0026 Cleanse",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "greengoblin",
+                          "name":  "Green Goblin",
+                          "class":  "Tech",
+                          "image":  "greengoblin.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Green Goblin",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Green Goblin",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Spider-Verse"
+                                       "#Villain"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "yondu.png",
                           "id":  "yondu",
-                          "guide":  null,
+                          "name":  "Yondu",
+                          "class":  "Tech",
+                          "image":  "yondu.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Concussion Immunnity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Yondu",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "vulture.png",
                           "id":  "vulture",
-                          "guide":  null,
+                          "name":  "Vulture",
+                          "class":  "Tech",
+                          "image":  "vulture.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
-                                             "Shock Immunity",
                                              "Nullify Immunity",
+                                             "Shock Immunity",
                                              "Poison Immunity",
                                              "Incinerate Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vulture",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Vulture",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Spider-Verse"
+                                       "#Villain",
+                                       "#Metal"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "spidermanstarkenhanced.png",
                           "id":  "spidermanstarkenhanced",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Spider Man (Stark Enhanced)",
+                          "class":  "Tech",
+                          "image":  "spidermanstarkenhanced.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  2,
-                                        "rarity":  6,
-                                        "championName":  "Spider-Man (Stark Enhanced)",
-                                        "reqLvl":  "",
                                         "futureRank":  4,
                                         "notes":  ""
                                     },
-                          "name":  "Spider Man (Stark Enhanced)",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Burst Damage"
-                                         ]
-                      },
-                      {
-                          "image":  "doctoroctopus.png",
-                          "id":  "doctoroctopus",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Doctor Octopus",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Metal",
+                                       "#Hero",
                                        "#Spider-Verse"
                                    ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Burst Damage",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "nebula.png",
+                          "id":  "doctoroctopus",
+                          "name":  "Doctor Octopus",
+                          "class":  "Tech",
+                          "image":  "doctoroctopus.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "nebula",
-                          "guide":  null,
+                          "name":  "Nebula",
+                          "class":  "Tech",
+                          "image":  "nebula.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Shock Immunity",
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Nebula",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Robot",
+                                       "#Hero",
                                        "#Metal"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
+                                             "Burst Damage",
                                              "Damage Over Time (DOT)"
-                                         ]
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "punisher2099.png",
                           "id":  "punisher2099",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity"
-                                         ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  false,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Punisher 2099",
-                                        "reqLvl":  "",
-                                        "futureRank":  2,
-                                        "notes":  ""
-                                    },
                           "name":  "Punisher 2099",
-                          "storyTier":  null,
                           "class":  "Tech",
+                          "image":  "punisher2099.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  2,
+                                        "notes":  "must best for all"
+                                    },
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Stagger Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "ultronclassic.png",
                           "id":  "ultronclassic",
-                          "guide":  null,
+                          "name":  "Ultron (Classic)",
+                          "class":  "Tech",
+                          "image":  "ultronclassic.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ultron",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Ultron (Classic)",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Robot",
-                                       "#Metal"
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Robot"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "civilwarrior.png",
                           "id":  "civilwarrior",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity"
-                                         ],
+                          "name":  "Civil Warrior",
+                          "class":  "Tech",
+                          "image":  "civilwarrior.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Civil Warrior",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Stagger Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal"
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank",
-                                             "Support \u0026 Synergy"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "howardtheduck.png",
                           "id":  "howardtheduck",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Bleed Immunity"
-                                         ],
+                          "name":  "Howard The Duck",
+                          "class":  "Tech",
+                          "image":  "howardtheduck.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Howard the Duck",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Howard The Duck",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Bleed Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: S"
+                                       "#Size: S",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "rocketracoon.png",
                           "id":  "rocketraccoon",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "name":  "Rocket Raccoon",
+                          "class":  "Tech",
+                          "image":  "rocketracoon.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  true,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Rocket Raccoon",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Rocket Raccoon",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+
+                                         ],
                           "tags":  [
-                                       "#Hero",
-                                       "#Size: S"
+                                       "#Size: S",
+                                       "#Hero"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "kang.png",
                           "id":  "kangtheconqueror",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
-                          "isOwned":  false,
-                          "owned":  null,
                           "name":  "Kang the Conqueror",
-                          "storyTier":  null,
                           "class":  "Tech",
-                          "tags":  [
-                                       "#Villain",
-                                       "#Size: M"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "ironpatriot.png",
-                          "id":  "ironpatriot",
-                          "guide":  null,
-                          "immunities":  [
-
-                                         ],
+                          "image":  "kang.png",
                           "isOwned":  false,
                           "owned":  null,
-                          "name":  "Iron Patriot",
-                          "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "ironman.webp",
-                          "id":  "ironman",
-                          "guide":  null,
                           "immunities":  [
 
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Iron Man",
-                                        "reqLvl":  "",
-                                        "futureRank":  1,
-                                        "notes":  ""
-                                    },
-                          "name":  "Iron Man",
-                          "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
+                                       "#Villain"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "ironpatriot",
+                          "name":  "Iron Patriot",
+                          "class":  "Tech",
+                          "image":  "ironpatriot.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "starlord.png",
-                          "id":  "starlord",
-                          "guide":  null,
-                          "immunities":  [
-
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "Star-Lord",
                           "storyTier":  null,
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Metal"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "guide":  null
                       },
                       {
-                          "image":  "vision.png",
-                          "id":  "vision",
-                          "guide":  {
-                                        "whyStory":  "Smart utility champ good for outlasting enemies and controlling fights with debuffs.",
-                                        "easyToHandle":  "Needs a little strategy/planning but not hard timing — more about picking the right moment."
-                                    },
-                          "immunities":  [
-                                             "Poison Immunity",
-                                             "Bleed Immunity"
-                                         ],
+                          "id":  "ironman",
+                          "name":  "Iron Man",
+                          "class":  "Tech",
+                          "image":  "ironman.webp",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  7,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Vision",
-                                        "reqLvl":  "",
                                         "futureRank":  1,
                                         "notes":  ""
                                     },
-                          "name":  "Vision",
-                          "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech",
-                          "tags":  [
-                                       "#Hero",
-                                       "#Size: M",
-                                       "#Robot",
-                                       "#Avenger"
-                                   ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
-                      },
-                      {
-                          "image":  "visionageofultron.png",
-                          "id":  "visionageofultron",
-                          "guide":  null,
                           "immunities":  [
-                                             "Poison Immunity",
-                                             "Bleed Immunity"
+
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ultron",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Vision (Age of Ultron)",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Robot",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "warmachine.png",
+                          "id":  "starlord",
+                          "name":  "Star-Lord",
+                          "class":  "Tech",
+                          "image":  "starlord.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "vision",
+                          "name":  "Vision",
+                          "class":  "Tech",
+                          "image":  "vision.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  false,
+                                        "rank":  1,
+                                        "futureRank":  1,
+                                        "notes":  ""
+                                    },
+                          "immunities":  [
+                                             "Poison Immunity",
+                                             "Bleed Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Hero",
+                                       "#Metal",
+                                       "#Robot",
+                                       "#Avenger"
+                                   ],
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
+                          "id":  "visionageofultron",
+                          "name":  "Vision (Age of Ultron)",
+                          "class":  "Tech",
+                          "image":  "visionageofultron.png",
+                          "isOwned":  false,
+                          "owned":  null,
+                          "immunities":  [
+                                             "Poison Immunity",
+                                             "Bleed Immunity"
+                                         ],
+                          "tags":  [
+                                       "#Size: M",
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Robot",
+                                       "#Avenger"
+                                   ],
+                          "categories":  "Power Control",
+                          "storyTier":  null,
+                          "guide":  null
+                      },
+                      {
                           "id":  "warmachine",
-                          "guide":  null,
+                          "name":  "War Machine",
+                          "class":  "Tech",
+                          "image":  "warmachine.png",
+                          "isOwned":  false,
+                          "owned":  null,
                           "immunities":  [
                                              "Poison Immunity"
                                          ],
-                          "isOwned":  false,
-                          "owned":  null,
-                          "name":  "War Machine",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Hero",
                                        "#Size: M",
-                                       "#Metal",
-                                       "#Avenger"
+                                       "#Hero",
+                                       "#Metal"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "hulkbuster.png",
                           "id":  "hulkbuster",
-                          "guide":  null,
-                          "immunities":  [
-                                             "Stagger Immunity",
-                                             "Nullify Immunity",
-                                             "Fate Seal Immunity"
-                                         ],
+                          "name":  "Hulkbuster",
+                          "class":  "Tech",
+                          "image":  "hulkbuster.png",
                           "isOwned":  true,
                           "owned":  {
-                                        "class":  "Tech",
+                                        "rarity":  6,
                                         "awaken":  false,
                                         "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Hulkbuster",
-                                        "reqLvl":  "",
                                         "futureRank":  2,
                                         "notes":  ""
                                     },
-                          "name":  "Hulkbuster",
-                          "storyTier":  null,
-                          "class":  "Tech",
+                          "immunities":  [
+                                             "Nullify Immunity",
+                                             "Stagger Immunity",
+                                             "Fate Seal Immunity"
+                                         ],
                           "tags":  [
-                                       "#Hero",
                                        "#Size: XL",
+                                       "#Hero",
                                        "#Metal",
                                        "#Avenger",
                                        "#Gamma"
                                    ],
-                          "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                          "categories":  "Defensive \u0026 Tank",
+                          "storyTier":  null,
+                          "guide":  null
                       },
                       {
-                          "image":  "ultron.png",
                           "id":  "ultron",
-                          "guide":  null,
+                          "name":  "Ultron",
+                          "class":  "Tech",
+                          "image":  "ultron.png",
+                          "isOwned":  true,
+                          "owned":  {
+                                        "rarity":  6,
+                                        "awaken":  true,
+                                        "rank":  1,
+                                        "futureRank":  4,
+                                        "notes":  ""
+                                    },
                           "immunities":  [
                                              "Slow Immunity",
                                              "Poison Immunity",
                                              "Bleed Immunity"
                                          ],
-                          "isOwned":  true,
-                          "owned":  {
-                                        "class":  "Tech",
-                                        "awaken":  true,
-                                        "rank":  1,
-                                        "rarity":  6,
-                                        "championName":  "Ultron",
-                                        "reqLvl":  "",
-                                        "futureRank":  4,
-                                        "notes":  ""
-                                    },
-                          "name":  "Ultron",
-                          "storyTier":  null,
-                          "class":  "Tech",
                           "tags":  [
-                                       "#Villain",
                                        "#Size: M",
-                                       "#Robot",
-                                       "#Metal"
+                                       "#Villain",
+                                       "#Metal",
+                                       "#Robot"
                                    ],
                           "categories":  [
-                                             "Power Control",
-                                             "Defensive \u0026 Tank"
-                                         ]
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ],
+                          "storyTier":  null,
+                          "guide":  null
                       }
                   ],
-    "stats":  {
-                  "sixStars":  192,
-                  "sevenStars":  16,
-                  "ownedChampions":  208,
-                  "totalChampions":  327,
-                  "totalImmunities":  43
-              },
-    "immunities":  {
-                       "Stagger Immunity":  {
-                                                "champions":  [
-                                                                  "Civil Warrior",
-                                                                  "Mister Negative",
-                                                                  "Omega Sentinel",
-                                                                  "Red Skull",
-                                                                  "The Overseer",
-                                                                  "Thing",
-                                                                  "Crossbones",
-                                                                  "Punisher 2099",
-                                                                  "Red Skull",
-                                                                  "Hulk",
-                                                                  "Hulkbuster"
-                                                              ],
-                                                "description":  "",
-                                                "name":  "Stagger Immunity",
-                                                "count":  8
-                                            },
-                       "Stun Immunity":  {
-                                             "champions":  [
-                                                               "Diablo",
-                                                               "Emma Frost",
-                                                               "Gentle",
-                                                               "Hercules",
-                                                               "Kindred",
-                                                               "Kitty Pryde",
-                                                               "Nick Fury",
-                                                               "Rintrah",
-                                                               "Spot",
-                                                               "The Hood",
-                                                               "Viv Vision",
-                                                               "Hulkling",
-                                                               "Wiccan",
-                                                               "Peni Parker",
-                                                               "Air-Walker",
-                                                               "Falcon"
-                                                           ],
-                                             "description":  "This ability allows the Champion to ignore incoming Stun debuffs",
-                                             "name":  "Stun Immunity",
-                                             "count":  13
-                                         },
-                       "Frostbite Immunity":  {
-                                                  "champions":  [
-                                                                    "Absorbing Man",
-                                                                    "Colossus",
-                                                                    "Emma Frost",
-                                                                    "Human Torch",
-                                                                    "Iceman",
-                                                                    "Ironheart",
-                                                                    "Isophyne",
-                                                                    "Karolina Dean",
-                                                                    "Mephisto",
-                                                                    "M’Baku",
-                                                                    "Sabretooth",
-                                                                    "Sasquatch",
-                                                                    "Sentinel",
-                                                                    "Storm (Pyramid X)",
-                                                                    "Thanos (Deathless)",
-                                                                    "Vision (Deathless)",
-                                                                    "Warlock"
-                                                                ],
-                                                  "description":  "",
-                                                  "name":  "Frostbite Immunity",
-                                                  "count":  17
-                                              },
-                       "Reverse Control Immunity":  {
-                                                        "champions":  [
-                                                                          "Ironheart",
-                                                                          "Jack O’Lantern",
-                                                                          "Jean Grey",
-                                                                          "Juggernaut",
-                                                                          "Mister Sinister",
-                                                                          "Moondragon",
-                                                                          "Professor X",
-                                                                          "The Maker",
-                                                                          "Viv Vision",
-                                                                          "Wiccan",
-                                                                          "Hulk",
-                                                                          "The Overseer",
-                                                                          "Hulk (Immortal)",
-                                                                          "The Overseer",
-                                                                          "Hulk (Ragnarok)",
-                                                                          "The Overseer",
-                                                                          "Joe Fixit",
-                                                                          "The Overseer",
-                                                                          "Kitty Pryde",
-                                                                          "Emma Frost",
-                                                                          "Mysterio",
-                                                                          "Emma Frost",
-                                                                          "Prowler",
-                                                                          "Spider-Punk",
-                                                                          "Spider-Punk",
-                                                                          "Prowler",
-                                                                          "Spiral",
-                                                                          "Gambit",
-                                                                          "Rogue",
-                                                                          "The Overseer",
-                                                                          "Hulk",
-                                                                          "Hulk (Immortal)",
-                                                                          "Hulk (Ragnarok)",
-                                                                          "Joe Fixit",
-                                                                          "Vision (Deathless)",
-                                                                          "Thanos (Deathless)"
-                                                                      ],
-                                                        "description":  "Grants immunity to reverse controls",
-                                                        "name":  "Reverse Control Immunity",
-                                                        "count":  21
-                                                    },
-                       "Disintegrate Immunity":  {
-                                                     "champions":  "Imperiosa",
-                                                     "description":  "",
-                                                     "name":  "Disintegrate Immunity",
-                                                     "count":  1
-                                                 },
-                       "Infuriate Immunity":  {
-                                                  "champions":  [
-                                                                    "Kindred",
-                                                                    "The Destroyer"
-                                                                ],
-                                                  "description":  "Gain Immunity to Infuriate Debuff.",
-                                                  "name":  "Infuriate Immunity",
-                                                  "count":  2
-                                              },
-                       "Neuroshock Immunity":  {
-                                                   "champions":  "The Maker",
-                                                   "description":  "",
-                                                   "name":  "Neuroshock Immunity",
-                                                   "count":  1
-                                               },
-                       "Power Steal Immunity":  {
-                                                    "champions":  [
-                                                                      "Blue Marvel",
-                                                                      "Cassie Lang",
-                                                                      "Count Nefaria",
-                                                                      "Hulkling",
-                                                                      "Photon",
-                                                                      "Sauron",
-                                                                      "Spider-Woman"
-                                                                  ],
-                                                    "description":  "",
-                                                    "name":  "Power Steal Immunity",
-                                                    "count":  7
-                                                },
-                       "Death Immunity":  {
-                                              "champions":  [
-                                                                "The Serpent",
-                                                                "Moondragon",
-                                                                "Phyla-Vell"
-                                                            ],
-                                              "description":  "Death Immunity prevents a Champion from being Knocked Out and May confer other benefits.",
-                                              "name":  "Death Immunity",
-                                              "count":  2
-                                          },
-                       "Nova Flame Immunity":  {
-                                                   "champions":  [
-                                                                     "Dark Phoenix",
-                                                                     "Iceman"
-                                                                 ],
-                                                   "description":  "",
-                                                   "name":  "Nova Flame Immunity",
-                                                   "count":  2
-                                               },
-                       "Bad Vibes Immunity":  {
-                                                  "champions":  "Dazzler",
-                                                  "description":  "",
-                                                  "name":  "Bad Vibes Immunity",
-                                                  "count":  1
-                                              },
-                       "Armor Break Immunity":  {
-                                                    "champions":  [
-                                                                      "Absorbing Man",
-                                                                      "Colossus",
-                                                                      "Diablo",
-                                                                      "Doctor Doom",
-                                                                      "Lady Deathstrike",
-                                                                      "Man-Thing",
-                                                                      "Mangog",
-                                                                      "Sasquatch",
-                                                                      "Sentinel",
-                                                                      "The Destroyer",
-                                                                      "Thing",
-                                                                      "Wiccan"
-                                                                  ],
-                                                    "description":  "Immunity to Armor Break, Armor Shatter effects",
-                                                    "name":  "Armor Break Immunity",
-                                                    "count":  12
-                                                },
-                       "Buff immunity":  {
-                                             "champions":  [
-                                                               "Ant-Man",
-                                                               "Black Widow (Claire Voyant)",
-                                                               "Cassie Lang",
-                                                               "High Evolutionary",
-                                                               "Lizard",
-                                                               "Nico Minoru",
-                                                               "Red Guardian",
-                                                               "Spider Man 2099",
-                                                               "Spot",
-                                                               "Titania",
-                                                               "Hulk",
-                                                               "Silver Surfer"
-                                                           ],
-                                             "description":  "Grants immunity to buffs.",
-                                             "name":  "Buff immunity",
-                                             "count":  11
-                                         },
-                       "Fate Seal Immunity":  {
-                                                  "champions":  [
-                                                                    "Galan",
-                                                                    "Mister Negative",
-                                                                    "Omega Sentinel",
-                                                                    "Red Skull",
-                                                                    "Sentry",
-                                                                    "The Champion",
-                                                                    "The Overseer",
-                                                                    "The Serpent",
-                                                                    "Thing",
-                                                                    "Viv Vision",
-                                                                    "Hulk",
-                                                                    "Hulkbuster",
-                                                                    "Mordo",
-                                                                    "Doctor Voodoo",
-                                                                    "Sorcerer Supreme",
-                                                                    "Wiccan",
-                                                                    "Wong"
-                                                                ],
-                                                  "description":  "",
-                                                  "name":  "Fate Seal Immunity",
-                                                  "count":  12
-                                              },
-                       "Wither Immunity":  {
-                                               "champions":  [
-                                                                 "Punisher",
-                                                                 "Thor (Ragnarok)"
-                                                             ],
-                                               "description":  "",
-                                               "name":  "Wither Immunity",
-                                               "count":  2
-                                           },
-                       "Shock Immunity":  {
-                                              "champions":  [
-                                                                "Absorbing Man",
-                                                                "Ant-Man",
-                                                                "Arcade",
-                                                                "Beta Ray Bill",
-                                                                "Cassie Lang",
-                                                                "Doctor Doom",
-                                                                "Dust",
-                                                                "Electro",
-                                                                "Emma Frost",
-                                                                "Hulkling",
-                                                                "Ikaris",
-                                                                "Iron Man (Infamous)",
-                                                                "Korg",
-                                                                "Maestro",
-                                                                "Mole Man",
-                                                                "Nebula",
-                                                                "Sandman",
-                                                                "Scorpion",
-                                                                "Shocker",
-                                                                "Shuri",
-                                                                "Storm",
-                                                                "Super-Skrull",
-                                                                "Terrax",
-                                                                "Thing",
-                                                                "Thor (Ragnarok)",
-                                                                "Vulture",
-                                                                "Kingpin",
-                                                                "Masacre",
-                                                                "Yellow Jacket"
-                                                            ],
-                                              "description":  "Shock Immunity is a Passive Ability that makes a Champion immune to the effects of Shock",
-                                              "name":  "Shock Immunity",
-                                              "count":  26
-                                          },
-                       "Poison Immunity":  {
-                                               "champions":  [
-                                                                 "Abomination",
-                                                                 "Ant-Man",
-                                                                 "Anti-Venom",
-                                                                 "Arcade",
-                                                                 "Arnim Zola",
-                                                                 "Black Bolt",
-                                                                 "Black Tarantula",
-                                                                 "Black Widow (Claire Voyant)",
-                                                                 "Captain Marvel",
-                                                                 "Captain Marvel (Classic)",
-                                                                 "Cassie Lang",
-                                                                 "Darkhawk",
-                                                                 "Dormammu",
-                                                                 "Dragon Man",
-                                                                 "Dust",
-                                                                 "Emma Frost",
-                                                                 "Franken-Castle",
-                                                                 "Guillotine 2099",
-                                                                 "Hobgoblin (Phil Urich)",
-                                                                 "Hulk",
-                                                                 "Hulk (Immortal)",
-                                                                 "Hulk (Ragnarok)",
-                                                                 "Hulkling",
-                                                                 "Hyperion",
-                                                                 "Iceman",
-                                                                 "Joe Fixit",
-                                                                 "Kindred",
-                                                                 "Lizard",
-                                                                 "Maestro",
-                                                                 "Medusa",
-                                                                 "Mephisto",
-                                                                 "Ms. Marvel",
-                                                                 "Ms. Marvel (Kamala Khan)",
-                                                                 "Nebula",
-                                                                 "Nico Minoru",
-                                                                 "Nimrod",
-                                                                 "Omega Red",
-                                                                 "Peni Parker",
-                                                                 "Phyla-Vell",
-                                                                 "Red Hulk",
-                                                                 "Ronan",
-                                                                 "Sandman",
-                                                                 "Sauron",
-                                                                 "Scorpion",
-                                                                 "Sentinel",
-                                                                 "She-Hulk",
-                                                                 "She-Hulk (Deathless)",
-                                                                 "Solvarch",
-                                                                 "Spider-Slayer (J. Jonah Jameson)",
-                                                                 "Spider-Woman",
-                                                                 "Thanos (Deathless)",
-                                                                 "The Destroyer",
-                                                                 "The Leader",
-                                                                 "The Overseer",
-                                                                 "Toad",
-                                                                 "Ultron",
-                                                                 "Ultron (Classic)",
-                                                                 "Vision",
-                                                                 "Vision (Age of Ultron)",
-                                                                 "Vision (Deathless)",
-                                                                 "Viv Vision",
-                                                                 "Vox",
-                                                                 "Warlock",
-                                                                 "Yelena Belova",
-                                                                 "Absorbing Man",
-                                                                 "Abomination (Immortal)",
-                                                                 "Hulk (Immortal)",
-                                                                 "Hawkeye",
-                                                                 "Black Widow",
-                                                                 "Black Widow (Deadly Origin)",
-                                                                 "Nick Fury",
-                                                                 "Quake",
-                                                                 "Vulture",
-                                                                 "Sentry",
-                                                                 "Ultron",
-                                                                 "War Machine"
-                                                             ],
-                                               "description":  "Poison Immunity is a Passive Ability that makes a Champion immune to the effects of Poison",
-                                               "name":  "Poison Immunity",
-                                               "count":  67
-                                           },
-                       "Taunt Immunity":  {
-                                              "champions":  "Mister Sinister",
-                                              "description":  "Gain Immunity to Taunt Debuff.",
-                                              "name":  "Taunt Immunity",
-                                              "count":  1
-                                          },
-                       "Power Lock Immunity":  {
-                                                   "champions":  [
-                                                                     "Enchantress",
-                                                                     "Galan",
-                                                                     "Karolina Dean",
-                                                                     "Phoenix",
-                                                                     "The Serpent",
-                                                                     "Vox"
-                                                                 ],
-                                                   "description":  "Immune to Power Lock.",
-                                                   "name":  "Power Lock Immunity",
-                                                   "count":  6
-                                               },
-                       "Concussion Immunnity":  {
-                                                    "champions":  [
-                                                                      "Shocker",
-                                                                      "Spider-Punk",
-                                                                      "Yondu"
-                                                                  ],
-                                                    "description":  "",
-                                                    "name":  "Concussion Immunnity",
-                                                    "count":  3
-                                                },
-                       "Power Sting Immunity":  {
-                                                    "champions":  "Doctor Bong",
-                                                    "description":  "",
-                                                    "name":  "Power Sting Immunity",
-                                                    "count":  1
-                                                },
-                       "Neutralize Immunity":  {
-                                                   "champions":  [
-                                                                     "High Evolutionary",
-                                                                     "Photon",
-                                                                     "Spider-Woman",
-                                                                     "The Overseer",
-                                                                     "Spider-Man (Supreme)"
-                                                                 ],
-                                                   "description":  "Gain Immunity to Neutralize.",
-                                                   "name":  "Neutralize Immunity",
-                                                   "count":  4
-                                               },
-                       "Petrify Immunity":  {
-                                                "champions":  [
-                                                                  "Daredevil (Hell\u0027s Kitchen)",
-                                                                  "Franken-Castle",
-                                                                  "Kingpin",
-                                                                  "The Champion",
-                                                                  "Wolverine (Weapon X)"
-                                                              ],
-                                                "description":  "",
-                                                "name":  "Petrify Immunity",
-                                                "count":  5
-                                            },
-                       "Intimidate Immunity":  {
-                                                   "champions":  [
-                                                                     "Kindred",
-                                                                     "The Destroyer"
-                                                                 ],
-                                                   "description":  "Gain Immunity to Intimidate Debuff.",
-                                                   "name":  "Intimidate Immunity",
-                                                   "count":  2
-                                               },
-                       "Power Drain Immunity":  {
-                                                    "champions":  [
-                                                                      "Beta Ray Bill",
-                                                                      "Dark Phoenix",
-                                                                      "Galan",
-                                                                      "Gladiator",
-                                                                      "Hulkling",
-                                                                      "Imperiosa",
-                                                                      "King Groot",
-                                                                      "King Groot (Deathless)",
-                                                                      "Phoenix",
-                                                                      "Vox",
-                                                                      "Thanos (Deathless)",
-                                                                      "Vision (Deathless)"
-                                                                  ],
-                                                    "description":  "",
-                                                    "name":  "Power Drain Immunity",
-                                                    "count":  11
-                                                },
-                       "Delirium Immunity":  {
-                                                 "champions":  "Ruby Thursday",
-                                                 "description":  "",
-                                                 "name":  "Delirium Immunity",
-                                                 "count":  1
-                                             },
-                       "Rupture Immunity":  {
-                                                "champions":  [
-                                                                  "High Evolutionary",
-                                                                  "Lady Deathstrike",
-                                                                  "Lumatrix",
-                                                                  "Madelyne Pryor",
-                                                                  "Nico Minoru",
-                                                                  "Scorpion",
-                                                                  "Spider-Punk",
-                                                                  "She-Hulk (Deathless)",
-                                                                  "Thanos (Deathless)"
-                                                              ],
-                                                "description":  "",
-                                                "name":  "Rupture Immunity",
-                                                "count":  8
-                                            },
-                       "Nullify Immunity":  {
-                                                "champions":  [
-                                                                  "Civil Warrior",
-                                                                  "Dazzler",
-                                                                  "Doctor Bong",
-                                                                  "Galan",
-                                                                  "Mister Negative",
-                                                                  "Omega Sentinel",
-                                                                  "Red Skull",
-                                                                  "Sentry",
-                                                                  "The Overseer",
-                                                                  "Thing",
-                                                                  "Viv Vision",
-                                                                  "White Tiger",
-                                                                  "Crossbones",
-                                                                  "Punisher 2099",
-                                                                  "Red Skull",
-                                                                  "Hulk",
-                                                                  "Hulkbuster",
-                                                                  "Mangog",
-                                                                  "Odin",
-                                                                  "Mordo",
-                                                                  "Doctor Voodoo",
-                                                                  "Sorcerer Supreme",
-                                                                  "Wiccan",
-                                                                  "Wong",
-                                                                  "Vulture",
-                                                                  "Prowler"
-                                                              ],
-                                                "description":  "",
-                                                "name":  "Nullify Immunity",
-                                                "count":  17
-                                            },
-                       "Precision Immunity":  {
-                                                  "champions":  "Bullseye",
-                                                  "description":  "",
-                                                  "name":  "Precision Immunity",
-                                                  "count":  1
-                                              },
-                       "Ability Accuracy Reduction Immunity":  {
-                                                                   "champions":  [
-                                                                                     "Archangel",
-                                                                                     "Ironheart",
-                                                                                     "Lady Deathstrike",
-                                                                                     "Longshot",
-                                                                                     "Mordo",
-                                                                                     "Mysterio",
-                                                                                     "Nimrod",
-                                                                                     "Old Man Logan",
-                                                                                     "Red Skull",
-                                                                                     "Shuri"
-                                                                                 ],
-                                                                   "description":  "Ability Accuracy cannot be reduced.",
-                                                                   "name":  "Ability Accuracy Reduction Immunity",
-                                                                   "count":  10
-                                                               },
-                       "Heal Block Immunity":  {
-                                                   "champions":  [
-                                                                     "Dracula",
-                                                                     "Gorr",
-                                                                     "Kindred",
-                                                                     "Lady Deathstrike",
-                                                                     "Lizard",
-                                                                     "Phoenix",
-                                                                     "The Champion",
-                                                                     "The Serpent",
-                                                                     "Werewolf By Night"
-                                                                 ],
-                                                   "description":  "",
-                                                   "name":  "Heal Block Immunity",
-                                                   "count":  9
-                                               },
-                       "Armor Shattered Immunity":  {
-                                                        "champions":  [
-                                                                          "Absorbing Man",
-                                                                          "Colossus",
-                                                                          "Doctor Doom",
-                                                                          "Dragon Man",
-                                                                          "Man-Thing",
-                                                                          "Thing"
-                                                                      ],
-                                                        "description":  "",
-                                                        "name":  "Armor Shattered Immunity",
-                                                        "count":  6
-                                                    },
-                       "Slow Immunity":  {
-                                             "champions":  [
-                                                               "The Destroyer",
-                                                               "Ultron"
-                                                           ],
-                                             "description":  "",
-                                             "name":  "Slow Immunity",
-                                             "count":  2
-                                         },
-                       "Fatigue Immunity":  {
-                                                "champions":  "Bullseye",
-                                                "description":  "",
-                                                "name":  "Fatigue Immunity",
-                                                "count":  1
-                                            },
-                       "Coldsnap Immunity":  {
-                                                 "champions":  [
-                                                                   "Absorbing Man",
-                                                                   "Colossus",
-                                                                   "Emma Frost",
-                                                                   "Human Torch",
-                                                                   "Iceman",
-                                                                   "Iron Man (Infinity War)",
-                                                                   "Ironheart",
-                                                                   "Isophyne",
-                                                                   "Karolina Dean",
-                                                                   "Mephisto",
-                                                                   "Sabretooth",
-                                                                   "Sentinel",
-                                                                   "Storm (Pyramid X)",
-                                                                   "Thanos (Deathless)",
-                                                                   "The Serpent",
-                                                                   "Vision (Deathless)",
-                                                                   "Warlock",
-                                                                   "Doctor Strange",
-                                                                   "Dormammu",
-                                                                   "Storm",
-                                                                   "Storm (Pyramid X)"
-                                                               ],
-                                                 "description":  "Coldsnap immunity is an ability that allows a champion to not take damage from cold damage.",
-                                                 "name":  "Coldsnap Immunity",
-                                                 "count":  19
-                                             },
-                       "Spectre Immunity":  {
-                                                "champions":  "Franken-Castle",
-                                                "description":  "",
-                                                "name":  "Spectre Immunity",
-                                                "count":  1
-                                            },
-                       "Falter Immunity":  {
-                                               "champions":  [
-                                                                 "Prowler",
-                                                                 "Spiral"
-                                                             ],
-                                               "description":  "",
-                                               "name":  "Falter Immunity",
-                                               "count":  2
-                                           },
-                       "Disorient Immunity":  {
-                                                  "champions":  "Apocalypse",
-                                                  "description":  "",
-                                                  "name":  "Disorient Immunity",
-                                                  "count":  1
-                                              },
-                       "Bleed Immunity":  {
-                                              "champions":  [
-                                                                "Absorbing Man",
-                                                                "Apocalypse",
-                                                                "Arnim Zola",
-                                                                "Black Widow (Claire Voyant)",
-                                                                "Blue Marvel",
-                                                                "Colossus",
-                                                                "Cosmic Ghost Rider",
-                                                                "Count Nefaria",
-                                                                "Darkhawk",
-                                                                "Dormammu",
-                                                                "Dragon Man",
-                                                                "Dust",
-                                                                "Emma Frost",
-                                                                "Gentle",
-                                                                "Ghost Rider",
-                                                                "Groot",
-                                                                "Guillotine 2099",
-                                                                "Howard The Duck",
-                                                                "Iceman",
-                                                                "Imperiosa",
-                                                                "Iron Man (Infinity War)",
-                                                                "Isophyne",
-                                                                "King Groot",
-                                                                "King Groot (Deathless)",
-                                                                "Korg",
-                                                                "Kushala",
-                                                                "Luke Cage",
-                                                                "Lumatrix",
-                                                                "Madelyne Pryor",
-                                                                "Magneto (House of X)",
-                                                                "Man-Thing",
-                                                                "Mangog",
-                                                                "Morningstar",
-                                                                "Nebula",
-                                                                "Nimrod",
-                                                                "Photon",
-                                                                "Prowler",
-                                                                "Sandman",
-                                                                "Sentinel",
-                                                                "Solvarch",
-                                                                "Spider-Slayer (J. Jonah Jameson)",
-                                                                "Terrax",
-                                                                "The Destroyer",
-                                                                "Thing",
-                                                                "Ultron",
-                                                                "Ultron (Classic)",
-                                                                "Unstoppable Colossus",
-                                                                "Vision",
-                                                                "Vision (Age of Ultron)",
-                                                                "Vision (Deathless)",
-                                                                "Viv Vision",
-                                                                "Warlock",
-                                                                "Kraven",
-                                                                "Arcade",
-                                                                "Magik",
-                                                                "Purgatory",
-                                                                "Mephisto",
-                                                                "Purgatory",
-                                                                "Purgatory",
-                                                                "Dormammu",
-                                                                "Magik",
-                                                                "Mephisto",
-                                                                "The Hood",
-                                                                "The Hood",
-                                                                "Purgatory",
-                                                                "Titania",
-                                                                "Absorbing Man"
-                                                            ],
-                                              "description":  "Bleed Immunity is a Passive Ability that makes a Champion immune to the effects of Bleed",
-                                              "name":  "Bleed Immunity",
-                                              "count":  58
-                                          },
-                       "Power Burn Immunity":  {
-                                                   "champions":  [
-                                                                     "Galan",
-                                                                     "Gladiator",
-                                                                     "Hulkling",
-                                                                     "King Groot",
-                                                                     "King Groot (Deathless)",
-                                                                     "Phoenix",
-                                                                     "Red Goblin",
-                                                                     "Vox",
-                                                                     "Thanos (Deathless)",
-                                                                     "Vision (Deathless)"
-                                                                 ],
-                                                   "description":  "",
-                                                   "name":  "Power Burn Immunity",
-                                                   "count":  9
-                                               },
-                       "Crush Immunity":  {
-                                              "champions":  "Solvarch",
-                                              "description":  "",
-                                              "name":  "Crush Immunity",
-                                              "count":  1
-                                          },
-                       "Special Lock Immunity":  {
-                                                     "champions":  [
-                                                                       "Galan",
-                                                                       "Imperiosa",
-                                                                       "Karolina Dean",
-                                                                       "Phoenix",
-                                                                       "Phyla-Vell",
-                                                                       "The Serpent",
-                                                                       "Vox",
-                                                                       "Venompool",
-                                                                       "Spider-Man (Supreme)"
-                                                                   ],
-                                                     "description":  "",
-                                                     "name":  "Special Lock Immunity",
-                                                     "count":  8
-                                                 },
-                       "Incinerate Immunity":  {
-                                                   "champions":  [
-                                                                     "Absorbing Man",
-                                                                     "Anti-Venom",
-                                                                     "Apocalypse",
-                                                                     "Arcade",
-                                                                     "Attuma",
-                                                                     "Black Widow (Claire Voyant)",
-                                                                     "Colossus",
-                                                                     "Cosmic Ghost Rider",
-                                                                     "Dark Phoenix",
-                                                                     "Emma Frost",
-                                                                     "Ghost Rider",
-                                                                     "Havok",
-                                                                     "Human Torch",
-                                                                     "Iceman",
-                                                                     "Ikaris",
-                                                                     "Iron Man (Infamous)",
-                                                                     "Ironheart",
-                                                                     "Jack O’Lantern",
-                                                                     "Kindred",
-                                                                     "Kitty Pryde",
-                                                                     "Kushala",
-                                                                     "Maestro",
-                                                                     "Night Thrasher",
-                                                                     "Peni Parker",
-                                                                     "Phoenix",
-                                                                     "Prowler",
-                                                                     "Purgatory",
-                                                                     "Red Goblin",
-                                                                     "Red Hulk",
-                                                                     "Sentry",
-                                                                     "Sunspot",
-                                                                     "Super-Skrull",
-                                                                     "Void",
-                                                                     "Vulture",
-                                                                     "Dazzler",
-                                                                     "Kitty Pryde",
-                                                                     "Dormammu",
-                                                                     "Doctor Strange",
-                                                                     "Storm",
-                                                                     "Storm (Pyramid X)",
-                                                                     "Venompool",
-                                                                     "Human Torch",
-                                                                     "Red Hulk",
-                                                                     "Sunspot"
-                                                                 ],
-                                                   "description":  "Incinerate Immunity is a Passive Ability that makes a Champion immune to the effects of Incinerate",
-                                                   "name":  "Incinerate Immunity",
-                                                   "count":  38
-                                               }
-                   },
-    "glossary":  [
-                     {
-                         "term":  "Story content",
-                         "definition":  "The main quests/missions you play through to progress in the game."
-                     },
-                     {
-                         "term":  "All-rounder",
-                         "definition":  "A champion who performs well in almost every situation — a safe, flexible choice."
-                     },
-                     {
-                         "term":  "Node remover",
-                         "definition":  "Some quest paths have special rules (\u0027nodes\u0027) that make fights harder. These champs can cancel or shrink those rules."
-                     },
-                     {
-                         "term":  "Parry",
-                         "definition":  "Well-timed block right before an opponent lands a basic strike, inflicting a Stun debuff (requires Parry mastery)."
-                     },
-                     {
-                         "term":  "Dexterity (Dex)",
-                         "definition":  "Dashing backwards at the exact moment of an incoming strike to evade damage completely and gain a Precision buff."
-                     },
-                     {
-                         "term":  "Buff vs Passive",
-                         "definition":  "Buffs have circular borders and can be Nullified/Staggered by Mystics. Passives are raw symbols with NO border and CANNOT be Nullified."
-                     },
-                     {
-                         "term":  "DoT (Damage over Time)",
-                         "definition":  "Effects that drain health continuously like Bleed, Poison, Incinerate, Shock, Degeneration, Coldsnap, and Plasma."
-                     },
-                     {
-                         "term":  "Fate Seal vs Nullify",
-                         "definition":  "Nullify removes active buffs on the opponent immediately. Fate Seal prevents ANY new buffs from triggering for the duration."
-                     },
-                     {
-                         "term":  "Stagger",
-                         "definition":  "A debuff placed on the enemy. The next time they would gain a buff, that buff is immediately nullified instead."
-                     },
-                     {
-                         "term":  "Cleanse / Shrug-off",
-                         "definition":  "Mechanic that instantly removes debuffs inflicted on your champion (e.g. Jabari Panther, Kingpin, Silk, Crossbones)."
-                     },
-                     {
-                         "term":  "Intercepting",
-                         "definition":  "Attacking the defender while they are dashing toward you, hitting them before their attack lands without needing to parry."
-                     },
-                     {
-                         "term":  "Baiting Specials",
-                         "definition":  "Holding block, dashing back, or pacing distance to convince the defender to throw their Special 1 or Special 2 instead of reaching an unblockable Special 3."
-                     },
-                     {
-                         "term":  "True Strike / True Sense",
-                         "definition":  "Ignores Armor, Resistances, Auto-Block, and Evade entirely."
-                     },
-                     {
-                         "term":  "Unstoppable / Unblockable",
-                         "definition":  "Unstoppable means attacks won\u0027t interrupt their animations. Unblockable means holding block will not mitigate incoming attacks."
-                     }
-                 ],
     "nodePresets":  [
                         {
-                            "counterAdvice":  "Bring Double-Immune champions (Bleed AND Poison immune) like Absorbing Man, Warlock, Colossus, Sentinel, BWCV, or automatic Cleanse champions like Silk or Kingpin.",
+                            "id":  "biohazard",
+                            "name":  "Biohazard (Bleed + Poison)",
+                            "icon":  "\u2623\uFE0F",
+                            "description":  "Hitting into defender\u0027s block inflicts Bleed (100% chance). Direct hits inflict Poison (20% chance).",
+                            "counterAdvice":  "Bring dual Bleed + Poison immune champions or robotic entities (e.g. Nimrod, Warlock, Ultron, Red Nebula).",
                             "requiredImmunities":  [
                                                        "Bleed Immunity",
                                                        "Poison Immunity"
-                                                   ],
-                            "id":  "biohazard",
-                            "category":  "Hazard / DoT",
-                            "name":  "Biohazard (Bleed + Poison)",
-                            "description":  "Hitting into defender\u0027s block inflicts Bleed (100% chance). Direct hits inflict Poison (20% chance).",
-                            "recommendedChampions":  [
-                                                         "Absorbing Man",
-                                                         "Warlock",
-                                                         "Colossus",
-                                                         "Sentinel",
-                                                         "Black Widow (Claire Voyant)",
-                                                         "Ultron",
-                                                         "Dragon Man",
-                                                         "King Groot"
-                                                     ],
-                            "icon":  "☣️"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Use multi-elemental immune champions or stance switchers who negate energy debuffs (Absorbing Man, Human Torch, Storm PX, BWCV, Ultron).",
+                            "id":  "hazard_shift",
+                            "name":  "Hazard Shift (Incinerate / Shock / Coldsnap)",
+                            "icon":  "\u26A1\uD83D\uDD25",
+                            "description":  "Periodically cycles between energy hazards. Every hit received or dealt applies the active debuff.",
+                            "counterAdvice":  "Bring multi-energy immune champions (e.g. Silver Surfer, Absorbing Man, Human Torch, Storm X).",
                             "requiredImmunities":  [
                                                        "Incinerate Immunity",
                                                        "Shock Immunity",
                                                        "Coldsnap Immunity"
-                                                   ],
-                            "id":  "hazard_shift",
-                            "category":  "Hazard / DoT",
-                            "name":  "Hazard Shift (Incinerate / Shock / Coldsnap)",
-                            "description":  "Periodically cycles between energy hazards. Every hit received or dealt applies the active debuff.",
-                            "recommendedChampions":  [
-                                                         "Absorbing Man",
-                                                         "Human Torch",
-                                                         "Black Widow (Claire Voyant)",
-                                                         "Storm (Pyramid X)",
-                                                         "Ultron",
-                                                         "Iceman"
-                                                     ],
-                            "icon":  "⚡🔥"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Bleed-immune champions completely negate Caltrops, letting you dash back and dex freely.",
+                            "id":  "caltrops",
+                            "name":  "Caltrops (Bleed on Dash Back)",
+                            "icon":  "\uD83E\uDE78",
+                            "description":  "Dashing backwards inflicts a heavy Bleed taking 100% of attack as direct damage over 15 seconds.",
+                            "counterAdvice":  "Bring 100% Bleed immune champions or shruggers (e.g. Kingpin, Colossus, Ghost, Magneto).",
                             "requiredImmunities":  [
                                                        "Bleed Immunity"
-                                                   ],
-                            "id":  "caltrops",
-                            "category":  "Hazard / DoT",
-                            "name":  "Caltrops (Bleed on Dash Back)",
-                            "description":  "Dashing backwards inflicts a heavy Bleed taking 100% of attack as direct damage over 15 seconds.",
-                            "recommendedChampions":  [
-                                                         "Cosmic Ghost Rider",
-                                                         "Colossus",
-                                                         "Doctor Doom",
-                                                         "Warlock",
-                                                         "Absorbing Man",
-                                                         "Apocalypse",
-                                                         "Kushala",
-                                                         "Nimrod"
-                                                     ],
-                            "icon":  "🩸"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Bring Shock-immune champions or champions who use Passives instead of active Buffs (Titania, Hulk, Red Guardian, Spot, Cassie Lang).",
-                            "requiredImmunities":  [
-                                                       "Shock Immunity",
-                                                       "Buff immunity"
-                                                   ],
                             "id":  "emp_modification",
-                            "category":  "Hazard / DoT",
                             "name":  "EMP Modification (Shock on Buffs)",
+                            "icon":  "\u26A1",
                             "description":  "Whenever an attacker\u0027s Buff expires, they suffer a burst of direct Shock damage.",
-                            "recommendedChampions":  [
-                                                         "Doctor Doom",
-                                                         "Titania",
-                                                         "Red Guardian",
-                                                         "Thing",
-                                                         "Absorbing Man",
-                                                         "Silver Surfer",
-                                                         "Storm (Pyramid X)"
-                                                     ],
-                            "icon":  "⚡"
+                            "counterAdvice":  "Bring buffless champions or 100% Shock immune champions (e.g. Doctor Doom, Korg, Thing, Hulk).",
+                            "requiredImmunities":  [
+                                                       "Shock Immunity"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Incinerate immune champions negate the aura damage completely. Human Torch actually gets HEALED and builds Smolders.",
+                            "id":  "mephisto_incinerate",
+                            "name":  "Aura of Incineration (Mephisto / Sunspot)",
+                            "icon":  "\uD83D\uDD25",
+                            "description":  "Constant proximity burning aura dealing severe passive energy damage over time.",
+                            "counterAdvice":  "Incinerate immune champions are mandatory. Void, Human Torch, Red Hulk excel here.",
                             "requiredImmunities":  [
                                                        "Incinerate Immunity"
-                                                   ],
-                            "id":  "mephisto_incinerate",
-                            "category":  "Hazard / DoT",
-                            "name":  "Aura of Incineration (Mephisto / Sunspot)",
-                            "description":  "Constant proximity burning aura dealing severe passive energy damage over time.",
-                            "recommendedChampions":  [
-                                                         "Human Torch",
-                                                         "Absorbing Man",
-                                                         "Colossus",
-                                                         "Iceman",
-                                                         "Red Hulk",
-                                                         "Mephisto",
-                                                         "Kushala",
-                                                         "Havok"
-                                                     ],
-                            "icon":  "🔥"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Use Heal Block / Petrify champions (Scorpion, Void, Warlock, Mister Fantastic) or Stagger / Fate Seal (Doom, Kushala, BWCV).",
-                            "requiredImmunities":  [
-                                                       "Fate Seal Immunity",
-                                                       "Petrify Immunity",
-                                                       "Buff immunity"
-                                                   ],
                             "id":  "buffet_masochism",
-                            "category":  "Regeneration / Defense",
                             "name":  "Buffet / Masochism (Regen on Buffs/Debuffs)",
+                            "icon":  "\uD83D\uDD04",
                             "description":  "Defender consumes buffs or shrugs off debuffs to regenerate 5-7% max health every 7 seconds.",
-                            "recommendedChampions":  [
-                                                         "Doctor Doom",
-                                                         "Kushala",
-                                                         "Warlock",
-                                                         "Scorpion",
-                                                         "Void",
-                                                         "Human Torch",
-                                                         "Titania"
-                                                     ],
-                            "icon":  "🩹"
+                            "counterAdvice":  "Bring heal block, petrify, or stagger champions (e.g. Void, Warlock, Guillotine 2099, Archangel).",
+                            "requiredImmunities":  [
+                                                       "Heal Block Immunity"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Bring strict Power Lock, Power Burn, or Enervate specialists (Infamous Iron Man, Doom, Magik, Viv Vision, Wiccan, Absorbing Man).",
+                            "id":  "power_gain_spite",
+                            "name":  "Power Gain / Spite / All or Nothing",
+                            "icon":  "\u26A1",
+                            "description":  "Defender gains rapid Power or gains power when you buff, rushing to unblockable Special 3.",
+                            "counterAdvice":  "Power lock, power drain, or enervate counters (e.g. Magik, Doctor Doom, Galan, Spider-Man 2099).",
                             "requiredImmunities":  [
                                                        "Power Drain Immunity",
-                                                       "Power Lock Immunity",
                                                        "Power Burn Immunity"
-                                                   ],
-                            "id":  "power_gain_spite",
-                            "category":  "Power Control",
-                            "name":  "Power Gain / Spite / All or Nothing",
-                            "description":  "Defender gains rapid Power or gains power when you buff, rushing to unblockable Special 3.",
-                            "recommendedChampions":  [
-                                                         "Doctor Doom",
-                                                         "Iron Man (Infamous)",
-                                                         "Viv Vision",
-                                                         "Wiccan",
-                                                         "Absorbing Man",
-                                                         "Nimrod",
-                                                         "Magik"
-                                                     ],
-                            "icon":  "🔋"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Use Slow debuffs (Silk, Shang-Chi, She-Hulk, Spider-Gwen, Valkyrie) which disable Unstoppable and Evade, or intercept specialists.",
-                            "requiredImmunities":  [
-                                                       "Stun Immunity",
-                                                       "Slow Immunity"
-                                                   ],
                             "id":  "unstoppable_stun_immune",
-                            "category":  "Combat Mechanics",
                             "name":  "Unstoppable / Stun Immune / Aspect of War",
+                            "icon":  "\uD83D\uDEE1\uFE0F",
                             "description":  "Defender cannot be stunned via Parry or enters frequent Unstoppable phases that cannot be hit.",
-                            "recommendedChampions":  [
-                                                         "Silk",
-                                                         "Shang-Chi",
-                                                         "She-Hulk",
-                                                         "Valkyrie",
-                                                         "Hit-Monkey",
-                                                         "Kate Bishop",
-                                                         "Photon"
-                                                     ],
-                            "icon":  "🛡️"
-                        },
-                        {
-                            "counterAdvice":  "Use True Strike / True Sense / Coldsnap / Slow anti-evade champions (Kate Bishop, Bullseye, Nick Fury, Shang-Chi, Iceman, Professor X).",
+                            "counterAdvice":  "Bring Slow debuff champions or passive staggers (e.g. She-Hulk, Shang-Chi, Quicksilver, Spider-Gwen).",
                             "requiredImmunities":  [
-                                                       "Coldsnap Immunity"
-                                                   ],
-                            "id":  "evade_autoblock",
-                            "category":  "Combat Mechanics",
-                            "name":  "Evade / Auto-Block Mechanics",
-                            "description":  "Defenders randomly evade attacks or auto-block mid-combo, triggering stun or counters.",
-                            "recommendedChampions":  [
-                                                         "Kate Bishop",
-                                                         "Bullseye",
-                                                         "Shang-Chi",
-                                                         "Nick Fury",
-                                                         "Professor X",
-                                                         "Iceman",
-                                                         "Hit-Monkey"
-                                                     ],
-                            "icon":  "💨"
+                                                       "Stun Immunity"
+                                                   ]
                         },
                         {
-                            "counterAdvice":  "Champions immune to Reverse Controls maintain standard controls during the fight (Magneto, Professor X, Emma Frost, Mister Sinister, Juggernaut).",
+                            "id":  "evade_autoblock",
+                            "name":  "Evade / Auto-Block Mechanics",
+                            "icon":  "\uD83C\uDFAF",
+                            "description":  "Defenders randomly evade attacks or auto-block mid-combo, triggering stun or counters.",
+                            "counterAdvice":  "Bring True Strike, True Sense, or Cold/Decelerate counters (e.g. Nick Fury, Hercules, Kate Bishop, Falcon).",
+                            "requiredImmunities":  [
+
+                                                   ]
+                        },
+                        {
+                            "id":  "reverse_controls",
+                            "name":  "Reverse Controls (Grandmaster / Delirium)",
+                            "icon":  "\uD83C\uDF00",
+                            "description":  "Left becomes Right, Dash forward becomes Dash backward, and controls are inverted.",
+                            "counterAdvice":  "Reverse Control Immune champions ignore control flipping (e.g. Magneto White, Professor X, Emma Frost, Mister Sinister).",
                             "requiredImmunities":  [
                                                        "Reverse Control Immunity"
-                                                   ],
-                            "id":  "reverse_controls",
-                            "category":  "Controls \u0026 Mind",
-                            "name":  "Reverse Controls (Grandmaster / Delirium)",
-                            "description":  "Left becomes Right, Dash forward becomes Dash backward, and controls are inverted.",
-                            "recommendedChampions":  [
-                                                         "Magneto (House of X)",
-                                                         "Professor X",
-                                                         "Emma Frost",
-                                                         "Mister Sinister",
-                                                         "Juggernaut",
-                                                         "Kitty Pryde"
-                                                     ],
-                            "icon":  "🔄"
+                                                   ]
                         }
                     ],
-    "storyTiers":  {
-                       "sTier":  {
-                                     "Tech":  [
-                                                  "Nimrod",
-                                                  "Shuri",
-                                                  "Iron Man (Infamous)",
-                                                  "Viv Vision",
-                                                  "Ironheart"
-                                              ],
-                                     "Cosmic":  [
-                                                    "Hercules",
-                                                    "The Serpent",
-                                                    "Hulkling",
-                                                    "Cosmic Ghost Rider",
-                                                    "Vox"
-                                                ],
-                                     "Science":  [
-                                                     "Silk",
-                                                     "Photon",
-                                                     "Human Torch",
-                                                     "Scorpion",
-                                                     "Spider-Ham"
-                                                 ],
-                                     "Mystic":  [
-                                                    "Kushala",
-                                                    "Doctor Doom",
-                                                    "Black Widow (Claire Voyant)",
-                                                    "Wiccan",
-                                                    "Nico Minoru"
-                                                ],
-                                     "Mutant":  [
-                                                    "Onslaught",
-                                                    "Archangel",
-                                                    "Magneto",
-                                                    "Domino",
-                                                    "Apocalypse"
-                                                ],
-                                     "Skill":  [
-                                                   "Kate Bishop",
-                                                   "Bullseye",
-                                                   "Hit-Monkey",
-                                                   "Yelena Belova",
-                                                   "Nick Fury"
-                                               ]
-                                 },
-                       "bestByClass":  {
-                                           "Tech":  [
-                                                        "Bastion",
-                                                        "Shuri",
-                                                        "Iron Man (Infamous)",
-                                                        "Red Skull",
-                                                        "yondu",
-                                                        "Rocket Raccoon",
-                                                        "Ultron",
-                                                        "Ironheart",
-                                                        "Viv Vision",
-                                                        "Arcade",
-                                                        "Guillotine 2099"
-                                                    ],
-                                           "Cosmic":  [
-                                                          "The Champion",
-                                                          "Red Goblin",
-                                                          "Ronan",
-                                                          "Vox",
-                                                          "The Serpent",
-                                                          "Gamora",
-                                                          "Knull",
-                                                          "Odin",
-                                                          "venom",
-                                                          "Venompool",
-                                                          "Galan",
-                                                          "Support",
-                                                          "Heimdall",
-                                                          "Hela",
-                                                          "Odin"
-                                                      ],
-                                           "Science":  [
-                                                           "Human Torch",
-                                                           "Anti-Venom",
-                                                           "She-Hulk",
-                                                           "Spider-Woman",
-                                                           "Count Nefaria",
-                                                           "Immortal Hulk",
-                                                           "Hulk",
-                                                           "Void",
-                                                           "Spider-Man (Classic)",
-                                                           "Spider-Man (Miles Morales)",
-                                                           "Joe Fixit"
-                                                       ],
-                                           "Mystic":  [
-                                                          "Spider-Man (India)",
-                                                          "Wiccan",
-                                                          "Black Widow (Claire Voyant)",
-                                                          "Nico Minoru",
-                                                          "Ghost Rider",
-                                                          "Doctor Strange",
-                                                          "Doctor Voodoo",
-                                                          "Wong",
-                                                          "Purgatory",
-                                                          "Sasquatch",
-                                                          "Longshot",
-                                                          "1 time Death Free, fury",
-                                                          "Pre-Fight"
-                                                      ],
-                                           "Mutant":  [
-                                                          "Captain Britain",
-                                                          "Sunspot",
-                                                          "Iceman",
-                                                          "Omega Red",
-                                                          "Wolverine (Weapon X)",
-                                                          "Mister Sinister",
-                                                          "Magneto",
-                                                          "Magneto (House of X)",
-                                                          "Jean Grey",
-                                                          "Toad",
-                                                          "Domino"
-                                                      ],
-                                           "Skill":  [
-                                                         "Okoye",
-                                                         "Valkyrie",
-                                                         "Hit-Monkey",
-                                                         "Elsa Bloodstone",
-                                                         "Baron Zemo",
-                                                         "Hawkeye",
-                                                         "Chee\u0027ilth",
-                                                         "Attuma",
-                                                         "Mole Man",
-                                                         "Mister Knight",
-                                                         "Yelena Belova"
-                                                     ]
-                                       }
-                   },
+    "glossary":  [
+                     {
+                         "term":  "Parry",
+                         "definition":  "Well-timed block right as defender strikes, stunning them and opening them up for combos."
+                     },
+                     {
+                         "term":  "Dexterity",
+                         "definition":  "Dodge backward at the moment of an enemy projectile or basic attack to avoid damage completely."
+                     },
+                     {
+                         "term":  "Stagger / Nullify",
+                         "definition":  "Removes active or incoming beneficial buffs from the opponent."
+                     },
+                     {
+                         "term":  "Shrug-off / Cleanse",
+                         "definition":  "Instantly purifies or ignores incoming negative status effects/debuffs."
+                     },
+                     {
+                         "term":  "Power Lock \u0026 Power Burn",
+                         "definition":  "Prevents opponent from gaining power (Lock) or drains power while inflicting direct energy damage (Burn)."
+                     },
+                     {
+                         "term":  "Fate Seal",
+                         "definition":  "Completely blocks opponent from triggering any new buffs for the duration."
+                     },
+                     {
+                         "term":  "True Strike / True Sense",
+                         "definition":  "Attacks completely ignore opponent Armor, Resistances, Auto-Block, and Evade."
+                     },
+                     {
+                         "term":  "Slow",
+                         "definition":  "Reduces opponent Evade and Unstoppable ability accuracy by 100% (except against natural class disadvantage)."
+                     }
+                 ],
     "masterTags":  [
                        "#Hero",
                        "#Villain",
@@ -10831,5 +8605,11 @@ window.MCOC_DATA = {
                              "Purify \u0026 Cleanse",
                              "Support \u0026 Synergy",
                              "Boss Slayer \u0026 Story MVP"
-                         ]
+                         ],
+    "stats":  {
+                  "totalChampions":  327,
+                  "ownedChampions":  190,
+                  "sevenStarChampions":  46,
+                  "sixStarChampions":  144
+              }
 };
