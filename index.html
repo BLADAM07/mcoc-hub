@@ -178,58 +178,73 @@
         </div>
       </div>
 
-      <!-- Filters Row -->
-      <div class="flex flex-wrap items-center justify-between gap-3 glass-panel p-3.5 rounded-xl border border-slate-800">
-        <!-- Class Filter Icon Toggles -->
-        <div class="flex items-center gap-2 flex-wrap">
-          <span class="text-xs text-slate-400 font-bold mr-1">Class:</span>
-          <button onclick="resetRosterClassFilter()" id="roster-class-all-btn" class="class-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
-          <div class="flex items-center flex-wrap gap-1.5 shrink-0" id="roster-class-icons">
-            <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
-              <input type="checkbox" name="roster_class[]" value="Science" onchange="handleRosterClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/science.svg" alt="Science" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
-              <input type="checkbox" name="roster_class[]" value="Skill" onchange="handleRosterClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/skill.svg" alt="Skill" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
-              <input type="checkbox" name="roster_class[]" value="Mutant" onchange="handleRosterClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #0070f3;" title="Tech">
-              <input type="checkbox" name="roster_class[]" value="Tech" onchange="handleRosterClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/tech.svg" alt="Tech" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
-              <input type="checkbox" name="roster_class[]" value="Cosmic" onchange="handleRosterClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #9d4edd;" title="Mystic">
-              <input type="checkbox" name="roster_class[]" value="Mystic" onchange="handleRosterClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-6 h-6 object-contain">
-              </span>
-            </label>
+      <!-- Filters Row (Classes + Interactive Star Slide Bar) -->
+      <div class="glass-panel p-4 rounded-2xl border border-slate-800 space-y-3">
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+          
+          <!-- Class Filter Icon Toggles -->
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs text-slate-400 font-bold mr-1">Class:</span>
+            <button onclick="resetRosterClassFilter()" id="roster-class-all-btn" class="class-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
+            <div class="flex items-center flex-wrap gap-1.5 shrink-0" id="roster-class-icons">
+              <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
+                <input type="checkbox" name="roster_class[]" value="Cosmic" onchange="handleRosterClassToggle(this)" class="peer">
+                <span><img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
+                <input type="checkbox" name="roster_class[]" value="Mutant" onchange="handleRosterClassToggle(this)" class="peer">
+                <span><img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-6 h-6 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #9d4edd;" title="Mystic">
+                <input type="checkbox" name="roster_class[]" value="Mystic" onchange="handleRosterClassToggle(this)" class="peer">
+                <span><img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-6 h-6 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
+                <input type="checkbox" name="roster_class[]" value="Science" onchange="handleRosterClassToggle(this)" class="peer">
+                <span><img src="assets/images/classes/science.svg" alt="Science" class="w-6 h-6 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
+                <input type="checkbox" name="roster_class[]" value="Skill" onchange="handleRosterClassToggle(this)" class="peer">
+                <span><img src="assets/images/classes/skill.svg" alt="Skill" class="w-6 h-6 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #0070f3;" title="Tech">
+                <input type="checkbox" name="roster_class[]" value="Tech" onchange="handleRosterClassToggle(this)" class="peer">
+                <span><img src="assets/images/classes/tech.svg" alt="Tech" class="w-6 h-6 object-contain"></span>
+              </label>
+            </div>
           </div>
-        </div>
 
-        <!-- Rarity Filters -->
-        <div class="flex items-center gap-1.5">
-          <span class="text-xs text-slate-400 font-bold mr-1">Rarity:</span>
-          <button onclick="filterByRarity('All')" data-rarity="All" class="rarity-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-bold bg-sky-500 text-white">All</button>
-          <button onclick="filterByRarity('7')" data-rarity="7" class="rarity-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-bold star-badge-7">7★</button>
-          <button onclick="filterByRarity('6')" data-rarity="6" class="rarity-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-bold star-badge-6">6★</button>
+          <!-- Interactive Star Slide Bar Filter -->
+          <div class="flex-1 max-w-md bg-slate-950/80 p-3 rounded-xl border border-slate-800 shadow-inner space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                <span>⭐</span> Star Rarity Filter Slider:
+              </span>
+              <div id="roster-star-slider-display" class="flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                <span>★ ALL RARITIES</span>
+              </div>
+            </div>
+
+            <!-- Slider Track -->
+            <div class="relative px-1">
+              <input type="range" id="roster-star-slider" min="0" max="7" value="0" step="1" 
+                     oninput="handleRosterStarSlider(this.value)" 
+                     class="w-full cursor-pointer h-2.5 rounded-lg appearance-none">
+              
+              <!-- Clickable Tick Markers -->
+              <div class="flex justify-between text-[10px] font-bold text-slate-400 mt-1.5 select-none">
+                <span onclick="setRosterStarSlider(0)" class="cursor-pointer hover:text-white transition-all text-white font-black" id="star-tick-0">ALL</span>
+                <span onclick="setRosterStarSlider(1)" class="cursor-pointer hover:text-amber-400 transition-all" id="star-tick-1">1★</span>
+                <span onclick="setRosterStarSlider(2)" class="cursor-pointer hover:text-amber-400 transition-all" id="star-tick-2">2★</span>
+                <span onclick="setRosterStarSlider(3)" class="cursor-pointer hover:text-amber-400 transition-all" id="star-tick-3">3★</span>
+                <span onclick="setRosterStarSlider(4)" class="cursor-pointer hover:text-amber-400 transition-all" id="star-tick-4">4★</span>
+                <span onclick="setRosterStarSlider(5)" class="cursor-pointer hover:text-amber-400 transition-all" id="star-tick-5">5★</span>
+                <span onclick="setRosterStarSlider(6)" class="cursor-pointer hover:text-amber-400 transition-all" id="star-tick-6">6★</span>
+                <span onclick="setRosterStarSlider(7)" class="cursor-pointer hover:text-rose-400 transition-all" id="star-tick-7">7★</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

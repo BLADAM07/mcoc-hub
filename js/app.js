@@ -782,14 +782,58 @@ function closeChampionModal() {
   if (modal) modal.classList.add('hidden');
 }
 
-function filterByRarity(rarity) {
-  selectedRarityFilter = rarity;
-  document.querySelectorAll('.rarity-filter-btn').forEach(btn => {
-    btn.classList.toggle('bg-sky-500', btn.dataset.rarity === rarity);
-    btn.classList.toggle('text-white', btn.dataset.rarity === rarity);
-  });
+function handleRosterStarSlider(val) {
+  val = parseInt(val);
+  const slider = document.getElementById('roster-star-slider');
+  if (slider) slider.value = val;
+
+  const display = document.getElementById('roster-star-slider-display');
+  if (val === 0) {
+    selectedRarityFilter = 'All';
+    if (display) {
+      display.className = 'flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/30';
+      display.innerHTML = `<span>★ ALL RARITIES</span>`;
+    }
+  } else {
+    selectedRarityFilter = val.toString();
+    if (display) {
+      if (val === 7) {
+        display.className = 'flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-xs font-black bg-rose-950/60 text-rose-300 border border-rose-500/40';
+        display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3 h-3 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(Mythic)</span>`;
+      } else {
+        display.className = 'flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-xs font-black bg-amber-950/60 text-amber-300 border border-amber-500/40';
+        display.innerHTML = `<span>${val}★</span> <div class="flex items-center gap-0.5">${Array.from({ length: val }).map(() => `<img src="assets/images/Champion-star.png" class="w-3 h-3 inline-block" />`).join('')}</div>`;
+      }
+    }
+  }
+
+  // Update tick labels active styling
+  for (let i = 0; i <= 7; i++) {
+    const tick = document.getElementById(`star-tick-${i}`);
+    if (tick) {
+      const isActive = (i === val);
+      tick.classList.toggle('text-white', isActive && i === 0);
+      tick.classList.toggle('text-amber-300', isActive && i > 0 && i < 7);
+      tick.classList.toggle('text-rose-400', isActive && i === 7);
+      tick.classList.toggle('font-black', isActive);
+      tick.classList.toggle('scale-125', isActive);
+      tick.classList.toggle('text-slate-400', !isActive);
+    }
+  }
+
   renderRosterTab();
-  renderDatabaseTab();
+}
+
+function setRosterStarSlider(val) {
+  handleRosterStarSlider(val);
+}
+
+function filterByRarity(rarity) {
+  if (rarity === 'All') {
+    handleRosterStarSlider(0);
+  } else {
+    handleRosterStarSlider(parseInt(rarity));
+  }
 }
 
 function filterByImmunity(imm) {
