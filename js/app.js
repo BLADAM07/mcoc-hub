@@ -3,6 +3,8 @@ let currentTab = 'nodes';
 let searchQuery = '';
 let selectedRosterClasses = new Set();
 let selectedDbClasses = new Set();
+let selectedDbTag = 'All';
+let selectedDbCategory = 'All';
 let selectedRarityFilter = 'All';
 let ownedOnlyFilter = false;
 let selectedImmunityFilter = 'All';
@@ -230,22 +232,67 @@ function renderDatabaseTab() {
   const container = document.getElementById('database-champions-grid');
   if (!container) return;
 
-  let champs = window.MCOC_DATA.champions || [];
+  // 1. Render/Update Tag Chips Container
+  const tagsContainer = document.getElementById('db-tags-container');
+  if (tagsContainer) {
+    const defaultTags = window.MCOC_DATA.masterTags || [
+      "#Hero", "#Villain", "#Metal", "#Robot", "#Dimensional Being", "#Symbiote",
+      "#Gamma", "#God", "#Avenger", "#Spider-Verse", "#X-Men", "#Mercenary",
+      "#Size: XL", "#Size: L", "#Size: S", "#Deathless"
+    ];
+    let tagHtml = `
+      <button onclick="filterDbByTag('All')" class="db-tag-chip px-2.5 py-1 rounded-lg text-xs font-bold border ${selectedDbTag === 'All' ? 'active bg-sky-500 text-white border-sky-400' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
+        ALL TAGS
+      </button>
+    `;
+    defaultTags.forEach(t => {
+      const isActive = selectedDbTag === t;
+      tagHtml += `
+        <button onclick="filterDbByTag('${t}')" class="db-tag-chip px-2.5 py-1 rounded-lg text-xs font-bold border ${isActive ? 'active bg-sky-500/20 text-sky-300 border-sky-400' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
+          ${t}
+        </button>
+      `;
+    });
+    tagsContainer.innerHTML = tagHtml;
+  }
 
-  if (selectedRarityFilter !== 'All') {
-    const rNum = parseInt(selectedRarityFilter);
-    champs = champs.filter(c => c.owned?.rarity === rNum);
-  }
-  if (ownedOnlyFilter) {
-    champs = champs.filter(c => c.isOwned);
-  }
-  if (selectedImmunityFilter !== 'All') {
-    champs = champs.filter(c => c.immunities && c.immunities.includes(selectedImmunityFilter));
-  }
-  if (searchQuery) {
-    champs = champs.filter(c => c.name.toLowerCase().includes(searchQuery));
+  // 2. Render/Update Category Buttons Container
+  const catsContainer = document.getElementById('db-categories-container');
+  if (catsContainer) {
+    const defaultCats = window.MCOC_DATA.masterCategories || [
+      "Burst Damage", "Damage Over Time (DOT)", "Power Control", "Buff Control & Nullify",
+      "Defensive & Tank", "Evade & Auto-Block Counter", "Purify & Cleanse", "Support & Synergy",
+      "Boss Slayer & Story MVP"
+    ];
+    let catHtml = `
+      <button onclick="filterDbByCategory('All')" class="db-category-btn px-2.5 py-1 rounded-lg text-xs font-bold border ${selectedDbCategory === 'All' ? 'active bg-amber-500 text-slate-950 border-amber-400 font-black' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
+        ALL CATEGORIES
+      </button>
+    `;
+    const catIcons = {
+      "Burst Damage": "💥",
+      "Damage Over Time (DOT)": "🩸",
+      "Power Control": "⚡",
+      "Buff Control & Nullify": "🛑",
+      "Defensive & Tank": "🛡️",
+      "Evade & Auto-Block Counter": "🎯",
+      "Purify & Cleanse": "🔄",
+      "Support & Synergy": "🌟",
+      "Boss Slayer & Story MVP": "👑"
+    };
+    defaultCats.forEach(c => {
+      const isActive = selectedDbCategory === c;
+      const icon = catIcons[c] || '⚔️';
+      catHtml += `
+        <button onclick="filterDbByCategory('${c}')" class="db-category-btn px-2.5 py-1 rounded-lg text-xs font-bold border ${isActive ? 'active bg-amber-500/20 text-amber-300 border-amber-400' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
+          <span>${icon}</span> ${c}
+        </button>
+      `;
+    });
+    catsContainer.innerHTML = catHtml;
   }
 
+  // 3. Populate Immunity Dropdown
   const immSelect = document.getElementById('immunity-filter-select');
   if (immSelect && immSelect.options.length <= 1) {
     const immList = Object.keys(window.MCOC_DATA.immunities || {}).sort();
@@ -256,6 +303,94 @@ function renderDatabaseTab() {
       immSelect.appendChild(opt);
     });
   }
+  if (immSelect) {
+    immSelect.value = selectedImmunityFilter;
+  }
+
+  // Update Indicator Labels
+  const tagLabel = document.getElementById('active-tag-label');
+  if (tagLabel) tagLabel.innerText = selectedDbTag === 'All' ? 'All Tags' : selectedDbTag;
+  
+  const catLabel = document.getElementById('active-category-label');
+  if (catLabel) catLabel.innerText = selectedDbCategory === 'All' ? 'All Categories' : selectedDbCategory;
+
+  const classLabel = document.getElementById('active-class-label');
+  if (classLabel) classLabel.innerText = selectedDbClasses.size > 0 ? Array.from(selectedDbClasses).join(', ') : 'All Classes';
+
+  const immLabel = document.getElementById('active-immunity-label');
+  if (immLabel) immLabel.innerText = selectedImmunityFilter === 'All' ? 'All Immunities' : selectedImmunityFilter;
+
+  // Filter champions based on the 4 dimensions + owned + search
+  let champs = window.MCOC_DATA.champions || [];
+
+  // Dimension 1: Tag
+  if (selectedDbTag !== 'All') {
+    champs = champs.filter(c => c.tags && c.tags.includes(selectedDbTag));
+  }
+
+  // Dimension 2: Category
+  if (selectedDbCategory !== 'All') {
+    champs = champs.filter(c => c.categories && c.categories.includes(selectedDbCategory));
+  }
+
+  // Dimension 3: Class
+  if (selectedDbClasses.size > 0) {
+    champs = champs.filter(c => selectedDbClasses.has(c.class));
+  }
+
+  // Dimension 4: Immunity
+  if (selectedImmunityFilter !== 'All') {
+    champs = champs.filter(c => c.immunities && c.immunities.includes(selectedImmunityFilter));
+  }
+
+  // Owned Only
+  if (ownedOnlyFilter) {
+    champs = champs.filter(c => c.isOwned);
+  }
+
+  // Search input
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    champs = champs.filter(c => {
+      const nameMatch = c.name.toLowerCase().includes(q);
+      const alias = ALIAS_LOOKUP[c.name] || '';
+      const aliasMatch = alias.toLowerCase().includes(q);
+      const tagMatch = c.tags && c.tags.some(t => t.toLowerCase().includes(q));
+      const catMatch = c.categories && c.categories.some(cat => cat.toLowerCase().includes(q));
+      return nameMatch || aliasMatch || tagMatch || catMatch;
+    });
+  }
+
+  // Active filters summary bar
+  const activeFiltersRow = document.getElementById('db-active-filters-row');
+  const activeFiltersPills = document.getElementById('db-active-filters-pills');
+  const hasActiveFilters = (selectedDbTag !== 'All') || (selectedDbCategory !== 'All') || (selectedDbClasses.size > 0) || (selectedImmunityFilter !== 'All') || ownedOnlyFilter || !!searchQuery;
+
+  if (activeFiltersRow && activeFiltersPills) {
+    activeFiltersRow.classList.toggle('hidden', !hasActiveFilters);
+    let pillsHtml = '';
+    if (selectedDbTag !== 'All') {
+      pillsHtml += `<span class="active-filter-pill">🏷️ Tag: ${selectedDbTag} <button onclick="filterDbByTag('All')">✕</button></span>`;
+    }
+    if (selectedDbCategory !== 'All') {
+      pillsHtml += `<span class="active-filter-pill">🎯 Role: ${selectedDbCategory} <button onclick="filterDbByCategory('All')">✕</button></span>`;
+    }
+    if (selectedDbClasses.size > 0) {
+      selectedDbClasses.forEach(cls => {
+        pillsHtml += `<span class="active-filter-pill">🧬 Class: ${cls} <button onclick="toggleDbClassSingle('${cls}')">✕</button></span>`;
+      });
+    }
+    if (selectedImmunityFilter !== 'All') {
+      pillsHtml += `<span class="active-filter-pill">🧪 Immunity: ${selectedImmunityFilter} <button onclick="filterByImmunity('All')">✕</button></span>`;
+    }
+    if (ownedOnlyFilter) {
+      pillsHtml += `<span class="active-filter-pill">★ Owned Only <button onclick="toggleOwnedOnly()">✕</button></span>`;
+    }
+    if (searchQuery) {
+      pillsHtml += `<span class="active-filter-pill">🔍 "${escapeHtml(searchQuery)}" <button onclick="clearDbSearch()">✕</button></span>`;
+    }
+    activeFiltersPills.innerHTML = pillsHtml;
+  }
 
   const dbCounts = document.getElementById('db-filter-counts');
   if (dbCounts) {
@@ -263,7 +398,16 @@ function renderDatabaseTab() {
   }
 
   if (champs.length === 0) {
-    container.innerHTML = `<div class="p-8 text-center glass-panel rounded-xl text-slate-400">No champions found matching your search criteria.</div>`;
+    container.innerHTML = `
+      <div class="p-12 text-center glass-panel rounded-2xl border border-slate-800 space-y-3">
+        <div class="text-3xl">🔍</div>
+        <div class="text-sm font-bold text-slate-300">No champions matched the 4-dimensional criteria.</div>
+        <p class="text-xs text-slate-500">Try loosening your Tag, Category, Class, or Immunity filters.</p>
+        <button onclick="resetAllDbFilters()" class="px-4 py-2 rounded-xl text-xs font-bold bg-sky-500 text-white hover:bg-sky-400 transition-all">
+          Reset All Filters
+        </button>
+      </div>
+    `;
     return;
   }
 
@@ -279,8 +423,8 @@ function renderDatabaseTab() {
     const clsInfo = window.MCOC_DATA.classes[clsName] || { color: '#38bdf8', border: '#38bdf8' };
     const classChamps = champs.filter(c => c.class === clsName);
 
-    if (classChamps.length === 0 && selectedDbClasses.size === 0) {
-      return; // Skip empty class block when searching
+    if (classChamps.length === 0) {
+      return; // Skip empty class block
     }
 
     // Sort alphabetically by name
@@ -310,19 +454,23 @@ function renderDatabaseTab() {
         </div>
 
         <!-- Champions Grid for this class -->
-        ${classChamps.length > 0 ? `
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            ${classChamps.map(champ => renderChampionCard(champ, false)).join('')}
-          </div>
-        ` : `
-          <div class="p-6 text-center text-xs text-slate-400">No ${clsName} champions match the filters.</div>
-        `}
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          ${classChamps.map(champ => renderChampionCard(champ, false)).join('')}
+        </div>
       </div>
     `;
   });
 
   if (html === '') {
-    html = `<div class="p-8 text-center glass-panel rounded-xl text-slate-400">No champions found matching the selected class filter.</div>`;
+    html = `
+      <div class="p-12 text-center glass-panel rounded-2xl border border-slate-800 space-y-3">
+        <div class="text-3xl">🔍</div>
+        <div class="text-sm font-bold text-slate-300">No champions found in the selected class matching active filters.</div>
+        <button onclick="resetAllDbFilters()" class="px-4 py-2 rounded-xl text-xs font-bold bg-sky-500 text-white hover:bg-sky-400 transition-all">
+          Reset All Filters
+        </button>
+      </div>
+    `;
   }
 
   container.innerHTML = html;
@@ -579,7 +727,7 @@ function displayChampionModal(champ) {
         <div>
           <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 flex items-center justify-between">
             <span>🛡️ Active Immunities & Resistances</span>
-            <span class="text-sky-400">${champ.immunities ? champ.immunities.length : 0} Total</span>
+            <span class="text-sky-400 font-bold">${champ.immunities ? champ.immunities.length : 0} Total</span>
           </h4>
           ${champ.immunities && champ.immunities.length > 0 ? `
             <div class="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto pr-1">
@@ -593,6 +741,36 @@ function displayChampionModal(champ) {
             <p class="text-xs text-slate-500 italic bg-slate-900/40 p-2.5 rounded-lg">No direct baseline immunities recorded. Relies on offensive mechanics or kit passives.</p>
           `}
         </div>
+
+        <!-- Champion Tags -->
+        ${champ.tags && champ.tags.length > 0 ? `
+          <div>
+            <h4 class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+              <span>🏷️</span> Champion Tags
+            </h4>
+            <div class="flex flex-wrap gap-1.5">
+              ${champ.tags.map(tag => `
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-slate-900 border border-slate-700 text-sky-300">${tag}</span>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        <!-- Combat Categories & Roles -->
+        ${champ.categories && champ.categories.length > 0 ? `
+          <div>
+            <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+              <span>🎯</span> Combat Categories & Utility Roles
+            </h4>
+            <div class="flex flex-wrap gap-1.5">
+              ${champ.categories.map(cat => `
+                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-950/40 border border-amber-500/30 text-amber-300 flex items-center gap-1">
+                  <span>★</span> ${cat}
+                </span>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
 
         ${isOwned && ownedData.notes ? `
           <div class="p-3 rounded-xl bg-amber-950/20 border border-amber-500/30">
@@ -654,6 +832,71 @@ function toggleOwnedOnly() {
   renderDatabaseTab();
 }
 
+// 1. Tag Filter Handler
+function filterDbByTag(tag) {
+  if (selectedDbTag === tag) {
+    selectedDbTag = 'All';
+  } else {
+    selectedDbTag = tag;
+  }
+  renderDatabaseTab();
+}
+
+// 2. Category Filter Handler
+function filterDbByCategory(cat) {
+  if (selectedDbCategory === cat) {
+    selectedDbCategory = 'All';
+  } else {
+    selectedDbCategory = cat;
+  }
+  renderDatabaseTab();
+}
+
+// 3. Database Class Filter Handlers
+function handleDbClassToggle(checkbox) {
+  if (checkbox.checked) {
+    selectedDbClasses.add(checkbox.value);
+  } else {
+    selectedDbClasses.delete(checkbox.value);
+  }
+  const allBtn = document.getElementById('db-class-all-btn');
+  if (allBtn) {
+    const isAll = selectedDbClasses.size === 0;
+    allBtn.classList.toggle('ring-2', isAll);
+    allBtn.classList.toggle('ring-white', isAll);
+    allBtn.classList.toggle('bg-sky-500', isAll);
+    allBtn.classList.toggle('bg-slate-800', !isAll);
+  }
+  renderDatabaseTab();
+}
+
+function toggleDbClassSingle(cls) {
+  selectedDbClasses.delete(cls);
+  document.querySelectorAll('input[name="db_class[]"]').forEach(cb => {
+    if (cb.value === cls) cb.checked = false;
+  });
+  const allBtn = document.getElementById('db-class-all-btn');
+  if (allBtn) {
+    const isAll = selectedDbClasses.size === 0;
+    allBtn.classList.toggle('ring-2', isAll);
+    allBtn.classList.toggle('ring-white', isAll);
+    allBtn.classList.toggle('bg-sky-500', isAll);
+    allBtn.classList.toggle('bg-slate-800', !isAll);
+  }
+  renderDatabaseTab();
+}
+
+function resetDbClassFilter() {
+  selectedDbClasses.clear();
+  document.querySelectorAll('input[name="db_class[]"]').forEach(cb => cb.checked = false);
+  const allBtn = document.getElementById('db-class-all-btn');
+  if (allBtn) {
+    allBtn.classList.add('ring-2', 'ring-white', 'bg-sky-500');
+    allBtn.classList.remove('bg-slate-800');
+  }
+  renderDatabaseTab();
+}
+
 // Roster Class Icon Filter Handlers
 function handleRosterClassToggle(checkbox) {
   if (checkbox.checked) {
@@ -683,32 +926,41 @@ function resetRosterClassFilter() {
   renderRosterTab();
 }
 
-// Database Class Icon Filter Handlers
-function handleDbClassToggle(checkbox) {
-  if (checkbox.checked) {
-    selectedDbClasses.add(checkbox.value);
-  } else {
-    selectedDbClasses.delete(checkbox.value);
-  }
-  const allBtn = document.getElementById('db-class-all-btn');
-  if (allBtn) {
-    const isAll = selectedDbClasses.size === 0;
-    allBtn.classList.toggle('ring-2', isAll);
-    allBtn.classList.toggle('ring-white', isAll);
-    allBtn.classList.toggle('bg-sky-500', isAll);
-    allBtn.classList.toggle('bg-slate-800', !isAll);
-  }
+function clearDbSearch() {
+  searchQuery = '';
+  const input = document.getElementById('main-search-input');
+  if (input) input.value = '';
   renderDatabaseTab();
 }
 
-function resetDbClassFilter() {
+// Reset ALL 4 Dimensions & Search
+function resetAllDbFilters() {
   selectedDbClasses.clear();
+  selectedDbTag = 'All';
+  selectedDbCategory = 'All';
+  selectedImmunityFilter = 'All';
+  ownedOnlyFilter = false;
+  searchQuery = '';
+
+  const input = document.getElementById('main-search-input');
+  if (input) input.value = '';
+
+  const immSelect = document.getElementById('immunity-filter-select');
+  if (immSelect) immSelect.value = 'All';
+
+  const ownedBtn = document.getElementById('owned-only-toggle-btn');
+  if (ownedBtn) {
+    ownedBtn.classList.remove('bg-emerald-500', 'text-slate-950');
+    ownedBtn.classList.add('bg-slate-800', 'text-slate-300');
+  }
+
   document.querySelectorAll('input[name="db_class[]"]').forEach(cb => cb.checked = false);
   const allBtn = document.getElementById('db-class-all-btn');
   if (allBtn) {
     allBtn.classList.add('ring-2', 'ring-white', 'bg-sky-500');
     allBtn.classList.remove('bg-slate-800');
   }
+
   renderDatabaseTab();
 }
 

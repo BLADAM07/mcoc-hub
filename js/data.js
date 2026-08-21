@@ -1,4 +1,4 @@
-﻿// MCOC Master Hub Generated Dataset
+// MCOC Master Hub Generated Dataset
 window.MCOC_DATA = {
     "classes":  {
                     "Cosmic":  {
@@ -68,7 +68,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Shatterstar",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "Pixie_portrait.webp",
@@ -81,7 +90,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Pixie",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "silversamurai.png",
@@ -94,7 +112,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Silver Samurai",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "cassandranova.png",
@@ -116,7 +143,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Cassandra Nova",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "jean_grey.webp",
@@ -129,7 +164,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Jean Grey",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "gentle_og.png",
@@ -143,7 +187,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Gentle",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "dazzler.png",
@@ -167,7 +220,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Dazzler",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "northstar.png",
@@ -189,7 +251,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Northstar",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "Negasonic Teenage Warhead.webp",
@@ -211,7 +281,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Negasonic Teenage Warhead",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "dust.webp",
@@ -226,7 +305,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Dust",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "onslaughtt.webp",
@@ -251,7 +339,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Onslaught",
                           "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "danimoonstar.png",
@@ -264,7 +362,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Dani Moonstar",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "captainbritain.png",
@@ -286,7 +394,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain Britain",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "sauron.png",
@@ -309,7 +425,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sauron",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "toad.png",
@@ -322,7 +447,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Toad",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "jubilee.png",
@@ -335,7 +469,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Jubilee",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "stryfe.png",
@@ -348,7 +490,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Stryfe",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "kittypryde.png",
@@ -372,7 +522,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Kitty Pryde",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "platinumpool.png",
@@ -385,7 +546,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Platinum Pool",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "wolverineweaponx.png",
@@ -398,7 +567,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Wolverine (Weapon X)",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "stormpyramidx.png",
@@ -425,7 +604,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Storm (Pyramid X)",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "professorx.png",
@@ -447,7 +635,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Professor X",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Support \u0026 Synergy",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "apocalypse.png",
@@ -465,7 +664,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Apocalypse",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "mistersinister.png",
@@ -488,7 +698,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mister Sinister",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "havok.png",
@@ -501,7 +719,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Havok",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "namor.png",
@@ -514,7 +742,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Namor",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Purify \u0026 Cleanse"
+                                         ]
                       },
                       {
                           "image":  "sunspot.png",
@@ -536,7 +773,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sunspot",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "sabretooth.png",
@@ -550,7 +798,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Sabretooth",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "goldpool.png",
@@ -563,7 +819,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Goldpool",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "domino.png",
@@ -588,7 +853,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Domino",
                           "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "emmafrost.png",
@@ -617,7 +894,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Emma Frost",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "bishop.png",
@@ -642,7 +929,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Bishop",
                           "storyTier":  "S-Tier (Skill)",
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "omegared.png",
@@ -655,7 +953,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Omega Red",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Purify \u0026 Cleanse"
+                                         ]
                       },
                       {
                           "image":  "iceman.png",
@@ -682,7 +989,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Iceman",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "psylocke.png",
@@ -704,7 +1020,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Psylocke",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "cable.webp",
@@ -717,7 +1042,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Cable",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "archangel.png",
@@ -730,7 +1065,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Archangel",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "beast.png",
@@ -752,7 +1098,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Beast",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "cyclopsblueteam.png",
@@ -774,7 +1129,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Cyclops (Blue Team)",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "wolverine.png",
@@ -796,7 +1160,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Wolverine (X 23)",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "oldmanlogan.png",
@@ -809,7 +1183,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Old Man Logan",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "rogue.png",
@@ -831,7 +1214,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Rogue",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Purify \u0026 Cleanse"
+                                         ]
                       },
                       {
                           "image":  "nightcrawler.png",
@@ -853,7 +1246,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Nightcrawler",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "gambit.png",
@@ -875,7 +1277,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Gambit",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "deadpool.webp",
@@ -888,7 +1299,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Deadpool",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "cyclopsblueteam.png",
@@ -901,7 +1321,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Cyclops (New Xavier School)",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "deadpoolxforce.png",
@@ -914,7 +1343,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Deadpool (X-Force)",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "wolverine.png",
@@ -936,7 +1374,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Wolverine",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "storm.png",
@@ -963,7 +1411,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Storm",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "magneto.png",
@@ -985,7 +1442,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Magneto (House of X)",
                           "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "colossus.png",
@@ -1012,7 +1480,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Colossus",
                           "storyTier":  null,
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "magneto.png",
@@ -1034,7 +1512,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Magneto",
                           "storyTier":  "S-Tier (Mutant)",
-                          "class":  "Mutant"
+                          "class":  "Mutant",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "phylavell.webp",
@@ -1049,7 +1538,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Phyla-Vell",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "Imperiosa_portrait.webp",
@@ -1065,7 +1562,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Imperiosa",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "karolinadean.png",
@@ -1090,7 +1595,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Karolina Dean",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "phoenix.webp",
@@ -1105,7 +1618,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Dark Phoenix",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "thanos.png",
@@ -1124,7 +1645,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Thanos (Deathless)",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Deathless"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "scream.webp",
@@ -1137,7 +1667,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Scream",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Symbiote",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "Beta_Ray_Bill.webp",
@@ -1160,7 +1700,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Beta Ray Bill",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "kinggrootdeathless.webp",
@@ -1175,7 +1724,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "King Groot (Deathless)",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Deathless"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "the_serpent.webp",
@@ -1196,7 +1754,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "The Serpent",
                           "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "maestro.webp",
@@ -1211,7 +1778,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Maestro",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "gladiator.webp",
@@ -1234,7 +1809,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Gladiator",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "vox.png",
@@ -1263,7 +1846,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Vox",
                           "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "adamwarlock.png",
@@ -1291,7 +1884,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Adam Warlock",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "hulkling.png",
@@ -1318,7 +1922,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hulkling",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "gorr.png",
@@ -1340,7 +1955,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Gorr",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "galan.png",
@@ -1367,7 +1993,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Galan",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "odin.png",
@@ -1392,7 +2029,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Odin",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "superskrull.png",
@@ -1415,7 +2062,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Super-Skrull",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "ikaris.png",
@@ -1429,7 +2084,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Ikaris",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "Sersi.png",
@@ -1451,7 +2114,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sersi",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "knull.png",
@@ -1473,7 +2144,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Knull",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Symbiote",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "hercules.png",
@@ -1498,7 +2180,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hercules",
                           "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "nova.png",
@@ -1520,7 +2213,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Nova",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "airwalker.png",
@@ -1533,7 +2234,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Air-Walker",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "terrax.png",
@@ -1556,7 +2267,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Terrax",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "redgoblin.png",
@@ -1579,7 +2299,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Red Goblin",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "cosmicghostrider.png",
@@ -1605,7 +2334,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Cosmic Ghost Rider",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "cullobsidian.png",
@@ -1627,7 +2365,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Cull Obsidian",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "annihilus.png",
@@ -1649,7 +2395,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Annihilus",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "siversurfer.png",
@@ -1671,7 +2425,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Silver Surfer",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "visionaarkus.png",
@@ -1694,7 +2457,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Vision (Aarkus)",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "captainmarvel.png",
@@ -1716,7 +2490,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain Marvel",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "champion.png",
@@ -1731,7 +2514,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "The Champion",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "heimdall.png",
@@ -1744,7 +2535,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Heimdall",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "venomtheduck.png",
@@ -1766,7 +2567,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Venom The Duck",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "proximamidnight.png",
@@ -1779,7 +2589,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Proxima Midnight",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "corvusglaive.png",
@@ -1801,7 +2619,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Corvus Glaive",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "carnage.png",
@@ -1823,7 +2650,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Carnage",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "hela.png",
@@ -1845,7 +2681,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hela",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "angela.png",
@@ -1858,7 +2703,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Angela",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "medusa.png",
@@ -1871,7 +2726,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Medusa",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Defensive \u0026 Tank",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "kinggroot.png",
@@ -1886,7 +2751,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "King Groot",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "thanos.png",
@@ -1899,7 +2772,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Thanos",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "msmarvel.png",
@@ -1921,7 +2802,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ms. Marvel (Kamala Khan)",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "phoenix.webp",
@@ -1939,7 +2828,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Phoenix",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "venompool.png",
@@ -1962,7 +2859,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Venompool",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "hyperion.png",
@@ -1987,7 +2893,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hyperion",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "superiorironman.png",
@@ -2009,7 +2925,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Superior Iron Man",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "msmarvel.png",
@@ -2031,7 +2957,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ms. Marvel",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "spidermansymbiote.webp",
@@ -2053,7 +2987,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Man (Symbiote)",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Symbiote",
+                                       "#Spider-Verse",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "groot.png",
@@ -2066,7 +3011,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Groot",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "blackbolt.png",
@@ -2088,7 +3041,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Bolt",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "drax.png",
@@ -2101,7 +3062,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Drax",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "captainmarvel.png",
@@ -2123,7 +3092,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain Marvel (Classic)",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "gamora.png",
@@ -2136,7 +3114,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Gamora",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "ronan.png",
@@ -2158,7 +3144,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ronan",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "thor.png",
@@ -2180,7 +3174,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Thor",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "venom.png",
@@ -2202,7 +3206,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Venom",
                           "storyTier":  null,
-                          "class":  "Cosmic"
+                          "class":  "Cosmic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Burst Damage",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "agathaharkness.webp",
@@ -2215,7 +3228,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Agatha Harkness",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "blade.png",
@@ -2237,7 +3258,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Blade (Stellar Forged)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "Madelyne_Pryor_portrait.webp",
@@ -2251,7 +3281,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Madelyne Pryor",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "spiderman.png",
@@ -2264,7 +3302,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Spider-Man (Pavitr Prabhakar)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Spider-Verse",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "dracula.webp",
@@ -2277,7 +3325,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Dracula",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "nicominoru.png",
@@ -2304,7 +3360,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Nico Minoru",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "isophyne_latest.webp",
@@ -2328,7 +3392,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Isophyne",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "spiral.png",
@@ -2351,7 +3423,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spiral",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "shathra.png",
@@ -2364,7 +3444,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Shathra",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "enchantresss.webp",
@@ -2386,7 +3475,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Enchantress",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "the_destroyer.webp",
@@ -2413,7 +3511,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "The Destroyer",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "whitetiger.webp",
@@ -2435,7 +3543,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "White Tiger",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "guillotine_deathless.webp",
@@ -2448,7 +3564,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Guillotine (Deathless)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Dimensional Being",
+                                       "#Deathless"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "kushala.webp",
@@ -2474,7 +3601,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Kushala",
                           "storyTier":  "S-Tier (Mystic)",
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "werewolfbynight.webp",
@@ -2496,7 +3635,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Werewolf By Night",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "kindred.png",
@@ -2523,7 +3672,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Kindred",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "Absorbing_Man.png",
@@ -2552,7 +3711,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Absorbing Man",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "wong.png",
@@ -2566,7 +3736,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Wong",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "Wiccan.png",
@@ -2595,7 +3773,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Wiccan",
                           "storyTier":  "S-Tier (Mystic)",
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "spiderman_supreme.png",
@@ -2618,7 +3807,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Man (Supreme)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Spider-Verse",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "rintrah.png",
@@ -2631,7 +3830,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Rintrah",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "purgatory.png",
@@ -2645,7 +3855,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Purgatory",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "americachavez.png",
@@ -2667,7 +3886,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "America Chavez",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "mangog.png",
@@ -2682,7 +3911,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Mangog",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "scarletwitch.png",
@@ -2704,7 +3942,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Scarlet Witch (Sigil)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "longshot.png",
@@ -2726,7 +3973,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Longshot",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "sasquatch.png",
@@ -2749,7 +4006,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sasquatch",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "dragonman.png",
@@ -2773,7 +4040,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Dragon Man",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Robot",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "mojo.png",
@@ -2795,7 +4073,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mojo",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "sorcerersupreme.png",
@@ -2809,7 +4096,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Sorcerer Supreme",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "tigra.png",
@@ -2831,7 +4126,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Tigra",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "manthing.png",
@@ -2855,7 +4160,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Man-Thing",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "ebonymaw.png",
@@ -2877,7 +4190,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ebony Maw",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "diablo.png",
@@ -2891,7 +4212,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Diablo",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "doctordoom.png",
@@ -2909,7 +4239,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Doctor Doom",
                           "storyTier":  "S-Tier (Mystic)",
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "blackwidowvlairevoyant.png",
@@ -2934,7 +4274,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Widow (Claire Voyant)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "symbiotesupreme.png",
@@ -2947,7 +4298,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Symbiote Supreme",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Symbiote",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "dormammu.png",
@@ -2963,7 +4324,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Dormammu",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "morningstar.png",
@@ -2985,7 +4355,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Morningstar",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "mephisto.png",
@@ -3010,7 +4391,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mephisto",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "hood.png",
@@ -3024,7 +4415,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "The Hood",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "loki.png",
@@ -3037,7 +4437,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Loki",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "ghostrider.webp",
@@ -3060,7 +4469,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ghost Rider",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "mordo.png",
@@ -3084,7 +4502,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mordo",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "doctorvoodoo.png",
@@ -3107,7 +4533,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Doctor Voodoo",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "thorjanefoster.png",
@@ -3129,7 +4564,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Thor (Jane Foster)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "ironfist.png",
@@ -3142,7 +4587,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Iron Fist",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "unstoppablecolossus.png",
@@ -3164,7 +4617,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Unstoppable Colossus",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Metal",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "Doctor_Strange_portrait.webp",
@@ -3178,7 +4641,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Doctor Strange",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "juggernaut.png",
@@ -3194,7 +4668,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Juggernaut",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "ironfist.png",
@@ -3207,7 +4691,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Iron Fist (Immortal)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "scarletwitch.png",
@@ -3229,7 +4721,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Scarlet Witch (Classic)",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "guillotine.png",
@@ -3251,7 +4752,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Guillotine",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "magik.webp",
@@ -3264,7 +4775,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Magik",
                           "storyTier":  null,
-                          "class":  "Mystic"
+                          "class":  "Mystic",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Buff Control \u0026 Nullify",
+                                             "Power Control"
+                                         ]
                       },
                       {
                           "image":  "Wave_portrait.webp",
@@ -3277,7 +4797,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Wave",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "blue_marvel_portrait.webp",
@@ -3300,7 +4828,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Blue Marvel",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "lizard.png",
@@ -3315,7 +4851,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Lizard",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "portrait_high_evolutionary.png",
@@ -3330,7 +4874,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "High Evolutionary",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "spider-women.webp",
@@ -3354,7 +4906,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Woman",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "falcon_joaquintorres.webp",
@@ -3376,7 +4936,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Falcon (Joaquin Torres)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "shehulk.webp",
@@ -3399,7 +4969,20 @@ window.MCOC_DATA = {
                                     },
                           "name":  "She-Hulk (Deathless)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma",
+                                       "#Deathless"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "count_nefaria.png",
@@ -3413,7 +4996,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Count Nefaria",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "The_ledger.webp",
@@ -3426,7 +5018,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "The Leader",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "spider-punk.webp",
@@ -3450,7 +5050,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Punk",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "morbius.webp",
@@ -3472,7 +5080,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Morbius",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "photon.png",
@@ -3499,7 +5116,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Photon",
                           "storyTier":  "S-Tier (Science)",
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "silk.png",
@@ -3524,7 +5152,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Silk",
                           "storyTier":  "S-Tier (Science)",
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "sandman.webp",
@@ -3551,7 +5190,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sandman",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "cassie_lang.webp",
@@ -3576,7 +5224,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Cassie Lang",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "titania.png",
@@ -3590,7 +5246,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Titania",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "spot.png",
@@ -3613,7 +5280,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spot",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "quicksilver.png",
@@ -3626,7 +5303,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "QuickSilver",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "jessica.png",
@@ -3648,7 +5333,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Jessica Jones",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "scorpion.png",
@@ -3672,7 +5365,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Scorpion",
                           "storyTier":  "S-Tier (Science)",
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "antivenom.png",
@@ -3695,7 +5400,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Anti-Venom",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "theoverseer.png",
@@ -3713,7 +5427,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "The Overseer",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "spiderman2099.png",
@@ -3729,7 +5452,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Spider Man 2099",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "misternegative.png",
@@ -3753,7 +5484,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mister Negative",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "redguardian.png",
@@ -3775,7 +5514,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Red Guardian",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Buff Control \u0026 Nullify"
+                                         ]
                       },
                       {
                           "image":  "spiderham.png",
@@ -3788,7 +5536,19 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Spider-Ham",
                           "storyTier":  "S-Tier (Science)",
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "hulkimmortal.png",
@@ -3811,7 +5571,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hulk (Immortal)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "abomination.png",
@@ -3833,7 +5605,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Abomination (Immortal)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "invisiblewoman.png",
@@ -3846,7 +5627,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Invisible Woman",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "thing.png",
@@ -3874,7 +5663,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Thing",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "misterfantastic.png",
@@ -3896,7 +5694,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mister Fantastic",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "humantorch.png",
@@ -3920,7 +5727,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Human Torch",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "sentry.png",
@@ -3945,7 +5761,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sentry",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "wasp.png",
@@ -3967,7 +5791,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Wasp",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "hulkragnarok.png",
@@ -3990,7 +5823,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hulk (Ragnarok)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "void.png",
@@ -4003,7 +5848,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Void",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "captainamerica.png",
@@ -4025,7 +5878,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain America (Infinity War)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "modok.png",
@@ -4047,7 +5910,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "M.O.D.O.K.",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: S"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "shehulk.webp",
@@ -4069,7 +5940,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "She-Hulk",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "redhulk.png",
@@ -4092,7 +5975,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Red Hulk",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "spidermanmilesmorales.png",
@@ -4117,7 +6012,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider man (Miles Morales)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "quake.png",
@@ -4130,7 +6033,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Quake",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "spiderman.png",
@@ -4152,7 +6064,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Man (Classic)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Spider-Verse",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "captainamerica.png",
@@ -4174,7 +6096,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain America",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "captainamericawwii.png",
@@ -4196,7 +6128,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain America (WWII)",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "rhino_new.png",
@@ -4209,7 +6151,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Rhino",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "antman.png",
@@ -4233,7 +6184,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ant-Man",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "abomination.png",
@@ -4255,7 +6215,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Abomination",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "hulk.png",
@@ -4282,7 +6251,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hulk",
                           "storyTier":  "S-Tier (Cosmic)",
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "electro.png",
@@ -4295,7 +6276,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Electro",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "yellowjacket.png",
@@ -4317,7 +6307,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Yellow Jacket",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "spidergwen.png",
@@ -4339,7 +6337,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Gwen",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "lukecage.png",
@@ -4361,7 +6369,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Luke Cage",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "joefixit.png",
@@ -4384,7 +6401,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Joe Fixit",
                           "storyTier":  null,
-                          "class":  "Science"
+                          "class":  "Science",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "blacktarantula.webp",
@@ -4397,7 +6423,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Black Tarantula",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "Doctor_Bong_portrait.webp",
@@ -4411,7 +6445,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Doctor Bong",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "mbaku_portrait.webp",
@@ -4433,7 +6475,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "M’Baku",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "starlord.png",
@@ -4446,7 +6496,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Star-Lord (Stellar Forged)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "frankencastle.webp",
@@ -4470,7 +6529,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Franken-Castle",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "misterknight.png",
@@ -4492,7 +6559,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mr. Knight",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "portrait_yelenabelova.webp",
@@ -4508,7 +6583,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Yelena Belova",
                           "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "lumatrix.webp",
@@ -4531,7 +6614,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Lumatrix",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "okoye_og.png",
@@ -4544,7 +6635,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Okoye",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "patriot.webp",
@@ -4557,7 +6656,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Patriot",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "silver_sable.webp",
@@ -4579,7 +6687,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Silver Sable",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "bullseye.webp",
@@ -4593,7 +6710,19 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Bullseye",
                           "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "chee\u0027ilth.webp",
@@ -4615,7 +6744,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Chee\u0027ilth",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "moondragon.png",
@@ -4638,7 +6777,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Moondragon",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "kate_bishop.png",
@@ -4663,7 +6810,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Kate Bishop",
                           "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger",
+                                       "#X-Men"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "Baron_Zemo.png",
@@ -4685,7 +6843,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Baron Zemo",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "valkyrie.png",
@@ -4710,7 +6877,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Valkyrie",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "mantis.png",
@@ -4732,7 +6909,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mantis",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "attuma.png",
@@ -4745,7 +6930,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Attuma",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "blackcat.png",
@@ -4767,7 +6962,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Cat",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "mistyknight.png",
@@ -4780,7 +6983,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Misty Knight",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "karven.png",
@@ -4793,7 +7004,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Kraven",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "jabaripanther.png",
@@ -4815,7 +7036,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Jabari Panther",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "shangchi.png",
@@ -4837,7 +7066,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Shang Chi",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "squirrelgirl.png",
@@ -4850,7 +7087,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Squirrel Girl",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "blackwidow.png",
@@ -4872,7 +7117,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Widow (Deadly Origin)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "hitmonkey.png",
@@ -4897,7 +7152,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hit-Monkey",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "moleman.png",
@@ -4919,7 +7185,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mole Man",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "ronin.png",
@@ -4932,7 +7207,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Ronin",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "elsabloodstone.png",
@@ -4945,7 +7228,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Elsa Bloodstone",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "spidermanstealthsuit.png",
@@ -4967,7 +7258,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Man (Stealth-Suit)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Spider-Verse",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "nickfury.png",
@@ -4981,7 +7282,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Nick Fury",
                           "storyTier":  "S-Tier (Skill)",
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Support \u0026 Synergy",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "korg.png",
@@ -5004,7 +7316,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Korg",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "night_thrasher.png",
@@ -5017,7 +7338,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Night Thrasher",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "masacre.png",
@@ -5030,7 +7359,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Masacre",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "killmonger.png",
@@ -5052,7 +7390,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Killmonger",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "dragonman.png",
@@ -5074,7 +7422,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ægon",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "gwenpool.png",
@@ -5096,7 +7452,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Gwenpool",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "taskmaster.png",
@@ -5118,7 +7483,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Taskmaster",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "blade.png",
@@ -5140,7 +7515,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Blade",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "thor.png",
@@ -5163,7 +7548,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Thor (Ragnarok)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger",
+                                       "#God"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "kingpin.png",
@@ -5186,7 +7581,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Kingpin",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "agentvenom.png",
@@ -5208,7 +7613,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Agent Venom",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Symbiote"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "blackpanthercivilwar.png",
@@ -5230,7 +7644,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Panther (Civil War)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "karnak.png",
@@ -5243,7 +7667,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Karnak",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "falcon.png",
@@ -5265,7 +7697,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Falcon",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "crossbones.png",
@@ -5279,7 +7721,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Crossbones",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "daredevil.png",
@@ -5301,7 +7754,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Daredevil (Classic)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "punisher.png",
@@ -5323,7 +7784,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Punisher",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "moonknight.png",
@@ -5336,7 +7805,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Moon Knight",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "elektra.png",
@@ -5358,7 +7835,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Elektra",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Mercenary"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "wintersoldier.png",
@@ -5380,7 +7866,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Winter Soldier",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "blackwidow.png",
@@ -5402,7 +7897,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Widow",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "daredevil.png",
@@ -5424,7 +7929,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Daredevil (Hell\u0027s Kitchen)",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "black_panther.png",
@@ -5446,7 +7959,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Black Panther",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "hawkeye.png",
@@ -5468,7 +7991,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hawkeye",
                           "storyTier":  null,
-                          "class":  "Skill"
+                          "class":  "Skill",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Purify \u0026 Cleanse",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "hobgoblin_philurich.webp",
@@ -5481,7 +8013,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Hobgoblin (Phil Urich)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "Ruby_Thursday_portrait.webp",
@@ -5494,7 +8034,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Ruby Thursday",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "Spider-Slayer_jjj_portrait.webp",
@@ -5517,7 +8065,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider-Slayer (J. Jonah Jameson)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "solvarch.png",
@@ -5532,7 +8091,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Solvarch",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "portrait_maker.png",
@@ -5549,7 +8116,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "The Maker",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "bastion.webp",
@@ -5565,7 +8140,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Bastion",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "arimzola.webp",
@@ -5588,7 +8171,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Arnim Zola",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "jack_o_lantern.webp",
@@ -5602,7 +8193,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Jack O’Lantern",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "vision_deathless.webp",
@@ -5630,7 +8229,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Vision (Deathless)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Avenger",
+                                       "#Deathless"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "arcade.png",
@@ -5655,7 +8265,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Arcade",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "prowler.webp",
@@ -5681,7 +8300,20 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Prowler",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "Ironheart.webp",
@@ -5710,7 +8342,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ironheart",
                           "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "ladydeathstrike.png",
@@ -5726,7 +8368,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Lady Deathstrike",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "shocker.webp",
@@ -5749,7 +8399,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Shocker",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "Viv_Vision.png",
@@ -5779,7 +8439,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Viv Vision",
                           "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ant_man_future.webp",
@@ -5803,7 +8473,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ant-Man (Future)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "shuri.png",
@@ -5817,7 +8496,19 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Shuri",
                           "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "idoom.png",
@@ -5840,7 +8531,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Iron Man (Infamous)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "captainamerica.png",
@@ -5862,7 +8563,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Captain America (Sam Wilson)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "omegasentinel.png",
@@ -5886,7 +8596,19 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Omega Sentinel",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "psychoman.png",
@@ -5908,7 +8630,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Psycho-Man",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "peniparker.png",
@@ -5932,7 +8662,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Peni Parker",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "silvercenturion.png",
@@ -5954,7 +8695,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Silver Centurion",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "nimrod.png",
@@ -5972,7 +8722,20 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Nimrod",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Damage Over Time (DOT)",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "guardian.png",
@@ -5994,7 +8757,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Guardian",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "mysterio.png",
@@ -6017,7 +8789,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Mysterio",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "guillotine2099.png",
@@ -6040,7 +8822,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Guillotine 2099",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal",
+                                       "#Dimensional Being"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "warlock.png",
@@ -6068,7 +8861,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Warlock",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP"
+                                         ]
                       },
                       {
                           "image":  "redskull.png",
@@ -6093,7 +8896,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Red Skull",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "darkhawk.png",
@@ -6107,7 +8920,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Darkhawk",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "sentinel.png",
@@ -6133,7 +8956,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Sentinel",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: XL",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ironman.webp",
@@ -6156,7 +8989,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Iron Man (Infinity War)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ghost.png",
@@ -6178,7 +9021,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ghost",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Boss Slayer \u0026 Story MVP",
+                                             "Burst Damage",
+                                             "Evade \u0026 Auto-Block Counter"
+                                         ]
                       },
                       {
                           "image":  "greengoblin.png",
@@ -6200,7 +9054,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Green Goblin",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "yondu.png",
@@ -6213,7 +9077,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Yondu",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "vulture.png",
@@ -6238,7 +9111,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Vulture",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "spidermanstarkenhanced.png",
@@ -6260,7 +9143,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Spider Man (Stark Enhanced)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Burst Damage"
+                                         ]
                       },
                       {
                           "image":  "doctoroctopus.png",
@@ -6273,7 +9165,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Doctor Octopus",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Spider-Verse"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "nebula.png",
@@ -6288,7 +9190,18 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Nebula",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Damage Over Time (DOT)"
+                                         ]
                       },
                       {
                           "image":  "punisher2099.png",
@@ -6311,7 +9224,16 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Punisher 2099",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ultronclassic.png",
@@ -6334,7 +9256,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ultron (Classic)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "civilwarrior.png",
@@ -6348,7 +9280,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Civil Warrior",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank",
+                                             "Support \u0026 Synergy"
+                                         ]
                       },
                       {
                           "image":  "howardtheduck.png",
@@ -6370,7 +9312,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Howard The Duck",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "rocketracoon.png",
@@ -6392,7 +9342,15 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Rocket Raccoon",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: S"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "kang.png",
@@ -6405,7 +9363,15 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Kang the Conqueror",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ironpatriot.png",
@@ -6418,7 +9384,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Iron Patriot",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ironman.webp",
@@ -6440,7 +9415,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Iron Man",
                           "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "starlord.png",
@@ -6453,7 +9438,16 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "Star-Lord",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "vision.png",
@@ -6479,7 +9473,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Vision",
                           "storyTier":  "S-Tier (Tech)",
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "visionageofultron.png",
@@ -6502,7 +9506,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Vision (Age of Ultron)",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "warmachine.png",
@@ -6515,7 +9530,17 @@ window.MCOC_DATA = {
                           "owned":  null,
                           "name":  "War Machine",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: M",
+                                       "#Metal",
+                                       "#Avenger"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "hulkbuster.png",
@@ -6539,7 +9564,18 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Hulkbuster",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Hero",
+                                       "#Size: XL",
+                                       "#Metal",
+                                       "#Avenger",
+                                       "#Gamma"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       },
                       {
                           "image":  "ultron.png",
@@ -6563,7 +9599,17 @@ window.MCOC_DATA = {
                                     },
                           "name":  "Ultron",
                           "storyTier":  null,
-                          "class":  "Tech"
+                          "class":  "Tech",
+                          "tags":  [
+                                       "#Villain",
+                                       "#Size: M",
+                                       "#Robot",
+                                       "#Metal"
+                                   ],
+                          "categories":  [
+                                             "Power Control",
+                                             "Defensive \u0026 Tank"
+                                         ]
                       }
                   ],
     "stats":  {
@@ -7749,12 +10795,41 @@ window.MCOC_DATA = {
                                                          "Elsa Bloodstone",
                                                          "Baron Zemo",
                                                          "Hawkeye",
-                                                         "Chee'ilth",
+                                                         "Chee\u0027ilth",
                                                          "Attuma",
                                                          "Mole Man",
                                                          "Mister Knight",
                                                          "Yelena Belova"
                                                      ]
                                        }
-                   }
+                   },
+    "masterTags":  [
+                       "#Hero",
+                       "#Villain",
+                       "#Metal",
+                       "#Robot",
+                       "#Dimensional Being",
+                       "#Symbiote",
+                       "#Gamma",
+                       "#God",
+                       "#Avenger",
+                       "#Spider-Verse",
+                       "#X-Men",
+                       "#Mercenary",
+                       "#Size: XL",
+                       "#Size: L",
+                       "#Size: S",
+                       "#Deathless"
+                   ],
+    "masterCategories":  [
+                             "Burst Damage",
+                             "Damage Over Time (DOT)",
+                             "Power Control",
+                             "Buff Control \u0026 Nullify",
+                             "Defensive \u0026 Tank",
+                             "Evade \u0026 Auto-Block Counter",
+                             "Purify \u0026 Cleanse",
+                             "Support \u0026 Synergy",
+                             "Boss Slayer \u0026 Story MVP"
+                         ]
 };

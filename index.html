@@ -245,87 +245,145 @@
       <div class="glass-panel p-5 rounded-2xl border border-sky-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
           <h2 class="text-xl font-black text-white flex items-center gap-2">
-            <span>🔍</span> Master Champion Database & Immunity Inspector
+            <span>🔍</span> Master Champion Database & Advanced Inspector
           </h2>
           <p class="text-xs text-slate-300 mt-1 max-w-2xl">
-            Browse all 327+ champions in the Contest classified by class. Filter by class icons, star rarity, or specific baseline immunities to find exact matches.
+            Filter all 327+ champions across 4 dimensions: <strong>🏷️ Tags</strong>, <strong>🎯 Combat Categories</strong>, <strong>🧬 Class Icons</strong>, and <strong>🧪 Immunities</strong>.
           </p>
         </div>
         <div id="db-filter-counts" class="text-xs text-slate-300 font-medium">
-          <!-- Database count -->
+          <!-- Database count rendered by app.js -->
         </div>
       </div>
 
-      <!-- Search & Filters Toolbar -->
-      <div class="glass-panel p-4 rounded-xl border border-slate-800 space-y-3">
+      <!-- Advanced 4-Dimensional Filter Control Center -->
+      <div class="glass-panel p-4.5 rounded-2xl border border-slate-800 space-y-4">
+        
+        <!-- Row 1: Search & Quick Actions -->
         <div class="flex flex-col md:flex-row gap-3 items-center justify-between">
-          
           <!-- Search input -->
-          <div class="relative w-full md:w-80">
-            <input type="text" id="main-search-input" placeholder="Search champion name or keyword..." 
+          <div class="relative w-full md:w-96">
+            <input type="text" id="main-search-input" placeholder="Search name, alias (e.g. CGR), tag, or ability..." 
                    class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-400">
             <span class="absolute right-3 top-2.5 text-xs text-slate-500">🔍</span>
           </div>
 
-          <!-- Immunity Filter Dropdown -->
-          <div class="flex items-center gap-2 w-full md:w-auto">
-            <span class="text-xs font-bold text-slate-400 whitespace-nowrap">Filter Immunity:</span>
+          <div class="flex items-center gap-2.5 w-full md:w-auto justify-end">
+            <!-- Owned Only Toggle -->
+            <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
+                    class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500 transition-all whitespace-nowrap">
+              ★ Owned Roster Only
+            </button>
+
+            <!-- Reset All Filters Button -->
+            <button onclick="resetAllDbFilters()" 
+                    class="px-3 py-2 rounded-xl text-xs font-bold bg-rose-950/40 text-rose-300 border border-rose-500/40 hover:bg-rose-900/50 hover:border-rose-400 transition-all whitespace-nowrap flex items-center gap-1.5" title="Reset all 4 filters to default">
+              <span>↺</span> Reset All Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- DIMENSION 1: TAG BASED FILTER -->
+        <div class="pt-3 border-t border-slate-800/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-sky-400 flex items-center gap-1.5">
+              <span>🏷️</span> 1. Filter by Tag:
+            </span>
+            <span class="text-[11px] text-slate-400 font-semibold" id="active-tag-label">All Tags</span>
+          </div>
+          <div id="db-tags-container" class="flex flex-wrap gap-1.5">
+            <!-- Tag pills rendered by app.js -->
+          </div>
+        </div>
+
+        <!-- DIMENSION 2: CATEGORY BASED FILTER -->
+        <div class="pt-3 border-t border-slate-800/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+              <span>🎯</span> 2. Filter by Combat Category / Role:
+            </span>
+            <span class="text-[11px] text-slate-400 font-semibold" id="active-category-label">All Categories</span>
+          </div>
+          <div id="db-categories-container" class="flex flex-wrap gap-1.5">
+            <!-- Category buttons rendered by app.js -->
+          </div>
+        </div>
+
+        <!-- DIMENSION 3: CLASS BASED FILTER -->
+        <div class="pt-3 border-t border-slate-800/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+              <span>🧬</span> 3. Filter by Class:
+            </span>
+            <span class="text-[11px] text-slate-400 font-semibold" id="active-class-label">All Classes</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <button onclick="resetDbClassFilter()" id="db-class-all-btn" class="db-class-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
+            <div class="flex items-center flex-wrap gap-1.5 shrink-0" id="db-class-icons">
+              <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
+                <input type="checkbox" name="db_class[]" value="Science" onchange="handleDbClassToggle(this)" class="peer">
+                <span class="peer-checked:border-[color:var(--c)]">
+                  <img src="assets/images/classes/science.svg" alt="Science" class="w-6 h-6 object-contain">
+                </span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
+                <input type="checkbox" name="db_class[]" value="Skill" onchange="handleDbClassToggle(this)" class="peer">
+                <span class="peer-checked:border-[color:var(--c)]">
+                  <img src="assets/images/classes/skill.svg" alt="Skill" class="w-6 h-6 object-contain">
+                </span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
+                <input type="checkbox" name="db_class[]" value="Mutant" onchange="handleDbClassToggle(this)" class="peer">
+                <span class="peer-checked:border-[color:var(--c)]">
+                  <img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-6 h-6 object-contain">
+                </span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #0070f3;" title="Tech">
+                <input type="checkbox" name="db_class[]" value="Tech" onchange="handleDbClassToggle(this)" class="peer">
+                <span class="peer-checked:border-[color:var(--c)]">
+                  <img src="assets/images/classes/tech.svg" alt="Tech" class="w-6 h-6 object-contain">
+                </span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
+                <input type="checkbox" name="db_class[]" value="Cosmic" onchange="handleDbClassToggle(this)" class="peer">
+                <span class="peer-checked:border-[color:var(--c)]">
+                  <img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain">
+                </span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #9d4edd;" title="Mystic">
+                <input type="checkbox" name="db_class[]" value="Mystic" onchange="handleDbClassToggle(this)" class="peer">
+                <span class="peer-checked:border-[color:var(--c)]">
+                  <img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-6 h-6 object-contain">
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIMENSION 4: IMMUNITY BASED FILTER -->
+        <div class="pt-3 border-t border-slate-800/80 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-purple-400 flex items-center gap-1.5">
+              <span>🧪</span> 4. Filter by Immunity & Resistance:
+            </span>
+            <span class="text-[11px] text-slate-400 font-semibold" id="active-immunity-label">All Immunities</span>
+          </div>
+          <div class="flex items-center gap-2.5 flex-wrap">
             <select id="immunity-filter-select" onchange="filterByImmunity(this.value)" 
-                    class="bg-slate-900 border border-slate-700 text-xs text-white rounded-xl px-3 py-2 focus:outline-none focus:border-sky-400 max-w-[220px]">
-              <option value="All">All Immunities</option>
+                    class="bg-slate-900 border border-slate-700 text-xs text-white rounded-xl px-3 py-2 focus:outline-none focus:border-purple-400 min-w-[260px]">
+              <option value="All">All Immunities (No Immunity Filter)</option>
             </select>
           </div>
-
-          <!-- Owned Only Toggle -->
-          <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
-                  class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500 transition-all whitespace-nowrap">
-            ★ Owned Roster Only
-          </button>
         </div>
 
-        <!-- Class Icon Filter Toggles -->
-        <div class="flex items-center gap-2 flex-wrap pt-2.5 border-t border-slate-800/80">
-          <span class="text-xs text-slate-400 font-bold mr-1">Class Filter:</span>
-          <button onclick="resetDbClassFilter()" id="db-class-all-btn" class="db-class-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
-          <div class="flex items-center flex-wrap gap-1.5 shrink-0" id="db-class-icons">
-            <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
-              <input type="checkbox" name="db_class[]" value="Science" onchange="handleDbClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/science.svg" alt="Science" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
-              <input type="checkbox" name="db_class[]" value="Skill" onchange="handleDbClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/skill.svg" alt="Skill" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
-              <input type="checkbox" name="db_class[]" value="Mutant" onchange="handleDbClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #0070f3;" title="Tech">
-              <input type="checkbox" name="db_class[]" value="Tech" onchange="handleDbClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/tech.svg" alt="Tech" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
-              <input type="checkbox" name="db_class[]" value="Cosmic" onchange="handleDbClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain">
-              </span>
-            </label>
-            <label class="class-icon-toggle" style="--c: #9d4edd;" title="Mystic">
-              <input type="checkbox" name="db_class[]" value="Mystic" onchange="handleDbClassToggle(this)" class="peer">
-              <span class="peer-checked:border-[color:var(--c)]">
-                <img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-6 h-6 object-contain">
-              </span>
-            </label>
+        <!-- Active Filter Summary Pills -->
+        <div id="db-active-filters-row" class="hidden pt-3 border-t border-slate-800/80 flex items-center gap-2 flex-wrap">
+          <span class="text-xs text-slate-400 font-bold">Active Filters:</span>
+          <div id="db-active-filters-pills" class="flex items-center gap-1.5 flex-wrap">
+            <!-- Active pills rendered by app.js -->
           </div>
         </div>
+
       </div>
 
       <!-- Database Classified Sections Container -->

@@ -254,3 +254,67 @@ body {
   box-shadow: 0 0 12px var(--c), inset 0 0 6px rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
+
+/* Database Tag & Category Filter Pills */
+.db-tag-chip {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.db-tag-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.6);
+  color: #ffffff;
+}
+
+.db-tag-chip.active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.25), rgba(2, 132, 199, 0.35));
+  border-color: #38bdf8;
+  color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+  font-weight: 800;
+}
+
+.db-category-btn {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.db-category-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(250, 204, 21, 0.6);
+  color: #ffffff;
+}
+
+.db-category-btn.active {
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.25), rgba(202, 138, 4, 0.35));
+  border-color: #facc15;
+  color: #fef08a;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.35);
+  font-weight: 800;
+}
+
+.active-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #e2e8f0;
+  transition: all 0.15s ease;
+}
+
+.active-filter-pill button {
+  color: #94a3b8;
+  transition: color 0.15s ease;
+}
+
+.active-filter-pill button:hover {
+  color: #f43f5e;
+}
