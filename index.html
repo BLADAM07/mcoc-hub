@@ -178,102 +178,147 @@
         </div>
       </div>
 
-      <!-- Filters Row -->
-      <div class="flex flex-wrap items-center justify-between gap-3 glass-panel p-3.5 rounded-xl border border-slate-800">
-        <!-- Class Filter Chips -->
-        <div class="flex items-center gap-1.5 flex-wrap">
-          <span class="text-xs text-slate-400 font-bold mr-1">Class:</span>
-          <button onclick="filterByClass('All')" data-class="All" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-white hover:bg-slate-700">All</button>
-          <button onclick="filterByClass('Cosmic')" data-class="Cosmic" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-cosmic text-slate-950">Cosmic</button>
-          <button onclick="filterByClass('Tech')" data-class="Tech" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-tech text-white">Tech</button>
-          <button onclick="filterByClass('Mutant')" data-class="Mutant" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-mutant text-slate-950">Mutant</button>
-          <button onclick="filterByClass('Skill')" data-class="Skill" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-skill text-white">Skill</button>
-          <button onclick="filterByClass('Science')" data-class="Science" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-science text-white">Science</button>
-          <button onclick="filterByClass('Mystic')" data-class="Mystic" class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-mystic text-white">Mystic</button>
-        </div>
+          <!-- Filters Row -->
+    <div class="flex flex-wrap items-center justify-between gap-3 glass-panel p-3.5 rounded-xl border border-slate-800">
 
-        <!-- Rarity Filters -->
-        <div class="flex items-center gap-1.5">
-          <span class="text-xs text-slate-400 font-bold mr-1">Rarity:</span>
-          <button onclick="filterByRarity('All')" data-rarity="All" class="rarity-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-500 text-white">All</button>
-          <button onclick="filterByRarity('7')" data-rarity="7" class="rarity-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold star-badge-7">7★</button>
-          <button onclick="filterByRarity('6')" data-rarity="6" class="rarity-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold star-badge-6">6★</button>
-        </div>
+      <!-- Class Filter Chips -->
+      <div class="flex items-center gap-1.5 flex-wrap">
+
+        <span class="text-xs text-slate-400 font-bold mr-1">Class:</span>
+
+        <!-- All -->
+        <button onclick="filterByClass('All')" data-class="All"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-white hover:bg-slate-700 flex items-center gap-1.5">
+          <span>All</span>
+        </button>
+
+        <!-- Cosmic -->
+        <button onclick="filterByClass('Cosmic')" data-class="Cosmic"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-cosmic text-slate-950 flex items-center gap-1.5">
+          <img src="assets/images/cosmic.png" alt="Cosmic" class="w-5 h-5 object-contain">
+          <span>Cosmic</span>
+        </button>
+
+        <!-- Tech -->
+        <button onclick="filterByClass('Tech')" data-class="Tech"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-tech text-white flex items-center gap-1.5">
+          <img src="assets/images/tech.png" alt="Tech" class="w-5 h-5 object-contain">
+          <span>Tech</span>
+        </button>
+
+        <!-- Mutant -->
+        <button onclick="filterByClass('Mutant')" data-class="Mutant"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-mutant text-slate-950 flex items-center gap-1.5">
+          <img src="assets/images/mutant.png" alt="Mutant" class="w-5 h-5 object-contain">
+          <span>Mutant</span>
+        </button>
+
+        <!-- Skill -->
+        <button onclick="filterByClass('Skill')" data-class="Skill"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-skill text-white flex items-center gap-1.5">
+          <img src="assets/images/skill.png" alt="Skill" class="w-5 h-5 object-contain">
+          <span>Skill</span>
+        </button>
+
+        <!-- Science -->
+        <button onclick="filterByClass('Science')" data-class="Science"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-science text-white flex items-center gap-1.5">
+          <img src="assets/images/science.png" alt="Science" class="w-5 h-5 object-contain">
+          <span>Science</span>
+        </button>
+
+        <!-- Mystic -->
+        <button onclick="filterByClass('Mystic')" data-class="Mystic"
+          class="class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-mystic text-white flex items-center gap-1.5">
+          <img src="assets/images/mystic.png" alt="Mystic" class="w-5 h-5 object-contain">
+          <span>Mystic</span>
+        </button>
+
       </div>
+    </div>
 
-      <!-- Owned Grid -->
-      <div id="roster-champions-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-        <!-- Rendered by app.js -->
-      </div>
-    </section>
-
-
-    <!-- TAB 3: CHAMPION DATABASE (327+) -->
-    <section id="tab-database" class="tab-content hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl border border-sky-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div>
-          <h2 class="text-xl font-black text-white flex items-center gap-2">
-            <span>🔍</span> Master Champion Database & Immunity Inspector
-          </h2>
-          <p class="text-xs text-slate-300 mt-1 max-w-2xl">
-            Browse all 327+ champions in the Contest. Filter by class, star rarity, or specific baseline immunities to find exact matches.
-          </p>
-        </div>
-        <div id="db-filter-counts" class="text-xs text-slate-300 font-medium">
-          <!-- Database count -->
-        </div>
-      </div>
-
-      <!-- Search & Filters Toolbar -->
-      <div class="glass-panel p-4 rounded-xl border border-slate-800 space-y-3">
-        <div class="flex flex-col md:flex-row gap-3 items-center justify-between">
-          
-          <!-- Search input -->
-          <div class="relative w-full md:w-80">
-            <input type="text" id="main-search-input" placeholder="Search champion name or keyword..." 
-                   class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-400">
-            <span class="absolute right-3 top-2.5 text-xs text-slate-500">🔍</span>
+            <!-- Rarity Filters -->
+            <div class="flex items-center gap-1.5">
+              <span class="text-xs text-slate-400 font-bold mr-1">Rarity:</span>
+              <button onclick="filterByRarity('All')" data-rarity="All" class="rarity-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-500 text-white">All</button>
+              <button onclick="filterByRarity('7')" data-rarity="7" class="rarity-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold star-badge-7">7★</button>
+              <button onclick="filterByRarity('6')" data-rarity="6" class="rarity-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold star-badge-6">6★</button>
+            </div>
           </div>
 
-          <!-- Immunity Filter Dropdown -->
-          <div class="flex items-center gap-2 w-full md:w-auto">
-            <span class="text-xs font-bold text-slate-400 whitespace-nowrap">Filter Immunity:</span>
-            <select id="immunity-filter-select" onchange="filterByImmunity(this.value)" 
-                    class="bg-slate-900 border border-slate-700 text-xs text-white rounded-xl px-3 py-2 focus:outline-none focus:border-sky-400 max-w-[220px]">
-              <option value="All">All Immunities</option>
-            </select>
+          <!-- Owned Grid -->
+          <div id="roster-champions-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <!-- Rendered by app.js -->
+          </div>
+        </section>
+
+
+        <!-- TAB 3: CHAMPION DATABASE (327+) -->
+        <section id="tab-database" class="tab-content hidden space-y-6">
+          <div class="glass-panel p-5 rounded-2xl border border-sky-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-black text-white flex items-center gap-2">
+                <span>🔍</span> Master Champion Database & Immunity Inspector
+              </h2>
+              <p class="text-xs text-slate-300 mt-1 max-w-2xl">
+                Browse all 327+ champions in the Contest. Filter by class, star rarity, or specific baseline immunities to find exact matches.
+              </p>
+            </div>
+            <div id="db-filter-counts" class="text-xs text-slate-300 font-medium">
+              <!-- Database count -->
+            </div>
           </div>
 
-          <!-- Owned Only Toggle -->
-          <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
-                  class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500 transition-all whitespace-nowrap">
-            ★ Owned Roster Only
-          </button>
-        </div>
-      </div>
+          <!-- Search & Filters Toolbar -->
+          <div class="glass-panel p-4 rounded-xl border border-slate-800 space-y-3">
+            <div class="flex flex-col md:flex-row gap-3 items-center justify-between">
+              
+              <!-- Search input -->
+              <div class="relative w-full md:w-80">
+                <input type="text" id="main-search-input" placeholder="Search champion name or keyword..." 
+                      class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-400">
+                <span class="absolute right-3 top-2.5 text-xs text-slate-500">🔍</span>
+              </div>
 
-      <!-- Database Grid -->
-      <div id="database-champions-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-        <!-- Rendered by app.js -->
-      </div>
-    </section>
+              <!-- Immunity Filter Dropdown -->
+              <div class="flex items-center gap-2 w-full md:w-auto">
+                <span class="text-xs font-bold text-slate-400 whitespace-nowrap">Filter Immunity:</span>
+                <select id="immunity-filter-select" onchange="filterByImmunity(this.value)" 
+                        class="bg-slate-900 border border-slate-700 text-xs text-white rounded-xl px-3 py-2 focus:outline-none focus:border-sky-400 max-w-[220px]">
+                  <option value="All">All Immunities</option>
+                </select>
+              </div>
+
+              <!-- Owned Only Toggle -->
+              <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
+                      class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500 transition-all whitespace-nowrap">
+                ★ Owned Roster Only
+              </button>
+            </div>
+          </div>
+
+          <!-- Database Grid -->
+          <div id="database-champions-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <!-- Rendered by app.js -->
+          </div>
+        </section>
 
 
-    <!-- TAB 4: STORY QUEST TIER LISTS -->
-    <section id="tab-tiers" class="tab-content hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl border border-amber-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div>
-          <h2 class="text-xl font-black text-white flex items-center gap-2">
-            <span>🏆</span> Story Quest & Progression Tier Lists
-          </h2>
-          <p class="text-xs text-slate-300 mt-1 max-w-2xl">
-            S-Tier champions categorized by class. These champions provide the highest utility, node coverage, and damage output for clearing story acts, variants, and boss fights.
-          </p>
-        </div>
-        <div class="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1.5 rounded-xl border border-amber-400/30">
-          Rank-Up Priority Guide
-        </div>
-      </div>
+        <!-- TAB 4: STORY QUEST TIER LISTS -->
+        <section id="tab-tiers" class="tab-content hidden space-y-6">
+          <div class="glass-panel p-5 rounded-2xl border border-amber-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-black text-white flex items-center gap-2">
+                <span>🏆</span> Story Quest & Progression Tier Lists
+              </h2>
+              <p class="text-xs text-slate-300 mt-1 max-w-2xl">
+                S-Tier champions categorized by class. These champions provide the highest utility, node coverage, and damage output for clearing story acts, variants, and boss fights.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1.5 rounded-xl border border-amber-400/30">
+              Rank-Up Priority Guide
+            </div>
+          </div>
 
       <!-- Tier List Container -->
       <div id="tier-lists-container">
