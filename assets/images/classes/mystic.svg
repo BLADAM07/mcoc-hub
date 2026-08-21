@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mysticGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0aaff" />
+      <stop offset="50%" stop-color="#9d4edd" />
+      <stop offset="100%" stop-color="#5a189a" />
+    </linearGradient>
+  </defs>
+  <!-- Mystic Arcane Eye / Diamond -->
+  <polygon points="32,8 54,32 32,56 10,32" stroke="url(#mysticGrad)" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+  <path d="M10 32 Q32 16 54 32 Q32 48 10 32 Z" stroke="#e0aaff" stroke-width="2.5" fill="rgba(157, 78, 221, 0.25)"/>
+  <circle cx="32" cy="32" r="7" fill="url(#mysticGrad)"/>
+  <circle cx="32" cy="32" r="3" fill="#ffffff"/>
+  <circle cx="32" cy="14" r="2" fill="#e0aaff"/>
+  <circle cx="32" cy="50" r="2" fill="#e0aaff"/>
+</svg>

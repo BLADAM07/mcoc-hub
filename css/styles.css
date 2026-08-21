@@ -214,3 +214,43 @@ body {
     transform: scale(1) translateY(0);
   }
 }
+
+/* Class Icon Filter Toggles */
+.class-icon-toggle {
+  display: inline-flex;
+  cursor: pointer;
+  user-select: none;
+}
+
+.class-icon-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.class-icon-toggle span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(51, 65, 85, 0.7);
+  background-color: rgba(30, 41, 59, 0.6);
+  opacity: 0.45;
+  filter: grayscale(100%);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.class-icon-toggle span:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.class-icon-toggle input[type="checkbox"]:checked + span,
+.class-icon-toggle.active span {
+  opacity: 1;
+  filter: grayscale(0%);
+  border-color: var(--c);
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px var(--c), inset 0 0 6px rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}

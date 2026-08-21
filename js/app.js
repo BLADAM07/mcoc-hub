@@ -1,8 +1,8 @@
 // MCOC Master Companion Main Application Logic
 let currentTab = 'nodes';
 let searchQuery = '';
-let selectedClassFilter = 'All';
-let selectedDbClassFilter = 'All';
+let selectedRosterClasses = new Set();
+let selectedDbClasses = new Set();
 let selectedRarityFilter = 'All';
 let ownedOnlyFilter = false;
 let selectedImmunityFilter = 'All';
@@ -189,8 +189,8 @@ function renderRosterTab() {
   const allChamps = window.MCOC_DATA.champions || [];
   let ownedChamps = allChamps.filter(c => c.isOwned);
 
-  if (selectedClassFilter !== 'All') {
-    ownedChamps = ownedChamps.filter(c => c.class === selectedClassFilter);
+  if (selectedRosterClasses.size > 0) {
+    ownedChamps = ownedChamps.filter(c => selectedRosterClasses.has(c.class));
   }
   if (selectedRarityFilter !== 'All') {
     const rNum = parseInt(selectedRarityFilter);
@@ -269,16 +269,9 @@ function renderDatabaseTab() {
 
   // Official Classification Order: Science, Skill, Mutant, Tech, Cosmic, Mystic
   const classOrder = ['Science', 'Skill', 'Mutant', 'Tech', 'Cosmic', 'Mystic'];
-  const classIcons = {
-    'Science': '🧪',
-    'Skill': '🎯',
-    'Mutant': '🧬',
-    'Tech': '🤖',
-    'Cosmic': '🌌',
-    'Mystic': '🔮'
-  };
-
-  const classesToRender = selectedDbClassFilter === 'All' ? classOrder : [selectedDbClassFilter];
+  const classesToRender = selectedDbClasses.size > 0 
+    ? classOrder.filter(cls => selectedDbClasses.has(cls))
+    : classOrder;
 
   let html = '';
 
@@ -286,20 +279,21 @@ function renderDatabaseTab() {
     const clsInfo = window.MCOC_DATA.classes[clsName] || { color: '#38bdf8', border: '#38bdf8' };
     const classChamps = champs.filter(c => c.class === clsName);
 
-    if (classChamps.length === 0 && selectedDbClassFilter === 'All') {
+    if (classChamps.length === 0 && selectedDbClasses.size === 0) {
       return; // Skip empty class block when searching
     }
 
     // Sort alphabetically by name
     classChamps.sort((a, b) => a.name.localeCompare(b.name));
-    const icon = classIcons[clsName] || '🛡️';
 
     html += `
       <div class="glass-panel p-5 rounded-2xl border space-y-4" style="border-color: ${clsInfo.border};">
         <!-- Class Section Header -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
-          <div class="flex items-center gap-2.5">
-            <span class="text-2xl">${icon}</span>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-slate-900 border p-1 flex items-center justify-center shadow-md" style="border-color: ${clsInfo.color};">
+              <img src="assets/images/classes/${clsName.toLowerCase()}.svg" alt="${clsName}" class="w-full h-full object-contain">
+            </div>
             <div>
               <h3 class="text-base sm:text-lg font-black tracking-tight" style="color: ${clsInfo.color};">${clsName.toUpperCase()} CLASS</h3>
               <p class="text-[11px] text-slate-400 font-medium">${clsInfo.identity || ''}</p>
@@ -626,16 +620,6 @@ function closeChampionModal() {
   if (modal) modal.classList.add('hidden');
 }
 
-function filterByClass(cls) {
-  selectedClassFilter = cls;
-  document.querySelectorAll('.class-filter-btn').forEach(btn => {
-    btn.classList.toggle('ring-2', btn.dataset.class === cls);
-    btn.classList.toggle('ring-white', btn.dataset.class === cls);
-  });
-  renderRosterTab();
-  renderDatabaseTab();
-}
-
 function filterByRarity(rarity) {
   selectedRarityFilter = rarity;
   document.querySelectorAll('.rarity-filter-btn').forEach(btn => {
@@ -663,13 +647,61 @@ function toggleOwnedOnly() {
   renderDatabaseTab();
 }
 
-function filterDbByClass(cls) {
-  selectedDbClassFilter = cls;
-  document.querySelectorAll('.db-class-filter-btn').forEach(btn => {
-    const isMatch = btn.dataset.dbClass === cls;
-    btn.classList.toggle('ring-2', isMatch);
-    btn.classList.toggle('ring-white', isMatch);
-  });
+// Roster Class Icon Filter Handlers
+function handleRosterClassToggle(checkbox) {
+  if (checkbox.checked) {
+    selectedRosterClasses.add(checkbox.value);
+  } else {
+    selectedRosterClasses.delete(checkbox.value);
+  }
+  const allBtn = document.getElementById('roster-class-all-btn');
+  if (allBtn) {
+    const isAll = selectedRosterClasses.size === 0;
+    allBtn.classList.toggle('ring-2', isAll);
+    allBtn.classList.toggle('ring-white', isAll);
+    allBtn.classList.toggle('bg-sky-500', isAll);
+    allBtn.classList.toggle('bg-slate-800', !isAll);
+  }
+  renderRosterTab();
+}
+
+function resetRosterClassFilter() {
+  selectedRosterClasses.clear();
+  document.querySelectorAll('input[name="roster_class[]"]').forEach(cb => cb.checked = false);
+  const allBtn = document.getElementById('roster-class-all-btn');
+  if (allBtn) {
+    allBtn.classList.add('ring-2', 'ring-white', 'bg-sky-500');
+    allBtn.classList.remove('bg-slate-800');
+  }
+  renderRosterTab();
+}
+
+// Database Class Icon Filter Handlers
+function handleDbClassToggle(checkbox) {
+  if (checkbox.checked) {
+    selectedDbClasses.add(checkbox.value);
+  } else {
+    selectedDbClasses.delete(checkbox.value);
+  }
+  const allBtn = document.getElementById('db-class-all-btn');
+  if (allBtn) {
+    const isAll = selectedDbClasses.size === 0;
+    allBtn.classList.toggle('ring-2', isAll);
+    allBtn.classList.toggle('ring-white', isAll);
+    allBtn.classList.toggle('bg-sky-500', isAll);
+    allBtn.classList.toggle('bg-slate-800', !isAll);
+  }
+  renderDatabaseTab();
+}
+
+function resetDbClassFilter() {
+  selectedDbClasses.clear();
+  document.querySelectorAll('input[name="db_class[]"]').forEach(cb => cb.checked = false);
+  const allBtn = document.getElementById('db-class-all-btn');
+  if (allBtn) {
+    allBtn.classList.add('ring-2', 'ring-white', 'bg-sky-500');
+    allBtn.classList.remove('bg-slate-800');
+  }
   renderDatabaseTab();
 }
 

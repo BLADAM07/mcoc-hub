@@ -1,0 +1,17 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mutantGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5cc" />
+      <stop offset="50%" stop-color="#ffb703" />
+      <stop offset="100%" stop-color="#e5a100" />
+    </linearGradient>
+  </defs>
+  <!-- DNA Double Helix / Mutant Symbol -->
+  <path d="M18 12 Q32 26 46 12 M18 52 Q32 38 46 52" stroke="url(#mutantGrad)" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M18 12 Q32 32 18 52 M46 12 Q32 32 46 52" stroke="url(#mutantGrad)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Cross rungs -->
+  <line x1="22" y1="20" x2="42" y2="20" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="28" y1="32" x2="36" y2="32" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="44" x2="42" y2="44" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="32" cy="32" r="4.5" fill="#ffffff" />
+</svg>

@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="skillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b" />
+      <stop offset="50%" stop-color="#e63946" />
+      <stop offset="100%" stop-color="#9d0208" />
+    </linearGradient>
+  </defs>
+  <!-- Target Crosshair -->
+  <circle cx="32" cy="32" r="22" stroke="url(#skillGrad)" stroke-width="3.5" fill="none"/>
+  <circle cx="32" cy="32" r="14" stroke="#ff6b6b" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <circle cx="32" cy="32" r="6" fill="url(#skillGrad)"/>
+  <circle cx="32" cy="32" r="2.5" fill="#ffffff"/>
+  <!-- Cross lines -->
+  <line x1="32" y1="6" x2="32" y2="14" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="32" y1="50" x2="32" y2="58" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="6" y1="32" x2="14" y2="32" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="32" x2="58" y2="32" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+</svg>
