@@ -2,6 +2,7 @@
 let currentTab = 'nodes';
 let searchQuery = '';
 let selectedClassFilter = 'All';
+let selectedDbClassFilter = 'All';
 let selectedRarityFilter = 'All';
 let ownedOnlyFilter = false;
 let selectedImmunityFilter = 'All';
@@ -96,7 +97,7 @@ function renderStatsOverview() {
   if (sixEl) sixEl.innerText = stats.sixStars || 192;
 }
 
-function renderChampionCard(champ, isCounterMode = false) {
+function renderChampionCard(champ, isRosterMode = false) {
   const clsData = window.MCOC_DATA.classes[champ.class] || { color: '#94a3b8', bg: 'rgba(148, 163, 184, 0.1)', border: 'rgba(148, 163, 184, 0.3)' };
   const isOwned = champ.isOwned;
   const ownedData = champ.owned || {};
@@ -116,15 +117,12 @@ function renderChampionCard(champ, isCounterMode = false) {
     </div>
   `;
 
-  const statusBadge = isOwned ? `
+  // Status Badge: ONLY shown in Roster & Upgrade Tracker (R1, R2, R3...)
+  const statusBadge = (isRosterMode && isOwned) ? `
     <div class="absolute top-2 left-2 ${rarity === 7 ? 'bg-rose-950/90 text-rose-300 border-rose-500/50' : 'bg-slate-900/90 text-amber-300 border-amber-500/50'} border px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider shadow-md z-10">
       ${ownedData.rank ? `R${ownedData.rank}` : 'OWNED'}
     </div>
-  ` : `
-    <div class="absolute top-2 left-2 bg-slate-900/80 text-slate-400 border border-slate-700 px-1.5 py-0.5 rounded text-[9px] font-semibold z-10">
-      Database
-    </div>
-  `;
+  ` : '';
 
   const sTierBadge = champ.storyTier ? `
     <div class="absolute top-2 right-2 bg-amber-500/90 text-slate-950 font-black text-[9px] px-1.5 py-0.5 rounded uppercase tracking-wider shadow z-10">
@@ -143,10 +141,16 @@ function renderChampionCard(champ, isCounterMode = false) {
     </div>
   ` : '';
 
-  const upgradePill = (isOwned && ownedData.futureRank && ownedData.futureRank > ownedData.rank) ? `
+  // Upgrade pill: ONLY shown in Roster & Upgrade Tracker
+  const upgradePill = (isRosterMode && isOwned && ownedData.futureRank && ownedData.futureRank > ownedData.rank) ? `
     <div class="mt-1 text-[10px] font-bold text-amber-300 bg-amber-950/50 px-1.5 py-0.5 rounded border border-amber-500/30 text-center">
       Upgrade: R${ownedData.rank} ➔ R${ownedData.futureRank}
     </div>
+  ` : '';
+
+  // Notes: ONLY shown in Roster & Upgrade Tracker
+  const notesHtml = (isRosterMode && isOwned && ownedData.notes) ? `
+    <span class="text-[9px] text-slate-400 truncate max-w-[70px] italic" title="${escapeHtml(ownedData.notes)}">${escapeHtml(ownedData.notes)}</span>
   ` : '';
 
   return `
@@ -169,7 +173,7 @@ function renderChampionCard(champ, isCounterMode = false) {
         </div>
         <div class="flex items-center justify-between text-[11px] mt-0.5">
           <span class="font-semibold" style="color: ${clsData.color};">${champ.class}</span>
-          ${isOwned && ownedData.notes ? `<span class="text-[9px] text-slate-400 truncate max-w-[70px] italic">${escapeHtml(ownedData.notes)}</span>` : ''}
+          ${notesHtml}
         </div>
         ${immunitiesPreview}
         ${upgradePill}
@@ -219,7 +223,7 @@ function renderRosterTab() {
     return;
   }
 
-  container.innerHTML = ownedChamps.map(champ => renderChampionCard(champ)).join('');
+  container.innerHTML = ownedChamps.map(champ => renderChampionCard(champ, true)).join('');
 }
 
 function renderDatabaseTab() {
@@ -228,9 +232,6 @@ function renderDatabaseTab() {
 
   let champs = window.MCOC_DATA.champions || [];
 
-  if (selectedClassFilter !== 'All') {
-    champs = champs.filter(c => c.class === selectedClassFilter);
-  }
   if (selectedRarityFilter !== 'All') {
     const rNum = parseInt(selectedRarityFilter);
     champs = champs.filter(c => c.owned?.rarity === rNum);
@@ -262,11 +263,75 @@ function renderDatabaseTab() {
   }
 
   if (champs.length === 0) {
-    container.innerHTML = `<div class="col-span-full p-8 text-center glass-panel rounded-xl text-slate-400">No champions found matching your criteria.</div>`;
+    container.innerHTML = `<div class="p-8 text-center glass-panel rounded-xl text-slate-400">No champions found matching your search criteria.</div>`;
     return;
   }
 
-  container.innerHTML = champs.map(champ => renderChampionCard(champ)).join('');
+  // Official Classification Order: Science, Skill, Mutant, Tech, Cosmic, Mystic
+  const classOrder = ['Science', 'Skill', 'Mutant', 'Tech', 'Cosmic', 'Mystic'];
+  const classIcons = {
+    'Science': '🧪',
+    'Skill': '🎯',
+    'Mutant': '🧬',
+    'Tech': '🤖',
+    'Cosmic': '🌌',
+    'Mystic': '🔮'
+  };
+
+  const classesToRender = selectedDbClassFilter === 'All' ? classOrder : [selectedDbClassFilter];
+
+  let html = '';
+
+  classesToRender.forEach(clsName => {
+    const clsInfo = window.MCOC_DATA.classes[clsName] || { color: '#38bdf8', border: '#38bdf8' };
+    const classChamps = champs.filter(c => c.class === clsName);
+
+    if (classChamps.length === 0 && selectedDbClassFilter === 'All') {
+      return; // Skip empty class block when searching
+    }
+
+    // Sort alphabetically by name
+    classChamps.sort((a, b) => a.name.localeCompare(b.name));
+    const icon = classIcons[clsName] || '🛡️';
+
+    html += `
+      <div class="glass-panel p-5 rounded-2xl border space-y-4" style="border-color: ${clsInfo.border};">
+        <!-- Class Section Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+          <div class="flex items-center gap-2.5">
+            <span class="text-2xl">${icon}</span>
+            <div>
+              <h3 class="text-base sm:text-lg font-black tracking-tight" style="color: ${clsInfo.color};">${clsName.toUpperCase()} CLASS</h3>
+              <p class="text-[11px] text-slate-400 font-medium">${clsInfo.identity || ''}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-xs text-slate-400 hidden lg:block">
+              Crushes <strong class="text-emerald-400">${clsInfo.beats}</strong> &bull; Weak to <strong class="text-rose-400">${clsInfo.weakTo}</strong>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-black bg-slate-900/90 border border-slate-700 text-slate-200 shadow-sm whitespace-nowrap">
+              ${classChamps.length} Champions
+            </span>
+          </div>
+        </div>
+
+        <!-- Champions Grid for this class -->
+        ${classChamps.length > 0 ? `
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            ${classChamps.map(champ => renderChampionCard(champ, false)).join('')}
+          </div>
+        ` : `
+          <div class="p-6 text-center text-xs text-slate-400">No ${clsName} champions match the filters.</div>
+        `}
+      </div>
+    `;
+  });
+
+  if (html === '') {
+    html = `<div class="p-8 text-center glass-panel rounded-xl text-slate-400">No champions found matching the selected class filter.</div>`;
+  }
+
+  container.innerHTML = html;
 }
 
 function renderTiersTab() {
@@ -595,6 +660,16 @@ function toggleOwnedOnly() {
     btn.classList.toggle('bg-slate-800', !ownedOnlyFilter);
     btn.classList.toggle('text-slate-300', !ownedOnlyFilter);
   }
+  renderDatabaseTab();
+}
+
+function filterDbByClass(cls) {
+  selectedDbClassFilter = cls;
+  document.querySelectorAll('.db-class-filter-btn').forEach(btn => {
+    const isMatch = btn.dataset.dbClass === cls;
+    btn.classList.toggle('ring-2', isMatch);
+    btn.classList.toggle('ring-white', isMatch);
+  });
   renderDatabaseTab();
 }
 

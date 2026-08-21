@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
@@ -250,10 +250,22 @@
             ★ Owned Roster Only
           </button>
         </div>
+
+        <!-- Class Quick Filter Chips -->
+        <div class="flex items-center gap-1.5 flex-wrap pt-2 border-t border-slate-800/80">
+          <span class="text-xs text-slate-400 font-bold mr-1">Class Filter:</span>
+          <button onclick="filterDbByClass('All')" data-db-class="All" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-500 text-white transition-all ring-2 ring-white">All Classes</button>
+          <button onclick="filterDbByClass('Science')" data-db-class="Science" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-science text-white hover:opacity-90 transition-all">🧪 Science</button>
+          <button onclick="filterDbByClass('Skill')" data-db-class="Skill" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-skill text-white hover:opacity-90 transition-all">🎯 Skill</button>
+          <button onclick="filterDbByClass('Mutant')" data-db-class="Mutant" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-mutant text-slate-950 hover:opacity-90 transition-all">🧬 Mutant</button>
+          <button onclick="filterDbByClass('Tech')" data-db-class="Tech" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-tech text-white hover:opacity-90 transition-all">🤖 Tech</button>
+          <button onclick="filterDbByClass('Cosmic')" data-db-class="Cosmic" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-cosmic text-slate-950 hover:opacity-90 transition-all">🌌 Cosmic</button>
+          <button onclick="filterDbByClass('Mystic')" data-db-class="Mystic" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-mystic text-white hover:opacity-90 transition-all">🔮 Mystic</button>
+        </div>
       </div>
 
-      <!-- Database Grid -->
-      <div id="database-champions-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+      <!-- Database Classified Sections Container -->
+      <div id="database-champions-grid" class="space-y-6">
         <!-- Rendered by app.js -->
       </div>
     </section>

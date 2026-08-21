@@ -1,4 +1,4 @@
-﻿// Interactive Node & Hazard Counter Engine
+// Interactive Node & Hazard Counter Engine
 let activeSelectedNodeId = "biohazard";
 let activeCustomImmunities = new Set();
 
@@ -163,7 +163,7 @@ window.calculateAndRenderCounters = function() {
     </div>
     
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-      ${matchedChamps.map(champ => renderChampionCard(champ, true)).join('')}
+      ${matchedChamps.map(champ => renderChampionCard(champ, false)).join('')}
     </div>
   `;
 };
