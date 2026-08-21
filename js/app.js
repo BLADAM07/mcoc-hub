@@ -787,28 +787,25 @@ function handleRosterStarSlider(val) {
   const slider = document.getElementById('roster-star-slider');
   if (slider) slider.value = val;
 
-  const stats = window.MCOC_DATA.stats || {};
-  const totalOwned = stats.ownedChampions || 183;
-  const count6 = stats.sixStarChampions || 151;
-  const count7 = stats.sevenStarChampions || 32;
-
+  const display = document.getElementById('roster-star-slider-display');
+  
   if (val === 0) {
     selectedRarityFilter = 'All';
     if (display) {
       display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm';
-      display.innerHTML = `<span>★ ALL (6★ & 7★)</span> <span class="text-[10px] text-slate-400 font-bold ml-1">${totalOwned} Total</span>`;
+      display.innerHTML = `<span>★ ALL (6★ & 7★)</span> <span class="text-[10px] text-slate-400 font-bold ml-1">208 Total</span>`;
     }
   } else if (val === 1) {
     selectedRarityFilter = '6';
     if (display) {
       display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-amber-950/60 text-amber-300 border border-amber-500/40 shadow-sm';
-      display.innerHTML = `<span>6★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 6 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-amber-400 font-bold ml-1">(${count6} Champions)</span>`;
+      display.innerHTML = `<span>6★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 6 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-amber-400 font-bold ml-1">(198 Champions)</span>`;
     }
   } else if (val === 2) {
     selectedRarityFilter = '7';
     if (display) {
       display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-rose-950/60 text-rose-300 border border-rose-500/40 shadow-sm';
-      display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(${count7} Mythics)</span>`;
+      display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(10 Mythics)</span>`;
     }
   }
 
