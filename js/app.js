@@ -788,37 +788,46 @@ function handleRosterStarSlider(val) {
   if (slider) slider.value = val;
 
   const display = document.getElementById('roster-star-slider-display');
+  
   if (val === 0) {
     selectedRarityFilter = 'All';
     if (display) {
-      display.className = 'flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/30';
-      display.innerHTML = `<span>★ ALL RARITIES</span>`;
+      display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm';
+      display.innerHTML = `<span>★ ALL (6★ & 7★)</span> <span class="text-[10px] text-slate-400 font-bold ml-1">208 Total</span>`;
     }
-  } else {
-    selectedRarityFilter = val.toString();
+  } else if (val === 1) {
+    selectedRarityFilter = '6';
     if (display) {
-      if (val === 7) {
-        display.className = 'flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-xs font-black bg-rose-950/60 text-rose-300 border border-rose-500/40';
-        display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3 h-3 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(Mythic)</span>`;
-      } else {
-        display.className = 'flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-xs font-black bg-amber-950/60 text-amber-300 border border-amber-500/40';
-        display.innerHTML = `<span>${val}★</span> <div class="flex items-center gap-0.5">${Array.from({ length: val }).map(() => `<img src="assets/images/Champion-star.png" class="w-3 h-3 inline-block" />`).join('')}</div>`;
-      }
+      display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-amber-950/60 text-amber-300 border border-amber-500/40 shadow-sm';
+      display.innerHTML = `<span>6★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 6 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-amber-400 font-bold ml-1">(198 Champions)</span>`;
+    }
+  } else if (val === 2) {
+    selectedRarityFilter = '7';
+    if (display) {
+      display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-rose-950/60 text-rose-300 border border-rose-500/40 shadow-sm';
+      display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(10 Mythics)</span>`;
     }
   }
 
-  // Update tick labels active styling
-  for (let i = 0; i <= 7; i++) {
-    const tick = document.getElementById(`star-tick-${i}`);
-    if (tick) {
-      const isActive = (i === val);
-      tick.classList.toggle('text-white', isActive && i === 0);
-      tick.classList.toggle('text-amber-300', isActive && i > 0 && i < 7);
-      tick.classList.toggle('text-rose-400', isActive && i === 7);
-      tick.classList.toggle('font-black', isActive);
-      tick.classList.toggle('scale-125', isActive);
-      tick.classList.toggle('text-slate-400', !isActive);
-    }
+  // Update tick labels active styling (0, 1, 2)
+  const tick0 = document.getElementById('star-tick-0');
+  const tick1 = document.getElementById('star-tick-1');
+  const tick2 = document.getElementById('star-tick-2');
+
+  if (tick0) {
+    tick0.className = val === 0 
+      ? 'cursor-pointer transition-all text-sky-400 font-black scale-110' 
+      : 'cursor-pointer hover:text-sky-300 transition-all text-slate-400 font-bold';
+  }
+  if (tick1) {
+    tick1.className = val === 1 
+      ? 'cursor-pointer transition-all text-amber-300 font-black scale-110' 
+      : 'cursor-pointer hover:text-amber-300 transition-all text-slate-400 font-bold';
+  }
+  if (tick2) {
+    tick2.className = val === 2 
+      ? 'cursor-pointer transition-all text-rose-400 font-black scale-110' 
+      : 'cursor-pointer hover:text-rose-400 transition-all text-slate-400 font-bold';
   }
 
   renderRosterTab();
@@ -831,8 +840,10 @@ function setRosterStarSlider(val) {
 function filterByRarity(rarity) {
   if (rarity === 'All') {
     handleRosterStarSlider(0);
-  } else {
-    handleRosterStarSlider(parseInt(rarity));
+  } else if (rarity === '6' || rarity === 6) {
+    handleRosterStarSlider(1);
+  } else if (rarity === '7' || rarity === 7) {
+    handleRosterStarSlider(2);
   }
 }
 
