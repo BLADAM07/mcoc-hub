@@ -5,6 +5,9 @@ let selectedRosterClasses = new Set();
 let selectedDbClasses = new Set();
 let selectedDbTag = 'All';
 let selectedDbCategory = 'All';
+let selectedDbYear = 'All';
+let selectedDbSort = 'name-asc';
+let selectedDbMatchMode = 'all';
 let selectedRarityFilter = 'All';
 let ownedOnlyFilter = false;
 let selectedImmunityFilter = 'All';
@@ -228,71 +231,71 @@ function renderRosterTab() {
   container.innerHTML = ownedChamps.map(champ => renderChampionCard(champ, true)).join('');
 }
 
+function renderHubChampionCard(champ) {
+  const clsData = window.MCOC_DATA.classes[champ.class] || { color: '#38bdf8', border: '#38bdf8', bg: 'rgba(56,189,248,0.15)' };
+  const isOwned = champ.isOwned;
+  const ownedData = champ.owned || {};
+  const rarity = ownedData.rarity || 6;
+  const isAwakened = !!ownedData.awaken;
+  const isStoryTier = !!champ.storyTier;
+  const hasImmunity = champ.immunities && champ.immunities.length > 0;
+  const hasPowerOrBuff = champ.categories && (champ.categories.includes('Power Control') || champ.categories.includes('Buff Control & Nullify'));
+
+  return `
+    <div class="hub-champion-card group" 
+         style="--card-border: ${clsData.border}; --card-bg: ${clsData.bg};" 
+         onclick="openChampionModal('${champ.id}')"
+         title="${escapeHtml(champ.name)} (${champ.class} Class)">
+      
+      <!-- Champion Portrait -->
+      <img src="assets/images/${champ.image}" 
+           alt="${escapeHtml(champ.name)}" 
+           class="hub-portrait" 
+           onerror="this.src='assets/images/ascendable.svg'" />
+      
+      <!-- Side Badges Column (Right Edge) -->
+      <div class="hub-side-badges">
+        <!-- Top badge: S-Tier / Crown / Star -->
+        ${isStoryTier ? `
+          <div class="hub-mini-badge bg-amber-950/90 border-amber-500/50" title="Story Quest S-Tier Pick">
+            <span class="text-[9px]">👑</span>
+          </div>
+        ` : (isOwned ? `
+          <div class="hub-mini-badge bg-slate-950/90" title="Owned ${rarity}★ ${isAwakened ? 'Awakened' : 'Unawakened'}">
+            <span class="text-[8px] font-black ${rarity === 7 ? 'text-rose-400' : 'text-amber-400'}">★</span>
+          </div>
+        ` : '')}
+
+        <!-- Middle badge: Class SVG logo -->
+        <div class="hub-mini-badge" title="${champ.class} Class">
+          <img src="assets/images/classes/${(champ.class || '').toLowerCase()}.svg" alt="" class="w-2.5 h-2.5 object-contain">
+        </div>
+
+        <!-- Bottom badge: Immunity / Defense Shield -->
+        ${hasImmunity ? `
+          <div class="hub-mini-badge bg-sky-950/90 border-sky-500/50" title="${champ.immunities.length} Active Immunities (${champ.immunities.slice(0, 2).join(', ')})">
+            <span class="text-[8px] text-sky-300">🛡️</span>
+          </div>
+        ` : (hasPowerOrBuff ? `
+          <div class="hub-mini-badge bg-purple-950/90 border-purple-500/50" title="Power / Buff Specialist">
+            <span class="text-[8px] text-purple-300">⚡</span>
+          </div>
+        ` : '')}
+      </div>
+
+      <!-- Bottom Name Bar -->
+      <div class="hub-name-bar">
+        <span class="hub-name-text">${escapeHtml(champ.name)}</span>
+      </div>
+    </div>
+  `;
+}
+
 function renderDatabaseTab() {
   const container = document.getElementById('database-champions-grid');
   if (!container) return;
 
-  // 1. Render/Update Tag Chips Container
-  const tagsContainer = document.getElementById('db-tags-container');
-  if (tagsContainer) {
-    const defaultTags = window.MCOC_DATA.masterTags || [
-      "#Hero", "#Villain", "#Metal", "#Robot", "#Dimensional Being", "#Symbiote",
-      "#Gamma", "#God", "#Avenger", "#Spider-Verse", "#X-Men", "#Mercenary",
-      "#Size: XL", "#Size: L", "#Size: S", "#Deathless"
-    ];
-    let tagHtml = `
-      <button onclick="filterDbByTag('All')" class="db-tag-chip px-2.5 py-1 rounded-lg text-xs font-bold border ${selectedDbTag === 'All' ? 'active bg-sky-500 text-white border-sky-400' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
-        ALL TAGS
-      </button>
-    `;
-    defaultTags.forEach(t => {
-      const isActive = selectedDbTag === t;
-      tagHtml += `
-        <button onclick="filterDbByTag('${t}')" class="db-tag-chip px-2.5 py-1 rounded-lg text-xs font-bold border ${isActive ? 'active bg-sky-500/20 text-sky-300 border-sky-400' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
-          ${t}
-        </button>
-      `;
-    });
-    tagsContainer.innerHTML = tagHtml;
-  }
-
-  // 2. Render/Update Category Buttons Container
-  const catsContainer = document.getElementById('db-categories-container');
-  if (catsContainer) {
-    const defaultCats = window.MCOC_DATA.masterCategories || [
-      "Burst Damage", "Damage Over Time (DOT)", "Power Control", "Buff Control & Nullify",
-      "Defensive & Tank", "Evade & Auto-Block Counter", "Purify & Cleanse", "Support & Synergy",
-      "Boss Slayer & Story MVP"
-    ];
-    let catHtml = `
-      <button onclick="filterDbByCategory('All')" class="db-category-btn px-2.5 py-1 rounded-lg text-xs font-bold border ${selectedDbCategory === 'All' ? 'active bg-amber-500 text-slate-950 border-amber-400 font-black' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
-        ALL CATEGORIES
-      </button>
-    `;
-    const catIcons = {
-      "Burst Damage": "💥",
-      "Damage Over Time (DOT)": "🩸",
-      "Power Control": "⚡",
-      "Buff Control & Nullify": "🛑",
-      "Defensive & Tank": "🛡️",
-      "Evade & Auto-Block Counter": "🎯",
-      "Purify & Cleanse": "🔄",
-      "Support & Synergy": "🌟",
-      "Boss Slayer & Story MVP": "👑"
-    };
-    defaultCats.forEach(c => {
-      const isActive = selectedDbCategory === c;
-      const icon = catIcons[c] || '⚔️';
-      catHtml += `
-        <button onclick="filterDbByCategory('${c}')" class="db-category-btn px-2.5 py-1 rounded-lg text-xs font-bold border ${isActive ? 'active bg-amber-500/20 text-amber-300 border-amber-400' : 'bg-slate-900/80 border-slate-700 text-slate-300'}">
-          <span>${icon}</span> ${c}
-        </button>
-      `;
-    });
-    catsContainer.innerHTML = catHtml;
-  }
-
-  // 3. Populate Immunity Dropdown
+  // 1. Populate Immunity Dropdown
   const immSelect = document.getElementById('immunity-filter-select');
   if (immSelect && immSelect.options.length <= 1) {
     const immList = Object.keys(window.MCOC_DATA.immunities || {}).sort();
@@ -307,40 +310,47 @@ function renderDatabaseTab() {
     immSelect.value = selectedImmunityFilter;
   }
 
-  // Update Indicator Labels
-  const tagLabel = document.getElementById('active-tag-label');
-  if (tagLabel) tagLabel.innerText = selectedDbTag === 'All' ? 'All Tags' : selectedDbTag;
-  
-  const catLabel = document.getElementById('active-category-label');
-  if (catLabel) catLabel.innerText = selectedDbCategory === 'All' ? 'All Categories' : selectedDbCategory;
+  // Update other dropdown values if elements exist
+  const tagSelect = document.getElementById('db-tag-select');
+  if (tagSelect) tagSelect.value = selectedDbTag;
 
-  const classLabel = document.getElementById('active-class-label');
-  if (classLabel) classLabel.innerText = selectedDbClasses.size > 0 ? Array.from(selectedDbClasses).join(', ') : 'All Classes';
+  const catSelect = document.getElementById('db-category-select');
+  if (catSelect) catSelect.value = selectedDbCategory;
 
-  const immLabel = document.getElementById('active-immunity-label');
-  if (immLabel) immLabel.innerText = selectedImmunityFilter === 'All' ? 'All Immunities' : selectedImmunityFilter;
+  const yearSelect = document.getElementById('db-year-select');
+  if (yearSelect) yearSelect.value = selectedDbYear;
 
-  // Filter champions based on the 4 dimensions + owned + search
+  const sortSelect = document.getElementById('db-sort-select');
+  if (sortSelect) sortSelect.value = selectedDbSort;
+
   let champs = window.MCOC_DATA.champions || [];
 
-  // Dimension 1: Tag
-  if (selectedDbTag !== 'All') {
-    champs = champs.filter(c => c.tags && c.tags.includes(selectedDbTag));
-  }
-
-  // Dimension 2: Category
-  if (selectedDbCategory !== 'All') {
-    champs = champs.filter(c => c.categories && c.categories.includes(selectedDbCategory));
-  }
-
-  // Dimension 3: Class
-  if (selectedDbClasses.size > 0) {
-    champs = champs.filter(c => selectedDbClasses.has(c.class));
-  }
-
-  // Dimension 4: Immunity
-  if (selectedImmunityFilter !== 'All') {
-    champs = champs.filter(c => c.immunities && c.immunities.includes(selectedImmunityFilter));
+  // Filter Champions based on Match Mode (All vs Any)
+  if (selectedDbMatchMode === 'all') {
+    if (selectedDbTag !== 'All') {
+      champs = champs.filter(c => c.tags && c.tags.includes(selectedDbTag));
+    }
+    if (selectedDbCategory !== 'All') {
+      champs = champs.filter(c => c.categories && c.categories.includes(selectedDbCategory));
+    }
+    if (selectedDbClasses.size > 0) {
+      champs = champs.filter(c => selectedDbClasses.has(c.class));
+    }
+    if (selectedImmunityFilter !== 'All') {
+      champs = champs.filter(c => c.immunities && c.immunities.includes(selectedImmunityFilter));
+    }
+  } else {
+    // MATCH ANY MODE
+    const hasAnyCriteria = (selectedDbTag !== 'All') || (selectedDbCategory !== 'All') || (selectedDbClasses.size > 0) || (selectedImmunityFilter !== 'All');
+    if (hasAnyCriteria) {
+      champs = champs.filter(c => {
+        const tagMatch = selectedDbTag !== 'All' && c.tags && c.tags.includes(selectedDbTag);
+        const catMatch = selectedDbCategory !== 'All' && c.categories && c.categories.includes(selectedDbCategory);
+        const clsMatch = selectedDbClasses.size > 0 && selectedDbClasses.has(c.class);
+        const immMatch = selectedImmunityFilter !== 'All' && c.immunities && c.immunities.includes(selectedImmunityFilter);
+        return tagMatch || catMatch || clsMatch || immMatch;
+      });
+    }
   }
 
   // Owned Only
@@ -361,10 +371,36 @@ function renderDatabaseTab() {
     });
   }
 
+  // Sort Champions
+  champs = [...champs];
+  if (selectedDbSort === 'name-asc') {
+    champs.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (selectedDbSort === 'name-desc') {
+    champs.sort((a, b) => b.name.localeCompare(a.name));
+  } else if (selectedDbSort === 'class') {
+    const order = { 'Cosmic': 1, 'Tech': 2, 'Mutant': 3, 'Skill': 4, 'Science': 5, 'Mystic': 6 };
+    champs.sort((a, b) => (order[a.class] || 99) - (order[b.class] || 99) || a.name.localeCompare(b.name));
+  } else if (selectedDbSort === 'owned') {
+    champs.sort((a, b) => {
+      if (b.isOwned !== a.isOwned) return (b.isOwned ? 1 : 0) - (a.isOwned ? 1 : 0);
+      const aR = a.owned?.rarity || 0;
+      const bR = b.owned?.rarity || 0;
+      if (bR !== aR) return bR - aR;
+      return a.name.localeCompare(b.name);
+    });
+  } else if (selectedDbSort === 'rarity') {
+    champs.sort((a, b) => {
+      const aR = a.owned?.rarity || (a.storyTier ? 5 : 4);
+      const bR = b.owned?.rarity || (b.storyTier ? 5 : 4);
+      if (bR !== aR) return bR - aR;
+      return a.name.localeCompare(b.name);
+    });
+  }
+
   // Active filters summary bar
   const activeFiltersRow = document.getElementById('db-active-filters-row');
   const activeFiltersPills = document.getElementById('db-active-filters-pills');
-  const hasActiveFilters = (selectedDbTag !== 'All') || (selectedDbCategory !== 'All') || (selectedDbClasses.size > 0) || (selectedImmunityFilter !== 'All') || ownedOnlyFilter || !!searchQuery;
+  const hasActiveFilters = (selectedDbTag !== 'All') || (selectedDbCategory !== 'All') || (selectedDbClasses.size > 0) || (selectedImmunityFilter !== 'All') || (selectedDbYear !== 'All') || ownedOnlyFilter || !!searchQuery;
 
   if (activeFiltersRow && activeFiltersPills) {
     activeFiltersRow.classList.toggle('hidden', !hasActiveFilters);
@@ -373,7 +409,7 @@ function renderDatabaseTab() {
       pillsHtml += `<span class="active-filter-pill">🏷️ Tag: ${selectedDbTag} <button onclick="filterDbByTag('All')">✕</button></span>`;
     }
     if (selectedDbCategory !== 'All') {
-      pillsHtml += `<span class="active-filter-pill">🎯 Role: ${selectedDbCategory} <button onclick="filterDbByCategory('All')">✕</button></span>`;
+      pillsHtml += `<span class="active-filter-pill">🎯 Ability: ${selectedDbCategory} <button onclick="filterDbByCategory('All')">✕</button></span>`;
     }
     if (selectedDbClasses.size > 0) {
       selectedDbClasses.forEach(cls => {
@@ -382,6 +418,9 @@ function renderDatabaseTab() {
     }
     if (selectedImmunityFilter !== 'All') {
       pillsHtml += `<span class="active-filter-pill">🧪 Immunity: ${selectedImmunityFilter} <button onclick="filterByImmunity('All')">✕</button></span>`;
+    }
+    if (selectedDbYear !== 'All') {
+      pillsHtml += `<span class="active-filter-pill">📅 Year: ${selectedDbYear} <button onclick="filterDbByYear('All')">✕</button></span>`;
     }
     if (ownedOnlyFilter) {
       pillsHtml += `<span class="active-filter-pill">★ Owned Only <button onclick="toggleOwnedOnly()">✕</button></span>`;
@@ -394,15 +433,15 @@ function renderDatabaseTab() {
 
   const dbCounts = document.getElementById('db-filter-counts');
   if (dbCounts) {
-    dbCounts.innerHTML = `Showing <span class="text-sky-400 font-bold">${champs.length}</span> / ${window.MCOC_DATA.champions.length} Total Champions`;
+    dbCounts.innerHTML = `Showing <span class="text-sky-400 font-black">${champs.length}</span> / ${window.MCOC_DATA.champions.length}`;
   }
 
   if (champs.length === 0) {
     container.innerHTML = `
-      <div class="p-12 text-center glass-panel rounded-2xl border border-slate-800 space-y-3">
+      <div class="col-span-full p-12 text-center glass-panel rounded-2xl border border-slate-800 space-y-3">
         <div class="text-3xl">🔍</div>
-        <div class="text-sm font-bold text-slate-300">No champions matched the 4-dimensional criteria.</div>
-        <p class="text-xs text-slate-500">Try loosening your Tag, Category, Class, or Immunity filters.</p>
+        <div class="text-sm font-bold text-slate-300">No champions matched the selected criteria.</div>
+        <p class="text-xs text-slate-500">Try changing your filter settings or search query.</p>
         <button onclick="resetAllDbFilters()" class="px-4 py-2 rounded-xl text-xs font-bold bg-sky-500 text-white hover:bg-sky-400 transition-all">
           Reset All Filters
         </button>
@@ -411,69 +450,7 @@ function renderDatabaseTab() {
     return;
   }
 
-  // Official Classification Order: Science, Skill, Mutant, Tech, Cosmic, Mystic
-  const classOrder = ['Science', 'Skill', 'Mutant', 'Tech', 'Cosmic', 'Mystic'];
-  const classesToRender = selectedDbClasses.size > 0 
-    ? classOrder.filter(cls => selectedDbClasses.has(cls))
-    : classOrder;
-
-  let html = '';
-
-  classesToRender.forEach(clsName => {
-    const clsInfo = window.MCOC_DATA.classes[clsName] || { color: '#38bdf8', border: '#38bdf8' };
-    const classChamps = champs.filter(c => c.class === clsName);
-
-    if (classChamps.length === 0) {
-      return; // Skip empty class block
-    }
-
-    // Sort alphabetically by name
-    classChamps.sort((a, b) => a.name.localeCompare(b.name));
-
-    html += `
-      <div class="glass-panel p-5 rounded-2xl border space-y-4" style="border-color: ${clsInfo.border};">
-        <!-- Class Section Header -->
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-lg bg-slate-900 border p-1 flex items-center justify-center shadow-md" style="border-color: ${clsInfo.color};">
-              <img src="assets/images/classes/${clsName.toLowerCase()}.svg" alt="${clsName}" class="w-full h-full object-contain">
-            </div>
-            <div>
-              <h3 class="text-base sm:text-lg font-black tracking-tight" style="color: ${clsInfo.color};">${clsName.toUpperCase()} CLASS</h3>
-              <p class="text-[11px] text-slate-400 font-medium">${clsInfo.identity || ''}</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="text-xs text-slate-400 hidden lg:block">
-              Crushes <strong class="text-emerald-400">${clsInfo.beats}</strong> &bull; Weak to <strong class="text-rose-400">${clsInfo.weakTo}</strong>
-            </div>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-black bg-slate-900/90 border border-slate-700 text-slate-200 shadow-sm whitespace-nowrap">
-              ${classChamps.length} Champions
-            </span>
-          </div>
-        </div>
-
-        <!-- Champions Grid for this class -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          ${classChamps.map(champ => renderChampionCard(champ, false)).join('')}
-        </div>
-      </div>
-    `;
-  });
-
-  if (html === '') {
-    html = `
-      <div class="p-12 text-center glass-panel rounded-2xl border border-slate-800 space-y-3">
-        <div class="text-3xl">🔍</div>
-        <div class="text-sm font-bold text-slate-300">No champions found in the selected class matching active filters.</div>
-        <button onclick="resetAllDbFilters()" class="px-4 py-2 rounded-xl text-xs font-bold bg-sky-500 text-white hover:bg-sky-400 transition-all">
-          Reset All Filters
-        </button>
-      </div>
-    `;
-  }
-
-  container.innerHTML = html;
+  container.innerHTML = champs.map(champ => renderHubChampionCard(champ)).join('');
 }
 
 function renderTiersTab() {
@@ -933,12 +910,41 @@ function clearDbSearch() {
   renderDatabaseTab();
 }
 
-// Reset ALL 4 Dimensions & Search
+// Match Mode (All vs Any)
+function setDbMatchMode(mode) {
+  selectedDbMatchMode = mode;
+  const allBtn = document.getElementById('match-all-btn');
+  const anyBtn = document.getElementById('match-any-btn');
+  if (allBtn && anyBtn) {
+    allBtn.classList.toggle('bg-purple-600', mode === 'all');
+    allBtn.classList.toggle('text-white', mode === 'all');
+    allBtn.classList.toggle('text-slate-400', mode !== 'all');
+    anyBtn.classList.toggle('bg-purple-600', mode === 'any');
+    anyBtn.classList.toggle('text-white', mode === 'any');
+    anyBtn.classList.toggle('text-slate-400', mode !== 'any');
+  }
+  renderDatabaseTab();
+}
+
+function filterDbByYear(year) {
+  selectedDbYear = year;
+  renderDatabaseTab();
+}
+
+function filterDbBySort(sort) {
+  selectedDbSort = sort;
+  renderDatabaseTab();
+}
+
+// Reset ALL Hub Filters & Search
 function resetAllDbFilters() {
   selectedDbClasses.clear();
   selectedDbTag = 'All';
   selectedDbCategory = 'All';
   selectedImmunityFilter = 'All';
+  selectedDbYear = 'All';
+  selectedDbSort = 'name-asc';
+  selectedDbMatchMode = 'all';
   ownedOnlyFilter = false;
   searchQuery = '';
 
@@ -948,16 +954,35 @@ function resetAllDbFilters() {
   const immSelect = document.getElementById('immunity-filter-select');
   if (immSelect) immSelect.value = 'All';
 
+  const tagSelect = document.getElementById('db-tag-select');
+  if (tagSelect) tagSelect.value = 'All';
+
+  const catSelect = document.getElementById('db-category-select');
+  if (catSelect) catSelect.value = 'All';
+
+  const yearSelect = document.getElementById('db-year-select');
+  if (yearSelect) yearSelect.value = 'All';
+
+  const sortSelect = document.getElementById('db-sort-select');
+  if (sortSelect) sortSelect.value = 'name-asc';
+
+  const allMatchBtn = document.getElementById('match-all-btn');
+  const anyMatchBtn = document.getElementById('match-any-btn');
+  if (allMatchBtn && anyMatchBtn) {
+    allMatchBtn.className = 'px-2.5 py-1 rounded-lg text-xs font-black transition-all bg-purple-600 text-white shadow';
+    anyMatchBtn.className = 'px-2.5 py-1 rounded-lg text-xs font-black transition-all text-slate-400 hover:text-white';
+  }
+
   const ownedBtn = document.getElementById('owned-only-toggle-btn');
   if (ownedBtn) {
     ownedBtn.classList.remove('bg-emerald-500', 'text-slate-950');
-    ownedBtn.classList.add('bg-slate-800', 'text-slate-300');
+    ownedBtn.classList.add('bg-slate-900', 'text-slate-300');
   }
 
   document.querySelectorAll('input[name="db_class[]"]').forEach(cb => cb.checked = false);
   const allBtn = document.getElementById('db-class-all-btn');
   if (allBtn) {
-    allBtn.classList.add('ring-2', 'ring-white', 'bg-sky-500');
+    allBtn.classList.add('ring-1', 'ring-white', 'bg-sky-500');
     allBtn.classList.remove('bg-slate-800');
   }
 

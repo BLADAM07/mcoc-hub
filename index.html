@@ -241,144 +241,165 @@
 
 
     <!-- TAB 3: CHAMPION DATABASE (327+) -->
-    <section id="tab-database" class="tab-content hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl border border-sky-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div>
-          <h2 class="text-xl font-black text-white flex items-center gap-2">
-            <span>🔍</span> Master Champion Database & Advanced Inspector
-          </h2>
-          <p class="text-xs text-slate-300 mt-1 max-w-2xl">
-            Filter all 327+ champions across 4 dimensions: <strong>🏷️ Tags</strong>, <strong>🎯 Combat Categories</strong>, <strong>🧬 Class Icons</strong>, and <strong>🧪 Immunities</strong>.
-          </p>
-        </div>
-        <div id="db-filter-counts" class="text-xs text-slate-300 font-medium">
-          <!-- Database count rendered by app.js -->
-        </div>
-      </div>
-
-      <!-- Advanced 4-Dimensional Filter Control Center -->
-      <div class="glass-panel p-4.5 rounded-2xl border border-slate-800 space-y-4">
+    <section id="tab-database" class="tab-content hidden space-y-4">
+      
+      <!-- Top MCOCHub Style Filter Control Bar -->
+      <div class="glass-panel p-3.5 rounded-2xl border border-slate-800 space-y-3 shadow-2xl">
         
-        <!-- Row 1: Search & Quick Actions -->
-        <div class="flex flex-col md:flex-row gap-3 items-center justify-between">
-          <!-- Search input -->
-          <div class="relative w-full md:w-96">
-            <input type="text" id="main-search-input" placeholder="Search name, alias (e.g. CGR), tag, or ability..." 
-                   class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-400">
-            <span class="absolute right-3 top-2.5 text-xs text-slate-500">🔍</span>
-          </div>
+        <!-- Row 1: Match Toggle, Class Icons, Reset & Total -->
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          
+          <div class="flex items-center gap-3 flex-wrap">
+            <!-- Match Mode Toggle (All / Any) -->
+            <div class="flex items-center bg-slate-950/80 rounded-xl p-1 border border-slate-800 text-xs font-bold shadow-inner">
+              <span class="text-[10px] text-slate-400 font-extrabold uppercase px-2 tracking-wider">MATCH</span>
+              <button onclick="setDbMatchMode('all')" id="match-all-btn" class="px-2.5 py-1 rounded-lg text-xs font-black transition-all bg-purple-600 text-white shadow">All</button>
+              <button onclick="setDbMatchMode('any')" id="match-any-btn" class="px-2.5 py-1 rounded-lg text-xs font-black transition-all text-slate-400 hover:text-white">Any</button>
+            </div>
 
-          <div class="flex items-center gap-2.5 w-full md:w-auto justify-end">
-            <!-- Owned Only Toggle -->
-            <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
-                    class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500 transition-all whitespace-nowrap">
-              ★ Owned Roster Only
-            </button>
-
-            <!-- Reset All Filters Button -->
-            <button onclick="resetAllDbFilters()" 
-                    class="px-3 py-2 rounded-xl text-xs font-bold bg-rose-950/40 text-rose-300 border border-rose-500/40 hover:bg-rose-900/50 hover:border-rose-400 transition-all whitespace-nowrap flex items-center gap-1.5" title="Reset all 4 filters to default">
-              <span>↺</span> Reset All Filters
-            </button>
-          </div>
-        </div>
-
-        <!-- DIMENSION 1: TAG BASED FILTER -->
-        <div class="pt-3 border-t border-slate-800/80 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-sky-400 flex items-center gap-1.5">
-              <span>🏷️</span> 1. Filter by Tag:
-            </span>
-            <span class="text-[11px] text-slate-400 font-semibold" id="active-tag-label">All Tags</span>
-          </div>
-          <div id="db-tags-container" class="flex flex-wrap gap-1.5">
-            <!-- Tag pills rendered by app.js -->
-          </div>
-        </div>
-
-        <!-- DIMENSION 2: CATEGORY BASED FILTER -->
-        <div class="pt-3 border-t border-slate-800/80 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
-              <span>🎯</span> 2. Filter by Combat Category / Role:
-            </span>
-            <span class="text-[11px] text-slate-400 font-semibold" id="active-category-label">All Categories</span>
-          </div>
-          <div id="db-categories-container" class="flex flex-wrap gap-1.5">
-            <!-- Category buttons rendered by app.js -->
-          </div>
-        </div>
-
-        <!-- DIMENSION 3: CLASS BASED FILTER -->
-        <div class="pt-3 border-t border-slate-800/80 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
-              <span>🧬</span> 3. Filter by Class:
-            </span>
-            <span class="text-[11px] text-slate-400 font-semibold" id="active-class-label">All Classes</span>
-          </div>
-          <div class="flex items-center gap-2 flex-wrap">
-            <button onclick="resetDbClassFilter()" id="db-class-all-btn" class="db-class-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
-            <div class="flex items-center flex-wrap gap-1.5 shrink-0" id="db-class-icons">
-              <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
-                <input type="checkbox" name="db_class[]" value="Science" onchange="handleDbClassToggle(this)" class="peer">
-                <span class="peer-checked:border-[color:var(--c)]">
-                  <img src="assets/images/classes/science.svg" alt="Science" class="w-6 h-6 object-contain">
-                </span>
-              </label>
-              <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
-                <input type="checkbox" name="db_class[]" value="Skill" onchange="handleDbClassToggle(this)" class="peer">
-                <span class="peer-checked:border-[color:var(--c)]">
-                  <img src="assets/images/classes/skill.svg" alt="Skill" class="w-6 h-6 object-contain">
-                </span>
-              </label>
-              <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
-                <input type="checkbox" name="db_class[]" value="Mutant" onchange="handleDbClassToggle(this)" class="peer">
-                <span class="peer-checked:border-[color:var(--c)]">
-                  <img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-6 h-6 object-contain">
-                </span>
+            <!-- Class Icon Filters (6 classes) -->
+            <div class="flex items-center gap-1 bg-slate-950/80 rounded-xl p-1 border border-slate-800 shadow-inner" id="db-class-icons">
+              <button onclick="resetDbClassFilter()" id="db-class-all-btn" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-1 ring-white">ALL</button>
+              <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
+                <input type="checkbox" name="db_class[]" value="Cosmic" onchange="handleDbClassToggle(this)">
+                <span><img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-5 h-5 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #0070f3;" title="Tech">
-                <input type="checkbox" name="db_class[]" value="Tech" onchange="handleDbClassToggle(this)" class="peer">
-                <span class="peer-checked:border-[color:var(--c)]">
-                  <img src="assets/images/classes/tech.svg" alt="Tech" class="w-6 h-6 object-contain">
-                </span>
+                <input type="checkbox" name="db_class[]" value="Tech" onchange="handleDbClassToggle(this)">
+                <span><img src="assets/images/classes/tech.svg" alt="Tech" class="w-5 h-5 object-contain"></span>
               </label>
-              <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
-                <input type="checkbox" name="db_class[]" value="Cosmic" onchange="handleDbClassToggle(this)" class="peer">
-                <span class="peer-checked:border-[color:var(--c)]">
-                  <img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain">
-                </span>
+              <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
+                <input type="checkbox" name="db_class[]" value="Mutant" onchange="handleDbClassToggle(this)">
+                <span><img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-5 h-5 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
+                <input type="checkbox" name="db_class[]" value="Skill" onchange="handleDbClassToggle(this)">
+                <span><img src="assets/images/classes/skill.svg" alt="Skill" class="w-5 h-5 object-contain"></span>
+              </label>
+              <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
+                <input type="checkbox" name="db_class[]" value="Science" onchange="handleDbClassToggle(this)">
+                <span><img src="assets/images/classes/science.svg" alt="Science" class="w-5 h-5 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #9d4edd;" title="Mystic">
-                <input type="checkbox" name="db_class[]" value="Mystic" onchange="handleDbClassToggle(this)" class="peer">
-                <span class="peer-checked:border-[color:var(--c)]">
-                  <img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-6 h-6 object-contain">
-                </span>
+                <input type="checkbox" name="db_class[]" value="Mystic" onchange="handleDbClassToggle(this)">
+                <span><img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-5 h-5 object-contain"></span>
               </label>
             </div>
           </div>
+
+          <!-- Right side: Owned Only & Reset -->
+          <div class="flex items-center gap-2">
+            <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
+                    class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-300 transition-all whitespace-nowrap">
+              ★ Owned Roster Only
+            </button>
+            <div id="db-filter-counts" class="text-xs text-sky-400 font-bold bg-slate-950/80 px-3 py-1.5 rounded-xl border border-slate-800">
+              <!-- Rendered count -->
+            </div>
+            <button onclick="resetAllDbFilters()" class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700 hover:border-rose-400 text-slate-300 hover:text-rose-400 flex items-center justify-center transition-all shadow" title="Reset All Filters">
+              ↺
+            </button>
+          </div>
+
         </div>
 
-        <!-- DIMENSION 4: IMMUNITY BASED FILTER -->
-        <div class="pt-3 border-t border-slate-800/80 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-purple-400 flex items-center gap-1.5">
-              <span>🧪</span> 4. Filter by Immunity & Resistance:
-            </span>
-            <span class="text-[11px] text-slate-400 font-semibold" id="active-immunity-label">All Immunities</span>
+        <!-- Row 2: 6 Dropdown Selectors (Champion, Year, Tags, Abilities, Immunities, Sort) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 pt-2.5 border-t border-slate-800/80">
+          
+          <!-- 1. Champion Search Input -->
+          <div class="relative">
+            <input type="text" id="main-search-input" placeholder="Champion..." 
+                   class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-400">
+            <span class="absolute right-2.5 top-2.5 text-[11px] text-slate-500 pointer-events-none">🔍</span>
           </div>
-          <div class="flex items-center gap-2.5 flex-wrap">
-            <select id="immunity-filter-select" onchange="filterByImmunity(this.value)" 
-                    class="bg-slate-900 border border-slate-700 text-xs text-white rounded-xl px-3 py-2 focus:outline-none focus:border-purple-400 min-w-[260px]">
-              <option value="All">All Immunities (No Immunity Filter)</option>
+
+          <!-- 2. Year Dropdown -->
+          <div>
+            <select id="db-year-select" onchange="filterDbByYear(this.value)" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+              <option value="All">Year: All</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
             </select>
           </div>
+
+          <!-- 3. Tags Dropdown -->
+          <div>
+            <select id="db-tag-select" onchange="filterDbByTag(this.value)" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+              <option value="All">Tags: All</option>
+              <option value="#Hero">#Hero</option>
+              <option value="#Villain">#Villain</option>
+              <option value="#Metal">#Metal</option>
+              <option value="#Robot">#Robot</option>
+              <option value="#Dimensional Being">#Dimensional Being</option>
+              <option value="#Symbiote">#Symbiote</option>
+              <option value="#Gamma">#Gamma</option>
+              <option value="#God">#God</option>
+              <option value="#Avenger">#Avenger</option>
+              <option value="#Spider-Verse">#Spider-Verse</option>
+              <option value="#X-Men">#X-Men</option>
+              <option value="#Mercenary">#Mercenary</option>
+              <option value="#Size: XL">#Size: XL</option>
+              <option value="#Size: L">#Size: L</option>
+              <option value="#Size: S">#Size: S</option>
+              <option value="#Deathless">#Deathless</option>
+            </select>
+          </div>
+
+          <!-- 4. Abilities / Categories Dropdown -->
+          <div>
+            <select id="db-category-select" onchange="filterDbByCategory(this.value)" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+              <option value="All">Abilities: All</option>
+              <option value="Burst Damage">💥 Burst Damage</option>
+              <option value="Damage Over Time (DOT)">🩸 Damage Over Time</option>
+              <option value="Power Control">⚡ Power Control</option>
+              <option value="Buff Control & Nullify">🛑 Buff Control & Nullify</option>
+              <option value="Defensive & Tank">🛡️ Defensive & Tank</option>
+              <option value="Evade & Auto-Block Counter">🎯 Evade Counter</option>
+              <option value="Purify & Cleanse">🔄 Purify & Cleanse</option>
+              <option value="Support & Synergy">🌟 Support & Synergy</option>
+              <option value="Boss Slayer & Story MVP">👑 Story & Boss MVP</option>
+            </select>
+          </div>
+
+          <!-- 5. Immunities Dropdown -->
+          <div>
+            <select id="immunity-filter-select" onchange="filterByImmunity(this.value)" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+              <option value="All">Immunities: All</option>
+            </select>
+          </div>
+
+          <!-- 6. Sort Dropdown -->
+          <div>
+            <select id="db-sort-select" onchange="filterDbBySort(this.value)" 
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+              <option value="name-asc">Sort: Name (A-Z)</option>
+              <option value="name-desc">Sort: Name (Z-A)</option>
+              <option value="class">Sort: Class</option>
+              <option value="owned">Sort: Owned First</option>
+              <option value="rarity">Sort: Rarity (7★ ➔ 6★)</option>
+            </select>
+          </div>
+
         </div>
 
-        <!-- Active Filter Summary Pills -->
-        <div id="db-active-filters-row" class="hidden pt-3 border-t border-slate-800/80 flex items-center gap-2 flex-wrap">
-          <span class="text-xs text-slate-400 font-bold">Active Filters:</span>
+        <!-- Active Filter Summary Bar (removable chips) -->
+        <div id="db-active-filters-row" class="hidden pt-2 border-t border-slate-800/80 flex items-center gap-1.5 flex-wrap">
+          <span class="text-[11px] text-slate-400 font-bold">Active:</span>
           <div id="db-active-filters-pills" class="flex items-center gap-1.5 flex-wrap">
             <!-- Active pills rendered by app.js -->
           </div>
@@ -386,8 +407,8 @@
 
       </div>
 
-      <!-- Database Classified Sections Container -->
-      <div id="database-champions-grid" class="space-y-6">
+      <!-- Dense Hub Squircle Grid Container -->
+      <div id="database-champions-grid" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 gap-2.5">
         <!-- Rendered by app.js -->
       </div>
     </section>

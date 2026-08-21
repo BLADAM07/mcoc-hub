@@ -318,3 +318,81 @@ body {
 .active-filter-pill button:hover {
   color: #f43f5e;
 }
+
+/* Hub-Style Champion Grid & Squircle Cards */
+.hub-champion-card {
+  position: relative;
+  aspect-ratio: 1 / 1.05;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  border: 2px solid var(--card-border, #334155);
+  background-color: var(--card-bg, #0f172a);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.hub-champion-card:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.75), 0 0 14px var(--card-border);
+  z-index: 30;
+}
+
+.hub-champion-card .hub-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.25s ease;
+}
+
+.hub-champion-card:hover .hub-portrait {
+  transform: scale(1.08);
+}
+
+.hub-side-badges {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+  z-index: 10;
+}
+
+.hub-mini-badge {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: rgba(10, 15, 29, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.hub-name-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px 2px 2px 2px;
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(2, 6, 23, 0.85) 40%, rgba(2, 6, 23, 0.98) 100%);
+  text-align: center;
+  z-index: 10;
+}
+
+.hub-name-text {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
+  letter-spacing: -0.2px;
+}
