@@ -1,4 +1,4 @@
-﻿/* MCOC Master Hub Custom Styles */
+/* MCOC Master Hub Custom Styles */
 :root {
   --bg-primary: #0a0d14;
   --bg-secondary: #111726;
@@ -154,6 +154,44 @@ body {
 
 .champion-card:hover .portrait-img {
   transform: scale(1.08);
+}
+
+/* Visual Champion Stars Row */
+.champion-stars-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  margin: 3px 0 5px 0;
+  height: 16px;
+  pointer-events: none;
+}
+
+.champion-stars-row .star-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
+  transition: transform 0.2s ease;
+}
+
+.champion-card:hover .champion-stars-row .star-icon {
+  transform: scale(1.15);
+}
+
+.modal-stars-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: 6px 0;
+}
+
+.modal-stars-row .star-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9));
 }
 
 /* Modal Animations */

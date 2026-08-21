@@ -1,4 +1,4 @@
-﻿// MCOC Master Companion Main Application Logic
+// MCOC Master Companion Main Application Logic
 let currentTab = 'nodes';
 let searchQuery = '';
 let selectedClassFilter = 'All';
@@ -101,14 +101,24 @@ function renderChampionCard(champ, isCounterMode = false) {
   const isOwned = champ.isOwned;
   const ownedData = champ.owned || {};
   const rarity = ownedData.rarity || 6;
-  const isAwakened = ownedData.awaken;
+  const isAwakened = !!ownedData.awaken;
   const imgPath = `assets/images/${champ.image || 'default_avatar.png'}`;
   const aliasBadge = ALIAS_LOOKUP[champ.name] ? `<span class="text-[9px] font-black text-sky-400 bg-sky-950/80 px-1 py-0.2 rounded border border-sky-500/40">${ALIAS_LOOKUP[champ.name]}</span>` : '';
 
-  const rarityBadge = isOwned ? `
-    <div class="absolute top-2 left-2 ${rarity === 7 ? 'star-badge-7' : 'star-badge-6'} px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider flex items-center gap-1 shadow-md z-10">
-      <span>${rarity}★</span>
-      ${isAwakened ? '<span class="star-awakened text-xs">✪</span>' : '<span class="star-unawakened text-[10px]">★</span>'}
+  // Star visual representation (Awakened: Silver Star, Unawakened: Gold Star)
+  const starImg = isAwakened ? 'assets/images/Awaken-champion-star.png' : 'assets/images/Champion-star.png';
+  const starCount = isOwned ? rarity : 6;
+  const starsHtml = `
+    <div class="champion-stars-row" title="${starCount}★ ${isAwakened ? 'Awakened' : 'Unawakened'}">
+      ${Array.from({ length: starCount }).map(() => `
+        <img src="${starImg}" alt="★" class="star-icon" />
+      `).join('')}
+    </div>
+  `;
+
+  const statusBadge = isOwned ? `
+    <div class="absolute top-2 left-2 ${rarity === 7 ? 'bg-rose-950/90 text-rose-300 border-rose-500/50' : 'bg-slate-900/90 text-amber-300 border-amber-500/50'} border px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider shadow-md z-10">
+      ${ownedData.rank ? `R${ownedData.rank}` : 'OWNED'}
     </div>
   ` : `
     <div class="absolute top-2 left-2 bg-slate-900/80 text-slate-400 border border-slate-700 px-1.5 py-0.5 rounded text-[9px] font-semibold z-10">
@@ -143,12 +153,14 @@ function renderChampionCard(champ, isCounterMode = false) {
     <div class="champion-card glass-panel border p-2.5 flex flex-col justify-between" 
          style="border-color: ${clsData.border};"
          onclick="openChampionModal('${champ.id}')">
-      ${rarityBadge}
+      ${statusBadge}
       ${sTierBadge}
       
-      <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-slate-950/80 mb-2 flex items-center justify-center border border-slate-800">
+      <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-slate-950/80 flex items-center justify-center border border-slate-800">
         <img src="${imgPath}" alt="${escapeHtml(champ.name)}" class="portrait-img w-full h-full object-contain p-1" onerror="this.src='assets/images/ascendable.svg'" />
       </div>
+
+      ${starsHtml}
 
       <div>
         <div class="flex items-center justify-between gap-1">
@@ -436,16 +448,27 @@ function displayChampionModal(champ) {
   const isOwned = champ.isOwned;
   const ownedData = champ.owned || {};
   const rarity = ownedData.rarity || 6;
-  const isAwakened = ownedData.awaken;
+  const isAwakened = !!ownedData.awaken;
   const alias = ALIAS_LOOKUP[champ.name] ? ` (${ALIAS_LOOKUP[champ.name]})` : '';
+
+  const starImg = isAwakened ? 'assets/images/Awaken-champion-star.png' : 'assets/images/Champion-star.png';
+  const starCount = isOwned ? rarity : 6;
+  const modalStarsHtml = `
+    <div class="modal-stars-row" title="${starCount}★ ${isAwakened ? 'Awakened' : 'Unawakened'}">
+      ${Array.from({ length: starCount }).map(() => `
+        <img src="${starImg}" alt="★" class="star-icon" />
+      `).join('')}
+    </div>
+  `;
 
   content.innerHTML = `
     <div class="flex flex-col md:flex-row gap-6">
       <div class="w-full md:w-48 flex flex-col items-center text-center">
-        <div class="relative w-36 h-36 rounded-2xl overflow-hidden bg-slate-950 p-2 border-2 mb-3 shadow-xl" style="border-color: ${clsData.color};">
+        <div class="relative w-36 h-36 rounded-2xl overflow-hidden bg-slate-950 p-2 border-2 mb-1 shadow-xl" style="border-color: ${clsData.color};">
           <img src="assets/images/${champ.image}" alt="${escapeHtml(champ.name)}" class="w-full h-full object-contain" onerror="this.src='assets/images/ascendable.svg'" />
           ${champ.storyTier ? `<div class="absolute top-2 right-2 bg-amber-500 text-slate-950 font-black text-[9px] px-1.5 py-0.5 rounded">S-TIER</div>` : ''}
         </div>
+        ${modalStarsHtml}
 
         <h3 class="text-base font-extrabold text-white mb-0.5">${champ.name}</h3>
         ${alias ? `<span class="text-xs text-sky-400 font-bold mb-1">${alias}</span>` : ''}
