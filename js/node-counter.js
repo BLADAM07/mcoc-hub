@@ -162,7 +162,7 @@ window.calculateAndRenderCounters = function() {
       </div>
     </div>
     
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-8 gap-2.5">
       ${matchedChamps.map(champ => renderChampionCard(champ, false)).join('')}
     </div>
   `;
