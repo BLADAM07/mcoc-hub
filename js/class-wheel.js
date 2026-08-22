@@ -16,6 +16,13 @@ window.initClassWheel = function() {
   const center = size / 2;
   const radius = 130;
 
+  const isLight = document.documentElement.classList.contains('light');
+  const nodeFill = isLight ? '#ffffff' : '#111726';
+  const hubFill = isLight ? '#ffffff' : '#0f172a';
+  const hubStroke = isLight ? 'rgba(0,0,0,0.15)' : 'rgba(255,255,255,0.1)';
+  const arrowStroke = isLight ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.2)';
+  const hubTextColor = isLight ? '#475569' : '#94a3b8';
+
   let nodesHtml = '';
   let arrowsHtml = '';
 
@@ -39,7 +46,7 @@ window.initClassWheel = function() {
     arrowsHtml += `
       <path d="M ${x} ${y} Q ${ctrlX} ${ctrlY} ${nextX} ${nextY}" 
             fill="none" 
-            stroke="rgba(255,255,255,0.2)" 
+            stroke="${arrowStroke}" 
             stroke-width="2.5" 
             stroke-dasharray="4,4"
             marker-end="url(#arrowhead)" 
@@ -49,7 +56,7 @@ window.initClassWheel = function() {
 
     nodesHtml += `
       <g class="class-node cursor-pointer group" data-class="${cls.name}" onclick="selectClassWheel('${cls.name}')">
-        <circle cx="${x}" cy="${y}" r="35" fill="#111726" stroke="${cls.color}" stroke-width="2.5" 
+        <circle cx="${x}" cy="${y}" r="35" fill="${nodeFill}" stroke="${cls.color}" stroke-width="2.5" 
                 class="transition-all duration-300 group-hover:r-[39] filter drop-shadow-[0_0_10px_${cls.color}]" />
         <image href="assets/images/classes/${cls.name.toLowerCase()}.svg" x="${x - 13}" y="${y - 20}" width="26" height="26" class="pointer-events-none" />
         <text x="${x}" y="${y + 18}" text-anchor="middle" font-size="9.5" font-weight="900" fill="${cls.color}" class="uppercase tracking-wider select-none">${cls.name}</text>
@@ -70,8 +77,8 @@ window.initClassWheel = function() {
       </defs>
       
       <!-- Central Hub Circle -->
-      <circle cx="${center}" cy="${center}" r="50" fill="#0f172a" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
-      <text x="${center}" y="${center - 6}" text-anchor="middle" font-size="12" font-weight="700" fill="#94a3b8">CLASS</text>
+      <circle cx="${center}" cy="${center}" r="50" fill="${hubFill}" stroke="${hubStroke}" stroke-width="2" />
+      <text x="${center}" y="${center - 6}" text-anchor="middle" font-size="12" font-weight="700" fill="${hubTextColor}">CLASS</text>
       <text x="${center}" y="${center + 12}" text-anchor="middle" font-size="11" font-weight="800" fill="#38bdf8">WHEEL</text>
       
       ${arrowsHtml}

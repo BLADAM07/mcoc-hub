@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initApp() {
+  initTheme();
   renderStatsOverview();
   renderRosterTab();
   renderDatabaseTab();
@@ -53,6 +54,59 @@ function initApp() {
 
   setupEventListeners();
   switchTab('nodes');
+}
+
+function initTheme() {
+  const savedTheme = localStorage.getItem('mcoc_hub_theme');
+  const isLight = savedTheme === 'light';
+  if (isLight) {
+    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.add('light');
+  } else {
+    document.documentElement.classList.remove('light');
+    document.documentElement.classList.add('dark');
+  }
+  updateThemeUI(isLight ? 'light' : 'dark');
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.classList.contains('dark');
+  const nextTheme = isDark ? 'light' : 'dark';
+  
+  if (nextTheme === 'light') {
+    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.add('light');
+  } else {
+    document.documentElement.classList.remove('light');
+    document.documentElement.classList.add('dark');
+  }
+  
+  try {
+    localStorage.setItem('mcoc_hub_theme', nextTheme);
+  } catch (e) {}
+  
+  updateThemeUI(nextTheme);
+
+  if (window.initClassWheel && currentTab === 'academy') {
+    window.initClassWheel();
+  }
+}
+
+function updateThemeUI(theme) {
+  const icon = document.getElementById('theme-toggle-icon');
+  const text = document.getElementById('theme-toggle-text');
+  const btn = document.getElementById('theme-toggle-btn');
+  if (!icon || !text) return;
+
+  if (theme === 'light') {
+    icon.innerText = '☀️';
+    text.innerText = 'Light';
+    if (btn) btn.title = 'Switch to Dark Mode';
+  } else {
+    icon.innerText = '🌙';
+    text.innerText = 'Dark';
+    if (btn) btn.title = 'Switch to Light Mode';
+  }
 }
 
 function setupEventListeners() {
@@ -124,38 +178,38 @@ function renderChampionCard(champ, isRosterMode = false) {
 
   // Status Badge: ONLY shown in Roster & Upgrade Tracker (R1, R2, R3...)
   const statusBadge = (isRosterMode && isOwned) ? `
-    <div class="absolute top-2 left-2 ${rarity === 7 ? 'bg-rose-950/90 text-rose-300 border-rose-500/50' : 'bg-slate-900/90 text-amber-300 border-amber-500/50'} border px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider shadow-md z-10">
+    <div class="absolute top-1.5 left-1.5 ${rarity === 7 ? 'bg-rose-950/90 text-rose-300 border-rose-500/50' : 'bg-slate-900/90 text-amber-300 border-amber-500/50'} border px-1 py-0.2 rounded text-[8px] font-black uppercase tracking-wider shadow-md z-10">
       ${ownedData.rank ? `R${ownedData.rank}` : 'OWNED'}
     </div>
   ` : '';
 
   const sTierBadge = champ.storyTier ? `
-    <div class="absolute top-2 right-2 bg-amber-500/90 text-slate-950 font-black text-[9px] px-1.5 py-0.5 rounded uppercase tracking-wider shadow z-10">
+    <div class="absolute top-1.5 right-1.5 bg-amber-500/90 text-slate-950 font-black text-[8px] px-1 py-0.2 rounded uppercase tracking-wider shadow z-10">
       S-TIER
     </div>
   ` : '';
 
   const immunitiesPreview = (champ.immunities && champ.immunities.length > 0) ? `
-    <div class="flex flex-wrap gap-1 mt-1.5 overflow-hidden max-h-5">
+    <div class="flex flex-wrap gap-0.5 mt-1 overflow-hidden max-h-4">
       ${champ.immunities.slice(0, 2).map(imm => `
-        <span class="text-[9px] px-1.5 py-0.2 rounded bg-sky-950/70 text-sky-300 border border-sky-500/30 truncate">
+        <span class="text-[8px] px-1 py-0.2 rounded bg-sky-950/70 text-sky-300 border border-sky-500/30 truncate">
           ${imm.replace(' Immunity', '')}
         </span>
       `).join('')}
-      ${champ.immunities.length > 2 ? `<span class="text-[9px] text-slate-400">+${champ.immunities.length - 2}</span>` : ''}
+      ${champ.immunities.length > 2 ? `<span class="text-[8px] text-slate-400">+${champ.immunities.length - 2}</span>` : ''}
     </div>
   ` : '';
 
   // Upgrade pill: ONLY shown in Roster & Upgrade Tracker
   const upgradePill = (isRosterMode && isOwned && ownedData.futureRank && ownedData.futureRank > ownedData.rank) ? `
-    <div class="mt-1 text-[10px] font-bold text-amber-300 bg-amber-950/50 px-1.5 py-0.5 rounded border border-amber-500/30 text-center">
-      Upgrade: R${ownedData.rank} ➔ R${ownedData.futureRank}
+    <div class="mt-0.5 text-[8.5px] font-extrabold text-amber-300 bg-amber-950/50 px-1 py-0.2 rounded border border-amber-500/30 text-center truncate" title="Upgrade Plan: R${ownedData.rank} ➔ R${ownedData.futureRank}">
+      R${ownedData.rank} ➔ R${ownedData.futureRank}
     </div>
   ` : '';
 
   // Notes: ONLY shown in Roster & Upgrade Tracker
   const notesHtml = (isRosterMode && isOwned && ownedData.notes) ? `
-    <span class="text-[9px] text-slate-400 truncate max-w-[70px] italic" title="${escapeHtml(ownedData.notes)}">${escapeHtml(ownedData.notes)}</span>
+    <span class="text-[8px] text-slate-400 truncate max-w-[50px] italic" title="${escapeHtml(ownedData.notes)}">${escapeHtml(ownedData.notes)}</span>
   ` : '';
 
   const cardClick = isRosterMode && champ.owned 
@@ -163,24 +217,24 @@ function renderChampionCard(champ, isRosterMode = false) {
     : `openChampionModal('${champ.id}')`;
 
   return `
-    <div class="champion-card glass-panel border p-2.5 flex flex-col justify-between" 
+    <div class="champion-card glass-panel border p-1.5 sm:p-2 flex flex-col justify-between" 
          style="border-color: ${clsData.border};"
          onclick="${cardClick}">
       ${statusBadge}
       ${sTierBadge}
       
       <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-slate-950/80 flex items-center justify-center border border-slate-800">
-        <img src="${imgPath}" alt="${escapeHtml(champ.name)}" class="portrait-img w-full h-full object-contain p-1" onerror="this.src='assets/images/ascendable.svg'" />
+        <img src="${imgPath}" alt="${escapeHtml(champ.name)}" class="portrait-img w-full h-full object-contain p-0.5" onerror="this.src='assets/images/ascendable.svg'" />
       </div>
 
       ${starsHtml}
 
       <div>
         <div class="flex items-center justify-between gap-1">
-          <h4 class="text-xs font-bold text-white truncate" title="${escapeHtml(champ.name)}">${champ.name}</h4>
+          <h4 class="text-[10px] sm:text-[10.5px] font-bold text-white truncate" title="${escapeHtml(champ.name)}">${champ.name}</h4>
           ${aliasBadge}
         </div>
-        <div class="flex items-center justify-between text-[11px] mt-0.5">
+        <div class="flex items-center justify-between text-[9px] sm:text-[9.5px] mt-0.5">
           <span class="font-semibold" style="color: ${clsData.color};">${champ.class}</span>
           ${notesHtml}
         </div>
@@ -262,27 +316,27 @@ function renderHubChampionCard(champ) {
         <!-- Top badge: S-Tier / Crown / Star -->
         ${isStoryTier ? `
           <div class="hub-mini-badge bg-amber-950/90 border-amber-500/50" title="Story Quest S-Tier Pick">
-            <span class="text-[9px]">👑</span>
+            <span class="text-[15px]">👑</span>
           </div>
         ` : (isOwned ? `
           <div class="hub-mini-badge bg-slate-950/90" title="Owned ${rarity}★ ${isAwakened ? 'Awakened' : 'Unawakened'}">
-            <span class="text-[8px] font-black ${rarity === 7 ? 'text-rose-400' : 'text-amber-400'}">★</span>
+            <span class="text-[18px] font-black ${rarity === 7 ? 'text-rose-400' : 'text-amber-400'}">★</span>
           </div>
         ` : '')}
 
         <!-- Middle badge: Class SVG logo -->
         <div class="hub-mini-badge" title="${champ.class} Class">
-          <img src="assets/images/classes/${(champ.class || '').toLowerCase()}.svg" alt="" class="w-2.5 h-2.5 object-contain">
+          <img src="assets/images/classes/${(champ.class || '').toLowerCase()}.svg" alt="" class="w-5 h-5 object-contain">
         </div>
 
         <!-- Bottom badge: Immunity / Defense Shield -->
         ${hasImmunity ? `
-          <div class="hub-mini-badge bg-sky-950/90 border-sky-500/50" title="${champ.immunities.length} Active Immunities (${champ.immunities.slice(0, 2).join(', ')})">
-            <span class="text-[8px] text-sky-300">🛡️</span>
+          <div class="hub-mini-badge bg-sky-900/90 border-sky-400/50" title="${champ.immunities.length} Active Immunities (${champ.immunities.slice(0, 2).join(', ')})">
+            <span class="text-[15px] text-sky-300">🛡️</span>
           </div>
         ` : (hasPowerOrBuff ? `
           <div class="hub-mini-badge bg-purple-950/90 border-purple-500/50" title="Power / Buff Specialist">
-            <span class="text-[8px] text-purple-300">⚡</span>
+            <span class="text-[15px] text-purple-300">⚡</span>
           </div>
         ` : '')}
       </div>
@@ -527,7 +581,7 @@ function renderTiersTab() {
 
         <div class="mb-4">
           <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">⭐ S-Tier Champions (Top Priority)</h4>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
             ${sTiers.map(cName => {
               const champ = window.MCOC_DATA.champions.find(c => c.name.toLowerCase() === cName.toLowerCase()) || { name: cName, class: clsName, image: 'default_avatar.png', isOwned: false };
               return renderChampionCard(champ);
@@ -593,26 +647,30 @@ function renderBeginnerGuides() {
   container.innerHTML = champsWithGuides.map(champ => {
     const clsData = window.MCOC_DATA.classes[champ.class] || { color: '#fff', border: '#444' };
     return `
-      <div class="glass-panel p-4 rounded-xl border flex flex-col justify-between" style="border-color: ${clsData.border};">
-        <div class="flex items-center gap-3 mb-3">
-          <img src="assets/images/${champ.image}" class="w-12 h-12 rounded-lg object-contain bg-slate-950 p-1 border border-slate-700" onerror="this.src='assets/images/ascendable.svg'" />
+      <div class="glass-panel p-5 rounded-2xl border flex flex-col justify-between hover:border-sky-500/40 transition-all shadow-lg" style="border-color: ${clsData.border};">
+        <div class="flex items-center gap-3.5 mb-3.5">
+          <img src="assets/images/${champ.image}" class="w-16 h-16 rounded-xl object-contain bg-slate-950 p-1.5 border border-slate-700 shadow-md flex-shrink-0" onerror="this.src='assets/images/ascendable.svg'" />
           <div>
-            <h4 class="text-sm font-bold text-white">${champ.name}</h4>
-            <div class="flex items-center gap-1.5 mt-0.5">
+            <h4 class="text-base sm:text-lg font-black text-white leading-tight">${champ.name}</h4>
+            <div class="flex items-center gap-2 mt-1">
               <img src="assets/images/classes/${champ.class.toLowerCase()}.svg" alt="${champ.class}" class="w-4 h-4 object-contain">
-              <span class="text-xs font-semibold" style="color: ${clsData.color};">${champ.class} Class</span>
+              <span class="text-xs sm:text-sm font-extrabold" style="color: ${clsData.color};">${champ.class} Class</span>
             </div>
           </div>
         </div>
 
-        <div class="space-y-2 text-xs">
-          <div class="bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
-            <strong class="text-emerald-400 block mb-0.5">🌟 Why Great for Story:</strong>
-            <span class="text-slate-300">${champ.guide.whyStory}</span>
+        <div class="space-y-2.5 text-xs sm:text-sm">
+          <div class="bg-slate-900/70 p-3.5 rounded-xl border border-slate-800 shadow-inner">
+            <strong class="text-emerald-400 flex items-center gap-1.5 mb-1 font-extrabold text-xs sm:text-sm">
+              <span>🌟</span> Why Great for Story:
+            </strong>
+            <p class="text-slate-200 leading-relaxed">${champ.guide.whyStory}</p>
           </div>
-          <div class="bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
-            <strong class="text-sky-400 block mb-0.5">🎮 Easy to Handle Rotation:</strong>
-            <span class="text-slate-300">${champ.guide.easyToHandle}</span>
+          <div class="bg-slate-900/70 p-3.5 rounded-xl border border-slate-800 shadow-inner">
+            <strong class="text-sky-400 flex items-center gap-1.5 mb-1 font-extrabold text-xs sm:text-sm">
+              <span>🎮</span> Easy to Handle Rotation:
+            </strong>
+            <p class="text-slate-200 leading-relaxed">${champ.guide.easyToHandle}</p>
           </div>
         </div>
       </div>

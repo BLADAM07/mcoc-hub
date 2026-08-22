@@ -30,6 +30,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
+  <!-- Theme Preloader Script -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('mcoc_hub_theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+  
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -37,67 +51,78 @@
 
   <!-- Top Header Banner -->
   <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+    <div class="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-1">
+      <div class="flex items-center justify-between min-h-[70px] py-2">
         
     
         <!-- Logo & Title -->
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 flex-shrink-0">
+        <div class="flex items-center gap-3.5">
+          <div class="w-12 h-12 flex-shrink-0">
             <img src="assets/images/logo.png" alt="MCOC Master Hub Logo" class="w-full h-full object-contain">
           </div>
           <div>
-            <h1 class="text-lg font-black tracking-tight bg-gradient-to-r from-white via-sky-200 to-sky-400 bg-clip-text text-transparent">
+            <h1 class="text-xl sm:text-2xl font-black tracking-tight bg-gradient-to-r from-white via-sky-200 to-sky-400 bg-clip-text text-transparent">
               MCOC MASTER HUB
             </h1>
-            <p class="text-[11px] text-slate-400 font-medium -mt-0.5">Contest Companion & Node Counter</p>
+            <p class="text-xs text-slate-400 font-semibold -mt-0.5">Contest Companion & Node Counter</p>
           </div>
         </div>
 
-        <!-- Roster Quick Counters -->
-        <div class="hidden md:flex items-center gap-4 text-xs font-semibold">
-          <div class="px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2">
-            <span class="text-slate-400">Total Champs:</span>
-            <span id="stat-total-champs" class="text-sky-400 font-black">327</span>
+        <!-- Right Header Controls: Roster Quick Counters & Theme Switcher -->
+        <div class="flex items-center gap-3.5">
+          <!-- Roster Quick Counters -->
+          <div class="hidden md:flex items-center gap-3 text-sm font-bold">
+            <div class="px-3.5 py-2 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2 shadow-sm">
+              <span class="text-slate-400">Total Champs:</span>
+              <span id="stat-total-champs" class="text-sky-400 font-black text-base">327</span>
+            </div>
+            <div class="px-3.5 py-2 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2 shadow-sm">
+              <span class="text-slate-400">Owned Roster:</span>
+              <span id="stat-owned-champs" class="text-emerald-400 font-black text-base">216</span>
+            </div>
+            <div class="px-3.5 py-2 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2 shadow-sm">
+              <span class="star-badge-7 px-2 py-0.5 rounded text-[11px] font-black">7★</span>
+              <span id="stat-seven-stars" class="text-rose-400 font-black text-base">47</span>
+              <span class="text-slate-600">|</span>
+              <span class="star-badge-6 px-2 py-0.5 rounded text-[11px] font-black">6★</span>
+              <span id="stat-six-stars" class="text-amber-400 font-black text-base">169</span>
+            </div>
           </div>
-          <div class="px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2">
-            <span class="text-slate-400">Owned Roster:</span>
-            <span id="stat-owned-champs" class="text-emerald-400 font-black">216</span>
-          </div>
-          <div class="px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2">
-            <span class="star-badge-7 px-1.5 py-0.2 rounded text-[10px]">7★</span>
-            <span id="stat-seven-stars" class="text-rose-400 font-black">47</span>
-            <span class="text-slate-600">|</span>
-            <span class="star-badge-6 px-1.5 py-0.2 rounded text-[10px]">6★</span>
-            <span id="stat-six-stars" class="text-amber-400 font-black">169</span>
-          </div>
+
+          <!-- Dark / Light Theme Toggle Trigger Button -->
+          <button id="theme-toggle-btn" onclick="toggleTheme()" 
+                  class="theme-toggle-trigger flex items-center gap-2 px-3.5 py-2 rounded-xl border border-slate-700 bg-slate-900/80 hover:bg-slate-800 text-slate-200 transition-all shadow-md focus:outline-none focus:ring-2 focus:ring-sky-500/50 cursor-pointer" 
+                  title="Switch to Light Theme">
+            <span id="theme-toggle-icon" class="text-lg leading-none">🌙</span>
+            <span id="theme-toggle-text" class="text-xs sm:text-sm font-extrabold hidden sm:inline">Dark</span>
+          </button>
         </div>
 
       </div>
 
       <!-- Navigation Tabs -->
-      <nav class="flex space-x-1 overflow-x-auto pb-1 text-xs font-bold scrollbar-none">
-        <button id="nav-nodes" onclick="switchTab('nodes')" class="nav-tab active px-4 py-2.5 rounded-lg text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
-          <span>🛡️</span> Node & Hazard Counters
+      <nav class="flex space-x-1.5 overflow-x-auto pb-1.5 text-xs sm:text-sm font-extrabold scrollbar-none">
+        <button id="nav-nodes" onclick="switchTab('nodes')" class="nav-tab active px-4 sm:px-5 py-3 rounded-xl text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
+          <span class="text-base">🛡️</span> Node & Hazard Counters
         </button>
-        <button id="nav-roster" onclick="switchTab('roster')" class="nav-tab px-4 py-2.5 rounded-lg text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
-          <span>📋</span> Roster & Upgrade Tracker
+        <button id="nav-roster" onclick="switchTab('roster')" class="nav-tab px-4 sm:px-5 py-3 rounded-xl text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
+          <span class="text-base">📋</span> Roster & Upgrade Tracker
         </button>
-        <button id="nav-database" onclick="switchTab('database')" class="nav-tab px-4 py-2.5 rounded-lg text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
-          <span>🔍</span> Champion Database (327+)
+        <button id="nav-database" onclick="switchTab('database')" class="nav-tab px-4 sm:px-5 py-3 rounded-xl text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
+          <span class="text-base">🔍</span> Champion Database (327+)
         </button>
-        <button id="nav-tiers" onclick="switchTab('tiers')" class="nav-tab px-4 py-2.5 rounded-lg text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
-          <span>🏆</span> Story Quest Tier Lists
+        <button id="nav-tiers" onclick="switchTab('tiers')" class="nav-tab px-4 sm:px-5 py-3 rounded-xl text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
+          <span class="text-base">🏆</span> Story Quest Tier Lists
         </button>
-        <button id="nav-academy" onclick="switchTab('academy')" class="nav-tab px-4 py-2.5 rounded-lg text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
-          <span>🔄</span> Class Wheel & Academy
+        <button id="nav-academy" onclick="switchTab('academy')" class="nav-tab px-4 sm:px-5 py-3 rounded-xl text-slate-300 hover:text-white flex items-center gap-2 whitespace-nowrap">
+          <span class="text-base">🔄</span> Class Wheel & Academy
         </button>
       </nav>
     </div>
   </header>
 
   <!-- Main Container -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
+  <main class="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-6 flex-1">
 
     <!-- TAB 1: NODE & HAZARD COUNTER FINDER (Flagship Tool) -->
     <section id="tab-nodes" class="tab-content space-y-6">
@@ -117,26 +142,26 @@
       </div>
 
       <!-- Presets & Builder Row -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
-        <!-- Left: Common Node Presets (2 cols on lg) -->
-        <div class="lg:col-span-2 space-y-3">
+        <!-- Left: Common Node Presets (8 cols on lg/xl) -->
+        <div class="lg:col-span-8 xl:col-span-8 space-y-3">
           <div class="flex items-center justify-between">
             <h3 class="text-xs font-extrabold uppercase tracking-wider text-slate-400">
               Popular Quest Hazards & Node Presets
             </h3>
             <span class="text-[11px] text-sky-400 font-semibold">Click any card to load</span>
           </div>
-          <div id="node-presets-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div id="node-presets-grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
             <!-- Rendered by node-counter.js -->
           </div>
         </div>
 
-        <!-- Right: Custom Multi-Hazard Builder -->
-        <div class="glass-panel p-4 rounded-2xl border border-slate-800 space-y-3">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xs font-extrabold uppercase tracking-wider text-amber-400">
-              ⚡ Multi-Hazard Builder
+        <!-- Right: Custom Multi-Hazard Builder (4 cols on lg/xl) -->
+        <div class="lg:col-span-4 xl:col-span-4 glass-panel p-5 rounded-2xl border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <h3 class="text-xs font-extrabold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+              <span>⚡</span> Multi-Hazard Builder
             </h3>
             <button onclick="clearCustomImmunities()" class="text-[11px] text-slate-400 hover:text-white underline">Reset</button>
           </div>
@@ -179,14 +204,14 @@
       </div>
 
       <!-- Filters Row (Classes + Interactive Star Slide Bar) -->
-      <div class="glass-panel p-4 rounded-2xl border border-slate-800 space-y-3">
+      <div class="glass-panel p-4 sm:p-5 rounded-2xl border border-slate-800 space-y-4">
         <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
           
           <!-- Class Filter Icon Toggles -->
-          <div class="flex items-center gap-2 flex-wrap">
-            <span class="text-xs text-slate-400 font-bold mr-1">Class:</span>
-            <button onclick="resetRosterClassFilter()" id="roster-class-all-btn" class="class-filter-btn px-2.5 py-1.5 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
-            <div class="flex items-center flex-wrap gap-1.5 shrink-0" id="roster-class-icons">
+          <div class="flex items-center gap-2.5 flex-wrap">
+            <span class="text-xs sm:text-sm text-slate-400 font-extrabold mr-1">Class:</span>
+            <button onclick="resetRosterClassFilter()" id="roster-class-all-btn" class="class-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
+            <div class="flex items-center flex-wrap gap-2 shrink-0" id="roster-class-icons">
               <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
                 <input type="checkbox" name="roster_class[]" value="Cosmic" onchange="handleRosterClassToggle(this)" class="peer">
                 <span><img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain"></span>
@@ -215,12 +240,12 @@
           </div>
 
           <!-- Interactive 6★ & 7★ Star Slide Bar Filter -->
-          <div class="flex-1 max-w-md bg-slate-950/80 p-3.5 rounded-xl border border-slate-800 shadow-inner space-y-2.5">
+          <div class="flex-1 max-w-lg bg-slate-950/80 p-4 sm:p-4.5 rounded-2xl border border-slate-800 shadow-inner space-y-3">
             <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <span class="text-xs sm:text-sm font-extrabold text-slate-300 flex items-center gap-2">
                 <span>⭐</span> Star Rarity Slider:
               </span>
-              <div id="roster-star-slider-display" class="flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/30">
+              <div id="roster-star-slider-display" class="flex items-center gap-1 px-3 py-1 rounded-xl text-xs sm:text-sm font-black bg-sky-500/20 text-sky-300 border border-sky-500/30">
                 <span>★ ALL (6★ & 7★)</span>
               </div>
             </div>
@@ -232,7 +257,7 @@
                      class="w-full cursor-pointer h-2.5 rounded-lg appearance-none">
               
               <!-- Clickable Tick Markers -->
-              <div class="flex justify-between text-xs font-bold text-slate-400 mt-2 select-none">
+              <div class="flex justify-between text-xs sm:text-sm font-extrabold text-slate-400 mt-2 select-none">
                 <span onclick="setRosterStarSlider(0)" class="cursor-pointer hover:text-sky-300 transition-all text-sky-400 font-black" id="star-tick-0">★ ALL (216)</span>
                 <span onclick="setRosterStarSlider(1)" class="cursor-pointer hover:text-amber-300 transition-all" id="star-tick-1">6★ Gold (169)</span>
                 <span onclick="setRosterStarSlider(2)" class="cursor-pointer hover:text-rose-400 transition-all" id="star-tick-2">7★ Mythic (47)</span>
@@ -243,8 +268,8 @@
         </div>
       </div>
 
-      <!-- Owned Grid -->
-      <div id="roster-champions-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+      <!-- Owned 12-Column Grid on Desktop -->
+      <div id="roster-champions-grid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-10 gap-2 sm:gap-2.5">
         <!-- Rendered by app.js -->
       </div>
     </section>
@@ -253,60 +278,60 @@
     <!-- TAB 3: CHAMPION DATABASE (327+) -->
     <section id="tab-database" class="tab-content hidden space-y-4">
       
-      <!-- Top MCOCHub Style Filter Control Bar -->
-      <div class="glass-panel p-3.5 rounded-2xl border border-slate-800 space-y-3 shadow-2xl">
+      <!-- Top MCOCHub Style Filter Control Bar (Enlarged & Prominent) -->
+      <div class="glass-panel p-4 sm:p-5 rounded-2xl border border-slate-800 space-y-4 shadow-2xl">
         
         <!-- Row 1: Match Toggle, Class Icons, Reset & Total -->
-        <div class="flex items-center justify-between gap-3 flex-wrap">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
           
-          <div class="flex items-center gap-3 flex-wrap">
+          <div class="flex items-center gap-3.5 flex-wrap">
             <!-- Match Mode Toggle (All / Any) -->
-            <div class="flex items-center bg-slate-950/80 rounded-xl p-1 border border-slate-800 text-xs font-bold shadow-inner">
-              <span class="text-[10px] text-slate-400 font-extrabold uppercase px-2 tracking-wider">MATCH</span>
-              <button onclick="setDbMatchMode('all')" id="match-all-btn" class="px-2.5 py-1 rounded-lg text-xs font-black transition-all bg-purple-600 text-white shadow">All</button>
-              <button onclick="setDbMatchMode('any')" id="match-any-btn" class="px-2.5 py-1 rounded-lg text-xs font-black transition-all text-slate-400 hover:text-white">Any</button>
+            <div class="flex items-center bg-slate-950/80 rounded-xl p-1.5 border border-slate-800 text-xs sm:text-sm font-bold shadow-inner">
+              <span class="text-[11px] sm:text-xs text-slate-400 font-extrabold uppercase px-2.5 tracking-wider">MATCH</span>
+              <button onclick="setDbMatchMode('all')" id="match-all-btn" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-black transition-all bg-purple-600 text-white shadow">All</button>
+              <button onclick="setDbMatchMode('any')" id="match-any-btn" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-black transition-all text-slate-400 hover:text-white">Any</button>
             </div>
 
             <!-- Class Icon Filters (6 classes) -->
-            <div class="flex items-center gap-1 bg-slate-950/80 rounded-xl p-1 border border-slate-800 shadow-inner" id="db-class-icons">
-              <button onclick="resetDbClassFilter()" id="db-class-all-btn" class="db-class-filter-btn px-2.5 py-1 rounded-lg text-xs font-black bg-sky-500 text-white transition-all ring-1 ring-white">ALL</button>
+            <div class="flex items-center gap-1.5 bg-slate-950/80 rounded-xl p-1.5 border border-slate-800 shadow-inner" id="db-class-icons">
+              <button onclick="resetDbClassFilter()" id="db-class-all-btn" class="db-class-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-black bg-sky-500 text-white transition-all ring-2 ring-white">ALL</button>
               <label class="class-icon-toggle" style="--c: #00c8ff;" title="Cosmic">
                 <input type="checkbox" name="db_class[]" value="Cosmic" onchange="handleDbClassToggle(this)">
-                <span><img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-5 h-5 object-contain"></span>
+                <span><img src="assets/images/classes/cosmic.svg" alt="Cosmic" class="w-6 h-6 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #0070f3;" title="Tech">
                 <input type="checkbox" name="db_class[]" value="Tech" onchange="handleDbClassToggle(this)">
-                <span><img src="assets/images/classes/tech.svg" alt="Tech" class="w-5 h-5 object-contain"></span>
+                <span><img src="assets/images/classes/tech.svg" alt="Tech" class="w-6 h-6 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #ffb703;" title="Mutant">
                 <input type="checkbox" name="db_class[]" value="Mutant" onchange="handleDbClassToggle(this)">
-                <span><img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-5 h-5 object-contain"></span>
+                <span><img src="assets/images/classes/mutant.svg" alt="Mutant" class="w-6 h-6 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #e63946;" title="Skill">
                 <input type="checkbox" name="db_class[]" value="Skill" onchange="handleDbClassToggle(this)">
-                <span><img src="assets/images/classes/skill.svg" alt="Skill" class="w-5 h-5 object-contain"></span>
+                <span><img src="assets/images/classes/skill.svg" alt="Skill" class="w-6 h-6 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #2a9d8f;" title="Science">
                 <input type="checkbox" name="db_class[]" value="Science" onchange="handleDbClassToggle(this)">
-                <span><img src="assets/images/classes/science.svg" alt="Science" class="w-5 h-5 object-contain"></span>
+                <span><img src="assets/images/classes/science.svg" alt="Science" class="w-6 h-6 object-contain"></span>
               </label>
               <label class="class-icon-toggle" style="--c: #9d4edd;" title="Mystic">
                 <input type="checkbox" name="db_class[]" value="Mystic" onchange="handleDbClassToggle(this)">
-                <span><img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-5 h-5 object-contain"></span>
+                <span><img src="assets/images/classes/mystic.svg" alt="Mystic" class="w-6 h-6 object-contain"></span>
               </label>
             </div>
           </div>
 
           <!-- Right side: Owned Only & Reset -->
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-3">
             <button id="owned-only-toggle-btn" onclick="toggleOwnedOnly()" 
-                    class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-300 transition-all whitespace-nowrap">
+                    class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-300 transition-all whitespace-nowrap shadow-sm">
               ★ Owned Roster Only
             </button>
-            <div id="db-filter-counts" class="text-xs text-sky-400 font-bold bg-slate-950/80 px-3 py-1.5 rounded-xl border border-slate-800">
+            <div id="db-filter-counts" class="text-xs sm:text-sm text-sky-400 font-extrabold bg-slate-950/80 px-4 py-2.5 rounded-xl border border-slate-800 shadow-sm">
               <!-- Rendered count -->
             </div>
-            <button onclick="resetAllDbFilters()" class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700 hover:border-rose-400 text-slate-300 hover:text-rose-400 flex items-center justify-center transition-all shadow" title="Reset All Filters">
+            <button onclick="resetAllDbFilters()" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-700 hover:border-rose-400 text-slate-300 hover:text-rose-400 flex items-center justify-center transition-all shadow-sm text-base" title="Reset All Filters">
               ↺
             </button>
           </div>
@@ -314,19 +339,19 @@
         </div>
 
         <!-- Row 2: 6 Dropdown Selectors (Champion, Year, Tags, Abilities, Immunities, Sort) -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 pt-2.5 border-t border-slate-800/80">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-3.5 border-t border-slate-800/80">
           
           <!-- 1. Champion Search Input -->
           <div class="relative">
-            <input type="text" id="main-search-input" placeholder="Champion..." 
-                   class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-400">
-            <span class="absolute right-2.5 top-2.5 text-[11px] text-slate-500 pointer-events-none">🔍</span>
+            <input type="text" id="main-search-input" placeholder="Champion search..." 
+                   class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 font-medium">
+            <span class="absolute right-3 top-3 text-sm text-slate-500 pointer-events-none">🔍</span>
           </div>
 
           <!-- 2. Year Dropdown -->
           <div>
             <select id="db-year-select" onchange="filterDbByYear(this.value)" 
-                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 rounded-xl px-3 py-2.5 focus:outline-none focus:border-sky-400 cursor-pointer font-medium">
               <option value="All">Year: All</option>
               <option value="2026">2026</option>
               <option value="2025">2025</option>
@@ -347,7 +372,7 @@
           <!-- 3. Tags Dropdown -->
           <div>
             <select id="db-tag-select" onchange="filterDbByTag(this.value)" 
-                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 rounded-xl px-3 py-2.5 focus:outline-none focus:border-sky-400 cursor-pointer font-medium">
               <option value="All">Tags: All</option>
               <option value="#Hero">#Hero</option>
               <option value="#Villain">#Villain</option>
@@ -371,7 +396,7 @@
           <!-- 4. Abilities / Categories Dropdown -->
           <div>
             <select id="db-category-select" onchange="filterDbByCategory(this.value)" 
-                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 rounded-xl px-3 py-2.5 focus:outline-none focus:border-sky-400 cursor-pointer font-medium">
               <option value="All">Abilities: All</option>
               <option value="Burst Damage">💥 Burst Damage</option>
               <option value="Damage Over Time (DOT)">🩸 Damage Over Time</option>
@@ -388,7 +413,7 @@
           <!-- 5. Immunities Dropdown -->
           <div>
             <select id="immunity-filter-select" onchange="filterByImmunity(this.value)" 
-                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 rounded-xl px-3 py-2.5 focus:outline-none focus:border-sky-400 cursor-pointer font-medium">
               <option value="All">Immunities: All</option>
             </select>
           </div>
@@ -396,7 +421,7 @@
           <!-- 6. Sort Dropdown -->
           <div>
             <select id="db-sort-select" onchange="filterDbBySort(this.value)" 
-                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 rounded-xl px-2.5 py-2 focus:outline-none focus:border-sky-400 cursor-pointer">
+                    class="w-full bg-slate-900/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 rounded-xl px-3 py-2.5 focus:outline-none focus:border-sky-400 cursor-pointer font-medium">
               <option value="name-asc">Sort: Name (A-Z)</option>
               <option value="name-desc">Sort: Name (Z-A)</option>
               <option value="class">Sort: Class</option>
@@ -408,8 +433,8 @@
         </div>
 
         <!-- Active Filter Summary Bar (removable chips) -->
-        <div id="db-active-filters-row" class="hidden pt-2 border-t border-slate-800/80 flex items-center gap-1.5 flex-wrap">
-          <span class="text-[11px] text-slate-400 font-bold">Active:</span>
+        <div id="db-active-filters-row" class="hidden pt-2.5 border-t border-slate-800/80 flex items-center gap-2 flex-wrap">
+          <span class="text-xs text-slate-400 font-bold">Active:</span>
           <div id="db-active-filters-pills" class="flex items-center gap-1.5 flex-wrap">
             <!-- Active pills rendered by app.js -->
           </div>
@@ -417,8 +442,8 @@
 
       </div>
 
-      <!-- Dense Hub Squircle Grid Container -->
-      <div id="database-champions-grid" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 gap-2.5">
+      <!-- 12-Column Hub Champion Grid Container on Desktop -->
+      <div id="database-champions-grid" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-10 gap-x-4 gap-y-5">
         <!-- Rendered by app.js -->
       </div>
     </section>
@@ -479,7 +504,7 @@
           </h3>
           <span class="text-xs text-slate-400">Simple, effective combat instructions</span>
         </div>
-        <div id="beginner-guides-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div id="beginner-guides-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <!-- Rendered by app.js -->
         </div>
       </div>
@@ -510,9 +535,9 @@
 
   <!-- Footer -->
   <footer class="border-t border-slate-800/80 bg-slate-950/80 py-4 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <div class="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 flex flex-col sm:flex-row items-center justify-between gap-2">
       <div>Marvel Contest of Champions &copy; Kabam. Fan-created companion tool.</div>
-      <div class="text-slate-400">Generated with curated player roster & immunity dataset</div>
+      <div class="text-slate-400">Created by MCOC Player "BL_ADAM_07" for understanding the game mechanics.</div>
     </div>
   </footer>
 
