@@ -97,9 +97,9 @@ function renderStatsOverview() {
   const sixEl = document.getElementById('stat-six-stars');
 
   if (totalEl) totalEl.innerText = stats.totalChampions || 327;
-  if (ownedEl) ownedEl.innerText = stats.ownedChampions || 208;
-  if (sevenEl) sevenEl.innerText = stats.sevenStars || 16;
-  if (sixEl) sixEl.innerText = stats.sixStars || 192;
+  if (ownedEl) ownedEl.innerText = stats.ownedChampions || 216;
+  if (sevenEl) sevenEl.innerText = stats.sevenStars || 47;
+  if (sixEl) sixEl.innerText = stats.sixStars || 169;
 }
 
 function renderChampionCard(champ, isRosterMode = false) {
@@ -158,10 +158,14 @@ function renderChampionCard(champ, isRosterMode = false) {
     <span class="text-[9px] text-slate-400 truncate max-w-[70px] italic" title="${escapeHtml(ownedData.notes)}">${escapeHtml(ownedData.notes)}</span>
   ` : '';
 
+  const cardClick = isRosterMode && champ.owned 
+    ? `openChampionModal('${champ.id}', ${JSON.stringify(champ.owned).replace(/"/g, '&quot;')})`
+    : `openChampionModal('${champ.id}')`;
+
   return `
     <div class="champion-card glass-panel border p-2.5 flex flex-col justify-between" 
          style="border-color: ${clsData.border};"
-         onclick="openChampionModal('${champ.id}')">
+         onclick="${cardClick}">
       ${statusBadge}
       ${sTierBadge}
       
@@ -191,8 +195,8 @@ function renderRosterTab() {
   const container = document.getElementById('roster-champions-grid');
   if (!container) return;
 
-  const allChamps = window.MCOC_DATA.champions || [];
-  let ownedChamps = allChamps.filter(c => c.isOwned);
+  const rosterList = window.MCOC_DATA.roster || (window.MCOC_DATA.champions || []).filter(c => c.isOwned);
+  let ownedChamps = [...rosterList];
 
   if (selectedRosterClasses.size > 0) {
     ownedChamps = ownedChamps.filter(c => selectedRosterClasses.has(c.class));
@@ -616,9 +620,10 @@ function renderBeginnerGuides() {
   }).join('');
 }
 
-function openChampionModal(champId) {
-  const champ = (window.MCOC_DATA.champions || []).find(c => c.id === champId);
-  if (!champ) return;
+function openChampionModal(champId, customOwned = null) {
+  const baseChamp = (window.MCOC_DATA.champions || []).find(c => c.id === champId);
+  if (!baseChamp) return;
+  const champ = customOwned ? { ...baseChamp, isOwned: true, owned: customOwned } : baseChamp;
   displayChampionModal(champ);
 }
 
@@ -788,24 +793,25 @@ function handleRosterStarSlider(val) {
   if (slider) slider.value = val;
 
   const display = document.getElementById('roster-star-slider-display');
+  const stats = window.MCOC_DATA.stats || {};
   
   if (val === 0) {
     selectedRarityFilter = 'All';
     if (display) {
       display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm';
-      display.innerHTML = `<span>★ ALL (6★ & 7★)</span> <span class="text-[10px] text-slate-400 font-bold ml-1">208 Total</span>`;
+      display.innerHTML = `<span>★ ALL (6★ & 7★)</span> <span class="text-[10px] text-slate-400 font-bold ml-1">${stats.ownedChampions || 216} Total</span>`;
     }
   } else if (val === 1) {
     selectedRarityFilter = '6';
     if (display) {
       display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-amber-950/60 text-amber-300 border border-amber-500/40 shadow-sm';
-      display.innerHTML = `<span>6★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 6 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-amber-400 font-bold ml-1">(198 Champions)</span>`;
+      display.innerHTML = `<span>6★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 6 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-amber-400 font-bold ml-1">(${stats.sixStars || 169} Champions)</span>`;
     }
   } else if (val === 2) {
     selectedRarityFilter = '7';
     if (display) {
       display.className = 'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black bg-rose-950/60 text-rose-300 border border-rose-500/40 shadow-sm';
-      display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(10 Mythics)</span>`;
+      display.innerHTML = `<span>7★</span> <div class="flex items-center gap-0.5">${Array.from({ length: 7 }).map(() => `<img src="assets/images/Champion-star.png" class="w-3.5 h-3.5 inline-block" />`).join('')}</div> <span class="text-[10px] text-rose-400 font-bold ml-1">(${stats.sevenStars || 47} Mythics)</span>`;
     }
   }
 

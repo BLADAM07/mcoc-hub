@@ -1,4 +1,4 @@
-﻿$path = "C:\Users\Vishnu\.gemini\antigravity\scratch\mcoc-master-hub\js\data.js"
+$path = Join-Path $PSScriptRoot "js\data.js"
 $content = [System.IO.File]::ReadAllText($path, [System.Text.Encoding]::UTF8)
 
 $replacements = @(
