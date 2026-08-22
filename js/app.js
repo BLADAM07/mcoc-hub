@@ -176,15 +176,15 @@ function renderChampionCard(champ, isRosterMode = false) {
     </div>
   `;
 
-  // Status Badge: ONLY shown in Roster & Upgrade Tracker (R1, R2, R3...)
+  // Status Badge: ONLY shown in 2Upgrade Tracker (R1, R2, R3...)
   const statusBadge = (isRosterMode && isOwned) ? `
-    <div class="absolute top-1.5 left-1.5 ${rarity === 7 ? 'bg-rose-950/90 text-rose-300 border-rose-500/50' : 'bg-slate-900/90 text-amber-300 border-amber-500/50'} border px-1 py-0.2 rounded text-[8px] font-black uppercase tracking-wider shadow-md z-10">
+    <div class="absolute top-1.5 left-1.5 ${rarity === 7 ? 'bg-rose-950/90 text-rose-300 border-rose-500/50' : 'bg-slate-900/90 text-amber-300 border-amber-500/50'} border px-1 py-0.2 rounded text-[10px] font-black uppercase tracking-wider shadow-md z-10">
       ${ownedData.rank ? `R${ownedData.rank}` : 'OWNED'}
     </div>
   ` : '';
 
   const sTierBadge = champ.storyTier ? `
-    <div class="absolute top-1.5 right-1.5 bg-amber-500/90 text-slate-950 font-black text-[8px] px-1 py-0.2 rounded uppercase tracking-wider shadow z-10">
+    <div class="absolute top-1.5 right-1.5 bg-amber-500/90 text-slate-950 font-black text-[10px] px-1 py-0.2 rounded uppercase tracking-wider shadow z-10">
       S-TIER
     </div>
   ` : '';
@@ -192,24 +192,24 @@ function renderChampionCard(champ, isRosterMode = false) {
   const immunitiesPreview = (champ.immunities && champ.immunities.length > 0) ? `
     <div class="flex flex-wrap gap-0.5 mt-1 overflow-hidden max-h-4">
       ${champ.immunities.slice(0, 2).map(imm => `
-        <span class="text-[8px] px-1 py-0.2 rounded bg-sky-950/70 text-sky-300 border border-sky-500/30 truncate">
+        <span class="text-[10px] px-1 py-0.2 rounded bg-sky-950/70 text-sky-300 border border-sky-500/30 truncate">
           ${imm.replace(' Immunity', '')}
         </span>
       `).join('')}
-      ${champ.immunities.length > 2 ? `<span class="text-[8px] text-slate-400">+${champ.immunities.length - 2}</span>` : ''}
+      ${champ.immunities.length > 2 ? `<span class="text-[10px] text-slate-400">+${champ.immunities.length - 2}</span>` : ''}
     </div>
   ` : '';
 
   // Upgrade pill: ONLY shown in Roster & Upgrade Tracker
   const upgradePill = (isRosterMode && isOwned && ownedData.futureRank && ownedData.futureRank > ownedData.rank) ? `
-    <div class="mt-0.5 text-[8.5px] font-extrabold text-amber-300 bg-amber-950/50 px-1 py-0.2 rounded border border-amber-500/30 text-center truncate" title="Upgrade Plan: R${ownedData.rank} ➔ R${ownedData.futureRank}">
+    <div class="mt-0.5 text-[10px] font-extrabold text-amber-300 bg-amber-950/50 px-1 py-0.2 rounded border border-amber-500/30 text-center truncate" title="Upgrade Plan: R${ownedData.rank} ➔ R${ownedData.futureRank}">
       R${ownedData.rank} ➔ R${ownedData.futureRank}
     </div>
   ` : '';
 
   // Notes: ONLY shown in Roster & Upgrade Tracker
   const notesHtml = (isRosterMode && isOwned && ownedData.notes) ? `
-    <span class="text-[8px] text-slate-400 truncate max-w-[50px] italic" title="${escapeHtml(ownedData.notes)}">${escapeHtml(ownedData.notes)}</span>
+    <span class="text-[10px] text-slate-400 truncate max-w-[50px] italic" title="${escapeHtml(ownedData.notes)}">${escapeHtml(ownedData.notes)}</span>
   ` : '';
 
   const cardClick = isRosterMode && champ.owned 
@@ -231,10 +231,10 @@ function renderChampionCard(champ, isRosterMode = false) {
 
       <div>
         <div class="flex items-center justify-between gap-1">
-          <h4 class="text-[10px] sm:text-[10.5px] font-bold text-white truncate" title="${escapeHtml(champ.name)}">${champ.name}</h4>
+          <h4 class="text-xs sm:text-sm font-bold text-white truncate" title="${escapeHtml(champ.name)}">${champ.name}</h4>
           ${aliasBadge}
         </div>
-        <div class="flex items-center justify-between text-[9px] sm:text-[9.5px] mt-0.5">
+        <div class="flex items-center justify-between text-xs sm:text-sm mt-0.5">
           <span class="font-semibold" style="color: ${clsData.color};">${champ.class}</span>
           ${notesHtml}
         </div>
@@ -649,7 +649,7 @@ function renderBeginnerGuides() {
     return `
       <div class="glass-panel p-5 rounded-2xl border flex flex-col justify-between hover:border-sky-500/40 transition-all shadow-lg" style="border-color: ${clsData.border};">
         <div class="flex items-center gap-3.5 mb-3.5">
-          <img src="assets/images/${champ.image}" class="w-16 h-16 rounded-xl object-contain bg-slate-950 p-1.5 border border-slate-700 shadow-md flex-shrink-0" onerror="this.src='assets/images/ascendable.svg'" />
+          <img src="assets/images/${champ.image}" class="guide-avatar-img w-16 h-16 rounded-xl object-contain bg-slate-950 p-1.5 border border-slate-700 shadow-md flex-shrink-0" onerror="this.src='assets/images/ascendable.svg'" />
           <div>
             <h4 class="text-base sm:text-lg font-black text-white leading-tight">${champ.name}</h4>
             <div class="flex items-center gap-2 mt-1">
@@ -660,17 +660,17 @@ function renderBeginnerGuides() {
         </div>
 
         <div class="space-y-2.5 text-xs sm:text-sm">
-          <div class="bg-slate-900/70 p-3.5 rounded-xl border border-slate-800 shadow-inner">
-            <strong class="text-emerald-400 flex items-center gap-1.5 mb-1 font-extrabold text-xs sm:text-sm">
+          <div class="guide-box-story bg-slate-900/70 p-3.5 rounded-xl border border-slate-800 shadow-inner">
+            <strong class="guide-title-story text-emerald-400 flex items-center gap-1.5 mb-1 font-extrabold text-xs sm:text-sm">
               <span>🌟</span> Why Great for Story:
             </strong>
-            <p class="text-slate-200 leading-relaxed">${champ.guide.whyStory}</p>
+            <p class="guide-text text-slate-200 leading-relaxed">${champ.guide.whyStory}</p>
           </div>
-          <div class="bg-slate-900/70 p-3.5 rounded-xl border border-slate-800 shadow-inner">
-            <strong class="text-sky-400 flex items-center gap-1.5 mb-1 font-extrabold text-xs sm:text-sm">
+          <div class="guide-box-rotation bg-slate-900/70 p-3.5 rounded-xl border border-slate-800 shadow-inner">
+            <strong class="guide-title-rotation text-sky-400 flex items-center gap-1.5 mb-1 font-extrabold text-xs sm:text-sm">
               <span>🎮</span> Easy to Handle Rotation:
             </strong>
-            <p class="text-slate-200 leading-relaxed">${champ.guide.easyToHandle}</p>
+            <p class="guide-text text-slate-200 leading-relaxed">${champ.guide.easyToHandle}</p>
           </div>
         </div>
       </div>

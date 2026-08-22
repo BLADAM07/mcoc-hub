@@ -108,7 +108,7 @@ window.selectClassWheel = function(className) {
     <div class="p-6 rounded-2xl glass-panel border" style="border-color: ${data.border};">
       <div class="flex items-center justify-between mb-5 flex-wrap gap-3">
         <div class="flex items-center gap-3.5">
-          <div class="w-12 h-12 rounded-xl bg-slate-900 border-2 p-1.5 flex items-center justify-center shadow-lg" style="border-color: ${data.color};">
+          <div class="class-wheel-icon-box w-12 h-12 rounded-xl bg-slate-900 border-2 p-1.5 flex items-center justify-center shadow-lg" style="border-color: ${data.color};">
             <img src="assets/images/classes/${className.toLowerCase()}.svg" alt="${className}" class="w-full h-full object-contain">
           </div>
           <div>
@@ -116,18 +116,18 @@ window.selectClassWheel = function(className) {
             <span class="text-xs text-slate-400 font-medium">Class Advantage Profile</span>
           </div>
         </div>
-        <div class="px-3 py-1 rounded-xl bg-slate-900 border border-slate-700 text-xs text-slate-300">
+        <div class="class-wheel-owned-pill px-3 py-1 rounded-xl bg-slate-900 border border-slate-700 text-xs text-slate-300">
           Owned: <span class="text-white font-bold">${ownedChamps.length}</span> champions
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-        <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/40 flex flex-col justify-between">
+        <div class="class-wheel-adv p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/40 flex flex-col justify-between">
           <div>
-            <div class="text-xs font-bold text-emerald-400 flex items-center gap-1.5 mb-1.5">
+            <div class="class-wheel-adv-title text-xs font-bold text-emerald-400 flex items-center gap-1.5 mb-1.5">
               <span>⚔️ ADVANTAGE (+40% Attack & Crit/Pen)</span>
             </div>
-            <div class="text-base font-black text-white flex items-center gap-2">
+            <div class="class-wheel-crushes-label text-base font-black text-white flex items-center gap-2">
               <span>CRUSHES:</span>
               <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-slate-900 border" style="border-color: ${beatCls.color || '#fff'};">
                 <img src="assets/images/classes/${data.beats.toLowerCase()}.svg" class="w-4 h-4 object-contain">
@@ -135,15 +135,15 @@ window.selectClassWheel = function(className) {
               </div>
             </div>
           </div>
-          <div class="text-xs text-slate-300 mt-2">Gains high damage bonus and reduced ability resistance against ${data.beats}.</div>
+          <div class="class-wheel-desc text-xs text-slate-300 mt-2">Gains high damage bonus and reduced ability resistance against ${data.beats}.</div>
         </div>
 
-        <div class="p-3.5 rounded-xl bg-rose-950/30 border border-rose-500/40 flex flex-col justify-between">
+        <div class="class-wheel-weak p-3.5 rounded-xl bg-rose-950/30 border border-rose-500/40 flex flex-col justify-between">
           <div>
-            <div class="text-xs font-bold text-rose-400 flex items-center gap-1.5 mb-1.5">
+            <div class="class-wheel-weak-title text-xs font-bold text-rose-400 flex items-center gap-1.5 mb-1.5">
               <span>🛡️ WEAKNESS (-20% Attack & Vulnerability)</span>
             </div>
-            <div class="text-base font-black text-white flex items-center gap-2">
+            <div class="class-wheel-weak-label text-base font-black text-white flex items-center gap-2">
               <span>WEAK TO:</span>
               <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-slate-900 border" style="border-color: ${weakCls.color || '#fff'};">
                 <img src="assets/images/classes/${data.weakTo.toLowerCase()}.svg" class="w-4 h-4 object-contain">
@@ -151,13 +151,13 @@ window.selectClassWheel = function(className) {
               </div>
             </div>
           </div>
-          <div class="text-xs text-slate-300 mt-2">Suffers reduced combat effectiveness against ${data.weakTo} defenders.</div>
+          <div class="class-wheel-desc text-xs text-slate-300 mt-2">Suffers reduced combat effectiveness against ${data.weakTo} defenders.</div>
         </div>
       </div>
 
       <div class="mb-5">
         <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Class Mechanics & Kit Specialty</h4>
-        <p class="text-sm text-slate-200 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 leading-relaxed">
+        <p class="class-wheel-identity text-sm text-slate-200 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 leading-relaxed">
           ${data.identity}
         </p>
       </div>

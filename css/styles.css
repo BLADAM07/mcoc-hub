@@ -169,6 +169,7 @@ html.light .bg-slate-950\/80,
 html.light .bg-slate-900,
 html.light .bg-slate-900\/80,
 html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/70,
 html.light .bg-slate-900\/60,
 html.light .bg-slate-900\/40 {
   background-color: #ffffff !important;
@@ -207,6 +208,92 @@ html.light .theme-toggle-trigger:hover {
 html.light footer {
   background-color: #ffffff !important;
   border-color: #e2e8f0 !important;
+}
+
+/* =========================================================
+   LIGHT MODE: ACADEMY & BEGINNER GUIDES CRISP STYLING
+   ========================================================= */
+html.light .guide-avatar-img {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+html.light .guide-box-story {
+  background-color: #f0fdf4 !important;
+  border-color: #bbf7d0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+html.light .guide-title-story {
+  color: #15803d !important; /* Rich Green */
+}
+
+html.light .guide-box-rotation {
+  background-color: #f0f9ff !important;
+  border-color: #bae6fd !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+html.light .guide-title-rotation {
+  color: #0369a1 !important; /* Deep Sky Blue */
+}
+
+html.light .guide-text {
+  color: #1e293b !important; /* Deep Slate Text */
+  font-weight: 500;
+}
+
+/* =========================================================
+   LIGHT MODE: CLASS WHEEL DETAIL PANEL CRISP STYLING
+   ========================================================= */
+html.light .class-wheel-icon-box {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+html.light .class-wheel-owned-pill {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+html.light .class-wheel-adv {
+  background-color: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+html.light .class-wheel-adv-title {
+  color: #047857 !important;
+}
+
+html.light .class-wheel-crushes-label {
+  color: #0f172a !important;
+}
+
+html.light .class-wheel-weak {
+  background-color: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+html.light .class-wheel-weak-title {
+  color: #be123c !important;
+}
+
+html.light .class-wheel-weak-label {
+  color: #0f172a !important;
+}
+
+html.light .class-wheel-desc {
+  color: #334155 !important;
+}
+
+html.light .class-wheel-identity {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
 }
 
 /* Class Border Glows */
@@ -527,7 +614,7 @@ html.light .active-filter-pill {
   color: #f43f5e;
 }
 
-/* Hub-Style Champion Grid & Squircle Cards (Enhanced Badge Dimensions) */
+/* Hub-Style Champion Grid & Squircle Cards */
 .hub-champion-card {
   position: relative;
   aspect-ratio: 1 / 1.05;
@@ -578,10 +665,10 @@ html.light .hub-champion-card:hover {
   z-index: 10;
 }
 
-/* Circular Mini Badges (Size increased to 24px) */
+/* Circular Mini Badges */
 .hub-mini-badge {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   border-radius: 9999px;
   background: rgba(10, 15, 29, 0.94);
   border: 1.5px solid rgba(255, 255, 255, 0.4);
@@ -619,7 +706,7 @@ html.light .hub-name-bar {
 }
 
 .hub-name-text {
-  font-size: 9.5px;
+  font-size: 15px;
   font-weight: 800;
   color: #ffffff !important;
   white-space: nowrap;
